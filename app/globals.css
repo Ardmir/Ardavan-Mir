@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #2d2d2d;
+  color: #f8f8f8;
+  line-height: 1.7;
+}
+
+/* Typography Rules */
+.font-display {
+  font-family: var(--font-space-grotesk);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-heading {
+  font-family: var(--font-space-grotesk);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.font-accent {
+  font-family: var(--font-space-grotesk);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.font-body {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.font-ui {
+  font-family: var(--font-inter);
+  font-weight: 500;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00d4aa;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00b89a;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: color, background-color, border-color, transform, opacity;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #00d4aa;
+  outline-offset: 4px;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+}
