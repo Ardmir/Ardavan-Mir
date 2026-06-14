@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Space_Grotesk } from "next/font/google"
+import { Inter, Space_Grotesk, Newsreader } from "next/font/google"
 import "./globals.css"
 
 const inter = Inter({
@@ -15,28 +15,39 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 })
 
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  variable: "--font-newsreader",
+  display: "swap",
+  style: ["normal", "italic"],
+})
+
 export const metadata: Metadata = {
-  title: "Ardavan Mir - Senior Product Designer",
+  title: "Ardavan Mirhosseini — Senior Product Designer",
   description:
-    "Senior Product Designer at Intuit, dedicated to transforming complex challenges into moments of clarity, crafting solutions that deliver meaningful value and elevate user experiences.",
-  keywords: "product designer, UX designer, UI designer, Intuit, fintech design, user experience",
-  authors: [{ name: "Ardavan Mir" }],
-  viewport: "width=device-width, initial-scale=1",
+    "Senior Product Designer designing AI-native enterprise products, financial workflows, and high-trust product experiences.",
+  keywords:
+    "product designer, senior product designer, enterprise SaaS, AI-native, financial systems, fintech design, Toronto",
+  authors: [{ name: "Ardavan Mirhosseini" }],
   robots: "index, follow",
   openGraph: {
-    title: "Ardavan Mir - Senior Product Designer",
+    title: "Ardavan Mirhosseini — Senior Product Designer",
     description:
-      "Senior Product Designer at Intuit, dedicated to transforming complex challenges into moments of clarity.",
+      "Designing intelligent products that turn financial complexity into confident action.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ardavan Mir - Senior Product Designer",
+    title: "Ardavan Mirhosseini — Senior Product Designer",
     description:
-      "Senior Product Designer at Intuit, dedicated to transforming complex challenges into moments of clarity.",
+      "Designing intelligent products that turn financial complexity into confident action.",
   },
-    generator: 'v0.dev'
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 }
 
 export default function RootLayout({
@@ -46,7 +57,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans`}>{children}</body>
+      <body
+        className={`${inter.variable} ${spaceGrotesk.variable} ${newsreader.variable} font-sans`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
