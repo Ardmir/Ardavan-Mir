@@ -7,38 +7,113 @@ html {
 }
 
 body {
-  background-color: #070a0b;
+  background-color: #05070a;
   color: #f4f7f6;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /* Typography Rules */
 .font-display {
-  font-family: var(--font-space-grotesk);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-family: var(--font-playfair);
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .font-heading {
-  font-family: var(--font-space-grotesk);
+  font-family: var(--font-playfair);
   font-weight: 600;
   letter-spacing: -0.01em;
 }
 
 .font-editorial {
-  font-family: var(--font-newsreader);
+  font-family: var(--font-playfair);
   letter-spacing: -0.01em;
 }
 
 .font-body {
   font-family: var(--font-inter);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .font-ui {
   font-family: var(--font-inter);
-  font-weight: 500;
+  font-weight: 400;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+/* Glass Monolith — oversized hero */
+.hero-monolith {
+  font-family: var(--font-inter);
+  font-weight: 200;
+  font-size: clamp(1.65rem, 4.8vw, 3.25rem);
+  line-height: 0.92;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f4f7f6;
+}
+
+.hero-monolith__filled {
+  display: inline;
+}
+
+.hero-monolith__outline {
+  display: inline;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(244, 247, 246, 0.9);
+}
+
+@media (min-width: 640px) {
+  .hero-monolith {
+    font-weight: 200;
+    letter-spacing: 0.08em;
+  }
+
+  .hero-monolith__outline {
+    -webkit-text-stroke-width: 1.5px;
+  }
+}
+
+/* Fullscreen overlay nav */
+.overlay-nav {
+  background-color: rgba(5, 7, 10, 0.97);
+  backdrop-filter: blur(12px);
+}
+
+.overlay-nav__link {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  padding: 0.75rem 0;
+  text-decoration: none;
+  color: #f4f7f6;
+  transition: color 200ms ease;
+}
+
+.overlay-nav__link:hover,
+.overlay-nav__link:focus-visible {
+  color: #31f5d4;
+}
+
+.overlay-nav__index {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: #a8b3b0;
+  min-width: 2rem;
+}
+
+.overlay-nav__label {
+  font-family: var(--font-playfair);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
 /* Custom scrollbar */
@@ -46,7 +121,7 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #070a0b;
+  background: #05070a;
 }
 ::-webkit-scrollbar-thumb {
   background: #1f2a2d;
@@ -93,44 +168,36 @@ img {
   animation: softRise 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-/* IA Logotype */
+/* IA Logotype — thin, wide tracking, teal slash */
 .ia-logotype {
   display: inline-flex;
   align-items: center;
   gap: 0;
   min-height: 44px;
   text-decoration: none;
-  font-family: var(--font-space-grotesk);
-  font-weight: 600;
-  font-size: 1.125rem;
-  letter-spacing: -0.02em;
+  font-family: var(--font-inter);
+  font-weight: 200;
+  font-size: 1rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
   color: #f4f7f6;
 }
 
 .ia-logotype__first,
 .ia-logotype__last {
   display: inline-block;
-  transition: transform 350ms cubic-bezier(0.16, 1, 0.3, 1),
-              opacity 350ms cubic-bezier(0.16, 1, 0.3, 1);
-  animation: logotypeLeft 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-.ia-logotype__last {
-  animation-name: logotypeRight;
+  transition: opacity 250ms ease;
 }
 
 .ia-logotype__slash {
   display: inline-flex;
   align-items: center;
   color: #31f5d4;
-  margin: 0 3px;
-  transition: transform 350ms cubic-bezier(0.16, 1, 0.3, 1);
-  animation: logotypeSlash 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
-  animation-delay: 200ms;
+  margin: 0 0.35rem;
 }
 
 .ia-logotype__slash svg line {
-  transition: stroke-width 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition: stroke-width 250ms ease;
 }
 
 /* Mobile: show compact, hide full */
@@ -142,43 +209,16 @@ img {
   .ia-logotype__full { display: inline; }
 }
 
-/* Hover / focus */
 .ia-logotype:hover .ia-logotype__first,
-.ia-logotype:focus-visible .ia-logotype__first {
-  transform: translateX(-2px);
-  opacity: 0.85;
-}
-
+.ia-logotype:focus-visible .ia-logotype__first,
 .ia-logotype:hover .ia-logotype__last,
 .ia-logotype:focus-visible .ia-logotype__last {
-  transform: translateX(2px);
-  opacity: 0.85;
-}
-
-.ia-logotype:hover .ia-logotype__slash,
-.ia-logotype:focus-visible .ia-logotype__slash {
-  transform: rotate(-25deg);
+  opacity: 0.8;
 }
 
 .ia-logotype:hover .ia-logotype__slash svg line,
 .ia-logotype:focus-visible .ia-logotype__slash svg line {
   stroke-width: 2.5;
-}
-
-/* Entrance keyframes */
-@keyframes logotypeLeft {
-  from { opacity: 0; transform: translateX(-8px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes logotypeRight {
-  from { opacity: 0; transform: translateX(8px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes logotypeSlash {
-  from { opacity: 0; transform: scaleY(0); }
-  to   { opacity: 1; transform: scaleY(1); }
 }
 
 /* Respect reduced motion globally */
@@ -198,15 +238,9 @@ img {
     stroke-dashoffset: 0;
     opacity: 0.6;
   }
-  .ia-logotype__first,
-  .ia-logotype__last,
-  .ia-logotype__slash {
+  .rise {
     animation: none;
     opacity: 1;
-    transform: none;
-  }
-  .ia-logotype:hover .ia-logotype__slash,
-  .ia-logotype:focus-visible .ia-logotype__slash {
     transform: none;
   }
 }

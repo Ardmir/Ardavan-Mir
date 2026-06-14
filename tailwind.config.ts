@@ -55,7 +55,7 @@ const config: Config = {
         },
         brand: {
           bg: "#0B0F10",
-          bgDeep: "#070A0B",
+          bgDeep: "#05070A",
           surface: "#111719",
           elevated: "#151D20",
           ink: "#F4F7F6",
@@ -99,8 +99,9 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        display: ["var(--font-space-grotesk)", "system-ui", "sans-serif"],
-        editorial: ["var(--font-newsreader)", "Georgia", "serif"],
+        display: ["var(--font-playfair)", "Georgia", "serif"],
+        editorial: ["var(--font-playfair)", "Georgia", "serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       keyframes: {
         "accordion-down": {

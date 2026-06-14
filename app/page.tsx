@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 import Image from "next/image"
 import ClarityEngine from "@/components/portfolio/clarity-engine"
 import IALogotype from "@/components/ia-logotype"
@@ -80,66 +80,142 @@ const STRENGTHS = [
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const menuButtonRef = useRef<HTMLButtonElement>(null)
+  const overlayRef = useRef<HTMLDivElement>(null)
+
+  const closeMenu = useCallback(() => {
+    setMenuOpen(false)
+    menuButtonRef.current?.focus()
+  }, [])
+
+  useEffect(() => {
+    if (!menuOpen) return
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+
+    const overlay = overlayRef.current
+    if (!overlay) {
+      return () => {
+        document.body.style.overflow = previousOverflow
+      }
+    }
+
+    const focusables = Array.from(
+      overlay.querySelectorAll<HTMLElement>(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      )
+    ).filter((el) => !el.hasAttribute("disabled"))
+
+    const first = focusables[0]
+    const last = focusables[focusables.length - 1]
+    first?.focus()
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        event.preventDefault()
+        closeMenu()
+        return
+      }
+
+      if (event.key !== "Tab" || focusables.length === 0) return
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last?.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first?.focus()
+      }
+    }
+
+    document.addEventListener("keydown", onKeyDown)
+    return () => {
+      document.body.style.overflow = previousOverflow
+      document.removeEventListener("keydown", onKeyDown)
+    }
+  }, [menuOpen, closeMenu])
 
   return (
-    <main className="min-h-screen bg-[#070A0B] text-[#F4F7F6]">
+    <main className="min-h-screen overflow-x-hidden bg-[#05070A] text-[#F4F7F6]">
       {/* Header */}
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-[rgba(255,255,255,0.12)] bg-[#070A0B]/85 backdrop-blur-md">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-[rgba(255,255,255,0.08)] bg-[#05070A]/90 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 lg:px-8">
           <IALogotype />
-          <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
-            {NAV.map((n) => (
-              <a
-                key={n.id}
-                href={`#${n.id}`}
-                className="rounded-lg px-3 py-2 font-ui text-sm text-[#A8B3B0] transition-colors hover:text-[#31F5D4]"
-              >
-                {n.label}
-              </a>
-            ))}
-            {/* TODO: Add résumé link once the refreshed PDF is verified and hosted. */}
-          </nav>
           <button
+            ref={menuButtonRef}
             type="button"
-            className="font-ui text-sm text-[#A8B3B0] md:hidden"
+            className="font-mono text-xs uppercase tracking-[0.2em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4]"
             aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((v) => !v)}
+            aria-controls="site-overlay-nav"
+            aria-haspopup="dialog"
+            onClick={() => setMenuOpen((open) => !open)}
           >
             {menuOpen ? "Close" : "Menu"}
           </button>
         </div>
-        {menuOpen && (
-          <nav className="border-t border-[rgba(255,255,255,0.12)] px-6 py-3 md:hidden" aria-label="Mobile">
-            {NAV.map((n) => (
+      </header>
+
+      {/* Fullscreen overlay nav */}
+      {menuOpen && (
+        <div
+          ref={overlayRef}
+          id="site-overlay-nav"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Site navigation"
+          className="overlay-nav fixed inset-0 z-[60] flex flex-col px-6 py-8 lg:px-8"
+        >
+          <div className="mx-auto flex w-full max-w-6xl items-center justify-end">
+            <button
+              type="button"
+              className="font-mono text-xs uppercase tracking-[0.2em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4]"
+              onClick={closeMenu}
+            >
+              Close
+            </button>
+          </div>
+          <nav
+            className="mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center gap-2"
+            aria-label="Primary"
+          >
+            {NAV.map((n, i) => (
               <a
                 key={n.id}
                 href={`#${n.id}`}
-                onClick={() => setMenuOpen(false)}
-                className="block py-2 font-ui text-sm text-[#A8B3B0]"
+                className="overlay-nav__link"
+                onClick={closeMenu}
               >
-                {n.label}
+                <span className="overlay-nav__index" aria-hidden="true">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="overlay-nav__label">{n.label}</span>
               </a>
             ))}
           </nav>
-        )}
-      </header>
+        </div>
+      )}
 
       {/* Hero */}
       <section id="top" className="px-6 pt-32 pb-20 lg:px-8 lg:pt-40">
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="rise">
-            <span className="inline-flex items-center gap-2 font-ui text-xs uppercase tracking-[0.16em] text-[#A8B3B0]">
+            <span className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.16em] text-[#A8B3B0]">
               Senior Product Designer · Enterprise AI · Toronto
             </span>
-            <h1 className="mt-6 font-editorial text-4xl leading-[1.08] text-[#F4F7F6] sm:text-5xl lg:text-6xl">
-              I design intelligent products that turn{" "}
-              <span className="italic">financial complexity</span> into{" "}
-              <span className="spark">confident action.</span>
+            <h1 className="hero-monolith mt-6">
+              <span className="hero-monolith__filled">
+                I design intelligent products that turn financial complexity into{" "}
+              </span>
+              <span className="hero-monolith__outline">confident action.</span>
             </h1>
             <p className="mt-6 max-w-xl font-body text-base leading-relaxed text-[#A8B3B0] sm:text-lg">
               Senior Product Designer focused on enterprise SaaS, AI-native workflows, and
               financial systems — transforming customer challenges into elevated moments that
               simplify complexity with clarity and deliver meaningful value.
+            </p>
+            <p className="mt-4 max-w-xl font-mono text-sm tracking-wide text-[#A8B3B0]">
+              Make the system legible before making it smart.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -300,7 +376,7 @@ export default function Home() {
             </span>
           </div>
 
-          <p className="mt-16 font-body text-[13px] text-[#A8B3B0]/60">
+          <p className="mt-16 font-mono text-[11px] uppercase tracking-[0.14em] text-[#A8B3B0]/60">
             © {new Date().getFullYear()} Ardavan Mirhosseini · Toronto, ON
           </p>
         </div>
