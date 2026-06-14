@@ -7,9 +7,10 @@ html {
 }
 
 body {
-  background-color: #2d2d2d;
-  color: #f8f8f8;
+  background-color: #070a0b;
+  color: #f4f7f6;
   line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Typography Rules */
@@ -25,16 +26,14 @@ body {
   letter-spacing: -0.01em;
 }
 
-.font-accent {
-  font-family: var(--font-space-grotesk);
-  font-weight: 500;
-  letter-spacing: 0.01em;
+.font-editorial {
+  font-family: var(--font-newsreader);
+  letter-spacing: -0.01em;
 }
 
 .font-body {
   font-family: var(--font-inter);
   font-weight: 400;
-  line-height: 1.8;
 }
 
 .font-ui {
@@ -46,50 +45,69 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #2d2d2d;
+  background: #070a0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2a2d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #31f5d4;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #00d4aa;
+/* The spark — IS / AI-assist mark */
+.spark {
+  color: #31f5d4;
+}
+
+/* Accessible focus states */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #31f5d4;
+  outline-offset: 3px;
   border-radius: 4px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #00b89a;
-}
-
-/* Smooth transitions for all interactive elements */
-* {
-  transition-property: color, background-color, border-color, transform, opacity;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Focus styles for accessibility */
-button:focus-visible,
-a:focus-visible {
-  outline: 2px solid #00d4aa;
-  outline-offset: 4px;
-}
-
-/* Ensure images are responsive */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Custom animations */
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%) skewX(-12deg);
-  }
-  100% {
-    transform: translateX(200%) skewX(-12deg);
-  }
+/* Flow pulse used by the Clarity Engine connectors */
+@keyframes flowPulse {
+  0% { stroke-dashoffset: 240; opacity: 0.25; }
+  50% { opacity: 0.9; }
+  100% { stroke-dashoffset: 0; opacity: 0.25; }
+}
+.flow-line {
+  stroke-dasharray: 6 10;
+  animation: flowPulse 4.5s linear infinite;
 }
 
-.animate-shimmer {
-  animation: shimmer 3s ease-in-out infinite;
+@keyframes softRise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.rise {
+  animation: softRise 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .flow-line {
+    animation: none;
+    stroke-dashoffset: 0;
+    opacity: 0.6;
+  }
 }
