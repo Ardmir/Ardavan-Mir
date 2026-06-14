@@ -93,6 +93,94 @@ img {
   animation: softRise 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
+/* IA Logotype */
+.ia-logotype {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  min-height: 44px;
+  text-decoration: none;
+  font-family: var(--font-space-grotesk);
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+  color: #f4f7f6;
+}
+
+.ia-logotype__first,
+.ia-logotype__last {
+  display: inline-block;
+  transition: transform 350ms cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  animation: logotypeLeft 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.ia-logotype__last {
+  animation-name: logotypeRight;
+}
+
+.ia-logotype__slash {
+  display: inline-flex;
+  align-items: center;
+  color: #31f5d4;
+  margin: 0 3px;
+  transition: transform 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  animation: logotypeSlash 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 200ms;
+}
+
+.ia-logotype__slash svg line {
+  transition: stroke-width 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Mobile: show compact, hide full */
+.ia-logotype__compact { display: inline; }
+.ia-logotype__full { display: none; }
+
+@media (min-width: 480px) {
+  .ia-logotype__compact { display: none; }
+  .ia-logotype__full { display: inline; }
+}
+
+/* Hover / focus */
+.ia-logotype:hover .ia-logotype__first,
+.ia-logotype:focus-visible .ia-logotype__first {
+  transform: translateX(-2px);
+  opacity: 0.85;
+}
+
+.ia-logotype:hover .ia-logotype__last,
+.ia-logotype:focus-visible .ia-logotype__last {
+  transform: translateX(2px);
+  opacity: 0.85;
+}
+
+.ia-logotype:hover .ia-logotype__slash,
+.ia-logotype:focus-visible .ia-logotype__slash {
+  transform: rotate(-25deg);
+}
+
+.ia-logotype:hover .ia-logotype__slash svg line,
+.ia-logotype:focus-visible .ia-logotype__slash svg line {
+  stroke-width: 2.5;
+}
+
+/* Entrance keyframes */
+@keyframes logotypeLeft {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes logotypeRight {
+  from { opacity: 0; transform: translateX(8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes logotypeSlash {
+  from { opacity: 0; transform: scaleY(0); }
+  to   { opacity: 1; transform: scaleY(1); }
+}
+
 /* Respect reduced motion globally */
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -109,5 +197,16 @@ img {
     animation: none;
     stroke-dashoffset: 0;
     opacity: 0.6;
+  }
+  .ia-logotype__first,
+  .ia-logotype__last,
+  .ia-logotype__slash {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .ia-logotype:hover .ia-logotype__slash,
+  .ia-logotype:focus-visible .ia-logotype__slash {
+    transform: none;
   }
 }

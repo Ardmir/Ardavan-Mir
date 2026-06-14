@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import ClarityEngine from "@/components/portfolio/clarity-engine"
+import IALogotype from "@/components/ia-logotype"
 
 const NAV = [
   { id: "work", label: "Work" },
@@ -85,9 +86,7 @@ export default function Home() {
       {/* Header */}
       <header className="fixed inset-x-0 top-0 z-50 border-b border-[rgba(255,255,255,0.12)] bg-[#070A0B]/85 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 lg:px-8">
-          <a href="#top" className="font-display text-lg tracking-tight text-[#F4F7F6]">
-            Ardavan<span className="spark"> Mir</span>
-          </a>
+          <IALogotype />
           <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
             {NAV.map((n) => (
               <a
@@ -98,14 +97,7 @@ export default function Home() {
                 {n.label}
               </a>
             ))}
-            {/* Résumé — held until the refreshed PDF is verified (TODO) */}
-            <span
-              aria-disabled="true"
-              title="Résumé refresh in progress"
-              className="ml-1 cursor-not-allowed rounded-lg px-3 py-2 font-ui text-sm text-[#A8B3B0]/40"
-            >
-              Résumé
-            </span>
+            {/* TODO: Add résumé link once the refreshed PDF is verified and hosted. */}
           </nav>
           <button
             type="button"
@@ -136,8 +128,8 @@ export default function Home() {
       <section id="top" className="px-6 pt-32 pb-20 lg:px-8 lg:pt-40">
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="rise">
-            <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.12)] bg-[#111719] px-3 py-1 font-ui text-xs uppercase tracking-[0.16em] text-[#A8B3B0]">
-              <span className="spark">✦</span> Senior Product Designer · Enterprise AI · Toronto
+            <span className="inline-flex items-center gap-2 font-ui text-xs uppercase tracking-[0.16em] text-[#A8B3B0]">
+              Senior Product Designer · Enterprise AI · Toronto
             </span>
             <h1 className="mt-6 font-editorial text-4xl leading-[1.08] text-[#F4F7F6] sm:text-5xl lg:text-6xl">
               I design intelligent products that turn{" "}
@@ -188,12 +180,12 @@ export default function Home() {
                   <span className="font-display text-sm text-[#31F5D4]">{p.no}</span>
                   <span className="font-ui text-[11px] uppercase tracking-[0.14em] text-[#A8B3B0]">{p.role}</span>
                 </div>
-                <h3 className="font-heading text-xl leading-snug text-[#F4F7F6]">{p.title}</h3>
+                <h3 className="font-heading text-2xl leading-snug text-[#F4F7F6]">{p.title}</h3>
                 <p className="mt-2 font-ui text-[12px] uppercase tracking-[0.12em] text-[#7CE7D6]">{p.label}</p>
                 <p className="mt-4 font-body text-[14.5px] leading-relaxed text-[#A8B3B0]">{p.description}</p>
                 <ul className="mt-5 flex flex-wrap gap-2">
                   {p.focus.map((f) => (
-                    <li key={f} className="rounded-full border border-[rgba(255,255,255,0.12)] px-3 py-1 font-ui text-[11px] text-[#A8B3B0]">
+                    <li key={f} className="rounded-full bg-[#111719] px-3 py-1.5 font-ui text-[12px] text-[#F4F7F6]">
                       {f}
                     </li>
                   ))}
@@ -232,7 +224,7 @@ export default function Home() {
           <h2 className="mb-12 font-editorial text-3xl text-[#F4F7F6] sm:text-4xl">Approach</h2>
           <div className="grid gap-6 sm:grid-cols-2">
             {PRINCIPLES.map((pr, i) => (
-              <div key={pr.t} className="rounded-2xl border border-[rgba(255,255,255,0.12)] bg-[#111719] p-7">
+              <div key={pr.t} className="rounded-2xl bg-[#111719] p-7">
                 <span className="font-display text-sm text-[#31F5D4]">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="mt-3 font-heading text-lg text-[#F4F7F6]">{pr.t}</h3>
                 <p className="mt-2 font-body text-[14px] leading-relaxed text-[#A8B3B0]">{pr.d}</p>
@@ -266,7 +258,7 @@ export default function Home() {
             <h3 className="mb-4 font-ui text-xs uppercase tracking-[0.16em] text-[#A8B3B0]">Strengths</h3>
             <ul className="flex flex-wrap gap-2">
               {STRENGTHS.map((s) => (
-                <li key={s} className="rounded-full border border-[rgba(255,255,255,0.12)] bg-[#111719] px-3 py-1.5 font-ui text-[12px] text-[#F4F7F6]">
+                <li key={s} className="rounded-full bg-[#111719] px-3 py-1.5 font-ui text-[12px] text-[#F4F7F6]">
                   {s}
                 </li>
               ))}
