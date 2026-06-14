@@ -89,8 +89,10 @@ body {
 .overlay-nav__link {
   display: flex;
   align-items: baseline;
+  justify-content: flex-start;
   gap: 1.25rem;
-  padding: 0.75rem 0;
+  width: 100%;
+  padding: 0.75rem 320px;
   text-decoration: none;
   color: #f4f7f6;
   transition: color 200ms ease;
