@@ -1,5 +1,6 @@
 "use client"
 
+import { Mail, Linkedin, FileText } from "lucide-react"
 import { useState, useEffect, useRef, useCallback } from "react"
 import Image from "next/image"
 import ClarityEngine from "@/components/portfolio/clarity-engine"
@@ -198,43 +199,27 @@ export default function Home() {
 
       {/* Hero */}
       <section id="top" className="px-6 pt-32 pb-20 lg:px-8 lg:pt-40">
-        <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="rise">
-            <span className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.16em] text-[#A8B3B0]">
-              Senior Product Designer · Enterprise AI · Toronto
+        <div className="mx-auto max-w-6xl rise">
+          <span className="hero-eyebrow inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.16em]">
+            Senior Product Designer · Enterprise AI · Toronto
+          </span>
+          <h1 className="hero-monolith mt-6">
+            <span className="hero-monolith__filled">
+              I design intelligent products that turn financial complexity into{" "}
             </span>
-            <h1 className="hero-monolith mt-6">
-              <span className="hero-monolith__filled">
-                I design intelligent products that turn financial complexity into{" "}
-              </span>
-              <span className="hero-monolith__outline">confident action.</span>
-            </h1>
-            <p className="mt-6 max-w-xl font-body text-base leading-relaxed text-[#A8B3B0] sm:text-lg">
-              Senior Product Designer focused on enterprise SaaS, AI-native workflows, and
-              financial systems — transforming customer challenges into elevated moments that
-              simplify complexity with clarity and deliver meaningful value.
-            </p>
-            <p className="mt-4 max-w-xl font-mono text-sm tracking-wide text-[#A8B3B0]">
-              Make the system legible before making it smart.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#work"
-                className="rounded-full bg-[#31F5D4] px-6 py-3 font-ui text-sm font-semibold text-[#07110F] transition-transform hover:scale-[1.03]"
-              >
-                View selected work
-              </a>
-              <a
-                href="#contact"
-                className="rounded-full border border-[rgba(255,255,255,0.18)] px-6 py-3 font-ui text-sm font-semibold text-[#F4F7F6] transition-colors hover:border-[#31F5D4]/50 hover:text-[#31F5D4]"
-              >
-                Get in touch
-              </a>
-            </div>
-          </div>
-          <div className="rise">
-            <ClarityEngine />
-          </div>
+            <span className="hero-monolith__outline">confident action.</span>
+          </h1>
+          <p className="mt-6 max-w-xl font-body text-base leading-relaxed text-[#A8B3B0] sm:text-lg">
+            I work across enterprise SaaS, AI-native workflows, and financial systems — making
+            complexity legible.
+          </p>
+        </div>
+      </section>
+
+      {/* Clarity Engine */}
+      <section className="border-t border-[rgba(255,255,255,0.12)] px-6 py-20 lg:px-8 lg:py-28">
+        <div className="mx-auto max-w-6xl rise">
+          <ClarityEngine />
         </div>
       </section>
 
@@ -242,7 +227,7 @@ export default function Home() {
       <section id="work" className="border-t border-[rgba(255,255,255,0.12)] px-6 py-20 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex items-end justify-between">
-            <h2 className="font-editorial text-3xl text-[#F4F7F6] sm:text-4xl">Selected work</h2>
+            <h2 className="monolith-title monolith-title--section">Selected work</h2>
             <span className="font-ui text-xs uppercase tracking-[0.16em] text-[#A8B3B0]">Three flagship projects</span>
           </div>
 
@@ -250,13 +235,13 @@ export default function Home() {
             {PROJECTS.filter((p) => p.feature).map((p) => (
               <article
                 key={p.no}
-                className="flex flex-col rounded-2xl border border-[rgba(255,255,255,0.12)] bg-[#111719] p-7 transition-colors hover:border-[#31F5D4]/30"
+                className="flex flex-col rounded-[6px] border border-[rgba(255,255,255,0.12)] bg-[#111719] p-7 transition-colors hover:border-[#31F5D4]/30"
               >
                 <div className="mb-4 flex items-center justify-between">
                   <span className="font-display text-sm text-[#31F5D4]">{p.no}</span>
                   <span className="font-ui text-[11px] uppercase tracking-[0.14em] text-[#A8B3B0]">{p.role}</span>
                 </div>
-                <h3 className="font-heading text-2xl leading-snug text-[#F4F7F6]">{p.title}</h3>
+                <h3 className="monolith-title monolith-title--card">{p.title}</h3>
                 <p className="mt-2 font-ui text-[12px] uppercase tracking-[0.12em] text-[#7CE7D6]">{p.label}</p>
                 <p className="mt-4 font-body text-[14.5px] leading-relaxed text-[#A8B3B0]">{p.description}</p>
                 <ul className="mt-5 flex flex-wrap gap-2">
@@ -277,12 +262,12 @@ export default function Home() {
               href={p.href ?? "#"}
               target="_blank"
               rel="noopener noreferrer"
-              className="group mt-6 flex flex-col gap-2 rounded-xl border border-[rgba(255,255,255,0.12)] bg-[#0B0F10] p-5 transition-colors hover:border-[#31F5D4]/30 sm:flex-row sm:items-center sm:justify-between"
+              className="group mt-6 flex flex-col gap-2 rounded-[6px] border border-[rgba(255,255,255,0.12)] bg-[#0B0F10] p-5 transition-colors hover:border-[#31F5D4]/30 sm:flex-row sm:items-center sm:justify-between"
             >
               <div>
                 <div className="flex items-center gap-3">
                   <span className="font-display text-xs text-[#31F5D4]">{p.no}</span>
-                  <h3 className="font-heading text-base text-[#F4F7F6]">{p.title}</h3>
+                  <h3 className="monolith-title monolith-title--card-sm">{p.title}</h3>
                 </div>
                 <p className="mt-1 font-body text-[13px] text-[#A8B3B0]">{p.description}</p>
               </div>
@@ -297,12 +282,12 @@ export default function Home() {
       {/* Approach */}
       <section id="approach" className="border-t border-[rgba(255,255,255,0.12)] px-6 py-20 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-12 font-editorial text-3xl text-[#F4F7F6] sm:text-4xl">Approach</h2>
+          <h2 className="monolith-title monolith-title--section mb-12">Approach</h2>
           <div className="grid gap-6 sm:grid-cols-2">
             {PRINCIPLES.map((pr, i) => (
-              <div key={pr.t} className="rounded-2xl bg-[#111719] p-7">
+              <div key={pr.t} className="rounded-[6px] bg-[#111719] p-7">
                 <span className="font-display text-sm text-[#31F5D4]">{String(i + 1).padStart(2, "0")}</span>
-                <h3 className="mt-3 font-heading text-lg text-[#F4F7F6]">{pr.t}</h3>
+                <h3 className="monolith-title monolith-title--card-sm mt-3">{pr.t}</h3>
                 <p className="mt-2 font-body text-[14px] leading-relaxed text-[#A8B3B0]">{pr.d}</p>
               </div>
             ))}
@@ -314,7 +299,7 @@ export default function Home() {
       <section id="about" className="border-t border-[rgba(255,255,255,0.12)] px-6 py-20 lg:px-8 lg:py-28">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_0.8fr]">
           <div>
-            <h2 className="mb-6 font-editorial text-3xl text-[#F4F7F6] sm:text-4xl">About</h2>
+            <h2 className="monolith-title monolith-title--section mb-6">About</h2>
             <p className="max-w-2xl font-body text-base leading-relaxed text-[#A8B3B0] sm:text-lg">
               I&rsquo;m Ardavan Mirhosseini, a Senior Product Designer based in Toronto. My work
               sits at the intersection of enterprise product design, AI-native systems, and
@@ -346,7 +331,7 @@ export default function Home() {
       {/* Contact / Footer */}
       <section id="contact" className="border-t border-[rgba(255,255,255,0.12)] px-6 py-20 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-6xl">
-          <h2 className="font-editorial text-3xl text-[#F4F7F6] sm:text-4xl">Let&rsquo;s talk</h2>
+          <h2 className="monolith-title monolith-title--section">Let&rsquo;s talk</h2>
           <p className="mt-4 max-w-2xl font-body text-base leading-relaxed text-[#A8B3B0] sm:text-lg">
             Available for senior product design roles shaping intelligent, high-trust product
             experiences.
@@ -354,25 +339,28 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="mailto:ardavanmir@outlook.com"
-              className="rounded-full bg-[#31F5D4] px-6 py-3 font-ui text-sm font-semibold text-[#07110F] transition-transform hover:scale-[1.03]"
+              aria-label="Email ardavanmir@outlook.com"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#31F5D4] text-[#07110F] transition-transform hover:scale-[1.03]"
             >
-              ardavanmir@outlook.com
+              <Mail size={20} strokeWidth={1.75} aria-hidden="true" />
             </a>
             <a
               href="https://linkedin.com/in/ardavanmir"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-[rgba(255,255,255,0.18)] px-6 py-3 font-ui text-sm font-semibold text-[#F4F7F6] transition-colors hover:border-[#31F5D4]/50 hover:text-[#31F5D4]"
+              aria-label="LinkedIn profile"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[rgba(255,255,255,0.18)] text-[#F4F7F6] transition-colors hover:border-[#31F5D4]/50 hover:text-[#31F5D4]"
             >
-              LinkedIn
+              <Linkedin size={20} strokeWidth={1.75} aria-hidden="true" />
             </a>
             {/* TODO: link résumé once the refreshed, [VERIFY]-cleared PDF is provided. */}
             <span
               aria-disabled="true"
+              aria-label="Résumé — coming soon"
               title="Résumé refresh in progress"
-              className="cursor-not-allowed rounded-full border border-dashed border-[rgba(255,255,255,0.18)] px-6 py-3 font-ui text-sm text-[#A8B3B0]/50"
+              className="inline-flex h-11 w-11 cursor-not-allowed items-center justify-center rounded-full border border-dashed border-[rgba(255,255,255,0.18)] text-[#A8B3B0]/50"
             >
-              Résumé — coming soon
+              <FileText size={20} strokeWidth={1.75} aria-hidden="true" />
             </span>
           </div>
 
