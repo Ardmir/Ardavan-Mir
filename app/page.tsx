@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import ClarityEngine from "@/components/portfolio/clarity-engine"
 
 const NAV = [
@@ -255,6 +256,13 @@ export default function Home() {
             </p>
           </div>
           <div>
+            <Image
+              src="/ardavan.png"
+              alt="Ardavan Mirhosseini"
+              width={180}
+              height={180}
+              className="mb-6 h-[180px] w-[180px] rounded-full border border-[rgba(255,255,255,0.12)] object-cover"
+            />
             <h3 className="mb-4 font-ui text-xs uppercase tracking-[0.16em] text-[#A8B3B0]">Strengths</h3>
             <ul className="flex flex-wrap gap-2">
               {STRENGTHS.map((s) => (
