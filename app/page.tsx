@@ -176,7 +176,7 @@ export default function Home() {
             </button>
           </div>
           <nav
-            className="mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center gap-2"
+            className="mx-auto flex w-full max-w-6xl flex-1 flex-col items-center justify-center gap-2"
             aria-label="Primary"
           >
             {NAV.map((n, i) => (
