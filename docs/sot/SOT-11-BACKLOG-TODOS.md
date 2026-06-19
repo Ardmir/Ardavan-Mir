@@ -1,7 +1,7 @@
 # SOT-11 — Backlog and TODOs
 
 Version: 0.1  
-Last updated: 2026-06-13  
+Last updated: 2026-06-14  
 Status: Active
 
 ## Immediate verification checklist
@@ -65,12 +65,26 @@ Status: Active
 
 ## Technical TODOs
 
-- Confirm whether production is served by GitHub Pages, Vercel, or both.
-- Confirm which repo/branch is production source.
-- Confirm whether `Ardmir/Ardavan-Mir` is the active source repo.
+### Deployment decisions (2026-06-14)
+
+- `[DECIDED]` **Production deploy path is GitHub Pages** — `.github/workflows/deploy.yml` on `main`; not Vercel.
+- `[DECIDED]` **Vercel will be disconnected** (deferred). Project `v0-portfolio` is a leftover v0 integration; it causes failing PR checks only.
+- `[DONE 2026-06-14]` Upgraded Next.js `15.2.4` → `15.2.9` (patched; unblocks Vercel builds until disconnect).
+
+### Next steps — disconnect Vercel (when ready)
+
+1. **Vercel dashboard** → project `v0-portfolio` → Settings → Git → **Disconnect** (or delete project).
+2. **Vercel dashboard** → Settings → Domains → remove any domain bound to Vercel (keep `CNAME` / DNS on GitHub Pages for `www.ardavanmir.com`).
+3. **GitHub** → Settings → Applications → Installed GitHub Apps → **Vercel** → remove `Ardavan-Mir` from repository access (stops PR checks).
+4. **v0.dev** (optional) → disconnect GitHub auto-sync for project `kKTsKeGBmnB`.
+5. **Repo cleanup** → update `README.md` to document GitHub Pages + local dev; remove v0/Vercel badges and auto-sync copy.
+
+### Remaining technical items
+
+- `[CONFIRMED]` Production source: `Ardmir/Ardavan-Mir`, branch `main`.
 - Preserve `CNAME`.
 - Confirm DNS settings for root and www domains.
-- Replace v0/Vercel starter content if still live.
+- Replace v0/Vercel starter content in README if still live.
 - Run build before deploying.
 - Test mobile.
 - Test accessibility basics.
