@@ -1,25 +1,25 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Space_Grotesk, Newsreader } from "next/font/google"
+import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  weight: ["100", "200", "300", "400", "500"],
   display: "swap",
 })
 
-const spaceGrotesk = Space_Grotesk({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-playfair",
   display: "swap",
 })
 
-const newsreader = Newsreader({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  variable: "--font-newsreader",
+  variable: "--font-mono",
   display: "swap",
-  style: ["normal", "italic"],
 })
 
 export const metadata: Metadata = {
@@ -58,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} ${newsreader.variable} font-sans`}
+        className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable} font-sans`}
       >
         {children}
       </body>
