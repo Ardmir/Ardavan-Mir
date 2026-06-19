@@ -89,7 +89,7 @@ body {
 }
 
 .monolith-title--card {
-  font-size: clamp(1.5rem, 2.8vw, 2.25rem);
+  font-size: 2rem;
 }
 
 .monolith-title--card-sm {

@@ -226,9 +226,8 @@ export default function Home() {
       {/* Selected Work */}
       <section id="work" className="border-t border-[rgba(255,255,255,0.12)] px-6 py-20 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-12 flex items-end justify-between">
-            <h2 className="monolith-title monolith-title--section">Selected work</h2>
-            <span className="font-ui text-xs uppercase tracking-[0.16em] text-[#A8B3B0]">Three flagship projects</span>
+          <div className="mb-12">
+            <h2 className="monolith-title monolith-title--section">Work</h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
@@ -238,7 +237,7 @@ export default function Home() {
                 className="flex flex-col rounded-[6px] border border-[rgba(255,255,255,0.12)] bg-[#111719] p-7 transition-colors hover:border-[#31F5D4]/30"
               >
                 <div className="mb-4 flex items-center justify-between">
-                  <span className="font-display text-sm text-[#31F5D4]">{p.no}</span>
+                  <span className="font-display text-[1.75rem] text-[#31F5D4]">{p.no}</span>
                   <span className="font-ui text-[11px] uppercase tracking-[0.14em] text-[#A8B3B0]">{p.role}</span>
                 </div>
                 <h3 className="monolith-title monolith-title--card">{p.title}</h3>
@@ -266,8 +265,8 @@ export default function Home() {
             >
               <div>
                 <div className="flex items-center gap-3">
-                  <span className="font-display text-xs text-[#31F5D4]">{p.no}</span>
-                  <h3 className="monolith-title monolith-title--card-sm">{p.title}</h3>
+                  <span className="font-display text-[1.5rem] text-[#31F5D4]">{p.no}</span>
+                  <h3 className="monolith-title monolith-title--card">{p.title}</h3>
                 </div>
                 <p className="mt-1 font-body text-[13px] text-[#A8B3B0]">{p.description}</p>
               </div>
