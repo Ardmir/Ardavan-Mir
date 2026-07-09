@@ -1,7 +1,7 @@
 # SOT-08 — Changelog
 
 Version: 0.1  
-Last updated: 2026-06-13  
+Last updated: 2026-06-19  
 Status: Active
 
 Use this file every time something changes.
@@ -93,3 +93,15 @@ Summary: Located the canonical repo (Ardmir/Ardavan-Mir, local folder "Ardavan-M
 Decision links: D-009  
 Verification needed: none for the items confirmed in v0.3 above.  
 Next action: Commit docs/sot/, verify deploy workflow branch, run build, open PR to main.
+
+### 2026-06-19 — v0.4 — Glass Monolith deployed; post-deployment roadmap recorded
+Type: Strategy / Content / Design / Deployment / Verification  
+Changed by: Cursor (documentation-only pass)  
+Files affected: `docs/sot/SOT-00-MASTER-BRIEF.md`, `docs/sot/SOT-01-CLAIMS-AND-VERIFICATION.md`, `docs/sot/SOT-06-CASE-STUDY-SOT.md`, `docs/sot/SOT-07-TECH-DEPLOYMENT-SOT.md`, `docs/sot/SOT-08-CHANGELOG.md`, `docs/sot/SOT-09-DECISION-LOG.md`, `docs/sot/SOT-11-BACKLOG-TODOS.md`, `docs/sot/README.md`  
+Summary: Recorded deployed portfolio status after PR #5 merge to `main` and successful GitHub Pages deploy. Documented professional review findings (verified against repo and production), prioritized P0/P1/P2 backlog, case-study plan, new decisions D-010–D-015, post-deployment QA checklist, and claim-verification needs.  
+Decision links: D-010, D-011, D-012, D-013, D-014, D-015  
+Claim impact: No new public claims introduced. Unverified claims remain `[VERIFY]`.  
+Code impact: None.  
+Deployment impact: None (documentation only).  
+Verification needed: résumé PDF, exact Intuit title/dates, IES/DCOA source packs, apex DNS, OG metadata.  
+Next action: Import IES source pack and complete P0 recruiter-facing fixes.
