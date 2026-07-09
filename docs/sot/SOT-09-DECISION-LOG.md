@@ -1,7 +1,7 @@
 # SOT-09 — Decision Log
 
 Version: 0.1  
-Last updated: 2026-06-13  
+Last updated: 2026-06-19  
 Status: Active
 
 Use this file for decisions that should persist across ChatGPT/Claude/Cursor sessions.
@@ -95,3 +95,58 @@ Rationale: The live site is Next.js + Tailwind with a GitHub Actions static-expo
 Implications: All future homepage edits happen in the Next.js files. Keep docs/sot/ in the repo so the source of truth travels with the code. PRs target main; deployment is via .github/workflows/deploy.yml (branch trigger to be confirmed before merge).  
 Supersedes: Any plan to apply static index.html/styles.css/script.js to the repo.  
 Related changelog entries: 2026-06-13 v0.3
+
+## D-010 — No homepage redesign at this stage
+
+Date: 2026-06-19  
+Status: Active  
+Decision: Do not redesign the portfolio homepage again at this stage.  
+Rationale: The deployed Glass Monolith homepage establishes strong identity, positioning, visual system, and hierarchy.  
+Implications: Next focus is evidence, case-study depth, recruiter pathways, accessibility, and polish — not another visual concept pass.  
+Related changelog entries: 2026-06-19 v0.4
+
+## D-011 — IES case study first
+
+Date: 2026-06-19  
+Status: Active  
+Decision: Develop the Intuit Enterprise Suite case study before other detailed case studies.  
+Rationale: Strongest match for target positioning: enterprise SaaS, AI-native workflows, IA, financial systems, senior product judgment.  
+Implications: P1-01/P1-02 take priority; DCoA follows.  
+Related changelog entries: 2026-06-19 v0.4
+
+## D-012 — Preserve the Clarity Engine
+
+Date: 2026-06-19  
+Status: Active  
+Decision: Keep the Clarity Engine as the signature conceptual interaction.  
+Constraint: It must support Work evidence rather than overshadow or delay it.  
+Implications: P2-02 evaluates hierarchy only as a proposal; no removal without decision.  
+Related changelog entries: 2026-06-19 v0.4
+
+## D-013 — Use the current wordmark
+
+Date: 2026-06-19  
+Status: Active  
+Decision: Continue with “ARDAVAN / MIR” as the portfolio identity (`IALogotype`).  
+Rationale: Shipped and cohesive with Glass Monolith system.  
+Implications: No logotype redesign in current phase.  
+Related changelog entries: 2026-06-19 v0.4
+
+## D-014 — Evidence over additional visual exploration
+
+Date: 2026-06-19  
+Status: Active  
+Decision: Prioritize case-study evidence, artifacts, decisions, and outcomes over further aesthetic concepting.  
+Rationale: Homepage positioning is sufficient; hiring signal now depends on proof depth.  
+Implications: P1 backlog prioritized over new visual experiments.  
+Related changelog entries: 2026-06-19 v0.4
+
+## D-015 — GitHub Pages is production; Vercel disconnect deferred
+
+Date: 2026-06-19  
+Status: Active  
+Decision: GitHub Pages on `main` is the production deployment source of truth. Vercel/v0 integration will be disconnected later.  
+Rationale: Verified live site on GitHub Pages after merge; Vercel is legacy noise on PR checks.  
+Implications: Do not treat Vercel preview as production; follow SOT-11 disconnect checklist when ready.  
+Supersedes: Open question in D-006 about which host serves production.  
+Related changelog entries: 2026-06-19 v0.4

@@ -1,8 +1,37 @@
 # SOT-06 — Case Study Source of Truth
 
-Version: 0.1  
-Last updated: 2026-06-13  
-Status: Active draft
+Version: 0.2  
+Last updated: 2026-06-19  
+Status: Active
+
+## Case-study strategy decisions (2026-06-19)
+
+- `[DECIDED]` **IES is the first case study to develop.**
+- `[DECIDED]` **DCOA (QuickBooks Online Advanced — Dimensional Chart of Accounts) is the second.**
+- `[DECIDED]` **Iranians Who Design remains a secondary founder/platform story.**
+- `[DECIDED]` Case studies should be **web-based where practical** (dedicated routes or pages, not PDF-only).
+- `[DECIDED]` Public stories must be **NDA-safe**.
+- `[DECIDED]` Primary case-study purpose is to **prove product judgment**, not simply display screens.
+
+## Standard case-study structure
+
+Use this order for IES and DCoA:
+
+1. Outcome-first title
+2. At a glance
+3. Context
+4. Problem
+5. Role and scope
+6. Constraints
+7. System / IA model
+8. Key decisions and tradeoffs
+9. AI experience design, where relevant
+10. Solution
+11. Evidence and artifacts
+12. Impact
+13. Reflection
+
+`[DECIDED]` Metrics are optional. Claims must be credible. Qualitative outcomes are preferable to invented numbers.
 
 ## Case study strategy
 
@@ -32,13 +61,13 @@ Making advanced accounting legible: Dimensional Chart of Accounts for QuickBooks
 Designing trust into intelligent workflows: AI-native experiences for Intuit Enterprise Suite
 ```
 
-## Case study structure
+## Case study structure (detailed)
 
 ### 1. Outcome-first headline
 
 One sentence that states the value clearly without overclaiming.
 
-### 2. Snapshot
+### 2. At a glance
 
 - Company / product:
 - Timeframe: `[VERIFY]`
@@ -56,7 +85,7 @@ What was happening in the business, product, or customer journey that made this 
 
 Who was struggling? What were they trying to do? Why did existing workflows, IA, or system models create friction?
 
-### 5. Role
+### 5. Role and scope
 
 Be specific. Choose verbs carefully:
 
@@ -96,7 +125,15 @@ Use 4–6 concise subsections:
 - System / design-system decisions.
 - Cross-functional alignment.
 
-### 8. Solution
+### 8. Key decisions and tradeoffs
+
+Document what was chosen, what was rejected, and why — especially IA and AI trust patterns.
+
+### 9. AI experience design (where relevant)
+
+Explainability, review, control, recovery, and human judgment boundaries.
+
+### 10. Solution
 
 Show final or representative experience through:
 
@@ -107,7 +144,11 @@ Show final or representative experience through:
 - Annotated UI snippets.
 - Decision model visuals.
 
-### 9. Impact
+### 11. Evidence and artifacts
+
+See P1-05 artifact inventory. Classify every asset before publication.
+
+### 12. Impact
 
 Use verified numbers first. If unavailable, use credible qualitative outcomes.
 
@@ -125,7 +166,7 @@ Potential metrics to verify:
 
 Never invent these.
 
-### 10. Reflection
+### 13. Reflection
 
 End with senior-level reflection:
 
@@ -143,11 +184,16 @@ End with senior-level reflection:
 - Avoid internal product names if not public.
 - Avoid unreleased feature details.
 
-## First case studies to create
+## Development order
 
-1. IES IA + AI experiences.
-2. QuickBooks Online Advanced — Dimensional Chart of Accounts.
-3. Iranians Who Design.
+1. IES IA + AI experiences — `[DECIDED]` first.
+2. QuickBooks Online Advanced — Dimensional Chart of Accounts — `[DECIDED]` second.
+3. Iranians Who Design — secondary.
+
+## Source pack locations (preferred)
+
+- `docs/sot/source-packs/IES_SOURCE_PACK.md` — `[BLOCKED]` not yet imported.
+- `docs/sot/source-packs/DCOA_SOURCE_PACK.md` — `[BLOCKED]` not yet imported.
 
 ## Verification needs
 
@@ -158,3 +204,5 @@ End with senior-level reflection:
 - Exact AI experience scope.
 - Exact impact metrics.
 - Screenshots or safe diagrams.
+- Logo and screenshot permissions.
+- NDA boundaries.

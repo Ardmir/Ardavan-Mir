@@ -1,8 +1,42 @@
 # SOT-04 — Portfolio IA and Copy
 
 Version: 0.1  
-Last updated: 2026-06-13  
+Last updated: 2026-06-19  
 Status: Active draft
+
+## Shipped homepage snapshot (Glass Monolith — 2026-06-19)
+
+`[OBSERVED]` The following reflects `app/page.tsx` merged to `main`. Earlier draft copy in this file may differ.
+
+### Navigation
+
+- Header: ARDAVAN/MIR logotype + **Menu** trigger (fullscreen overlay: Work, Approach, About, Contact).
+- No persistent desktop inline nav links.
+
+### Hero
+
+- Eyebrow: `Senior Product Designer · Enterprise AI · Toronto`
+- H1: `I design intelligent products that turn financial complexity into confident action.` (outline span on “confident action.”)
+- Subcopy: `I work across enterprise SaaS, AI-native workflows, and financial systems — making complexity legible.`
+- No hero CTA buttons (removed from shipped version).
+- No separate hero philosophy line (philosophy appears in Clarity Engine footer).
+
+### Clarity Engine
+
+- Interactive stage cards: collapsed at rest; expand on hover/focus/tap.
+- Footer includes: “Make the system legible before making it smart.”
+
+### Work
+
+- Section heading: **Work** (not “Selected work”).
+- Flagship cards: IES (`01`), QBOA DCoA (`02`); de-emphasized row: Iranians Who Design (external link).
+- No case-study routes on flagship cards yet.
+
+### Contact
+
+- Icon buttons: Email, LinkedIn, Résumé (résumé disabled — coming soon).
+
+---
 
 ## Portfolio format
 

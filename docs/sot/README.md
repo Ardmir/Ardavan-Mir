@@ -1,13 +1,16 @@
 # Ardavan Portfolio Project — Source of Truth Pack
 
-Version: 0.1  
-Last updated: 2026-06-13  
+Version: 0.2  
+Last updated: 2026-06-19  
 Owner: Ardavan Mirhosseini  
-Project: Portfolio update / résumé update / recruiter-ready positioning
+Project: Portfolio update / résumé update / recruiter-ready positioning  
+Current phase: Post-deployment QA, evidence development, and case-study expansion
 
 ## Purpose
 
 This folder is the living source of truth for the ChatGPT Portfolio Project. Use it to keep portfolio strategy, résumé copy, case study claims, design direction, deployment notes, and change history synchronized across ChatGPT, Claude, Cursor, v0, GitHub, and Vercel.
+
+`[CONFIRMED]` Production homepage deployed 2026-06-19 via GitHub Pages on `main`.
 
 ## How to use this in ChatGPT Projects
 
@@ -32,8 +35,14 @@ Every time the portfolio, résumé, case study, deployment, or design direction 
 Use these labels everywhere:
 
 - `[CONFIRMED]` — Ardavan confirmed it, it exists in source material, or it is visible in the repo/site.
+- `[OBSERVED]` — visible in the deployed/current implementation.
+- `[DECIDED]` — approved strategy or direction.
+- `[PROPOSED]` — recommended; not yet approved or implemented.
 - `[INFERRED]` — reasonable framing based on confirmed facts, but not directly proven.
 - `[VERIFY]` — needs fact-checking before publication.
+- `[DONE]` — completed and verified.
+- `[TODO]` — still required.
+- `[BLOCKED]` — cannot proceed without information or assets.
 - `[DO NOT USE]` — do not publish unless replaced with verified evidence.
 
 ## Files
@@ -49,5 +58,14 @@ Use these labels everywhere:
 - `SOT-08-CHANGELOG.md` — chronological update history.
 - `SOT-09-DECISION-LOG.md` — strategic and implementation decisions.
 - `SOT-10-AI-PROMPTS.md` — reusable prompts for ChatGPT, Claude, Cursor, v0.
-- `SOT-11-BACKLOG-TODOS.md` — open questions, verification list, next actions.
+- `SOT-11-BACKLOG-TODOS.md` — prioritized P0/P1/P2 backlog, verification list, next actions.
 - `PORTFOLIO_PROJECT_SOTS_CONSOLIDATED.md` — all SOTs in one file.
+
+## Next actions (summary)
+
+See `SOT-11-BACKLOG-TODOS.md` for full detail.
+
+- **P0:** Copy QA, contact/résumé clarity, project pathways, accessibility pass, claim audit.
+- **P1:** Import IES/DCOA source packs; build case-study SOTs; artifact inventory.
+- **P2:** Navigation and Clarity Engine hierarchy proposals, device QA, résumé alignment.
+- **Deferred:** Disconnect Vercel/v0; update root README.
