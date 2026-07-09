@@ -1,14 +1,20 @@
 # SOT-01 — Claims and Verification
 
 Version: 0.2  
-Last updated: 2026-06-13  
+Last updated: 2026-06-19  
 Status: Active
 
 ## Claim status labels
 
 - `[CONFIRMED]` — safe to use based on user confirmation, source files, public profile, or visible repo/site evidence.
+- `[OBSERVED]` — visible in the current deployed implementation or production HTML.
+- `[DECIDED]` — approved portfolio strategy not yet necessarily visible in code.
+- `[PROPOSED]` — recommended next action; not approved or implemented.
 - `[INFERRED]` — strong framing based on confirmed facts; verify before using as a precise factual claim.
 - `[VERIFY]` — needs confirmation before publication.
+- `[DONE]` — completed and verified.
+- `[TODO]` — still required.
+- `[BLOCKED]` — cannot proceed without information or assets.
 - `[DO NOT USE]` — remove or replace unless verified.
 
 ## Confirmed claims
@@ -30,6 +36,40 @@ Status: Active
 - `[CONFIRMED]` (2026-06-13) Public contact email: ardavanmir@outlook.com. Confirmed by Ardavan, safe to publish.
 - `[CONFIRMED]` (2026-06-13) LinkedIn URL: https://linkedin.com/in/ardavanmir. Confirmed by Ardavan, safe to publish.
 - `[CONFIRMED]` (2026-06-13) Iranians Who Design live URL: https://iranianxdesign.com/ (corresponds to repo Ardmir/iranianxdesign-next).
+- `[CONFIRMED]` (2026-06-19) Glass Monolith homepage deployed to production via GitHub Pages (`main`, merge `d528004`).
+- `[OBSERVED]` (2026-06-19) Public homepage hero subcopy: “I work across enterprise SaaS, AI-native workflows, and financial systems — making complexity legible.”
+- `[OBSERVED]` (2026-06-19) Public homepage H1: “I design intelligent products that turn financial complexity into confident action.”
+- `[OBSERVED]` (2026-06-19) Philosophy line “Make the system legible before making it smart.” appears in Clarity Engine footer, not hero.
+- `[OBSERVED]` (2026-06-19) Work section heading is “Work”; flagship cards show role labels “Senior Product Designer” (IES) and “Product Designer” (QBOA).
+
+## Post-deployment public claims summary
+
+`[CONFIRMED]` Safe to treat as live on `www.ardavanmir.com` after 2026-06-19 deploy:
+
+- Ardavan Mirhosseini
+- Senior Product Designer (positioning and IES card label)
+- Toronto (hero eyebrow)
+- Work connected to Intuit Enterprise Suite
+- Work connected to QuickBooks Online Advanced / Dimensional Chart of Accounts
+- Significant IES IA work (framing level — not specific artifact names)
+- Significant IES AI experience work (framing level — not specific feature names)
+- Creator/founder story for Iranians Who Design (subject to exact role wording)
+- Contact email and LinkedIn URLs as implemented
+
+`[VERIFY]` before expanding copy or résumé:
+
+- Exact Intuit title (official HR)
+- Exact dates (employment and projects)
+- Exact AI features that may be named publicly
+- Exact IA artifacts that may be shown
+- Exact personal ownership versus team contribution
+- Launch status
+- Product impact and metrics
+- Logo and screenshot permissions
+- NDA boundaries
+- Iranians Who Design scale/reach
+- Résumé link and PDF path
+- Apex vs www domain behavior
 
 ## Strong but inferred claims
 

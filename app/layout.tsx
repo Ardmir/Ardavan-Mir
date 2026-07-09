@@ -25,15 +25,15 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Ardavan Mirhosseini — Senior Product Designer",
   description:
-    "Senior Product Designer designing AI-native enterprise products, financial workflows, and high-trust product experiences.",
+    "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
   keywords:
-    "product designer, senior product designer, enterprise SaaS, AI-native, financial systems, fintech design, Toronto",
+    "product designer, senior product designer, enterprise SaaS, AI-native, financial systems, information architecture, fintech design, Toronto",
   authors: [{ name: "Ardavan Mirhosseini" }],
   robots: "index, follow",
   openGraph: {
     title: "Ardavan Mirhosseini — Senior Product Designer",
     description:
-      "Designing intelligent products that turn financial complexity into confident action.",
+      "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
     type: "website",
     locale: "en_US",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ardavan Mirhosseini — Senior Product Designer",
     description:
-      "Designing intelligent products that turn financial complexity into confident action.",
+      "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
   },
 }
 
