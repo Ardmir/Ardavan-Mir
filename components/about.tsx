@@ -1,3 +1,7 @@
+/**
+ * LEGACY — Not used on the live portfolio (`app/page.tsx` is canonical).
+ * Do not copy claims from this file into public copy.
+ */
 "use client"
 
 import { useState, useEffect } from "react"
@@ -27,15 +31,15 @@ export default function About() {
   const highlights = [
     {
       icon: Award,
-      title: "8+ Years Experience",
-      description: "Leading product design at scale for fintech and consumer products",
-      metric: "8+",
+      title: "Enterprise product design",
+      description: "Product design for fintech and complex financial workflows",
+      metric: "—",
     },
     {
       icon: Users,
-      title: "50M+ Users Impacted",
-      description: "Designing solutions that reach millions of users worldwide",
-      metric: "50M+",
+      title: "Human-centered systems",
+      description: "Designing for clarity, trust, and judgment in high-stakes workflows",
+      metric: "—",
     },
     {
       icon: Lightbulb,
@@ -93,17 +97,17 @@ export default function About() {
                   </div>
                   <div className="flex-1 space-y-3 sm:space-y-4 overflow-hidden">
                     <p className="font-body text-sm sm:text-base text-soft-white/80 leading-relaxed">
-                      Over 8 years of transforming complex financial challenges into intuitive experiences at Intuit,
-                      touching the lives of 50M+ users worldwide.
+                      Product design work across enterprise finance and community platforms,
+                      with a focus on legibility, trust, and explainability.
                     </p>
                     <p className="font-body text-xs sm:text-sm text-soft-white/70 leading-relaxed">
-                      My approach combines rigorous user research with creative problem-solving, always keeping human
-                      experience at the center of every design decision.
+                      My approach combines research synthesis with clear information architecture,
+                      always keeping human judgment at the center of complex workflows.
                     </p>
                     <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 mt-auto flex-shrink-0">
-                      <div className="text-teal font-ui text-xs sm:text-sm font-medium">Impact Metrics</div>
+                      <div className="text-teal font-ui text-xs sm:text-sm font-medium">Focus areas</div>
                       <div className="text-soft-white font-display text-sm sm:text-lg">
-                        50M+ Users • 8+ Years • 40% Efficiency Gains
+                        Enterprise finance · AI-native workflows · Product storytelling
                       </div>
                     </div>
                   </div>

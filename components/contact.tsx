@@ -1,3 +1,7 @@
+/**
+ * LEGACY — Not used on the live portfolio (`app/page.tsx` is canonical).
+ * Contact details here may be outdated; use verified links on the live homepage.
+ */
 "use client"
 
 import { useState, useEffect } from "react"

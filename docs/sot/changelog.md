@@ -1,5 +1,13 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Portfolio Sprint 2.1 — Legacy Claims Cleanup
+
+- Quarantined unverified metrics and risky verbs from legacy unused components (`projects.tsx`, `about.tsx`, `hero.tsx`, `contact.tsx`)
+- Added `docs/sot/legacy-portfolio-components.md` as internal reference for canonical vs legacy files
+- Updated `portfolio-claims-log.md` with DO_NOT_PUBLISH and VERIFY entries for legacy claims
+- Softened résumé source recognition bullet in `content/resume.md` (PDF unchanged)
+- Live homepage, IES case study, deployment config, and CNAME unchanged
+
 ## 2026-07-09 — Portfolio Sprint 2 — IES Case Study Foundation
 
 - Started Portfolio Sprint 2 — IES Case Study Foundation

@@ -25,7 +25,7 @@ Toronto, ON / Remote | [VERIFY dates]
 - Designed IA and product experience concepts for high-trust financial workflows, with a focus on clarity, explainability, evidence, human judgment, and user control.
 - Shaped QuickBooks Online Advanced accounting experiences, including Dimensional Chart of Accounts, to make multi-dimensional classification, reporting, and decision-making easier to understand and act on.
 - Created and synthesized evidence-backed frameworks, prototypes, and product narratives that helped make AI-native finance concepts tangible for leadership, partner-facing, and company showcase moments.
-- Recognized internally for executive storytelling, visual judgment, prototype craft, ambiguity navigation, and dependable execution under tight timelines.
+- Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories. [VERIFY scope and publication context before résumé use — see portfolio-claims-log.md]
 
 ## Experience — Iranians Who Design
 
