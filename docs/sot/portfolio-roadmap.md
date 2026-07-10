@@ -1,6 +1,6 @@
 # Portfolio Roadmap
 
-Version: 1.1  
+Version: 1.2  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -29,6 +29,7 @@ Status: Public-safe
 
 ### P2 — Expand portfolio depth
 
+- Executive storytelling and future-state prototype narrative (see `executive-storytelling-and-future-prototypes-sot.md`)
 - Ask Ardavan V1.5 suggested next prompts
 - Add “What teams bring me in for” proof section
 - Deeper private interview walkthrough for sensitive work (outside public repo if needed)
@@ -58,6 +59,25 @@ Portfolio Sprint 3 — IES visual polish + QBOA case study foundation
 - Proof section expansion
 - OG/social preview assets
 - IES deeper visual narrative
+
+### P2 — Executive storytelling and future-state prototype narrative
+
+Document and later develop a public-safe portfolio treatment around future-state IES exploration, cross-product concept adaptation, executive-facing functional prototypes, and investor-facing leadership demos.
+
+Reference: `docs/sot/executive-storytelling-and-future-prototypes-sot.md`
+
+## Future sprint candidate — Sprint 4 or later
+
+**Executive Storytelling Proof Layer**
+
+Potential deliverables:
+
+- “What teams bring me in for” homepage section
+- IES case study expansion around future-state exploration
+- Private interview walkthrough for executive prototype work
+- Sanitized visual storytelling artifacts
+- Résumé bullet update after verification
+- Ask Ardavan V1.5 prompt about executive storytelling
 
 ## Out of scope
 

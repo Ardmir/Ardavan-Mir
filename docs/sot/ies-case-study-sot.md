@@ -1,7 +1,7 @@
 # IES Case Study SOT — Public-Safe Version
 
-Version: 1.0  
-Last updated: 2026-07-09  
+Version: 1.1  
+Last updated: 2026-07-10  
 Status: Public-safe case study
 
 ## Public case study route
@@ -63,3 +63,16 @@ Helped define and communicate AI-native product direction for complex enterprise
 - Which sanitized artifacts Ardavan personally wants to claim
 - Whether “Intuit Enterprise Suite” can appear in the public case study title
 - Whether any outcomes can be verified later
+
+## Future expansion opportunities
+
+Not part of the current public case study until wording, naming, artifacts, and publication boundaries are approved.
+
+- Future-state IES exploration narrative
+- Framework transfer to adjacent enterprise product contexts
+- Executive-facing prototype work
+- Leadership/investor demo storytelling
+- Private interview walkthrough
+- Sanitized artifact set for prototype-to-demo storytelling
+
+See also: `docs/sot/executive-storytelling-and-future-prototypes-sot.md`

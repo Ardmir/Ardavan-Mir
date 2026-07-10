@@ -1,5 +1,13 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Sprint documentation update — Executive storytelling and future prototypes
+
+- Added `executive-storytelling-and-future-prototypes-sot.md` for future-state IES exploration, adjacent product prototype adaptation, and leadership/investor-facing demo storytelling
+- Captured this work as future portfolio opportunity, not public copy
+- Updated portfolio roadmap, claims log, IES case study SOT, and sanitized visual plan
+- Marked sensitive details as PRIVATE_CONTEXT / VERIFY
+- Preserved guardrails around internal names, executive audiences, event names, prototype details, and unverified outcomes
+
 ## 2026-07-10 — Portfolio Sprint 3 — IES visual polish + QBOA case study foundation
 
 - Polished IES abstract visuals: system map, human judgment checkpoint, captions, visual hierarchy
