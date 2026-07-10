@@ -19,19 +19,19 @@ Senior Product Designer focused on enterprise SaaS, AI-native workflows, and fin
 
 **INTUIT**  
 Senior Product Designer  
-Toronto, ON / Remote | [VERIFY dates]
+Toronto, ON / Remote
 
 - Helped define and communicate AI-native product direction for Intuit Enterprise Suite, translating complex enterprise finance workflows into clearer information architecture, product narratives, and prototype concepts.
 - Designed IA and product experience concepts for high-trust financial workflows, with a focus on clarity, explainability, evidence, human judgment, and user control.
 - Shaped QuickBooks Online Advanced accounting experiences, including Dimensional Chart of Accounts, to make multi-dimensional classification, reporting, and decision-making easier to understand and act on.
 - Created and synthesized evidence-backed frameworks, prototypes, and product narratives that helped make AI-native finance concepts tangible for leadership, partner-facing, and company showcase moments.
-- Recognized internally for executive storytelling, visual judgment, prototype craft, ambiguity navigation, and dependable execution under tight timelines.
+- Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories for leadership and cross-functional audiences.
 
 ## Experience — Iranians Who Design
 
 **IRANIANS WHO DESIGN**  
 Founder / Designer  
-Toronto, ON / Remote | [VERIFY dates]
+Toronto, ON / Remote
 
 - Created a community-driven platform to make Iranian designers in tech more visible, connected, and discoverable.
 - Applied information architecture, identity, discovery, and storytelling to turn a dispersed community into a more legible platform.

@@ -1,3 +1,8 @@
+/**
+ * LEGACY — Not used on the live portfolio (`app/page.tsx` is canonical).
+ * Do not copy claims from this file into public copy. Fictional placeholder carousel
+ * from an earlier template; metrics and product names are not verified public claims.
+ */
 "use client"
 
 import { useState, useEffect } from "react"
@@ -7,46 +12,49 @@ import Image from "next/image"
 const projects = [
   {
     id: 1,
-    title: "TurboTax Simplification",
-    tagline: "Reduced tax filing complexity by 40% for 50M+ users",
-    problem: "Users were abandoning tax filing due to overwhelming complexity and unclear guidance.",
+    title: "Legacy placeholder — Tax workflow",
+    tagline: "Explored ways to make a complex filing workflow easier to follow",
+    problem: "Users needed clearer guidance through a dense, multi-step process.",
     process:
-      "Conducted extensive user research, redesigned information architecture, and implemented progressive disclosure patterns.",
-    outcome: "40% reduction in user drop-off rates, 25% faster completion times, and 95% user satisfaction score.",
-    role: "Lead Product Designer",
+      "User research, information architecture, and progressive disclosure patterns.",
+    outcome:
+      "Qualitative improvements to clarity and task flow — no verified public metrics.",
+    role: "Product designer",
     image: "/placeholder.svg?height=600&width=800",
-    year: "2023",
-    metrics: ["40%", "25%", "95%"],
-    metricLabels: ["Drop-off Reduction", "Faster Completion", "Satisfaction Score"],
+    year: "Placeholder",
+    highlights: ["Workflow clarity", "Progressive disclosure", "Research synthesis"],
+    highlightLabels: ["Focus", "Approach", "Evidence"],
   },
   {
     id: 2,
-    title: "QuickBooks Mobile Redesign",
-    tagline: "Empowered 2M+ small business owners with mobile-first financial management",
+    title: "Legacy placeholder — Mobile financial product",
+    tagline: "Shaped a mobile-first view of key financial tasks",
     problem:
-      "Small business owners needed quick access to financial data on-the-go but existing mobile experience was cluttered.",
+      "Small business users needed quicker access to essential financial information on mobile.",
     process:
-      "Mobile-first design approach with focus on key financial metrics, streamlined navigation, and offline capabilities.",
-    outcome: "150% increase in mobile engagement, 60% faster task completion, featured in App Store.",
-    role: "Senior Product Designer",
+      "Mobile-first layout, streamlined navigation, and offline-friendly patterns.",
+    outcome:
+      "Clearer mobile task flows and structure — no verified public metrics.",
+    role: "Product designer",
     image: "/placeholder.svg?height=600&width=800",
-    year: "2022",
-    metrics: ["150%", "60%", "#1"],
-    metricLabels: ["Engagement Increase", "Faster Tasks", "App Store Feature"],
+    year: "Placeholder",
+    highlights: ["Mobile IA", "Task focus", "Navigation"],
+    highlightLabels: ["Focus", "Approach", "Structure"],
   },
   {
     id: 3,
-    title: "Mint Budget Intelligence",
-    tagline: "AI-powered insights that helped users save $500M+ collectively",
-    problem: "Users struggled to understand spending patterns and make informed financial decisions.",
+    title: "Legacy placeholder — Budget insights",
+    tagline: "Prototyped explainable insight patterns for personal finance",
+    problem: "Users needed help understanding spending patterns and next steps.",
     process:
-      "Designed AI-driven insights dashboard with personalized recommendations and predictive analytics visualization.",
-    outcome: "Users saved average of $200/month, 80% adoption rate for AI recommendations, 4.8 App Store rating.",
-    role: "Product Design Lead",
+      "Insight dashboards with explainable recommendations and clear visual hierarchy.",
+    outcome:
+      "Prototype narratives for trustworthy insight patterns — no verified public metrics.",
+    role: "Product designer",
     image: "/placeholder.svg?height=600&width=800",
-    year: "2023",
-    metrics: ["$200", "80%", "4.8★"],
-    metricLabels: ["Monthly Savings", "AI Adoption", "App Rating"],
+    year: "Placeholder",
+    highlights: ["Explainability", "Insight design", "Prototyping"],
+    highlightLabels: ["Focus", "Approach", "Output"],
   },
 ]
 
@@ -87,23 +95,11 @@ export default function Projects() {
               {projects[currentProject].title}
             </h3>
             <p className="font-body font-light text-xl md:text-2xl lg:text-3xl text-soft-white/90 leading-relaxed mb-12">
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: projects[currentProject].tagline
-                    .replace(
-                      /([\d\w]+\+?\s*(?:users|owners|collectively))/gi,
-                      '<span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-medium">$1</span>',
-                    )
-                    .replace(
-                      /(reduced|empowered|AI-powered)/gi,
-                      '<span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent font-medium">$1</span>',
-                    ),
-                }}
-              />
+              {projects[currentProject].tagline}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8 bg-charcoal-light/30 py-6 border border-zinc-700 mb-12 rounded border-l-0 border-r-0">
-              {projects[currentProject].metrics.map((metric, index) => (
+              {projects[currentProject].highlights.map((highlight, index) => (
                 <div key={index} className="flex gap-4 flex-row leading-7 font-normal text-left items-stretch text-gray-400">
                   <div className="flex-shrink-0">
                     {index === 0 && <TrendingDown className="w-6 text-gray-400 h-8" />}
@@ -111,9 +107,9 @@ export default function Projects() {
                     {index === 2 && <Plus className="w-6 text-gray-400 h-8" />}
                   </div>
                   <div className="flex-1">
-                    <div className="font-display text-2xl md:text-2xl mb-0 text-gray-200">{metric}</div>
+                    <div className="font-display text-2xl md:text-2xl mb-0 text-gray-200">{highlight}</div>
                     <div className="font-ui text-sm text-soft-white/70">
-                      {projects[currentProject].metricLabels[index]}
+                      {projects[currentProject].highlightLabels[index]}
                     </div>
                   </div>
                 </div>
@@ -128,8 +124,8 @@ export default function Projects() {
                   <div className="bg-gradient-to-br from-purple-900/30 via-blue-900/20 to-purple-800/30 rounded-2xl p-5 border border-purple-500/20">
                     <h4 className="font-display text-xl font-bold text-soft-white mb-3">Project Overview</h4>
                     <p className="font-body font-light text-base text-soft-white/70 leading-relaxed mb-3">
-                      This project focused on {projects[currentProject].title.toLowerCase()}, addressing key user
-                      challenges through strategic design improvements and resulting in significant measurable impact.
+                      This legacy placeholder describes approach and structure only — not verified
+                      outcomes or public portfolio claims.
                     </p>
                     <button
                       onClick={() => setShowDetailedMetrics(true)}
@@ -179,7 +175,7 @@ export default function Projects() {
                       <div className="bg-charcoal-light/20 rounded-xl p-6 border border-charcoal-light/30 transform transition-all duration-300 hover:scale-[1.02]">
                         <h5 className="font-display text-lg font-semibold text-green-400 mb-3 flex items-center gap-2">
                           <TrendingUp className="w-5 h-5" />
-                          Impact
+                          Outcome (qualitative)
                         </h5>
                         <p className="font-body font-light text-base text-soft-white/80 leading-relaxed">
                           {projects[currentProject].outcome}

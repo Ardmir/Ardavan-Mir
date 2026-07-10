@@ -1,3 +1,7 @@
+/**
+ * LEGACY — Not used on the live portfolio (`app/page.tsx` is canonical).
+ * Do not copy claims from this file into public copy.
+ */
 "use client"
 
 import { useEffect, useState, useRef } from "react"
@@ -17,7 +21,7 @@ export default function Hero() {
 
   // Full text content for typing animation
   const fullText =
-    "Senior Product Designer at Intuit, dedicated to transforming complex challenges into moments of clarity, crafting solutions that deliver meaningful value and elevate user experiences."
+    "Senior Product Designer at Intuit, focused on shaping complex challenges into clearer product experiences that deliver meaningful value."
 
   useEffect(() => {
     // Check if user has visited before
@@ -268,7 +272,7 @@ export default function Hero() {
 
             <div className="relative z-10">
               <p className="font-body font-normal text-base text-gray-800 leading-tight text-left">
-                Dedicated to the craft of transforming{" "}
+                Dedicated to the craft of shaping{" "}
                 <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent font-semibold">
                   customer challenges
                 </span>{" "}
