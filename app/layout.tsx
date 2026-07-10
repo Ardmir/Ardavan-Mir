@@ -23,6 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.ardavanmir.com"),
   title: "Ardavan Mirhosseini — Senior Product Designer",
   description:
     "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
@@ -30,12 +31,17 @@ export const metadata: Metadata = {
     "product designer, senior product designer, enterprise SaaS, AI-native, financial systems, information architecture, fintech design, Toronto",
   authors: [{ name: "Ardavan Mirhosseini" }],
   robots: "index, follow",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Ardavan Mirhosseini — Senior Product Designer",
     description:
       "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
     type: "website",
     locale: "en_US",
+    url: "https://www.ardavanmir.com",
+    siteName: "Ardavan Mirhosseini",
   },
   twitter: {
     card: "summary_large_image",

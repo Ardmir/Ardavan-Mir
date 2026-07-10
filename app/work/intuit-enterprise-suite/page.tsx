@@ -68,7 +68,7 @@ export default function IesCaseStudyPage() {
           <IALogotype />
           <Link
             href="/#work"
-            className="font-mono text-xs uppercase tracking-[0.16em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4]"
+            className="font-mono text-xs uppercase tracking-[0.16em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#31F5D4]"
           >
             Back to work
           </Link>
