@@ -7,7 +7,7 @@ Status: Public-safe
 ## Current status
 
 - Homepage is live with AI-native legibility positioning
-- Résumé PDF is live at `/resume-ardavan-mir.pdf` (source updated in Sprint 5A; PDF regeneration pending review)
+- Résumé PDF is live at `/resume-ardavan-mir.pdf` (regenerated from source in Sprint 5A.1)
 - Résumé markdown source aligned with portfolio positioning (`content/resume.md`)
 - Static guided Ask Ardavan chat is live
 - IES public-safe case study is live at `/work/intuit-enterprise-suite`

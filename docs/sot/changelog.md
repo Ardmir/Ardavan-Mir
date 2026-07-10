@@ -1,5 +1,12 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Portfolio Sprint 5A.1 — Résumé PDF Regeneration
+
+- Regenerated `public/resume-ardavan-mir.pdf` from `content/resume.md` using local ReportLab (outside repo dependencies)
+- Added `resume-pdf-generation.md` with method, checks, and manual fallback steps
+- Preserved public path `/resume-ardavan-mir.pdf`
+- No new claims, metrics, or confidential content added
+
 ## 2026-07-10 — Portfolio Sprint 5A — Verified Résumé Polish
 
 - Updated résumé source to align with current portfolio positioning
