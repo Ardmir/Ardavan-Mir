@@ -1,5 +1,14 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Portfolio Sprint 4 — Executive Storytelling Proof Layer
+
+- Added public-safe homepage proof section: “What teams bring me in for”
+- Added ambiguity → alignment arc visual and four proof cards
+- Added Ask Ardavan V1.5 guided prompt with anchor link to proof section
+- Updated executive storytelling SOT, roadmap, claims log, and sanitized visual plan
+- Preserved guardrails around private recognition, internal teams, executive audiences, event names, and prototype details
+- No public claim changes beyond approved abstract positioning
+
 ## 2026-07-10 — Portfolio Sprint 3.2 — Share Polish
 
 - Added share image and favicon assets (`og-image.svg`, `og-image.png`, `favicon.svg`, `favicon-32x32.png`, `apple-touch-icon.png`)

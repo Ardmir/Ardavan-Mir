@@ -78,3 +78,27 @@ This body of work strengthens the portfolio narrative beyond screen-level design
 ## 7. Claims status
 
 All items in this SOT are **PRIVATE_CONTEXT / VERIFY** until Ardavan approves public wording, naming boundaries, and artifact publication scope.
+
+## 8. Sprint 4 public proof layer implementation
+
+**Status:** Implemented in Sprint 4 — Executive Storytelling Proof Layer
+
+### What shipped publicly
+
+- Homepage section: “What teams bring me in for” at `/#what-teams-bring-me-in-for`
+- Four abstract proof cards: future-state ambiguity, high-trust workflows, executive-ready storytelling, prototype-driven alignment
+- Lightweight ambiguity → alignment arc visual (synthetic labels only)
+- Ask Ardavan V1.5 guided prompt: “What do teams bring you in for?”
+
+### Public-safe boundaries preserved
+
+- No internal names, event names, exact team names, or prototype details
+- No confidential screenshots, private quotes, or executive names
+- Public emphasis stays abstract: executive-ready storytelling, future-state ambiguity, high-trust workflows, prototype-driven alignment
+
+### Still deferred
+
+- IES case study future-state expansion
+- Framework transfer map and prototype-to-storyboard visuals beyond homepage arc
+- Résumé bullet updates after verification
+- Naming of adjacent product areas, leadership audiences, or investor-facing events

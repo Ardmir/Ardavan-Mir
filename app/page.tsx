@@ -25,6 +25,33 @@ const PROOF_POINTS = [
   "Executive Storytelling",
 ]
 
+const PROOF_LAYER_CARDS = [
+  {
+    title: "Future-state product ambiguity",
+    copy: "Turning early AI-native concepts into structured models, prototypes, and narratives that help teams align around what should exist next.",
+  },
+  {
+    title: "High-trust financial workflows",
+    copy: "Designing experiences where evidence, context, controls, and human judgment stay visible in complex decision-making moments.",
+  },
+  {
+    title: "Executive-ready product storytelling",
+    copy: "Making complex product capabilities tangible through demos, visual narratives, and clear product stories for leadership audiences.",
+  },
+  {
+    title: "Prototype-driven alignment",
+    copy: "Using functional prototypes and polished artifacts to help teams evaluate direction before the product is fully built.",
+  },
+]
+
+const PROOF_LAYER_ARC = [
+  "Ambiguity",
+  "Structure",
+  "Prototype",
+  "Story",
+  "Alignment",
+]
+
 const PROJECTS = [
   {
     no: "01",
@@ -270,6 +297,59 @@ export default function Home() {
           <p className="mt-5 max-w-3xl font-body text-[13px] leading-relaxed text-[#A8B3B0]/80 sm:text-sm">
             Recognized for turning complex AI and enterprise finance concepts into clear, tangible
             product stories for leadership, partner-facing, and company showcase moments.
+          </p>
+        </div>
+      </section>
+
+      {/* What teams bring me in for */}
+      <section
+        id="what-teams-bring-me-in-for"
+        aria-labelledby="proof-layer-heading"
+        className="proof-layer border-t border-[rgba(255,255,255,0.12)] px-6 py-20 lg:px-8 lg:py-28"
+      >
+        <div className="mx-auto max-w-6xl rise">
+          <p className="proof-layer__eyebrow font-mono text-xs uppercase tracking-[0.16em] text-[#7CE7D6]">
+            Where I create leverage
+          </p>
+          <h2 id="proof-layer-heading" className="monolith-title monolith-title--section mt-4">
+            What teams bring me in for
+          </h2>
+          <p className="proof-layer__intro mt-5 max-w-3xl font-body text-base leading-relaxed text-[#A8B3B0] sm:text-lg">
+            I&rsquo;m often brought into ambiguous, high-stakes product moments where teams need to
+            turn future direction into something clear, credible, and actionable.
+          </p>
+
+          <div className="proof-layer__arc" aria-hidden="true">
+            <div className="proof-layer__arc-track">
+              {PROOF_LAYER_ARC.map((step, i) => (
+                <div key={step} className="proof-layer__arc-step">
+                  <span className="proof-layer__arc-node" />
+                  <span className="proof-layer__arc-label">{step}</span>
+                  {i < PROOF_LAYER_ARC.length - 1 && (
+                    <span className="proof-layer__arc-connector" />
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="proof-layer__grid mt-10 grid gap-5 sm:grid-cols-2">
+            {PROOF_LAYER_CARDS.map((card, i) => (
+              <article key={card.title} className="proof-layer__card">
+                <span className="proof-layer__card-index font-display text-sm text-[#31F5D4]">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="monolith-title monolith-title--card-sm mt-3">{card.title}</h3>
+                <p className="mt-3 font-body text-[14px] leading-relaxed text-[#A8B3B0]">
+                  {card.copy}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          <p className="proof-layer__closing mt-10 max-w-3xl font-body text-[14px] leading-relaxed text-[#A8B3B0]/90 sm:text-[15px]">
+            The work is not just about designing screens. It is about making complex product direction
+            easier to understand, evaluate, and believe in.
           </p>
         </div>
       </section>

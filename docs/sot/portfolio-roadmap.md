@@ -1,6 +1,6 @@
 # Portfolio Roadmap
 
-Version: 1.2  
+Version: 1.3  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -10,8 +10,9 @@ Status: Public-safe
 - Résumé PDF is live at `/resume-ardavan-mir.pdf`
 - Static guided Ask Ardavan chat is live
 - IES public-safe case study is live at `/work/intuit-enterprise-suite`
-- QBOA public-safe case study foundation is in progress (Sprint 3)
-- Legacy claims cleanup merged (Sprint 2.1)
+- QBOA public-safe case study is live at `/work/quickbooks-dimensional-chart-of-accounts`
+- OG image, favicon, and share metadata are live (Sprint 3.2)
+- Executive storytelling proof layer homepage section is live (Sprint 4)
 
 ## Priority order
 
@@ -68,16 +69,21 @@ Reference: `docs/sot/executive-storytelling-and-future-prototypes-sot.md`
 
 ## Future sprint candidate — Sprint 4 or later
 
-**Executive Storytelling Proof Layer**
+**Executive Storytelling Proof Layer** — **Completed in Sprint 4**
 
-Potential deliverables:
+Delivered:
 
-- “What teams bring me in for” homepage section
+- “What teams bring me in for” homepage section (`/#what-teams-bring-me-in-for`)
+- Ask Ardavan V1.5 prompt: “What do teams bring you in for?”
+- Abstract ambiguity → alignment arc visual
+- Updated SOT docs and claims log
+
+Still deferred:
+
 - IES case study expansion around future-state exploration
 - Private interview walkthrough for executive prototype work
-- Sanitized visual storytelling artifacts
+- Sanitized visual storytelling artifacts beyond homepage arc
 - Résumé bullet update after verification
-- Ask Ardavan V1.5 prompt about executive storytelling
 
 ## Out of scope
 
