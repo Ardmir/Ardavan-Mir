@@ -22,6 +22,9 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 })
 
+const ogImageAlt =
+  "Ardavan Mirhosseini — Senior Product Designer designing AI-native enterprise products that make financial complexity legible."
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ardavanmir.com"),
   title: "Ardavan Mirhosseini — Senior Product Designer",
@@ -34,6 +37,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Ardavan Mirhosseini — Senior Product Designer",
     description:
@@ -42,12 +52,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.ardavanmir.com",
     siteName: "Ardavan Mirhosseini",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: ogImageAlt,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ardavan Mirhosseini — Senior Product Designer",
     description:
       "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
+    images: ["/og-image.png"],
   },
 }
 

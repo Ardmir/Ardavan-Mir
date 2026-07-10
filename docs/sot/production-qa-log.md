@@ -1,8 +1,8 @@
 # Production QA Log
 
-Version: 1.0  
+Version: 1.1  
 Last updated: 2026-07-10  
-Sprint: 3.1 — Production QA + Share Readiness
+Sprint: 3.2 — Share Polish
 
 ## Build
 
@@ -75,9 +75,9 @@ Sprint: 3.1 — Production QA + Share Readiness
 | Twitter card metadata | Pass (`summary_large_image`) |
 | `metadataBase` + canonical | **Added in Sprint 3.1** (`https://www.ardavanmir.com`) |
 | Open Graph `url` / `siteName` | **Added in Sprint 3.1** |
-| OG image (`og:image`) | **TODO** — no dedicated share image yet |
-| Favicon / apple-touch-icon | **TODO** — no `favicon.ico` or app icon in `public/` |
-| Per-route OG overrides for case studies | **TODO** — case studies inherit root metadata |
+| OG image (`og:image`) | **Added in Sprint 3.2** — `public/og-image.png` (1200×630) + `public/og-image.svg` |
+| Favicon / apple-touch-icon | **Added in Sprint 3.2** — `favicon.svg`, `favicon-32x32.png`, `apple-touch-icon.png` |
+| Per-route OG overrides for case studies | **Added in Sprint 3.2** — IES and QBOA set title, description, canonical, OG/Twitter metadata |
 
 ## Public-safety search (app / components / content)
 
@@ -90,13 +90,29 @@ SOT guardrails in `docs/sot/` may reference verification topics — not publishe
 1. `app/layout.tsx` — `metadataBase`, canonical URL, Open Graph `url` and `siteName`
 2. `app/work/intuit-enterprise-suite/page.tsx` — focus-visible ring on header back link
 
+## Sprint 3.2 — Share polish result
+
+| Item | Status |
+|------|--------|
+| Root OG image | Pass — `og-image.png` referenced in `app/layout.tsx` |
+| Root favicon | Pass — `favicon.svg` + `favicon-32x32.png` |
+| Apple touch icon | Pass — `apple-touch-icon.png` (180×180) |
+| IES per-route metadata | Pass — canonical, OG `url`, title, description, Twitter card |
+| QBOA per-route metadata | Pass — canonical, OG `url`, title, description, Twitter card |
+| Route-specific OG images | Deferred — case studies use root `og-image.png` |
+| `pnpm build` | Pass — static export includes new `public/` assets |
+
+### Manual share-preview TODOs
+
+- Paste `https://www.ardavanmir.com` into LinkedIn Post Inspector after deploy
+- Paste homepage and case-study URLs into Slack / iMessage and confirm card renders
+- Optional future polish: route-specific OG images for IES and QBOA
+
 ## Remaining issues
 
-- No OG share image asset
-- No favicon / touch icon
-- Case study pages do not yet set unique OG metadata
 - Ask Ardavan start prompt links to QBOA but not IES (IES has dedicated prompt — acceptable)
 - Production apex vs `www` redirect — verify DNS outside repo (see SOT-07)
+- Route-specific OG images not created (root image used for all routes)
 
 ## Deployment config
 
@@ -109,6 +125,6 @@ SOT guardrails in `docs/sot/` may reference verification topics — not publishe
 **Sprint 4 — Executive Storytelling Proof Layer** (per portfolio roadmap)
 
 Optional parallel polish:
-- OG image + favicon
+- Route-specific OG images for case studies
 - Ask Ardavan V1.5 suggested next prompts
 - “What teams bring me in for” homepage section (after verification)
