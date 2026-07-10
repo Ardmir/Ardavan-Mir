@@ -1,6 +1,7 @@
 "use client"
 
 import { Mail, Linkedin, FileText } from "lucide-react"
+import Link from "next/link"
 import { useState, useEffect, useRef, useCallback } from "react"
 import Image from "next/image"
 import ClarityEngine from "@/components/portfolio/clarity-engine"
@@ -27,13 +28,13 @@ const PROJECTS = [
   {
     no: "01",
     title: "Intuit Enterprise Suite",
-    href: null as string | null,
+    href: "/work/intuit-enterprise-suite",
     label: "Enterprise SaaS · AI-native workflows · Financial systems",
     description:
       "Helped define and communicate AI-native product direction for complex enterprise finance workflows, translating ambiguity into clearer information architecture, prototype concepts, and leadership-ready product narratives.",
     outcome:
       "Helped make complex financial systems easier to understand, evaluate, and act on through evidence-backed product thinking, workflow design, and storytelling.",
-    cta: "Case study in progress",
+    cta: "View case study",
     feature: true,
   },
   {
@@ -304,11 +305,18 @@ export default function Home() {
                   <span className="text-[#F4F7F6]">Outcome: </span>
                   {p.outcome}
                 </p>
-                {p.cta && (
+                {p.cta && p.href ? (
+                  <Link
+                    href={p.href}
+                    className="mt-5 inline-flex font-ui text-[11px] uppercase tracking-[0.12em] text-[#31F5D4] transition-colors hover:text-[#7CE7D6]"
+                  >
+                    {p.cta} →
+                  </Link>
+                ) : p.cta ? (
                   <p className="mt-5 font-ui text-[11px] uppercase tracking-[0.12em] text-[#5E6865]">
                     {p.cta}
                   </p>
-                )}
+                ) : null}
               </article>
             ))}
           </div>

@@ -639,3 +639,241 @@ img {
     transform: none;
   }
 }
+
+/* IES case study page */
+.case-study-title {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-weight: 100;
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f4f7f6;
+}
+
+.case-study-section {
+  margin-top: 3.5rem;
+}
+
+.case-study-heading {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-weight: 100;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #f4f7f6;
+}
+
+.case-study-body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #a8b3b0;
+}
+
+.case-study-callout {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  border-left: 2px solid #31f5d4;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  color: #7ce7d6;
+  background: rgba(17, 23, 25, 0.6);
+  border-radius: 0 4px 4px 0;
+}
+
+.case-study-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.25rem;
+  border-radius: 9999px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.8125rem;
+  text-decoration: none;
+  transition: border-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+.case-study-cta--primary {
+  background: #31f5d4;
+  color: #07110f;
+}
+
+.case-study-cta--primary:hover,
+.case-study-cta--primary:focus-visible {
+  transform: scale(1.02);
+}
+
+.case-study-cta--secondary {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #f4f7f6;
+}
+
+.case-study-cta--secondary:hover,
+.case-study-cta--secondary:focus-visible {
+  border-color: rgba(49, 245, 212, 0.45);
+  color: #31f5d4;
+}
+
+/* IES sanitized visuals */
+.ies-visuals-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ies-visuals-grid__pair {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .ies-visuals-grid__pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.ies-visual {
+  margin: 0;
+  padding: 1.25rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #111719;
+  overflow-x: auto;
+}
+
+.ies-visual__caption {
+  margin: 0 0 1rem;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #31f5d4;
+}
+
+.ies-visual__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.75rem;
+}
+
+.ies-flow-line {
+  animation: flowPulse 4.5s linear infinite;
+}
+
+.ies-visual__stages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ies-visual__stage {
+  flex: 1 1 auto;
+  min-width: 4.5rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 4px;
+  background: #0b0f10;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.ies-visual__stage-index {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  color: #5e6865;
+}
+
+.ies-visual__stage-label {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  color: #f4f7f6;
+}
+
+.ies-visual__rail {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ies-visual__rail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.75rem;
+  color: #a8b3b0;
+}
+
+.ies-visual__rail-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #31f5d4;
+  flex-shrink: 0;
+}
+
+.ies-visual__packet,
+.ies-visual__receipt {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.ies-visual__packet-row,
+.ies-visual__receipt-row {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.ies-visual__packet-row dt,
+.ies-visual__receipt-row dt {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5e6865;
+}
+
+.ies-visual__packet-row dd,
+.ies-visual__receipt-row dd {
+  margin: 0;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #f4f7f6;
+}
+
+@media (max-width: 480px) {
+  .ies-visual__packet-row,
+  .ies-visual__receipt-row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ies-flow-line {
+    animation: none;
+    stroke-dashoffset: 0;
+    opacity: 0.6;
+  }
+}
