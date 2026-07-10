@@ -27,10 +27,12 @@ Toronto, ON / Remote
 
 - Helped define and communicate AI-native product direction for Intuit Enterprise Suite, translating complex enterprise finance workflows into clearer information architecture, product narratives, and prototype concepts.
 - Designed IA and product experience concepts for high-trust financial workflows, with a focus on clarity, explainability, evidence, human judgment, and user control.
-- Shaped QuickBooks Online Advanced accounting experiences, including Dimensional Chart of Accounts, to make multi-dimensional classification, reporting, and decision-making easier to understand and act on.
-- Created and synthesized evidence-backed frameworks, prototypes, and product narratives that helped make AI-native finance concepts tangible for leadership and cross-functional audiences.
-- Contributed to future-state enterprise product explorations by translating AI-native concepts into functional prototypes and leadership-ready narratives.
-- Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories for leadership and cross-functional audiences.
+- Created and synthesized evidence-backed frameworks, prototypes, and visual narratives that helped make AI-native finance concepts tangible for leadership and cross-functional audiences.
+- Contributed to future-state enterprise product explorations by translating early AI-native concepts into structured models, prototypes, and leadership-ready narratives.
+- Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories through executive-ready storytelling, prototype craft, and visual judgment.
+- Shaped advanced accounting workflows that help teams understand multi-dimensional classification, reporting, and decision-making inside a complex financial product.
+- Created clearer structure around dense accounting workflows and financial information architecture.
+- Contributed to leadership-facing product narratives that made complex product capabilities easier to understand, evaluate, and discuss.
 
 ## Experience — Iranians Who Design
 
