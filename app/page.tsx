@@ -7,6 +7,7 @@ import Image from "next/image"
 import ClarityEngine from "@/components/portfolio/clarity-engine"
 import IALogotype from "@/components/ia-logotype"
 import PortfolioChat from "@/components/PortfolioChat"
+import ProjectCardVisual from "@/components/ProjectCardVisual"
 
 const NAV = [
   { id: "work", label: "Work" },
@@ -36,18 +37,20 @@ const PROJECTS = [
       "Helped make complex financial systems easier to understand, evaluate, and act on through evidence-backed product thinking, workflow design, and storytelling.",
     cta: "View case study",
     feature: true,
+    visual: "ies" as const,
   },
   {
     no: "02",
     title: "QuickBooks Online Advanced — Dimensional Chart of Accounts",
-    href: null as string | null,
+    href: "/work/quickbooks-dimensional-chart-of-accounts",
     label: "Advanced accounting · IA · Classification & reporting",
     description:
       "Shaped advanced accounting workflows that help teams understand multi-dimensional classification, reporting, and decision-making inside a complex financial product.",
     outcome:
       "Created clearer structure around dense accounting workflows and financial information architecture.",
-    cta: "Case study in progress",
+    cta: "View case study",
     feature: true,
+    visual: "qboa" as const,
   },
   {
     no: "03",
@@ -294,7 +297,8 @@ export default function Home() {
                 <div className="mb-4">
                   <span className="font-display text-[1.75rem] text-[#31F5D4]">{p.no}</span>
                 </div>
-                <h3 className="monolith-title monolith-title--card">{p.title}</h3>
+                {"visual" in p && p.visual ? <ProjectCardVisual variant={p.visual} /> : null}
+                <h3 className="monolith-title monolith-title--card mt-4">{p.title}</h3>
                 <p className="mt-2 font-ui text-[12px] uppercase tracking-[0.12em] text-[#7CE7D6]">
                   {p.label}
                 </p>
@@ -335,21 +339,24 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="group flex flex-col gap-2 rounded-[6px] border border-[rgba(255,255,255,0.12)] bg-[#0B0F10] p-5 transition-colors hover:border-[#31F5D4]/30 sm:flex-row sm:items-center sm:justify-between"
               >
-                <div>
-                  <div className="flex items-center gap-3">
-                    <span className="font-display text-[1.5rem] text-[#31F5D4]">{p.no}</span>
-                    <h3 className="monolith-title monolith-title--card">{p.title}</h3>
+                <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
+                  <ProjectCardVisual variant="community" />
+                  <div>
+                    <div className="flex items-center gap-3">
+                      <span className="font-display text-[1.5rem] text-[#31F5D4]">{p.no}</span>
+                      <h3 className="monolith-title monolith-title--card">{p.title}</h3>
+                    </div>
+                    <p className="mt-1 font-ui text-[12px] uppercase tracking-[0.12em] text-[#7CE7D6]">
+                      {p.label}
+                    </p>
+                    <p className="mt-2 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
+                      {p.description}
+                    </p>
+                    <p className="mt-2 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
+                      <span className="text-[#F4F7F6]">Outcome: </span>
+                      {p.outcome}
+                    </p>
                   </div>
-                  <p className="mt-1 font-ui text-[12px] uppercase tracking-[0.12em] text-[#7CE7D6]">
-                    {p.label}
-                  </p>
-                  <p className="mt-2 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
-                    {p.description}
-                  </p>
-                  <p className="mt-2 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
-                    <span className="text-[#F4F7F6]">Outcome: </span>
-                    {p.outcome}
-                  </p>
                 </div>
                 <span className="shrink-0 font-ui text-xs text-[#A8B3B0] transition-colors group-hover:text-[#31F5D4]">
                   iranianxdesign.com →

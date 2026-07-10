@@ -43,6 +43,12 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
     assistantTitle: "Where to start",
     answer:
       "Start with Intuit Enterprise Suite if you want to understand my AI-native enterprise product work. Look at QuickBooks Online Advanced for advanced accounting IA, and Iranians Who Design for my founder/community platform work.",
+    links: [
+      {
+        label: "View the public-safe QBOA case study",
+        href: "/work/quickbooks-dimensional-chart-of-accounts",
+      },
+    ],
   },
   {
     id: "ai-native",
