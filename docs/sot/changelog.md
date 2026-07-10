@@ -1,5 +1,13 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Portfolio Sprint 3.1 — Production QA + Share Readiness
+
+- Added `production-qa-log.md` with routes, links, accessibility, mobile, SEO, and deployment checks
+- Fixed IES header back-link focus-visible state
+- Added `metadataBase`, canonical URL, and Open Graph `url` / `siteName` in root layout
+- Documented OG image and favicon as TODOs (no new assets in this sprint)
+- No new public claims, metrics, or confidential content
+
 ## 2026-07-10 — Sprint documentation update — Executive storytelling and future prototypes
 
 - Added `executive-storytelling-and-future-prototypes-sot.md` for future-state IES exploration, adjacent product prototype adaptation, and leadership/investor-facing demo storytelling
