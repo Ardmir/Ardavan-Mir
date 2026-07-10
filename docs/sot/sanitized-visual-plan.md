@@ -72,7 +72,7 @@ See `docs/sot/executive-storytelling-and-future-prototypes-sot.md`.
 2. **Prototype-to-storyboard arc** — `components/IesFutureStateVisuals.tsx`  
    Shows how a future-state product concept becomes a leadership-ready narrative.
 
-3. **Executive alignment map** — `components/IesFutureStateVisuals.tsx`  
+3. **Leadership alignment map** — `components/IesFutureStateVisuals.tsx`  
    Shows how evidence, prototype, story, and decision come together.
 
 4. **Future-state exploration model** — `components/IesFutureStateVisuals.tsx`  

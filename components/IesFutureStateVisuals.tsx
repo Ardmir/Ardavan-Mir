@@ -125,7 +125,7 @@ function PrototypeStoryboardArc() {
   )
 }
 
-function ExecutiveAlignmentMap() {
+function LeadershipAlignmentMap() {
   const nodes = [
     { label: "Evidence", accent: false },
     { label: "Model", accent: false },
@@ -139,7 +139,7 @@ function ExecutiveAlignmentMap() {
       aria-labelledby="ies-future-alignment-title"
     >
       <figcaption id="ies-future-alignment-title" className="ies-visual__caption">
-        Executive alignment map
+        Leadership alignment map
       </figcaption>
       <VisualBlurb>
         A simplified model for bringing evidence, prototype, story, and decision-making into one
@@ -258,7 +258,7 @@ export default function IesFutureStateVisuals() {
       <FrameworkTransferMap />
       <PrototypeStoryboardArc />
       <div className="ies-visuals-grid__pair">
-        <ExecutiveAlignmentMap />
+        <LeadershipAlignmentMap />
         <FutureStateExplorationModel />
       </div>
     </div>
