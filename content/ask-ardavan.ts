@@ -67,6 +67,12 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
     assistantTitle: "Intuit Enterprise Suite",
     answer:
       "My IES work centers on helping define and communicate AI-native product direction for complex enterprise finance workflows. The public version focuses on information architecture, workflow clarity, explainability, and leadership-ready storytelling.",
+    links: [
+      {
+        label: "View the public-safe IES case study",
+        href: "/work/intuit-enterprise-suite",
+      },
+    ],
   },
   {
     id: "founder",
