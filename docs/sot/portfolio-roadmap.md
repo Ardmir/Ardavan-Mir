@@ -1,7 +1,7 @@
 # Portfolio Roadmap
 
-Version: 1.0  
-Last updated: 2026-07-09  
+Version: 1.2  
+Last updated: 2026-07-10  
 Status: Public-safe
 
 ## Current status
@@ -9,7 +9,9 @@ Status: Public-safe
 - Homepage is live with AI-native legibility positioning
 - Résumé PDF is live at `/resume-ardavan-mir.pdf`
 - Static guided Ask Ardavan chat is live
-- IES and QBOA cards still need case study depth (IES foundation in progress)
+- IES public-safe case study is live at `/work/intuit-enterprise-suite`
+- QBOA public-safe case study foundation is in progress (Sprint 3)
+- Legacy claims cleanup merged (Sprint 2.1)
 
 ## Priority order
 
@@ -18,19 +20,19 @@ Status: Public-safe
 - Preserve accessibility, mobile responsiveness, static export, CNAME, and deployment config
 - Avoid confidential content and unverified claims
 
-### P1 — IES public case study
+### P1 — Case study depth
 
-- Build NDA-safe IES public case study
-- Create sanitized visuals for IES
-- Link homepage and Ask Ardavan to the IES case study
-- Create deeper private interview walkthrough later, outside public repo if sensitive
+- Polish IES sanitized visuals
+- Build QBOA public case study foundation
+- Link homepage and Ask Ardavan to QBOA case study
+- Add project-card abstract thumbnails
 
 ### P2 — Expand portfolio depth
 
-- Create QBOA / Dimensional Chart of Accounts case study shell
-- Add project-card abstract visuals
-- Add Ask Ardavan V1.5 suggested next prompts
+- Executive storytelling and future-state prototype narrative (see `executive-storytelling-and-future-prototypes-sot.md`)
+- Ask Ardavan V1.5 suggested next prompts
 - Add “What teams bring me in for” proof section
+- Deeper private interview walkthrough for sensitive work (outside public repo if needed)
 
 ### P3 — Polish and legacy work
 
@@ -38,30 +40,49 @@ Status: Public-safe
 - Add OG/social preview polish
 - Add older projects only after scope and claims are verified
 
-## Sprint 2 scope
+## Sprint 3 scope
 
-Portfolio Sprint 2 — IES Case Study Foundation
+Portfolio Sprint 3 — IES visual polish + QBOA case study foundation
 
-- SOT docs (public-safe)
-- IES public case study route at `/work/intuit-enterprise-suite`
-- Sanitized abstract visuals
-- Homepage IES link
-- Ask Ardavan IES link
-- Build QA
+- IES visual polish (human judgment checkpoint, captions, hierarchy)
+- QBOA case study route at `/work/quickbooks-dimensional-chart-of-accounts`
+- QBOA sanitized visuals
+- Homepage QBOA link
+- Ask Ardavan QBOA link (where supported)
+- Project-card abstract thumbnails
+- Updated SOT docs and claims log
 
 ## Later backlog
 
-- IES sanitized visual polish
-- QBOA case study shell
+- QBOA visual polish and verified artifacts
 - Ask Ardavan suggested next prompts
 - Proof section expansion
 - OG/social preview assets
+- IES deeper visual narrative
+
+### P2 — Executive storytelling and future-state prototype narrative
+
+Document and later develop a public-safe portfolio treatment around future-state IES exploration, cross-product concept adaptation, executive-facing functional prototypes, and investor-facing leadership demos.
+
+Reference: `docs/sot/executive-storytelling-and-future-prototypes-sot.md`
+
+## Future sprint candidate — Sprint 4 or later
+
+**Executive Storytelling Proof Layer**
+
+Potential deliverables:
+
+- “What teams bring me in for” homepage section
+- IES case study expansion around future-state exploration
+- Private interview walkthrough for executive prototype work
+- Sanitized visual storytelling artifacts
+- Résumé bullet update after verification
+- Ask Ardavan V1.5 prompt about executive storytelling
 
 ## Out of scope
 
 - Real AI chat
 - Backend/API routes
 - Confidential materials in repo
-- QBOA full case study (this sprint)
 - Unverified metrics
 - Production merge without review

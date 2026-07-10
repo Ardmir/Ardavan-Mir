@@ -877,3 +877,323 @@ img {
     opacity: 0.6;
   }
 }
+
+/* IES visual polish */
+.ies-visual__blurb {
+  margin: 0 0 1rem;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.55;
+  color: #a8b3b0;
+}
+
+.ies-visual__svg--map {
+  margin-bottom: 0.25rem;
+}
+
+.ies-visual__rail-label {
+  flex: 0 0 auto;
+  min-width: 7rem;
+}
+
+.ies-visual__rail-bar {
+  flex: 1;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(49, 245, 212, 0.55), rgba(49, 245, 212, 0.15));
+  max-width: 5rem;
+}
+
+.ies-visual__packet-row--highlight {
+  padding: 0.35rem 0.5rem;
+  margin: -0.35rem -0.5rem;
+  border-radius: 4px;
+  background: rgba(49, 245, 212, 0.06);
+  border-left: 2px solid rgba(49, 245, 212, 0.45);
+}
+
+.ies-visual__checkpoint-lane {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ies-visual__checkpoint-node {
+  padding: 0.4rem 0.65rem;
+  border-radius: 4px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  color: #a8b3b0;
+  background: #0b0f10;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ies-visual__checkpoint-gate {
+  padding: 0.5rem 0.85rem;
+  border-radius: 6px;
+  background: rgba(255, 122, 102, 0.08);
+  border: 1px dashed rgba(255, 122, 102, 0.45);
+}
+
+.ies-visual__checkpoint-gate-label {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff9a8a;
+}
+
+.ies-visual__checkpoint-arrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #5e6865;
+}
+
+.ies-visual__checkpoint-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ies-visual__checkpoint-actions li {
+  padding: 0.35rem 0.65rem;
+  border-radius: 9999px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7ce7d6;
+  border: 1px solid rgba(49, 245, 212, 0.25);
+  background: rgba(49, 245, 212, 0.06);
+}
+
+.ies-visual__receipt-stamp {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #31f5d4;
+  border: 1px solid rgba(49, 245, 212, 0.35);
+}
+
+/* Shared case study visuals (QBOA) */
+.case-visuals-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.case-visuals-grid__pair {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .case-visuals-grid__pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.case-visual {
+  margin: 0;
+  padding: 1.25rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #111719;
+  overflow-x: auto;
+}
+
+.case-visual__caption {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #31f5d4;
+}
+
+.case-visual__blurb {
+  margin: 0 0 1rem;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.55;
+  color: #a8b3b0;
+}
+
+.case-visual__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.case-visual__fields {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.case-visual__field-row {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.case-visual__field-row dt {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5e6865;
+}
+
+.case-visual__field-row dd {
+  margin: 0;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #f4f7f6;
+}
+
+.qboa-visual__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.75rem;
+}
+
+.qboa-visual__grid-header,
+.qboa-visual__grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.qboa-visual__grid-header span {
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5e6865;
+}
+
+.qboa-visual__grid-cell {
+  padding: 0.45rem 0.5rem;
+  border-radius: 4px;
+  background: #0b0f10;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #a8b3b0;
+}
+
+.qboa-visual__layers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.qboa-visual__layer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 4px;
+  background: #0b0f10;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.75rem;
+  color: #a8b3b0;
+}
+
+.qboa-visual__layer-index {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  color: #31f5d4;
+}
+
+.qboa-visual__review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.qboa-visual__review-btn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #a8b3b0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.qboa-visual__review-btn--primary {
+  color: #07110f;
+  background: #31f5d4;
+  border-color: #31f5d4;
+}
+
+/* Homepage project card mini-visuals */
+.project-card-visual {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  background: #0b0f10;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  max-height: 5.5rem;
+  overflow: hidden;
+}
+
+.project-card-visual__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-card-visual__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.35rem;
+}
+
+.project-card-visual__grid-cell {
+  padding: 0.35rem;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.5625rem;
+  text-align: center;
+  color: #7ce7d6;
+  background: rgba(49, 245, 212, 0.06);
+  border: 1px solid rgba(49, 245, 212, 0.15);
+}
+
+@media (max-width: 480px) {
+  .case-visual__field-row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .qboa-visual__grid-header,
+  .qboa-visual__grid-row {
+    grid-template-columns: 1fr;
+  }
+}

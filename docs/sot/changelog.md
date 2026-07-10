@@ -1,5 +1,24 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Sprint documentation update — Executive storytelling and future prototypes
+
+- Added `executive-storytelling-and-future-prototypes-sot.md` for future-state IES exploration, adjacent product prototype adaptation, and leadership/investor-facing demo storytelling
+- Captured this work as future portfolio opportunity, not public copy
+- Updated portfolio roadmap, claims log, IES case study SOT, and sanitized visual plan
+- Marked sensitive details as PRIVATE_CONTEXT / VERIFY
+- Preserved guardrails around internal names, executive audiences, event names, prototype details, and unverified outcomes
+
+## 2026-07-10 — Portfolio Sprint 3 — IES visual polish + QBOA case study foundation
+
+- Polished IES abstract visuals: system map, human judgment checkpoint, captions, visual hierarchy
+- Added QBOA public-safe case study route at `/work/quickbooks-dimensional-chart-of-accounts`
+- Added QBOA sanitized visuals and SOT
+- Linked homepage QBOA card and Ask Ardavan start prompt to QBOA case study
+- Added project-card abstract thumbnails (IES, QBOA, Iranians Who Design)
+- Archived duplicate local résumé PDFs outside repo (`../portfolio-local-archive/`)
+- Polished QBOA public page status wording (removed “foundation” / “shell” from live copy)
+- Continued claims guardrails in portfolio-claims-log.md
+
 ## 2026-07-10 — Portfolio Sprint 2.1 — Legacy Claims Cleanup
 
 - Quarantined unverified metrics and risky verbs from legacy unused components (`projects.tsx`, `about.tsx`, `hero.tsx`, `contact.tsx`)

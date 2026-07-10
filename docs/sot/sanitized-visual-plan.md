@@ -1,7 +1,7 @@
 # Sanitized Visual Plan
 
-Version: 1.0  
-Last updated: 2026-07-09  
+Version: 1.2  
+Last updated: 2026-07-10  
 Status: Public-safe
 
 ## Purpose
@@ -17,6 +17,21 @@ Create case study visuals that show thinking and craft without exposing confiden
 5. Human judgment checkpoint
 6. Approval receipt
 
+## Visuals to build for QBOA V1
+
+1. Dimensional classification grid
+2. Reporting context layer
+3. Account structure model
+4. Review and confirmation moment
+
+## Homepage project-card thumbnails
+
+1. IES — abstract decision flow
+2. QBOA — dimensional classification grid
+3. Iranians Who Design — community constellation
+
+Implemented in `components/ProjectCardVisual.tsx` (decorative, aria-hidden).
+
 ## Rules
 
 - Use abstract diagrams
@@ -31,4 +46,32 @@ Create case study visuals that show thinking and craft without exposing confiden
 
 ## V1 implementation
 
-Implemented in `components/IesCaseStudyVisuals.tsx` as abstract SVG/HTML diagrams with generic synthetic labels.
+- IES: `components/IesCaseStudyVisuals.tsx` — polished Sprint 3 with captions and human judgment checkpoint
+- QBOA: `components/QboaCaseStudyVisuals.tsx` — abstract classification and reporting diagrams
+- Homepage cards: `components/ProjectCardVisual.tsx`
+
+## Future visual concepts — Executive storytelling / future prototypes
+
+Not yet implemented. See `docs/sot/executive-storytelling-and-future-prototypes-sot.md`.
+
+1. **Framework transfer map**  
+   Shows how a core AI-native concept can be adapted from one enterprise context to another without exposing product specifics.
+
+2. **Prototype-to-demo storyboard**  
+   Shows how a future-state product concept becomes a leadership-ready narrative.
+
+3. **Executive alignment map**  
+   Shows how ambiguity, evidence, prototype, narrative, and decision come together.
+
+4. **Investor narrative layer**  
+   Shows how complex capabilities can be translated into a clear, credible story for external-facing leadership moments.
+
+### Rules for future executive visuals
+
+- Use synthetic labels only
+- Do not use real executive names
+- Do not use internal product names or acronyms
+- Do not use confidential screenshots
+- Do not use real deck screenshots
+- Do not use real demo scripts
+- Do not imply launch, adoption, or business impact
