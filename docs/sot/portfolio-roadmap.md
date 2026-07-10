@@ -1,13 +1,14 @@
 # Portfolio Roadmap
 
-Version: 1.3  
+Version: 1.4  
 Last updated: 2026-07-10  
 Status: Public-safe
 
 ## Current status
 
 - Homepage is live with AI-native legibility positioning
-- Résumé PDF is live at `/resume-ardavan-mir.pdf`
+- Résumé PDF is live at `/resume-ardavan-mir.pdf` (source updated in Sprint 5A; PDF regeneration pending review)
+- Résumé markdown source aligned with portfolio positioning (`content/resume.md`)
 - Static guided Ask Ardavan chat is live
 - IES public-safe case study is live at `/work/intuit-enterprise-suite`
 - QBOA public-safe case study is live at `/work/quickbooks-dimensional-chart-of-accounts`
@@ -83,7 +84,25 @@ Still deferred:
 - IES case study expansion around future-state exploration
 - Private interview walkthrough for executive prototype work
 - Sanitized visual storytelling artifacts beyond homepage arc
-- Résumé bullet update after verification
+- Public résumé PDF regeneration from updated source
+
+## Sprint 5A — Verified Résumé Polish — **Completed**
+
+Delivered:
+
+- Updated `content/resume.md` with AI-native enterprise finance positioning
+- Added `resume-claims-review.md`
+- Updated claims log, roadmap, and changelog
+- Did not replace `public/resume-ardavan-mir.pdf` (no safe generation workflow in repo)
+
+## Next sprint — Sprint 5B — IES Future-State Depth
+
+Potential deliverables:
+
+- IES case study expansion around future-state exploration (public-safe, abstract)
+- Sanitized executive storytelling visuals in case study
+- Framework transfer map or prototype-to-storyboard visuals (if low-risk)
+- Route-specific OG images for case studies (optional)
 
 ## Out of scope
 

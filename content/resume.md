@@ -13,7 +13,11 @@ Portfolio: ardavanmir.com
 
 ## Summary
 
-Senior Product Designer focused on enterprise SaaS, AI-native workflows, and financial systems. Translates complex customer and business challenges into legible, high-trust product experiences through information architecture, workflow design, prototyping, and product storytelling. Recent work spans Intuit Enterprise Suite and QuickBooks Online Advanced, with an emphasis on making complex financial systems clearer, more explainable, and easier to act on.
+Senior Product Designer focused on enterprise SaaS, AI-native workflows, and financial systems. I translate complex customer and business challenges into legible, high-trust product experiences through information architecture, workflow design, prototyping, and product storytelling. My recent work spans Intuit Enterprise Suite and QuickBooks Online Advanced, with an emphasis on making complex financial systems clearer, more explainable, and easier to act on.
+
+## Skills
+
+Product Design · Enterprise SaaS · AI Experience Design · Financial Systems · Fintech Workflows · Information Architecture · Workflow Design · Systems Thinking · Interaction Design · UX Strategy · Prototyping · Executive Storytelling · Visual Design · Research Synthesis · Cross-functional Collaboration · Design Systems · Figma
 
 ## Experience — Intuit
 
@@ -24,7 +28,8 @@ Toronto, ON / Remote
 - Helped define and communicate AI-native product direction for Intuit Enterprise Suite, translating complex enterprise finance workflows into clearer information architecture, product narratives, and prototype concepts.
 - Designed IA and product experience concepts for high-trust financial workflows, with a focus on clarity, explainability, evidence, human judgment, and user control.
 - Shaped QuickBooks Online Advanced accounting experiences, including Dimensional Chart of Accounts, to make multi-dimensional classification, reporting, and decision-making easier to understand and act on.
-- Created and synthesized evidence-backed frameworks, prototypes, and product narratives that helped make AI-native finance concepts tangible for leadership, partner-facing, and company showcase moments.
+- Created and synthesized evidence-backed frameworks, prototypes, and product narratives that helped make AI-native finance concepts tangible for leadership and cross-functional audiences.
+- Contributed to future-state enterprise product explorations by translating AI-native concepts into functional prototypes and leadership-ready narratives.
 - Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories for leadership and cross-functional audiences.
 
 ## Experience — Iranians Who Design

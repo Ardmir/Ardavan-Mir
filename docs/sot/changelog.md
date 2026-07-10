@@ -1,5 +1,14 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Portfolio Sprint 5A — Verified Résumé Polish
+
+- Updated résumé source (`content/resume.md`) to align with AI-native enterprise finance positioning
+- Added executive storytelling and future-state exploration bullets (abstract, conservative verbs)
+- Added `resume-claims-review.md` for résumé claim verification boundaries
+- Updated claims log, roadmap, and changelog
+- Preserved claims guardrails; no `[VERIFY]` labels in résumé source
+- Did not replace public résumé PDF (no safe generation workflow in repo)
+
 ## 2026-07-10 — Portfolio Sprint 4 — Executive Storytelling Proof Layer
 
 - Added public-safe homepage proof section: “What teams bring me in for”

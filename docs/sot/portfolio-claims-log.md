@@ -1,6 +1,6 @@
 # Portfolio Claims Log
 
-Version: 1.4  
+Version: 1.5  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -31,3 +31,7 @@ Status: Public-safe
 | Ardavan works on executive-ready product storytelling. | PUBLIC_SAFE when abstracted | Making complex product capabilities tangible through demos, visual narratives, and clear product stories for leadership audiences. | Supported by private recognition themes. Do not publish raw quotes or private screenshots. |
 | Ardavan creates functional prototypes for senior review. | PRIVATE_CONTEXT / VERIFY | Using functional prototypes and polished artifacts to help teams evaluate future product direction. | Keep abstract unless exact prototype details are approved. |
 | Ardavan contributes to investor-facing demo narratives. | PRIVATE_CONTEXT / VERIFY | External-facing product storytelling for leadership moments. | Do not name event or audience until approved. |
+| Ardavan translates complex enterprise finance workflows into clearer IA, prototypes, and product narratives. | PUBLIC_SAFE | Helped define and communicate AI-native product direction for complex enterprise finance workflows. | Use conservative verbs. Résumé source: `content/resume.md`. |
+| Ardavan contributes to future-state enterprise product explorations (résumé). | PUBLIC_SAFE when abstracted / VERIFY for details | Contributed to future-state enterprise product explorations by translating AI-native concepts into functional prototypes and leadership-ready narratives. | Do not name exact internal team, adjacent product area, executive audience, or prototype details. |
+| Ardavan creates executive-ready product narratives (résumé). | PUBLIC_SAFE when abstracted | Created and synthesized evidence-backed frameworks, prototypes, and product narratives that made AI-native finance concepts tangible for leadership and cross-functional audiences. | Supported by portfolio proof layer and private recognition themes. Do not publish raw quotes. |
+| Specific internal recognition awards or exact quotes (résumé). | PRIVATE_CONTEXT / VERIFY | Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories. | Do not publish raw screenshots, names, or exact quotes without approval. |
