@@ -1,8 +1,8 @@
 # Résumé Claims Review
 
-Version: 1.0  
+Version: 1.1  
 Last updated: 2026-07-10  
-Sprint: 5A — Verified Résumé Polish  
+Sprint: 5A — Verified Résumé Polish (pre-merge tighten)  
 Status: Public-safe review doc — not published as site copy
 
 ## 1. Current résumé status
@@ -45,7 +45,7 @@ Senior Product Designer focused on enterprise SaaS, AI-native workflows, and fin
 | Recognition (abstract) | Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories through executive-ready storytelling, prototype craft, and visual judgment. |
 | QBOA / classification | Shaped advanced accounting workflows that help teams understand multi-dimensional classification, reporting, and decision-making inside a complex financial product. |
 | QBOA / IA structure | Created clearer structure around dense accounting workflows and financial information architecture. |
-| Leadership-facing narratives | Contributed to leadership-facing product narratives that made complex product capabilities easier to understand, evaluate, and discuss. |
+| QBO Money (conservative) | Contributed to interaction design for QuickBooks Money financial product experiences. |
 | Founder project | Created a community-driven platform to make Iranian designers in tech more visible, connected, and discoverable. |
 
 ## 4. Claims requiring verification
@@ -83,6 +83,21 @@ When regenerating `public/resume-ardavan-mir.pdf`, use `content/resume.md` as th
 4. Future-state enterprise exploration (abstract)
 5. Recognition-backed storytelling (abstract)
 6. Earlier experience — summarize tightly until dates and scope are verified
+
+### Candidate future bullets (not in current source)
+
+- Contributed to leadership-facing product narratives that made complex product capabilities easier to understand, evaluate, and discuss.
+
+### Earlier experience (verification pending — not in public source)
+
+Hold until dates, titles, and scope are verified:
+
+- **Xello** — Product Designer
+- **The Score** — Product Designer
+- **Toptal** — Product Designer / Contract Product Designer
+- **Nobu** — Designer / Brand Strategy Designer
+
+See `docs/sot/SOT-03-RESUME-SOT.md` for draft placeholders and verification notes.
 
 ## 7. Remaining questions for Ardavan
 
