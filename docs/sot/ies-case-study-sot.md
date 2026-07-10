@@ -2,7 +2,7 @@
 
 Version: 1.0  
 Last updated: 2026-07-09  
-Status: Public-safe shell
+Status: Public-safe case study
 
 ## Public case study route
 

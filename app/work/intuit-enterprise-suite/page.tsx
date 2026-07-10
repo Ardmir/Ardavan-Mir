@@ -57,7 +57,7 @@ const META = [
     label: "Output",
     value: "Frameworks, sanitized patterns, prototype narratives, alignment artifacts",
   },
-  { label: "Status", value: "Public-safe case study shell" },
+  { label: "Status", value: "Public-safe case study" },
 ]
 
 export default function IesCaseStudyPage() {
@@ -214,7 +214,7 @@ export default function IesCaseStudyPage() {
             Back to selected work
           </Link>
           <Link href="/#contact" className="case-study-cta case-study-cta--secondary">
-            Ask Ardavan about this work
+            Get in touch
           </Link>
         </footer>
       </article>
