@@ -1,5 +1,14 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Portfolio Sprint 5B — IES Future-State Depth
+
+- Expanded IES case study with public-safe future-state exploration section at `#future-state-exploration`
+- Added sanitized executive storytelling visuals: framework transfer map, prototype-to-storyboard arc, executive alignment map, future-state exploration model
+- Added Ask Ardavan IES anchor link to future-state section
+- Updated IES case study SOT, executive storytelling SOT, sanitized visual plan, claims log, and roadmap
+- Preserved NDA guardrails and avoided unverified outcomes
+- No résumé PDF, homepage positioning, QBOA, deploy config, or dependency changes
+
 ## 2026-07-10 — Portfolio Sprint 5A.1 — Résumé PDF Regeneration
 
 - Regenerated `public/resume-ardavan-mir.pdf` from `content/resume.md` using local ReportLab (outside repo dependencies)

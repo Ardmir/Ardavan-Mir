@@ -1058,6 +1058,115 @@ img {
   border: 1px solid rgba(49, 245, 212, 0.35);
 }
 
+/* IES future-state visuals */
+.ies-visual__transfer {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 480px) {
+  .ies-visual__transfer {
+    grid-template-columns: minmax(7rem, 9rem) 1fr;
+    align-items: start;
+    gap: 1.25rem;
+  }
+}
+
+.ies-visual__transfer-core {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5rem;
+  padding: 0.85rem;
+  border-radius: 6px;
+  background: rgba(49, 245, 212, 0.06);
+  border: 1px solid rgba(49, 245, 212, 0.35);
+}
+
+.ies-visual__transfer-core-label {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-align: center;
+  color: #f4f7f6;
+}
+
+.ies-visual__transfer-branches {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ies-visual__transfer-branch {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.ies-visual__transfer-line {
+  flex: 0 0 1.25rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(49, 245, 212, 0.55), rgba(49, 245, 212, 0.15));
+}
+
+.ies-visual__transfer-node {
+  flex: 1;
+  padding: 0.45rem 0.65rem;
+  border-radius: 4px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  color: #a8b3b0;
+  background: #0b0f10;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ies-visual__alignment {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.25rem;
+}
+
+.ies-visual__alignment-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ies-visual__alignment-index {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  color: #5e6865;
+}
+
+.ies-visual__alignment-label {
+  padding: 0.4rem 0.65rem;
+  border-radius: 4px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  color: #f4f7f6;
+  background: #0b0f10;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ies-visual__alignment-step--accent .ies-visual__alignment-label {
+  border-color: rgba(49, 245, 212, 0.35);
+  background: rgba(49, 245, 212, 0.06);
+  color: #7ce7d6;
+}
+
+.ies-visual__alignment-arrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #5e6865;
+}
+
 /* Shared case study visuals (QBOA) */
 .case-visuals-grid {
   display: flex;

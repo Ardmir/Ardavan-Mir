@@ -1,6 +1,6 @@
 # Sanitized Visual Plan
 
-Version: 1.2  
+Version: 1.3  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -59,19 +59,24 @@ See `docs/sot/executive-storytelling-and-future-prototypes-sot.md`.
 1. **Ambiguity → alignment arc**  
    Homepage horizontal flow: Ambiguity → Structure → Prototype → Story → Alignment. Synthetic labels only; decorative, aria-hidden.
 
-### Sprint 4+ backlog visuals (not yet implemented)
+### Sprint 4+ backlog visuals
 
-1. **Framework transfer map**  
+1. **Leadership narrative layer**  
+   Shows how complex capabilities can be translated into a clear, credible story for external-facing leadership moments.
+
+### Sprint 5B future-state visuals (implemented)
+
+1. **Framework transfer map** — `components/IesFutureStateVisuals.tsx`  
    Shows how a core AI-native concept can be adapted from one enterprise context to another without exposing product specifics.
 
-2. **Prototype-to-demo storyboard**  
+2. **Prototype-to-storyboard arc** — `components/IesFutureStateVisuals.tsx`  
    Shows how a future-state product concept becomes a leadership-ready narrative.
 
-3. **Executive alignment map**  
-   Shows how ambiguity, evidence, prototype, narrative, and decision come together.
+3. **Executive alignment map** — `components/IesFutureStateVisuals.tsx`  
+   Shows how evidence, prototype, story, and decision come together.
 
-4. **Leadership narrative layer**  
-   Shows how complex capabilities can be translated into a clear, credible story for external-facing leadership moments.
+4. **Future-state exploration model** — `components/IesFutureStateVisuals.tsx`  
+   Shows the relationship between system state, evidence, human judgment, and next action.
 
 ### Rules for future executive visuals
 

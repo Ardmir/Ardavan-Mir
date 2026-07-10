@@ -1,6 +1,6 @@
 # Portfolio Claims Log
 
-Version: 1.5  
+Version: 1.6  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -39,3 +39,6 @@ Status: Public-safe
 | Recognition/award wording (résumé). | PRIVATE_CONTEXT / VERIFY | Use abstract recognition framing only. | Do not publish raw quotes, internal award names, or screenshots without approval. |
 | Future-state prototype details (résumé). | PRIVATE_CONTEXT / VERIFY | Keep future-state bullets abstract. | Do not name internal teams, adjacent product acronyms, or prototype specifics until approved. |
 | Leadership/investor-facing details (résumé). | PRIVATE_CONTEXT / VERIFY | Use leadership-facing or cross-functional audiences only. | Do not name events, executives, or investor-facing contexts until approved. |
+| IES case study can describe future-state exploration. | PUBLIC_SAFE when abstracted | Helped make future-state product direction easier to understand, discuss, and evaluate through frameworks, prototypes, and leadership-ready narratives. | Do not name exact teams, product acronyms, executive audiences, event names, prototype names, or roadmap details. |
+| IES case study can describe framework transfer. | PUBLIC_SAFE when abstracted / VERIFY for specifics | Translated core AI-native experience concepts into reusable patterns that could be explored across related enterprise product contexts. | Do not name adjacent product area until approved. |
+| IES case study can describe executive-facing prototype/storytelling work. | PUBLIC_SAFE when abstracted / PRIVATE_CONTEXT for details | Used functional prototypes and polished artifacts to make abstract product direction easier for teams to understand, critique, and refine. | Do not name exact demo context, executives, or internal event names. |
