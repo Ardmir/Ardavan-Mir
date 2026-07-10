@@ -1,6 +1,6 @@
 # Portfolio Claims Log
 
-Version: 1.4  
+Version: 1.5  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -31,3 +31,11 @@ Status: Public-safe
 | Ardavan works on executive-ready product storytelling. | PUBLIC_SAFE when abstracted | Making complex product capabilities tangible through demos, visual narratives, and clear product stories for leadership audiences. | Supported by private recognition themes. Do not publish raw quotes or private screenshots. |
 | Ardavan creates functional prototypes for senior review. | PRIVATE_CONTEXT / VERIFY | Using functional prototypes and polished artifacts to help teams evaluate future product direction. | Keep abstract unless exact prototype details are approved. |
 | Ardavan contributes to investor-facing demo narratives. | PRIVATE_CONTEXT / VERIFY | External-facing product storytelling for leadership moments. | Do not name event or audience until approved. |
+| Ardavan translates complex enterprise finance workflows into clearer IA, prototypes, and product narratives. | PUBLIC_SAFE | Helped define and communicate AI-native product direction for complex enterprise finance workflows. | Use conservative verbs. Résumé source: `content/resume.md`. |
+| Résumé may describe executive-ready product storytelling. | PUBLIC_SAFE when abstracted | Contributed to leadership-facing product narratives that made complex product capabilities easier to understand, evaluate, and discuss. | Do not publish raw recognition quotes, internal event names, executive names, or exact demo contexts without approval. |
+| Résumé may describe future-state enterprise product exploration. | PUBLIC_SAFE when abstracted / VERIFY | Contributed to future-state enterprise product explorations by translating early AI-native concepts into structured models, prototypes, and leadership-ready narratives. | Do not name internal teams, adjacent product acronyms, or prototype details until approved. |
+| Résumé may mention recognition. | PUBLIC_SAFE when abstracted | Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories. | Keep raw screenshots and exact recognition quotes private unless approved. |
+| Exact role titles (résumé). | VERIFY | Confirm official HR title and title history before PDF update. | Verification tracked here only — not in `content/resume.md`. |
+| Recognition/award wording (résumé). | PRIVATE_CONTEXT / VERIFY | Use abstract recognition framing only. | Do not publish raw quotes, internal award names, or screenshots without approval. |
+| Future-state prototype details (résumé). | PRIVATE_CONTEXT / VERIFY | Keep future-state bullets abstract. | Do not name internal teams, adjacent product acronyms, or prototype specifics until approved. |
+| Leadership/investor-facing details (résumé). | PRIVATE_CONTEXT / VERIFY | Use leadership-facing or cross-functional audiences only. | Do not name events, executives, or investor-facing contexts until approved. |

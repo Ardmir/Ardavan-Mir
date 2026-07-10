@@ -1,6 +1,4 @@
-# Ardavan Mirhosseini — Résumé Source
-
-Published PDF: `public/resume-ardavan-mir.pdf` (homepage link: `/resume-ardavan-mir.pdf`)
+# Ardavan Mirhosseini — Résumé
 
 ## Header
 
@@ -13,19 +11,33 @@ Portfolio: ardavanmir.com
 
 ## Summary
 
-Senior Product Designer focused on enterprise SaaS, AI-native workflows, and financial systems. Translates complex customer and business challenges into legible, high-trust product experiences through information architecture, workflow design, prototyping, and product storytelling. Recent work spans Intuit Enterprise Suite and QuickBooks Online Advanced, with an emphasis on making complex financial systems clearer, more explainable, and easier to act on.
+Senior Product Designer focused on enterprise SaaS, AI-native workflows, and financial systems. I translate complex customer and business challenges into legible, high-trust product experiences through information architecture, workflow design, prototyping, and product storytelling. My recent work spans Intuit Enterprise Suite and QuickBooks Online Advanced, with an emphasis on making complex financial systems clearer, more explainable, and easier to act on.
+
+## Skills
+
+Product Design · Enterprise SaaS · AI Experience Design · Financial Systems · Fintech Workflows · Information Architecture · Workflow Design · Systems Thinking · Interaction Design · UX Strategy · Prototyping · Executive Storytelling · Visual Design · Research Synthesis · Cross-functional Collaboration · Design Systems · Figma
 
 ## Experience — Intuit
 
 **INTUIT**  
-Senior Product Designer  
 Toronto, ON / Remote
+
+**Intuit Enterprise Suite | Senior Product Designer | 2023–Present**
 
 - Helped define and communicate AI-native product direction for Intuit Enterprise Suite, translating complex enterprise finance workflows into clearer information architecture, product narratives, and prototype concepts.
 - Designed IA and product experience concepts for high-trust financial workflows, with a focus on clarity, explainability, evidence, human judgment, and user control.
-- Shaped QuickBooks Online Advanced accounting experiences, including Dimensional Chart of Accounts, to make multi-dimensional classification, reporting, and decision-making easier to understand and act on.
-- Created and synthesized evidence-backed frameworks, prototypes, and product narratives that helped make AI-native finance concepts tangible for leadership, partner-facing, and company showcase moments.
-- Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories for leadership and cross-functional audiences.
+- Created and synthesized evidence-backed frameworks, prototypes, and visual narratives that helped make AI-native finance concepts tangible for leadership and cross-functional audiences.
+- Contributed to future-state enterprise product explorations by translating early AI-native concepts into structured models, prototypes, and leadership-ready narratives.
+- Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories through executive-ready storytelling, prototype craft, and visual judgment.
+
+**QBO Advanced — Dimensional Chart of Accounts | Senior Product Designer | 2022–2023**
+
+- Shaped advanced accounting workflows that help teams understand multi-dimensional classification, reporting, and decision-making inside a complex financial product.
+- Created clearer structure around dense accounting workflows and financial information architecture.
+
+**QBO Money | Interaction Designer II | 2021–2022**
+
+- Contributed to interaction design for QuickBooks Money financial product experiences.
 
 ## Experience — Iranians Who Design
 
@@ -35,7 +47,3 @@ Toronto, ON / Remote
 
 - Created a community-driven platform to make Iranian designers in tech more visible, connected, and discoverable.
 - Applied information architecture, identity, discovery, and storytelling to turn a dispersed community into a more legible platform.
-
-## Earlier experience
-
-<!-- TODO: Add verified dates, titles, and scope for Xello, The Score, Toptal, and Nobu when ready for publication. See docs/sot/SOT-03-RESUME-SOT.md for placeholders. -->

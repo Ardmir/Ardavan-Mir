@@ -1,5 +1,13 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Portfolio Sprint 5A — Verified Résumé Polish
+
+- Updated résumé source to align with current portfolio positioning
+- Kept résumé claims public-safe and qualitative
+- Preserved verification notes in SOTs, not public résumé source
+- Did not update public PDF unless generation workflow was verified
+- Pre-merge tighten: restructured Intuit roles, removed placeholders from résumé source
+
 ## 2026-07-10 — Portfolio Sprint 4 — Executive Storytelling Proof Layer
 
 - Added public-safe homepage proof section: “What teams bring me in for”
