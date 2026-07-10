@@ -52,7 +52,14 @@ Implemented in `components/ProjectCardVisual.tsx` (decorative, aria-hidden).
 
 ## Future visual concepts — Executive storytelling / future prototypes
 
-Not yet implemented. See `docs/sot/executive-storytelling-and-future-prototypes-sot.md`.
+See `docs/sot/executive-storytelling-and-future-prototypes-sot.md`.
+
+### Sprint 4 proof-layer visuals (implemented)
+
+1. **Ambiguity → alignment arc**  
+   Homepage horizontal flow: Ambiguity → Structure → Prototype → Story → Alignment. Synthetic labels only; decorative, aria-hidden.
+
+### Sprint 4+ backlog visuals (not yet implemented)
 
 1. **Framework transfer map**  
    Shows how a core AI-native concept can be adapted from one enterprise context to another without exposing product specifics.
@@ -63,7 +70,7 @@ Not yet implemented. See `docs/sot/executive-storytelling-and-future-prototypes-
 3. **Executive alignment map**  
    Shows how ambiguity, evidence, prototype, narrative, and decision come together.
 
-4. **Investor narrative layer**  
+4. **Leadership narrative layer**  
    Shows how complex capabilities can be translated into a clear, credible story for external-facing leadership moments.
 
 ### Rules for future executive visuals

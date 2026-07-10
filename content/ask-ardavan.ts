@@ -17,6 +17,7 @@ export type AskArdavanPromptId =
   | "ai-native"
   | "trustworthy-ai"
   | "ies"
+  | "teams-bring-in"
   | "founder"
   | "contact"
 
@@ -77,6 +78,20 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
       {
         label: "View the public-safe IES case study",
         href: "/work/intuit-enterprise-suite",
+      },
+    ],
+  },
+  {
+    id: "teams-bring-in",
+    label: "What do teams bring you in for?",
+    prompt: "What do teams bring you in for?",
+    assistantTitle: "What teams bring me in for",
+    answer:
+      "Teams often bring me into ambiguous, high-stakes product moments where complex ideas need to become clear, tangible, and actionable. My work tends to sit across future-state product exploration, high-trust financial workflows, executive-ready storytelling, and prototype-driven alignment.",
+    links: [
+      {
+        label: "See what teams bring me in for",
+        href: "/#what-teams-bring-me-in-for",
       },
     ],
   },

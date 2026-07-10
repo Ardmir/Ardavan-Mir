@@ -1,6 +1,6 @@
 # Portfolio Claims Log
 
-Version: 1.3  
+Version: 1.4  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -27,3 +27,7 @@ Status: Public-safe
 | Ardavan created a functioning prototype for senior leadership review. | PRIVATE_CONTEXT / VERIFY | Created executive-facing functional prototypes to help senior stakeholders evaluate future product direction. | Do not name executive reviewers, demo owner, leadership context, or prototype details until approved. |
 | Ardavan contributes to investor-facing leadership demos. | PRIVATE_CONTEXT / VERIFY | Trusted to shape executive- and investor-facing demo narratives that make complex product capabilities tangible. | Verify whether the event name and leadership/investor audience can be named publicly. |
 | Ardavan’s portfolio can emphasize executive product storytelling. | PUBLIC_SAFE when abstracted | Making complex product capabilities tangible through prototypes, narratives, and evidence-backed visual storytelling. | Supported by recognition themes; do not publish raw screenshots or private quotes. |
+| Ardavan is often brought into ambiguous, high-stakes product moments. | PUBLIC_SAFE when abstracted | I'm often brought into ambiguous, high-stakes product moments where teams need to turn future direction into something clear, credible, and actionable. | Do not name exact teams, executives, events, or prototypes without approval. |
+| Ardavan works on executive-ready product storytelling. | PUBLIC_SAFE when abstracted | Making complex product capabilities tangible through demos, visual narratives, and clear product stories for leadership audiences. | Supported by private recognition themes. Do not publish raw quotes or private screenshots. |
+| Ardavan creates functional prototypes for senior review. | PRIVATE_CONTEXT / VERIFY | Using functional prototypes and polished artifacts to help teams evaluate future product direction. | Keep abstract unless exact prototype details are approved. |
+| Ardavan contributes to investor-facing demo narratives. | PRIVATE_CONTEXT / VERIFY | External-facing product storytelling for leadership moments. | Do not name event or audience until approved. |
