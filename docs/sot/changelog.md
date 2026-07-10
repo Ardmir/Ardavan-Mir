@@ -6,6 +6,7 @@
 - Added `docs/sot/legacy-portfolio-components.md` as internal reference for canonical vs legacy files
 - Updated `portfolio-claims-log.md` with DO_NOT_PUBLISH and VERIFY entries for legacy claims
 - Softened résumé source recognition bullet in `content/resume.md` (PDF unchanged)
+- Removed `[VERIFY]` labels from `content/resume.md`; verification notes live in `portfolio-claims-log.md` only
 - Live homepage, IES case study, deployment config, and CNAME unchanged
 
 ## 2026-07-09 — Portfolio Sprint 2 — IES Case Study Foundation
