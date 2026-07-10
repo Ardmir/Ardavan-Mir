@@ -1,8 +1,8 @@
 # Résumé Claims Review
 
-Version: 1.1  
+Version: 1.2  
 Last updated: 2026-07-10  
-Sprint: 5A — Verified Résumé Polish (pre-merge tighten)  
+Sprint: 5A.1 — Résumé PDF Regeneration  
 Status: Public-safe review doc — not published as site copy
 
 ## 1. Current résumé status
@@ -10,11 +10,10 @@ Status: Public-safe review doc — not published as site copy
 | Item | Status |
 |------|--------|
 | Markdown source | `content/resume.md` — updated in Sprint 5A |
-| Public PDF | `public/resume-ardavan-mir.pdf` — **unchanged** in Sprint 5A |
+| Public PDF | `public/resume-ardavan-mir.pdf` — **regenerated in Sprint 5A.1** from source |
 | Homepage link | `/resume-ardavan-mir.pdf` |
-| PDF generation workflow in repo | **None** — no `package.json` script or documented safe generator |
-
-**TODO:** Regenerate public résumé PDF from `content/resume.md` after Ardavan reviews the source.
+| PDF generation workflow in repo | **None** — local ReportLab used in Sprint 5A.1 (see `resume-pdf-generation.md`) |
+| PDF matches source | **Yes** — as of Sprint 5A.1 |
 
 ## 2. Public-safe positioning
 
