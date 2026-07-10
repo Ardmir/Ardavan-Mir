@@ -2,7 +2,7 @@
 
 Version: 1.0  
 Last updated: 2026-07-10  
-Status: Public-safe case study foundation
+Status: Public-safe case study
 
 ## Public case study route
 

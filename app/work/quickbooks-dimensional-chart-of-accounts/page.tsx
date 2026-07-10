@@ -6,7 +6,7 @@ import QboaCaseStudyVisuals from "@/components/QboaCaseStudyVisuals"
 export const metadata: Metadata = {
   title: "Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini",
   description:
-    "A public-safe case study shell about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture.",
+    "A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture.",
 }
 
 const PRINCIPLES = [
@@ -57,7 +57,7 @@ const META = [
     label: "Output",
     value: "IA models, workflow concepts, product patterns, cross-functional artifacts",
   },
-  { label: "Status", value: "Public-safe case study foundation" },
+  { label: "Status", value: "Public-safe case study" },
 ]
 
 export default function QboaCaseStudyPage() {

@@ -8,6 +8,7 @@
 - Linked homepage QBOA card and Ask Ardavan start prompt to QBOA case study
 - Added project-card abstract thumbnails (IES, QBOA, Iranians Who Design)
 - Archived duplicate local résumé PDFs outside repo (`../portfolio-local-archive/`)
+- Polished QBOA public page status wording (removed “foundation” / “shell” from live copy)
 - Continued claims guardrails in portfolio-claims-log.md
 
 ## 2026-07-10 — Portfolio Sprint 2.1 — Legacy Claims Cleanup
