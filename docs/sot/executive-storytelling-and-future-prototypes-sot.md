@@ -98,7 +98,17 @@ All items in this SOT are **PRIVATE_CONTEXT / VERIFY** until Ardavan approves pu
 
 ### Still deferred
 
-- IES case study future-state expansion
-- Framework transfer map and prototype-to-storyboard visuals beyond homepage arc
+- Private interview walkthrough for executive prototype work
 - Résumé bullet updates after verification
 - Naming of adjacent product areas, leadership audiences, or investor-facing events
+
+## Sprint 5B public treatment
+
+The Sprint 5B public treatment uses sanitized patterns only:
+
+- Framework transfer
+- Prototype-driven alignment
+- Leadership-ready narrative
+- Trust-before-automation framing
+
+Implemented in the IES case study at `/work/intuit-enterprise-suite#future-state-exploration`. No exact internal team names, adjacent product acronyms, executive audiences, event names, prototype details, or roadmap details appear in public copy.

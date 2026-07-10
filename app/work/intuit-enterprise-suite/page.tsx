@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import IALogotype from "@/components/ia-logotype"
 import IesCaseStudyVisuals from "@/components/IesCaseStudyVisuals"
+import IesFutureStateVisuals from "@/components/IesFutureStateVisuals"
 
 const ogImageAlt =
   "Ardavan Mirhosseini — Senior Product Designer designing AI-native enterprise products that make financial complexity legible."
@@ -55,6 +56,25 @@ const PRINCIPLES = [
   {
     title: "Close the loop",
     copy: "After a decision, show what changed, what was recorded, and what can be reviewed later.",
+  },
+]
+
+const FUTURE_STATE_CARDS = [
+  {
+    title: "Framework transfer",
+    copy: "Translated core AI-native experience concepts into reusable patterns that could be explored across related enterprise product contexts.",
+  },
+  {
+    title: "Prototype as alignment tool",
+    copy: "Used functional prototypes and polished artifacts to make abstract product direction easier for teams to understand, critique, and refine.",
+  },
+  {
+    title: "Leadership-ready narrative",
+    copy: "Turned complex capabilities into a clearer story: what the system understands, what evidence supports it, where human judgment matters, and what happens next.",
+  },
+  {
+    title: "Trust before automation",
+    copy: "Kept the emphasis on explainability, review, authorization, and control before any meaningful action could be taken.",
   },
 ]
 
@@ -207,6 +227,44 @@ export default function IesCaseStudyPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section id="future-state-exploration" className="case-study-section scroll-mt-24">
+          <p className="font-mono text-xs uppercase tracking-[0.16em] text-[#7CE7D6]">
+            Future-state exploration
+          </p>
+          <h2 className="case-study-heading mt-3">
+            Turning future product direction into something teams could evaluate
+          </h2>
+          <p className="case-study-body mt-6">
+            Part of the work was helping make future-state product direction easier to understand,
+            discuss, and evaluate. Rather than treating AI as a layer of automation, the
+            exploration focused on how complex financial workflows could become more legible through
+            structure, evidence, controls, and human judgment.
+          </p>
+          <p className="case-study-body mt-4">
+            The public version is intentionally abstracted. It focuses on the design approach and
+            storytelling patterns rather than internal prototypes, roadmap details, or confidential
+            demo material.
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {FUTURE_STATE_CARDS.map((card) => (
+              <div
+                key={card.title}
+                className="rounded-[6px] border border-[rgba(255,255,255,0.08)] bg-[#0B0F10] p-5"
+              >
+                <h3 className="font-ui text-[11px] uppercase tracking-[0.12em] text-[#7CE7D6]">
+                  {card.title}
+                </h3>
+                <p className="mt-2 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
+                  {card.copy}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8">
+            <IesFutureStateVisuals />
           </div>
         </section>
 

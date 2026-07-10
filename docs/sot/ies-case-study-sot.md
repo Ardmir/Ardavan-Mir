@@ -1,6 +1,6 @@
 # IES Case Study SOT — Public-Safe Version
 
-Version: 1.1  
+Version: 1.2  
 Last updated: 2026-07-10  
 Status: Public-safe case study
 
@@ -24,9 +24,10 @@ Helped define and communicate AI-native product direction for complex enterprise
 4. Why trust mattered
 5. How I made the system legible
 6. Key design patterns
-7. Prototype and storytelling artifacts
-8. What changed
-9. Reflection
+7. Future-state exploration
+8. Prototype and storytelling artifacts (abstract visuals)
+9. What changed
+10. Reflection
 
 ## Approved public-safe themes
 
@@ -68,11 +69,27 @@ Helped define and communicate AI-native product direction for complex enterprise
 
 Not part of the current public case study until wording, naming, artifacts, and publication boundaries are approved.
 
-- Future-state IES exploration narrative
-- Framework transfer to adjacent enterprise product contexts
-- Executive-facing prototype work
-- Leadership/investor demo storytelling
 - Private interview walkthrough
-- Sanitized artifact set for prototype-to-demo storytelling
+- Naming of adjacent product areas, leadership audiences, or investor-facing events
+- Verified earlier experience and outcome claims
 
 See also: `docs/sot/executive-storytelling-and-future-prototypes-sot.md`
+
+## Sprint 5B — Future-state depth implementation notes
+
+**Status:** Implemented in Sprint 5B — IES Future-State Depth
+
+### What shipped publicly
+
+- Future-state exploration section at `/work/intuit-enterprise-suite#future-state-exploration`
+- Four public-safe cards: framework transfer, prototype as alignment tool, leadership-ready narrative, trust before automation
+- Sanitized visuals: framework transfer map, prototype-to-storyboard arc, executive alignment map, future-state exploration model
+- Ask Ardavan IES link to future-state anchor
+
+### Public-safe boundaries preserved
+
+- Added public-safe future-state exploration section
+- Added abstract visuals for framework transfer, prototype-to-storyboard, executive alignment, and future-state exploration
+- No exact internal team names, adjacent product acronyms, executive audiences, event names, prototype details, or roadmap details
+- Claims remain qualitative and abstracted
+- No metrics, launch/adoption/revenue claims, or unsupported ownership verbs

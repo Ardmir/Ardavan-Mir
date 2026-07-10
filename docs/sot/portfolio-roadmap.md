@@ -1,6 +1,6 @@
 # Portfolio Roadmap
 
-Version: 1.4  
+Version: 1.5  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -10,7 +10,7 @@ Status: Public-safe
 - Résumé PDF is live at `/resume-ardavan-mir.pdf` (regenerated from source in Sprint 5A.1)
 - Résumé markdown source aligned with portfolio positioning (`content/resume.md`)
 - Static guided Ask Ardavan chat is live
-- IES public-safe case study is live at `/work/intuit-enterprise-suite`
+- IES public-safe case study is live at `/work/intuit-enterprise-suite` (future-state depth added in Sprint 5B)
 - QBOA public-safe case study is live at `/work/quickbooks-dimensional-chart-of-accounts`
 - OG image, favicon, and share metadata are live (Sprint 3.2)
 - Executive storytelling proof layer homepage section is live (Sprint 4)
@@ -95,14 +95,30 @@ Delivered:
 - Updated claims log, roadmap, and changelog
 - Did not replace `public/resume-ardavan-mir.pdf` (no safe generation workflow in repo)
 
-## Next sprint — Sprint 5B — IES Future-State Depth
+## Next sprint — Sprint 5B — IES Future-State Depth — **Completed**
+
+Delivered:
+
+- IES case study expansion around future-state exploration (public-safe, abstract)
+- Sanitized executive storytelling visuals: framework transfer map, prototype-to-storyboard arc, executive alignment map, future-state exploration model
+- Ask Ardavan IES anchor link to `#future-state-exploration`
+- Updated SOT docs and claims log
+
+Still deferred:
+
+- Route-specific OG images for case studies (optional)
+- Private interview walkthrough for executive prototype work
+- Naming of adjacent product areas, leadership audiences, or investor-facing events
+
+## Next sprint candidate — Sprint 6
 
 Potential deliverables:
 
-- IES case study expansion around future-state exploration (public-safe, abstract)
-- Sanitized executive storytelling visuals in case study
-- Framework transfer map or prototype-to-storyboard visuals (if low-risk)
+- QBOA visual polish and verified artifacts
+- Share-preview validation (LinkedIn Post Inspector)
 - Route-specific OG images for case studies (optional)
+- Ask Ardavan suggested next prompts
+- Leadership narrative layer visual (if approved)
 
 ## Out of scope
 

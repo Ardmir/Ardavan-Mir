@@ -79,6 +79,10 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
         label: "View the public-safe IES case study",
         href: "/work/intuit-enterprise-suite",
       },
+      {
+        label: "See future-state exploration",
+        href: "/work/intuit-enterprise-suite#future-state-exploration",
+      },
     ],
   },
   {
