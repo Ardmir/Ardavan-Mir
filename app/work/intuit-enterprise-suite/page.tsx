@@ -3,10 +3,40 @@ import Link from "next/link"
 import IALogotype from "@/components/ia-logotype"
 import IesCaseStudyVisuals from "@/components/IesCaseStudyVisuals"
 
+const ogImageAlt =
+  "Ardavan Mirhosseini — Senior Product Designer designing AI-native enterprise products that make financial complexity legible."
+
 export const metadata: Metadata = {
   title: "Defining an AI-native target state for enterprise finance — Ardavan Mirhosseini",
   description:
     "A public-safe case study about shaping AI-native product direction, information architecture, trust patterns, and storytelling for complex enterprise finance workflows.",
+  alternates: {
+    canonical: "/work/intuit-enterprise-suite",
+  },
+  openGraph: {
+    title:
+      "Defining an AI-native target state for enterprise finance — Ardavan Mirhosseini",
+    description:
+      "A public-safe case study about shaping AI-native product direction, information architecture, trust patterns, and storytelling for complex enterprise finance workflows.",
+    url: "https://www.ardavanmir.com/work/intuit-enterprise-suite",
+    type: "article",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: ogImageAlt,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Defining an AI-native target state for enterprise finance — Ardavan Mirhosseini",
+    description:
+      "A public-safe case study about shaping AI-native product direction, information architecture, trust patterns, and storytelling for complex enterprise finance workflows.",
+    images: ["/og-image.png"],
+  },
 }
 
 const PRINCIPLES = [

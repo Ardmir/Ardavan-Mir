@@ -3,10 +3,40 @@ import Link from "next/link"
 import IALogotype from "@/components/ia-logotype"
 import QboaCaseStudyVisuals from "@/components/QboaCaseStudyVisuals"
 
+const ogImageAlt =
+  "Ardavan Mirhosseini — Senior Product Designer designing AI-native enterprise products that make financial complexity legible."
+
 export const metadata: Metadata = {
   title: "Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini",
   description:
     "A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture.",
+  alternates: {
+    canonical: "/work/quickbooks-dimensional-chart-of-accounts",
+  },
+  openGraph: {
+    title:
+      "Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini",
+    description:
+      "A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture.",
+    url: "https://www.ardavanmir.com/work/quickbooks-dimensional-chart-of-accounts",
+    type: "article",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: ogImageAlt,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini",
+    description:
+      "A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture.",
+    images: ["/og-image.png"],
+  },
 }
 
 const PRINCIPLES = [

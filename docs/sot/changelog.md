@@ -1,5 +1,12 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Portfolio Sprint 3.2 — Share Polish
+
+- Added share image and favicon assets (`og-image.svg`, `og-image.png`, `favicon.svg`, `favicon-32x32.png`, `apple-touch-icon.png`)
+- Added or improved root and case-study Open Graph / Twitter / icons metadata
+- Preserved public-safe content and deployment configuration
+- No content claims changed
+
 ## 2026-07-10 — Portfolio Sprint 3.1 — Production QA + Share Readiness
 
 - Added `production-qa-log.md` with routes, links, accessibility, mobile, SEO, and deployment checks
