@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import IALogotype from "@/components/ia-logotype"
 import QboaCaseStudyVisuals from "@/components/QboaCaseStudyVisuals"
+import { openGraphShareImages, SITE_URL, twitterShareImages } from "@/lib/site"
 
 const ogImageAlt =
   "Ardavan Mirhosseini — Senior Product Designer designing AI-native enterprise products that make financial complexity legible."
@@ -18,16 +19,9 @@ export const metadata: Metadata = {
       "Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini",
     description:
       "A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture.",
-    url: "https://www.ardavanmir.com/work/quickbooks-dimensional-chart-of-accounts",
+    url: `${SITE_URL}/work/quickbooks-dimensional-chart-of-accounts`,
     type: "article",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: ogImageAlt,
-      },
-    ],
+    images: openGraphShareImages(ogImageAlt),
   },
   twitter: {
     card: "summary_large_image",
@@ -35,7 +29,7 @@ export const metadata: Metadata = {
       "Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini",
     description:
       "A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture.",
-    images: ["/og-image.png"],
+    images: twitterShareImages,
   },
 }
 

@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google"
+import { openGraphShareImages, SITE_URL, twitterShareImages } from "@/lib/site"
 import "./globals.css"
 
 const inter = Inter({
@@ -26,7 +27,7 @@ const ogImageAlt =
   "Ardavan Mirhosseini — Senior Product Designer designing AI-native enterprise products that make financial complexity legible."
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.ardavanmir.com"),
+  metadataBase: new URL(SITE_URL),
   title: "Ardavan Mirhosseini — Senior Product Designer",
   description:
     "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
@@ -39,10 +40,20 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: `${SITE_URL}/favicon.svg`, type: "image/svg+xml" },
+      {
+        url: `${SITE_URL}/favicon-32x32.png`,
+        sizes: "32x32",
+        type: "image/png",
+      },
     ],
-    apple: "/apple-touch-icon.png",
+    apple: [
+      {
+        url: `${SITE_URL}/apple-touch-icon.png`,
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
   openGraph: {
     title: "Ardavan Mirhosseini — Senior Product Designer",
@@ -50,23 +61,16 @@ export const metadata: Metadata = {
       "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
     type: "website",
     locale: "en_US",
-    url: "https://www.ardavanmir.com",
+    url: SITE_URL,
     siteName: "Ardavan Mirhosseini",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: ogImageAlt,
-      },
-    ],
+    images: openGraphShareImages(ogImageAlt),
   },
   twitter: {
     card: "summary_large_image",
     title: "Ardavan Mirhosseini — Senior Product Designer",
     description:
       "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
-    images: ["/og-image.png"],
+    images: twitterShareImages,
   },
 }
 

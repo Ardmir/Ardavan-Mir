@@ -1,5 +1,14 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-11 — Share preview metadata fix
+
+- Added `public/og-image.jpg` (1200×630 JPEG) as primary `og:image` for share crawlers; kept PNG as secondary fallback
+- Updated root and case-study metadata to use absolute `https://www.ardavanmir.com/...` URLs for OG, Twitter, favicon, and apple-touch-icon assets via `lib/site.ts`
+- Logged iMessage partial failure when sharing bare apex `ardavanmir.com` (HTTPS/TLS cert mismatch); documented retest with `www` URL
+- Updated `share-preview-validation.md` and production QA log
+- No homepage/case-study body, résumé PDF, CNAME, deploy workflow, dependency, or new claim changes
+- Apex DNS/TLS fix remains external follow-up at registrar level
+
 ## 2026-07-11 — Manual share-preview validation results logged
 
 - Logged structured manual validation results in `share-preview-validation.md`
