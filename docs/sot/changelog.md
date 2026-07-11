@@ -1,5 +1,16 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-11 — Sprint 8 — Research & Strategy Layer
+
+- Added public-safe SOT coverage for AI-native strategy research, GitHub-based design collaboration, and AI-native platform pattern research (`research-strategy-sot.md`)
+- Added `content/research.ts` canonical source for three research proof points
+- Added compact Research & Strategy homepage section (`#research-strategy`)
+- Added `/research` route with three public-safe research summaries and sanitized visuals
+- Added Ask Ardavan research prompt (“What kind of research do you do?”)
+- Updated roadmap, claims log, and sanitized visual plan
+- Preserved guardrails around private feedback, internal documents, internal names, screenshots, and unverified claims
+- No résumé PDF, CNAME, deploy workflow, dependency, or case-study body changes
+
 ## 2026-07-11 — Replace broken social preview image
 
 - Discovered `public/og-image.jpg` and `public/og-image.png` were XML error-page screenshots, not portfolio OG artwork

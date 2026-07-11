@@ -1482,3 +1482,130 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Research & Strategy visuals (Sprint 8) */
+.research-visual {
+  margin-top: 0.5rem;
+  padding: 1.25rem;
+  border-radius: 6px;
+  background: rgba(17, 23, 25, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.research-visual__caption {
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #f4f7f6;
+}
+
+.research-visual__blurb {
+  margin-top: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: #a8b3b0;
+}
+
+.research-visual__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.research-visual__pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.25rem;
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.research-visual__pipeline-step {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.research-visual__pipeline-node {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #31f5d4;
+  opacity: 0.75;
+  flex-shrink: 0;
+}
+
+.research-visual__pipeline-label {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  color: #a8b3b0;
+  white-space: nowrap;
+}
+
+.research-visual__pipeline-connector {
+  width: 0.75rem;
+  height: 1px;
+  background: rgba(49, 245, 212, 0.35);
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .research-visual__pipeline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .research-visual__pipeline-connector {
+    width: 1px;
+    height: 0.5rem;
+    margin-left: 0.2rem;
+  }
+}
+
+.research-card__visual {
+  position: relative;
+  height: 2.5rem;
+  border-radius: 4px;
+  background: rgba(49, 245, 212, 0.04);
+  border: 1px solid rgba(49, 245, 212, 0.12);
+  overflow: hidden;
+}
+
+.research-card__visual-line {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(49, 245, 212, 0.2),
+    rgba(49, 245, 212, 0.55),
+    rgba(124, 231, 214, 0.3)
+  );
+  transform: translateY(-50%);
+}
+
+.research-card__visual-node {
+  position: absolute;
+  top: 50%;
+  right: 18%;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #31f5d4;
+  opacity: 0.7;
+  transform: translateY(-50%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .research-flow-line {
+    animation: none !important;
+  }
+}
