@@ -1,7 +1,7 @@
 # Sanitized Visual Plan
 
-Version: 1.4  
-Last updated: 2026-07-10  
+Version: 1.5  
+Last updated: 2026-07-11  
 Status: Public-safe
 
 ## Purpose
@@ -98,3 +98,31 @@ See `docs/sot/executive-storytelling-and-future-prototypes-sot.md`.
 - Do not use real deck screenshots
 - Do not use real demo scripts
 - Do not imply launch, adoption, or business impact
+
+## Research & Strategy visuals (Sprint 8 — implemented)
+
+Implemented in `components/ResearchStrategyVisuals.tsx`:
+
+1. **Architectures of Intent model**  
+   A public-safe diagram showing the shift from AI as feature layer to AI as operating model.  
+   Labels: Feature layer → Operating model → Trust patterns → Action systems
+
+2. **GitHub collaboration operating model**  
+   A public-safe diagram showing how multiple product workstreams can move through shared foundations, pull-request review, review artifacts, and integrated prototype.  
+   Labels: Workstreams → Shared foundations → PR review → Review artifact → Integrated prototype
+
+3. **AI-native platform pattern loop**  
+   A public-safe diagram showing context, grounding, recommendation, review, action, and feedback.  
+   Labels: Context → Grounding → Recommendation → Review → Action → Feedback
+
+4. **Contribution governance model** (future)  
+   A future visual showing team-owned contributions, review checkpoints, and stable demo/release outputs.
+
+### Rules for research visuals
+
+- Synthetic labels only
+- No screenshots
+- No private docs
+- No internal repo names
+- No internal team names
+- No metrics

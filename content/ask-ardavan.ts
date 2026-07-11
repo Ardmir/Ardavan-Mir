@@ -18,6 +18,7 @@ export type AskArdavanPromptId =
   | "trustworthy-ai"
   | "ies"
   | "teams-bring-in"
+  | "research"
   | "founder"
   | "contact"
 
@@ -51,7 +52,7 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
         href: "/work/quickbooks-dimensional-chart-of-accounts",
       },
     ],
-    suggestedNext: ["ies", "trustworthy-ai"],
+    suggestedNext: ["ies", "research"],
   },
   {
     id: "ai-native",
@@ -104,6 +105,25 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
       },
     ],
     suggestedNext: ["ies", "contact"],
+  },
+  {
+    id: "research",
+    label: "What kind of research do you do?",
+    prompt: "What kind of research do you do?",
+    assistantTitle: "Research & Strategy",
+    answer:
+      "I create strategic research and operating models that help teams make sense of AI-native product work. Recent public-safe examples include an AI-native strategy guide, a GitHub-based collaboration model for integrated prototype work, and research on platform patterns like context, grounding, trust, review, permissions, human control, and moving from suggestion to action.",
+    links: [
+      {
+        label: "View Research & Strategy",
+        href: "/research",
+      },
+      {
+        label: "See how this connects to IES",
+        href: "/work/intuit-enterprise-suite",
+      },
+    ],
+    suggestedNext: ["teams-bring-in", "trustworthy-ai", "ies"],
   },
   {
     id: "founder",
