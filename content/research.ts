@@ -46,8 +46,6 @@ export const RESEARCH_ENTRIES: ResearchEntry[] = [
     status: "Public research artifact",
     href: "/research#architectures-of-intent",
     ctaLabel: "View research summary",
-    externalHref: "https://v0-ai-native-strategy-research.vercel.app/",
-    externalCtaLabel: "Open interactive guide",
   },
   {
     id: "github-design-collaboration",

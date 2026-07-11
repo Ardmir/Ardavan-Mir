@@ -485,23 +485,13 @@ export default function Home() {
                 <p className="mt-3 flex-1 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
                   {entry.summary}
                 </p>
-                <div className="mt-5 flex flex-col gap-2">
+                <div className="mt-5">
                   <Link
                     href={entry.href}
                     className="font-ui text-[11px] uppercase tracking-[0.12em] text-[#31F5D4] transition-colors hover:text-[#7CE7D6]"
                   >
                     {entry.ctaLabel} →
                   </Link>
-                  {entry.externalHref && entry.externalCtaLabel ? (
-                    <a
-                      href={entry.externalHref}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-ui text-[11px] uppercase tracking-[0.12em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4]"
-                    >
-                      {entry.externalCtaLabel} ↗
-                    </a>
-                  ) : null}
                 </div>
               </article>
             ))}
