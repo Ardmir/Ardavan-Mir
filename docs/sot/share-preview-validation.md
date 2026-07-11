@@ -1,8 +1,8 @@
 # Share Preview Validation
 
-Version: 1.4  
+Version: 1.5  
 Last updated: 2026-07-11  
-Status: OG image asset replaced with v2; metadata points to /og-image-v2.jpg; manual retest TODO
+Status: Final validation logged post PR #20 deploy (`77d3172`); automated/metadata **Pass** on four HTML routes; owner social unfurl sign-off **TODO**
 
 ## Purpose
 
@@ -35,28 +35,41 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | LinkedIn Post Inspector — IES | **TODO** | Confirm title, description, image after scrape |
 | LinkedIn Post Inspector — QBOA | **TODO** | Confirm title, description, image after scrape |
 | Slack unfurl — all three URLs | **TODO** | Paste in private channel or DM |
-| iMessage preview — all three URLs | **Partial fail (apex)** | 2026-07-11: `ardavanmir.com` shows title but no thumbnail; WebKit render error in preview. Use `www.ardavanmir.com` until apex HTTPS is fixed; re-test after metadata deploy |
+| iMessage preview — all four URLs | **TODO** | Prior apex-only partial fail documented; re-test with `https://www.ardavanmir.com/...` after PR #20 deploy |
+| LinkedIn Post Inspector — `/research` | **TODO** | Added Sprint 8 route to validation scope |
+| Slack unfurl — `/research` | **TODO** | Added Sprint 8 route to validation scope |
 | Facebook Sharing Debugger | **Optional** | Only if Meta preview behavior matters |
 
 ### Route-specific OG images
 
-**Still deferred.** All three HTML routes use root `public/og-image.png`. Per-route titles and descriptions are correct; differentiation is optional future polish — **not needed for launch**.
+**Still deferred.** All four HTML routes use root `og-image-v2.jpg` (primary) with PNG fallback. Per-route titles and descriptions are correct; differentiation is optional future polish — **not needed for launch**.
 
-## Manual validation results (logged 2026-07-11)
+## Final validation results (post PR #20 deploy — 2026-07-11)
 
-**Production commit:** `b3ce281` (Sprint 7 merge)  
-**Re-verified:** 2026-07-11 via live HTML scrape and direct asset checks  
-**Owner social unfurl sign-off:** Not yet completed — LinkedIn / Slack / iMessage remain TODO
+**Production commit:** `77d3172` (PR #20 — Replace broken social preview image)  
+**Re-verified:** 2026-07-11 via live HTML scrape and direct asset checks on production  
+**Owner social unfurl sign-off:** Not yet completed — LinkedIn / Slack / iMessage remain **TODO**
+
+### Summary
+
+| Question | Answer |
+|----------|--------|
+| Stale metadata appeared? | **No** — live HTML on all four routes matches expected OG/Twitter tags |
+| Route-specific OG images still needed? | **No** — root `og-image-v2.jpg` sufficient for launch |
+| Apex domain still broken? | **Yes** — `https://ardavanmir.com` HTTPS still fails (cert mismatch); share `www` URLs |
+| `/og-image-v2.jpg` resolved successfully? | **Yes** — HTTP 200; primary `og:image` on all four HTML routes |
+| Old broken `/og-image.jpg` appeared anywhere? | **No in metadata** — not referenced in live HTML; file still hosted at `/og-image.jpg` (HTTP 200) but deprecated |
 
 ### Global asset checks
 
 | Asset | Result | Notes |
 |-------|--------|-------|
-| `/og-image.png` | **Pass** | HTTP 200; 1200×630 PNG |
+| `/og-image-v2.jpg` | **Pass** | HTTP 200; 1200×630 JPEG — primary share image |
+| `/og-image.png` | **Pass** | HTTP 200; 1200×630 PNG — secondary fallback |
+| `/og-image.jpg` | **Deprecated** | Still HTTP 200 on server; not referenced in live metadata |
 | `/favicon.svg` | **Pass** | HTTP 200 |
 | `/favicon-32x32.png` | **Pass** | HTTP 200 |
 | `/apple-touch-icon.png` | **Pass** | HTTP 200 |
-| Favicon in browser tab | **Pass (expected)** | Icons declared in root layout metadata |
 | Stale metadata cache | **None observed** | Live HTML OG tags match expected values; LinkedIn cache not scraped |
 
 ### 1. Homepage
@@ -65,42 +78,55 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 
 | Platform | Result | Notes |
 |----------|--------|-------|
-| Live HTML / OG metadata | **Pass** | Title, description, and `og:image` match expected values |
-| LinkedIn Post Inspector | **TODO** | Owner manual step — not yet confirmed |
-| Slack unfurl | **TODO** | Owner manual step — not yet confirmed |
-| iMessage preview | **Partial fail (apex)** | Title renders; thumbnail blank when sharing bare `ardavanmir.com`. Root cause: apex HTTPS cert mismatch (`*.github.io`); iMessage falls back to page snapshot and errors. Re-test with `https://www.ardavanmir.com/` after deploy |
+| Direct HTML / metadata | **Pass** | Title, description, and primary `og:image` → `og-image-v2.jpg` match expected values |
+| `/og-image-v2.jpg` direct asset | **Pass** | HTTP 200; JPEG loads correctly |
+| iMessage | **TODO** | Owner sign-off pending — use full `https://www.ardavanmir.com/` URL (not bare apex) |
+| LinkedIn Post Inspector | **TODO** | Owner sign-off pending |
+| Slack unfurl | **TODO** | Owner sign-off pending |
 
-### 2. IES case study
+### 2. Research
+
+**URL:** https://www.ardavanmir.com/research
+
+| Platform | Result | Notes |
+|----------|--------|-------|
+| Direct HTML / metadata | **Pass** | Title “Research & Strategy — Ardavan Mirhosseini”; primary `og:image` → `og-image-v2.jpg` |
+| iMessage | **TODO** | Owner sign-off pending |
+| LinkedIn Post Inspector | **TODO** | Owner sign-off pending |
+| Slack unfurl | **TODO** | Owner sign-off pending |
+
+### 3. IES case study
 
 **URL:** https://www.ardavanmir.com/work/intuit-enterprise-suite
 
 | Platform | Result | Notes |
 |----------|--------|-------|
-| Live HTML / OG metadata | **Pass** | Title, description, and `og:image` match expected values |
-| LinkedIn Post Inspector | **TODO** | Owner manual step — not yet confirmed |
-| Slack unfurl | **TODO** | Owner manual step — not yet confirmed |
-| iMessage preview | **Partial fail (apex)** | Title renders; thumbnail blank when sharing bare `ardavanmir.com`. Root cause: apex HTTPS cert mismatch (`*.github.io`); iMessage falls back to page snapshot and errors. Re-test with `https://www.ardavanmir.com/` after deploy |
+| Direct HTML / metadata | **Pass** | Title, description, and primary `og:image` → `og-image-v2.jpg` match expected values |
+| iMessage | **TODO** | Owner sign-off pending |
+| LinkedIn Post Inspector | **TODO** | Owner sign-off pending |
+| Slack unfurl | **TODO** | Owner sign-off pending |
 
-### 3. QBOA case study
+### 4. QBOA case study
 
 **URL:** https://www.ardavanmir.com/work/quickbooks-dimensional-chart-of-accounts
 
 | Platform | Result | Notes |
 |----------|--------|-------|
-| Live HTML / OG metadata | **Pass** | Title, description, and `og:image` match expected values |
-| LinkedIn Post Inspector | **TODO** | Owner manual step — not yet confirmed |
-| Slack unfurl | **TODO** | Owner manual step — not yet confirmed |
-| iMessage preview | **Partial fail (apex)** | Title renders; thumbnail blank when sharing bare `ardavanmir.com`. Root cause: apex HTTPS cert mismatch (`*.github.io`); iMessage falls back to page snapshot and errors. Re-test with `https://www.ardavanmir.com/` after deploy |
+| Direct HTML / metadata | **Pass** | Title, description, and primary `og:image` → `og-image-v2.jpg` match expected values |
+| iMessage | **TODO** | Owner sign-off pending |
+| LinkedIn Post Inspector | **TODO** | Owner sign-off pending |
+| Slack unfurl | **TODO** | Owner sign-off pending |
 
 ### Route-specific OG images — still needed?
 
-**No — not required for launch.** Root `og-image.png` loads correctly and is referenced on all three HTML routes. Route-specific images (`public/og-ies.png`, `public/og-qboa.png`) remain optional future polish if share differentiation is desired.
+**No — not required for launch.** Root `og-image-v2.jpg` loads correctly and is referenced on all four HTML routes. Route-specific images (`public/og-ies.png`, `public/og-qboa.png`) remain optional future polish if share differentiation is desired.
 
 ## URLs to test
 
 | URL | Route |
 |-----|-------|
 | https://www.ardavanmir.com/ | Homepage |
+| https://www.ardavanmir.com/research | Research & Strategy |
 | https://www.ardavanmir.com/work/intuit-enterprise-suite | IES case study |
 | https://www.ardavanmir.com/work/quickbooks-dimensional-chart-of-accounts | QBOA case study |
 | https://www.ardavanmir.com/resume-ardavan-mir.pdf | Résumé PDF (link only — not expected to have OG metadata) |
@@ -136,7 +162,15 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 |-------|----------------|---------------|
 | Title | Ardavan Mirhosseini — Senior Product Designer | **Pass** |
 | Description | Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences. | **Pass** |
-| Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pending deploy** |
+| Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pass** |
+
+### Research (`/research`)
+
+| Field | Expected value | Sprint 8 live |
+|-------|----------------|---------------|
+| Title | Research & Strategy — Ardavan Mirhosseini | **Pass** |
+| Description | Public-safe research on AI-native product strategy, design collaboration, and platform patterns. | **Pass** |
+| Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pass** |
 
 ### IES case study
 
@@ -144,7 +178,7 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 |-------|----------------|---------------|
 | Title | Defining an AI-native target state for enterprise finance — Ardavan Mirhosseini | **Pass** |
 | Description | A public-safe case study about shaping AI-native product direction, information architecture, trust patterns, and storytelling for complex enterprise finance workflows. | **Pass** |
-| Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pending deploy** |
+| Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pass** |
 
 ### QBOA case study
 
@@ -152,31 +186,32 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 |-------|----------------|---------------|
 | Title | Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini | **Pass** |
 | Description | A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture. | **Pass** |
-| Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pending deploy** |
+| Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pass** |
 
 ## Results log
 
 | URL | Tool | Date | Title | Description | Image | Pass/Fail | Notes |
 |-----|------|------|-------|-------------|-------|-----------|-------|
-| `/` | Live HTML scrape | 2026-07-11 | Pass | Pass | Pass | **Pass** | Automated metadata check |
-| `/work/intuit-enterprise-suite` | Live HTML scrape | 2026-07-11 | Pass | Pass | Pass | **Pass** | Automated metadata check |
-| `/work/quickbooks-dimensional-chart-of-accounts` | Live HTML scrape | 2026-07-11 | Pass | Pass | Pass | **Pass** | Automated metadata check |
-| `/og-image.png` | Browser/curl | 2026-07-11 | — | — | 1200×630 | **Pass** | HTTP 200 |
+| `/` | Live HTML scrape | 2026-07-11 | Pass | Pass | Pass (v2) | **Pass** | Post PR #20 deploy (`77d3172`) |
+| `/research` | Live HTML scrape | 2026-07-11 | Pass | Pass | Pass (v2) | **Pass** | Post PR #20 deploy |
+| `/work/intuit-enterprise-suite` | Live HTML scrape | 2026-07-11 | Pass | Pass | Pass (v2) | **Pass** | Post PR #20 deploy |
+| `/work/quickbooks-dimensional-chart-of-accounts` | Live HTML scrape | 2026-07-11 | Pass | Pass | Pass (v2) | **Pass** | Post PR #20 deploy |
+| `/og-image-v2.jpg` | Browser/curl | 2026-07-11 | — | — | 1200×630 | **Pass** | HTTP 200; primary share image |
+| `/og-image.png` | Browser/curl | 2026-07-11 | — | — | 1200×630 | **Pass** | HTTP 200; secondary fallback |
+| `/og-image.jpg` | Browser/curl | 2026-07-11 | — | — | — | **Deprecated** | Still hosted; not in live metadata |
 | `/favicon.svg` | Browser/curl | 2026-07-11 | — | — | — | **Pass** | HTTP 200 |
-| `/` | LinkedIn Post Inspector | — | — | — | — | **TODO** | Manual step for Ardavan |
-| `/work/intuit-enterprise-suite` | LinkedIn Post Inspector | — | — | — | — | **TODO** | Manual step for Ardavan |
-| `/work/quickbooks-dimensional-chart-of-accounts` | LinkedIn Post Inspector | — | — | — | — | **TODO** | Manual step for Ardavan |
-| All three HTML routes | Slack unfurl | — | — | — | — | **TODO** | Manual step for Ardavan |
-| All three HTML routes | iMessage preview | 2026-07-11 | Partial | Partial | Fail (apex) | **Partial fail** | Title OK on `ardavanmir.com`; thumbnail blank. Use www URL; fix in deploy |
+| All four HTML routes | LinkedIn Post Inspector | — | — | — | — | **TODO** | Owner manual step |
+| All four HTML routes | Slack unfurl | — | — | — | — | **TODO** | Owner manual step |
+| All four HTML routes | iMessage preview | — | — | — | — | **TODO** | Owner manual step; use www URLs |
 
 ## Manual validation log (2026-07-11)
 
-Structured results recorded in **Manual validation results** section above. Automated/metadata checks **Pass** for all three HTML routes. LinkedIn, Slack, and iMessage unfurl checks remain **TODO** pending owner sign-off.
+Structured results recorded in **Final validation results** section above. Automated/metadata checks **Pass** for all four HTML routes post PR #20. LinkedIn, Slack, and iMessage unfurl checks remain **TODO** pending owner sign-off.
 
 ## Manual steps for Ardavan
 
 1. Open https://www.linkedin.com/post-inspector/
-2. Paste each URL (`/`, IES, QBOA); click **Inspect**
+2. Paste each URL (`/`, `/research`, IES, QBOA); click **Inspect**
 3. Confirm title, description, and image match expected values above
 4. If cached incorrectly, use Inspector refresh and re-check after a few minutes
 5. Paste each URL into Slack (private channel) and iMessage; confirm unfurl card
@@ -225,10 +260,11 @@ Structured results recorded in **Manual validation results** section above. Auto
 
 ## Remaining TODOs
 
-- Complete LinkedIn Post Inspector pass for all three HTML routes and update Pass/Fail in this file
-- Confirm Slack and iMessage unfurls match expected title/description/image
-- Re-test iMessage with `https://www.ardavanmir.com/` after `/og-image-v2.jpg` deploy
+- Complete LinkedIn Post Inspector pass for all four HTML routes and update Pass/Fail in this file
+- Confirm Slack and iMessage unfurls match expected title/description/image on all four routes
+- Re-test iMessage with full `https://www.ardavanmir.com/...` URLs (not bare apex)
 - Fix apex domain HTTPS at registrar/DNS so bare `ardavanmir.com` shares work (outside repo)
+- Optional: remove deprecated `/og-image.jpg` from hosting if no longer needed (low priority)
 - Optional: create route-specific OG images (`public/og-ies.png`, `public/og-qboa.png`) if share differentiation is worth the effort
 - Re-scrape after any metadata or OG asset change (LinkedIn caches aggressively)
 

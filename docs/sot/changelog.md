@@ -1,5 +1,17 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-11 — Log final share-preview validation results
+
+- Logged final manual share-preview validation results after OG image v2 fix.
+- Re-verified production post PR #20 deploy (`77d3172`): automated/metadata **Pass** on `/`, `/research`, IES, and QBOA
+- `/og-image-v2.jpg` resolves HTTP 200; primary `og:image` on all four HTML routes
+- Old `/og-image.jpg` not referenced in live metadata (deprecated asset still hosted)
+- Stale metadata: none observed in live HTML
+- Route-specific OG images: not needed for launch
+- Apex HTTPS still broken — share `www` URLs
+- LinkedIn / Slack / iMessage owner unfurl sign-off remains **TODO**
+- Docs-only update; no code, asset, résumé, CNAME, or deploy workflow changes
+
 ## 2026-07-11 — Replace broken social preview image
 
 - Discovered `public/og-image.jpg` and `public/og-image.png` were XML error-page screenshots, not portfolio OG artwork

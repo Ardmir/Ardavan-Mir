@@ -292,13 +292,33 @@ See `share-preview-validation.md` — **Manual validation results** section.
 | iMessage re-test (www URL) | **TODO** | Owner: paste `https://www.ardavanmir.com/` after deploy |
 | LinkedIn / Slack unfurl | **TODO** | Owner sign-off pending |
 
+### Final share-preview validation logged (2026-07-11, post PR #20)
+
+**Production commit:** `77d3172` (PR #20 — Replace broken social preview image)
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| Live OG metadata — `/` | **Pass** | Primary `og:image` → `og-image-v2.jpg` |
+| Live OG metadata — `/research` | **Pass** | Sprint 8 route included in validation scope |
+| Live OG metadata — IES | **Pass** | Primary `og:image` → `og-image-v2.jpg` |
+| Live OG metadata — QBOA | **Pass** | Primary `og:image` → `og-image-v2.jpg` |
+| `/og-image-v2.jpg` direct load | **Pass** | HTTP 200; 1200×630 JPEG |
+| `/og-image.jpg` in live metadata | **Pass (absent)** | Deprecated file still hosted; not referenced in HTML |
+| Stale metadata cache | **None observed** | Live HTML matches expected; LinkedIn cache not scraped |
+| Route-specific OG images needed? | **No** | Root v2 JPEG sufficient for launch |
+| Apex domain HTTPS | **Still broken** | `https://ardavanmir.com` fails; share `www` URLs |
+| LinkedIn Post Inspector | **TODO** | Owner sign-off pending — all four routes |
+| Slack unfurl | **TODO** | Owner sign-off pending — all four routes |
+| iMessage preview | **TODO** | Owner sign-off pending — use full www URLs |
+
+See `share-preview-validation.md` — **Final validation results** section.
+
 ## Remaining issues
 
 - Ask Ardavan start prompt links to QBOA but not IES (IES has dedicated prompt — acceptable)
 - Production apex vs `www` redirect — verify DNS outside repo (see SOT-07)
-- Route-specific OG images not created (root image used for all routes)
-- Manual share-preview validation not yet run — see `share-preview-validation.md`
-- iMessage re-test with `https://www.ardavanmir.com/` pending after `/og-image-v2.jpg` deploy
+- Route-specific OG images not created (root v2 image used for all routes)
+- Owner manual LinkedIn / Slack / iMessage unfurl pass pending — see `share-preview-validation.md`
 - Apex domain (`ardavanmir.com`) HTTPS/TLS broken — fix at registrar/DNS outside repo; share `www` URLs until fixed
 
 ## Deployment config
