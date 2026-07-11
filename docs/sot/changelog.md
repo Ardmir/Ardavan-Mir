@@ -1,5 +1,13 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-11 — Manual share-preview validation results logged
+
+- Logged structured manual validation results in `share-preview-validation.md`
+- Re-verified live OG metadata and asset checks for `/`, IES, and QBOA — **Pass**
+- LinkedIn Post Inspector, Slack unfurl, and iMessage preview remain **TODO** (owner sign-off pending)
+- Confirmed route-specific OG images not required for launch
+- Docs-only update; no code, content, asset, or deploy changes
+
 ## 2026-07-11 — Portfolio Sprint 7 — Share Validation + Final Launch Audit
 
 - Validated production routes, résumé PDF, OG/favicon assets, and live share metadata on `www.ardavanmir.com`

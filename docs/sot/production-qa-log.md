@@ -248,6 +248,21 @@ Recommend browser DevTools console check on `/`, IES, and QBOA after deploy for 
 
 **None.** Audit passed without code changes.
 
+### Manual share-preview results logged (2026-07-11)
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| Live OG metadata — `/`, IES, QBOA | **Pass** | Re-verified post Sprint 7 merge (`b3ce281`) |
+| `/og-image.png` | **Pass** | HTTP 200; 1200×630 |
+| `/favicon.svg` + PNG + apple-touch | **Pass** | HTTP 200 |
+| Stale metadata cache | **None observed** | Live HTML matches expected; LinkedIn cache not scraped |
+| Route-specific OG images needed? | **No** | Root OG sufficient for launch |
+| LinkedIn Post Inspector | **TODO** | Owner sign-off pending |
+| Slack unfurl | **TODO** | Owner sign-off pending |
+| iMessage preview | **TODO** | Owner sign-off pending |
+
+See `share-preview-validation.md` — **Manual validation results** section.
+
 ## Remaining issues
 
 - Ask Ardavan start prompt links to QBOA but not IES (IES has dedicated prompt — acceptable)

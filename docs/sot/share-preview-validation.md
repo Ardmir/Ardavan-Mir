@@ -1,8 +1,8 @@
 # Share Preview Validation
 
-Version: 1.1  
+Version: 1.2  
 Last updated: 2026-07-11  
-Status: Sprint 7 automated validation complete; manual social unfurl checks TODO
+Status: Automated/metadata validation pass; manual social unfurl checks TODO (owner sign-off pending)
 
 ## Purpose
 
@@ -38,7 +38,61 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 
 ### Route-specific OG images
 
-**Still deferred.** All three HTML routes use root `public/og-image.png`. Per-route titles and descriptions are correct; differentiation is optional future polish — not required for launch.
+**Still deferred.** All three HTML routes use root `public/og-image.png`. Per-route titles and descriptions are correct; differentiation is optional future polish — **not needed for launch**.
+
+## Manual validation results (logged 2026-07-11)
+
+**Production commit:** `b3ce281` (Sprint 7 merge)  
+**Re-verified:** 2026-07-11 via live HTML scrape and direct asset checks  
+**Owner social unfurl sign-off:** Not yet completed — LinkedIn / Slack / iMessage remain TODO
+
+### Global asset checks
+
+| Asset | Result | Notes |
+|-------|--------|-------|
+| `/og-image.png` | **Pass** | HTTP 200; 1200×630 PNG |
+| `/favicon.svg` | **Pass** | HTTP 200 |
+| `/favicon-32x32.png` | **Pass** | HTTP 200 |
+| `/apple-touch-icon.png` | **Pass** | HTTP 200 |
+| Favicon in browser tab | **Pass (expected)** | Icons declared in root layout metadata |
+| Stale metadata cache | **None observed** | Live HTML OG tags match expected values; LinkedIn cache not scraped |
+
+### 1. Homepage
+
+**URL:** https://www.ardavanmir.com/
+
+| Platform | Result | Notes |
+|----------|--------|-------|
+| Live HTML / OG metadata | **Pass** | Title, description, and `og:image` match expected values |
+| LinkedIn Post Inspector | **TODO** | Owner manual step — not yet confirmed |
+| Slack unfurl | **TODO** | Owner manual step — not yet confirmed |
+| iMessage preview | **TODO** | Owner manual step — not yet confirmed |
+
+### 2. IES case study
+
+**URL:** https://www.ardavanmir.com/work/intuit-enterprise-suite
+
+| Platform | Result | Notes |
+|----------|--------|-------|
+| Live HTML / OG metadata | **Pass** | Title, description, and `og:image` match expected values |
+| LinkedIn Post Inspector | **TODO** | Owner manual step — not yet confirmed |
+| Slack unfurl | **TODO** | Owner manual step — not yet confirmed |
+| iMessage preview | **TODO** | Owner manual step — not yet confirmed |
+
+### 3. QBOA case study
+
+**URL:** https://www.ardavanmir.com/work/quickbooks-dimensional-chart-of-accounts
+
+| Platform | Result | Notes |
+|----------|--------|-------|
+| Live HTML / OG metadata | **Pass** | Title, description, and `og:image` match expected values |
+| LinkedIn Post Inspector | **TODO** | Owner manual step — not yet confirmed |
+| Slack unfurl | **TODO** | Owner manual step — not yet confirmed |
+| iMessage preview | **TODO** | Owner manual step — not yet confirmed |
+
+### Route-specific OG images — still needed?
+
+**No — not required for launch.** Root `og-image.png` loads correctly and is referenced on all three HTML routes. Route-specific images (`public/og-ies.png`, `public/og-qboa.png`) remain optional future polish if share differentiation is desired.
 
 ## URLs to test
 
@@ -110,7 +164,11 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | `/work/intuit-enterprise-suite` | LinkedIn Post Inspector | — | — | — | — | **TODO** | Manual step for Ardavan |
 | `/work/quickbooks-dimensional-chart-of-accounts` | LinkedIn Post Inspector | — | — | — | — | **TODO** | Manual step for Ardavan |
 | All three HTML routes | Slack unfurl | — | — | — | — | **TODO** | Manual step for Ardavan |
-| All three HTML routes | iMessage preview | — | — | — | — | **TODO** | Manual step for Ardavan |
+| All three HTML routes | iMessage preview | — | — | — | — | **TODO** | Owner manual step — not yet confirmed |
+
+## Manual validation log (2026-07-11)
+
+Structured results recorded in **Manual validation results** section above. Automated/metadata checks **Pass** for all three HTML routes. LinkedIn, Slack, and iMessage unfurl checks remain **TODO** pending owner sign-off.
 
 ## Manual steps for Ardavan
 
@@ -123,7 +181,7 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 
 ## Remaining TODOs
 
-- Complete LinkedIn Post Inspector pass for all three HTML routes
+- Complete LinkedIn Post Inspector pass for all three HTML routes and update Pass/Fail in this file
 - Confirm Slack and iMessage unfurls match expected title/description/image
 - Optional: create route-specific OG images (`public/og-ies.png`, `public/og-qboa.png`) if share differentiation is worth the effort
 - Re-scrape after any metadata or OG asset change (LinkedIn caches aggressively)
