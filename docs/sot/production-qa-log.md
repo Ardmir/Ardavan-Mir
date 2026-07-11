@@ -76,7 +76,7 @@ Sprint: 7 — Share Validation + Final Launch Audit (+ share-preview metadata fi
 | `metadataBase` + canonical | **Added in Sprint 3.1** (`https://www.ardavanmir.com`) |
 | Open Graph `url` / `siteName` | **Added in Sprint 3.1** |
 | OG image (`og:image`) | **Added in Sprint 3.2** — `public/og-image.png` (1200×630) + `public/og-image.svg` |
-| OG image JPEG fallback | **Added 2026-07-11** — `public/og-image.jpg` (1200×630); primary `og:image` for share crawlers |
+| OG image JPEG fallback | **Added 2026-07-11** — superseded by `/og-image-v2.jpg` on 2026-07-11 after broken asset discovery |
 | Absolute share asset URLs | **Added 2026-07-11** — `og:image`, `og:image:secure_url`, Twitter images, favicon, apple-touch-icon use `https://www.ardavanmir.com/...` |
 | Favicon / apple-touch-icon | **Added in Sprint 3.2** — `favicon.svg`, `favicon-32x32.png`, `apple-touch-icon.png` |
 | Per-route OG overrides for case studies | **Added in Sprint 3.2** — IES and QBOA set title, description, canonical, OG/Twitter metadata |
@@ -265,6 +265,19 @@ Recommend browser DevTools console check on `/`, IES, and QBOA after deploy for 
 
 See `share-preview-validation.md` — **Manual validation results** section.
 
+### Share-preview OG asset fix (2026-07-11)
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| Broken JPEG/PNG asset discovery | **Fail → fixed** | Both contained XML error screenshot from corrupt SVG export |
+| `public/og-image.svg` repaired | **Pass** | Removed invalid `0x14` control char in `aria-label` |
+| `public/og-image-v2.jpg` added | **Pass** | 1200×630 clean JPEG; primary share image (cache-busting) |
+| `public/og-image.png` regenerated | **Pass** | Clean PNG fallback from fixed SVG |
+| `lib/site.ts` primary URL | **Pass** | Points to `/og-image-v2.jpg` |
+| `pnpm build` | **Pass** | `out/og-image-v2.jpg` exported |
+| iMessage re-test (www URL) | **TODO** | After deploy — use `https://www.ardavanmir.com/` |
+| Apex DNS/TLS | **External** | Bare `ardavanmir.com` HTTPS still broken outside repo |
+
 ### Share-preview metadata fix (2026-07-11)
 
 | Check | Result | Notes |
@@ -285,7 +298,7 @@ See `share-preview-validation.md` — **Manual validation results** section.
 - Production apex vs `www` redirect — verify DNS outside repo (see SOT-07)
 - Route-specific OG images not created (root image used for all routes)
 - Manual share-preview validation not yet run — see `share-preview-validation.md`
-- iMessage re-test with `https://www.ardavanmir.com/` pending after metadata fix deploy
+- iMessage re-test with `https://www.ardavanmir.com/` pending after `/og-image-v2.jpg` deploy
 - Apex domain (`ardavanmir.com`) HTTPS/TLS broken — fix at registrar/DNS outside repo; share `www` URLs until fixed
 
 ## Deployment config

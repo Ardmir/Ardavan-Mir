@@ -1,8 +1,8 @@
 # Share Preview Validation
 
-Version: 1.3  
+Version: 1.4  
 Last updated: 2026-07-11  
-Status: Automated/metadata validation pass; iMessage apex-domain failure logged; metadata fix pending deploy
+Status: OG image asset replaced with v2; metadata points to /og-image-v2.jpg; manual retest TODO
 
 ## Purpose
 
@@ -20,8 +20,9 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | Homepage OG title/description/image | **Pass** | Matches expected values in live HTML |
 | IES OG title/description/image | **Pass** | Matches expected values in live HTML |
 | QBOA OG title/description/image | **Pass** | Matches expected values in live HTML |
-| `/og-image.png` direct load | **Pass** | HTTP 200; 1200×630 PNG |
-| `/og-image.jpg` direct load | **Pass (after fix deploy)** | HTTP 200; 1200×630 JPEG — preferred for iMessage |
+| `/og-image-v2.jpg` direct load | **Pass (after deploy)** | HTTP 200; 1200×630 JPEG — primary share image (cache-busting v2) |
+| `/og-image.png` direct load | **Pass (after deploy)** | HTTP 200; 1200×630 PNG — regenerated from fixed SVG; secondary fallback |
+| `/og-image.jpg` direct load | **Deprecated** | Old primary JPEG contained broken XML error screenshot — do not use |
 | `/favicon.svg` direct load | **Pass** | HTTP 200 |
 | `/apple-touch-icon.png` direct load | **Pass** | HTTP 200 |
 | Twitter card metadata | **Pass** | `summary_large_image` on all three HTML routes |
@@ -108,7 +109,8 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 
 | Asset | URL |
 |-------|-----|
-| OG image | https://www.ardavanmir.com/og-image.png |
+| OG image | https://www.ardavanmir.com/og-image-v2.jpg |
+| OG PNG fallback | https://www.ardavanmir.com/og-image.png |
 | OG SVG source | https://www.ardavanmir.com/og-image.svg |
 | Favicon | https://www.ardavanmir.com/favicon.svg |
 
@@ -134,7 +136,7 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 |-------|----------------|---------------|
 | Title | Ardavan Mirhosseini — Senior Product Designer | **Pass** |
 | Description | Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences. | **Pass** |
-| Image | `https://www.ardavanmir.com/og-image.png` | **Pass** |
+| Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pending deploy** |
 
 ### IES case study
 
@@ -142,7 +144,7 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 |-------|----------------|---------------|
 | Title | Defining an AI-native target state for enterprise finance — Ardavan Mirhosseini | **Pass** |
 | Description | A public-safe case study about shaping AI-native product direction, information architecture, trust patterns, and storytelling for complex enterprise finance workflows. | **Pass** |
-| Image | `https://www.ardavanmir.com/og-image.png` | **Pass** |
+| Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pending deploy** |
 
 ### QBOA case study
 
@@ -150,7 +152,7 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 |-------|----------------|---------------|
 | Title | Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini | **Pass** |
 | Description | A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture. | **Pass** |
-| Image | `https://www.ardavanmir.com/og-image.png` | **Pass** |
+| Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pending deploy** |
 
 ## Results log
 
@@ -180,6 +182,21 @@ Structured results recorded in **Manual validation results** section above. Auto
 5. Paste each URL into Slack (private channel) and iMessage; confirm unfurl card
 6. Update the results log in this file with Pass/Fail and date
 
+## Broken OG asset root cause (2026-07-11)
+
+**Observed after metadata fix deploy:** iMessage still showed a broken preview image — the JPEG itself was wrong, not just metadata.
+
+**Root cause:** `public/og-image.svg` contained an invalid control character (`0x14`) in `aria-label`, causing SVG→PNG/JPEG exports to render an XML error page (“Below is a rendering of the page up to the first error.”). Both `public/og-image.png` and `public/og-image.jpg` were corrupted error screenshots.
+
+**Fix:**
+
+1. Repaired `public/og-image.svg` (invalid character removed)
+2. Regenerated clean PNG fallback from fixed SVG
+3. Added cache-busting primary asset: `public/og-image-v2.jpg` (1200×630)
+4. Updated `lib/site.ts` to point primary OG/Twitter images to `https://www.ardavanmir.com/og-image-v2.jpg`
+
+**Retest:** Use full `https://www.ardavanmir.com/` URL (not bare apex). Apex DNS/TLS remains external follow-up.
+
 ## iMessage thumbnail failure (2026-07-11)
 
 **Observed:** Sharing `ardavanmir.com` in iMessage shows the correct title but a blank preview area with “Below is a rendering of the page up to the first error.”
@@ -190,11 +207,11 @@ Structured results recorded in **Manual validation results** section above. Auto
 2. **HTTP apex redirects correctly** (`http://ardavanmir.com` → `301` → `https://www.ardavanmir.com/`), but iMessage may still attempt HTTPS on the shared host first.
 3. **Fallback page snapshot fails** on the heavy Next.js HTML when OG image fetch does not succeed.
 
-**In-repo fix (pending deploy):**
+**In-repo fix (deployed in metadata PR; asset fix in v2 PR):**
 
-- Add `public/og-image.jpg` (opaque JPEG, 1200×630) as the primary `og:image`
-- Use absolute `https://www.ardavanmir.com/...` URLs for `og:image`, `og:image:secure_url`, `apple-touch-icon`, and Twitter images
-- Keep PNG as secondary `og:image` for other platforms
+- ~~Add `public/og-image.jpg`~~ → superseded by `/og-image-v2.jpg` after broken asset discovery
+- Use absolute `https://www.ardavanmir.com/...` URLs for share assets
+- Keep regenerated PNG as secondary fallback
 
 **Out-of-repo fix (recommended):**
 
@@ -210,7 +227,7 @@ Structured results recorded in **Manual validation results** section above. Auto
 
 - Complete LinkedIn Post Inspector pass for all three HTML routes and update Pass/Fail in this file
 - Confirm Slack and iMessage unfurls match expected title/description/image
-- Re-test iMessage with `https://www.ardavanmir.com/` after OG metadata fix deploy
+- Re-test iMessage with `https://www.ardavanmir.com/` after `/og-image-v2.jpg` deploy
 - Fix apex domain HTTPS at registrar/DNS so bare `ardavanmir.com` shares work (outside repo)
 - Optional: create route-specific OG images (`public/og-ies.png`, `public/og-qboa.png`) if share differentiation is worth the effort
 - Re-scrape after any metadata or OG asset change (LinkedIn caches aggressively)

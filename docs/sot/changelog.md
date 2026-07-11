@@ -1,5 +1,15 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-11 — Replace broken social preview image
+
+- Discovered `public/og-image.jpg` and `public/og-image.png` were XML error-page screenshots, not portfolio OG artwork
+- Root cause: invalid control character in `public/og-image.svg` `aria-label` broke SVG rasterization
+- Fixed SVG source; regenerated clean PNG fallback; added cache-busting `public/og-image-v2.jpg` (1200×630)
+- Updated `lib/site.ts` primary OG/Twitter URL to `https://www.ardavanmir.com/og-image-v2.jpg`
+- Updated share-preview validation and production QA SOT docs
+- No homepage/case-study body, résumé PDF, CNAME, deploy workflow, dependency, or new claim changes
+- Apex DNS/TLS fix remains external follow-up; retest with full `www` URL
+
 ## 2026-07-11 — Sprint 8 — Research & Strategy Layer
 
 - Added public-safe SOT coverage for AI-native strategy research, GitHub-based design collaboration, and AI-native platform pattern research (`research-strategy-sot.md`)
