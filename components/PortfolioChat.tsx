@@ -16,6 +16,8 @@ export default function PortfolioChat() {
   const titleId = useId()
   const closeButtonRef = useRef<HTMLButtonElement>(null)
   const selected = ASK_ARDAVAN_PROMPTS.find((p) => p.id === selectedId)
+  const suggestedNext =
+    selected?.suggestedNext?.filter((id) => id !== selectedId) ?? []
 
   const close = useCallback(() => {
     setIsOpen(false)
@@ -117,6 +119,32 @@ export default function PortfolioChat() {
           <p className="portfolio-chat__hint">
             Choose a topic below to see an approved answer from public portfolio content.
           </p>
+        )}
+
+        {selected && suggestedNext.length > 0 && (
+          <div
+            className="portfolio-chat__suggestions"
+            role="group"
+            aria-label="Suggested next prompts"
+          >
+            <p className="portfolio-chat__suggestions-label">You might also ask</p>
+            <div className="portfolio-chat__suggestion-chips">
+              {suggestedNext.map((id) => {
+                const prompt = ASK_ARDAVAN_PROMPTS.find((p) => p.id === id)
+                if (!prompt) return null
+                return (
+                  <button
+                    key={id}
+                    type="button"
+                    className="portfolio-chat__suggestion-chip"
+                    onClick={() => setSelectedId(id)}
+                  >
+                    {prompt.label}
+                  </button>
+                )
+              })}
+            </div>
+          </div>
         )}
 
         <div className="portfolio-chat__chips" role="group" aria-label="Guided prompts">

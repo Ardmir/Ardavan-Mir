@@ -58,6 +58,21 @@ const PRINCIPLES = [
   },
 ]
 
+const FOCUS_CARDS = [
+  {
+    title: "Clarify the model",
+    copy: "Make the underlying dimensions and relationships easier to understand.",
+  },
+  {
+    title: "Keep context close",
+    copy: "Show classification choices alongside the reporting or decision context they affect.",
+  },
+  {
+    title: "Support review",
+    copy: "Create moments where users can confirm structure before it shapes downstream reporting.",
+  },
+]
+
 const PATTERNS = [
   {
     title: "Dimensional classification grid",
@@ -199,6 +214,34 @@ export default function QboaCaseStudyPage() {
                 </h3>
                 <p className="mt-2 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
                   {p.copy}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="classification-to-confidence" className="case-study-section scroll-mt-24">
+          <p className="font-mono text-xs uppercase tracking-[0.16em] text-[#7CE7D6]">
+            Design focus
+          </p>
+          <h2 className="case-study-heading mt-3">
+            From classification ambiguity to reporting confidence
+          </h2>
+          <p className="case-study-body mt-6">
+            The design challenge was helping users understand not only where a classification
+            belongs, but how that choice affects reporting, review, and downstream decision-making.
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            {FOCUS_CARDS.map((card) => (
+              <div
+                key={card.title}
+                className="rounded-[6px] border border-[rgba(255,255,255,0.08)] bg-[#0B0F10] p-5"
+              >
+                <h3 className="font-ui text-[11px] uppercase tracking-[0.12em] text-[#7CE7D6]">
+                  {card.title}
+                </h3>
+                <p className="mt-2 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
+                  {card.copy}
                 </p>
               </div>
             ))}

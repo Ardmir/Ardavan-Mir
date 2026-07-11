@@ -1,6 +1,6 @@
 # Portfolio Roadmap
 
-Version: 1.5  
+Version: 1.6  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -11,7 +11,7 @@ Status: Public-safe
 - Résumé markdown source aligned with portfolio positioning (`content/resume.md`)
 - Static guided Ask Ardavan chat is live
 - IES public-safe case study is live at `/work/intuit-enterprise-suite` (future-state depth added in Sprint 5B)
-- QBOA public-safe case study is live at `/work/quickbooks-dimensional-chart-of-accounts`
+- QBOA public-safe case study is live at `/work/quickbooks-dimensional-chart-of-accounts` (visual polish in Sprint 6)
 - OG image, favicon, and share metadata are live (Sprint 3.2)
 - Executive storytelling proof layer homepage section is live (Sprint 4)
 
@@ -110,15 +110,30 @@ Still deferred:
 - Private interview walkthrough for executive prototype work
 - Naming of adjacent product areas, leadership audiences, or investor-facing events
 
-## Next sprint candidate — Sprint 6
+## Next sprint — Sprint 6 — QBOA Polish + Share Validation — **Completed**
+
+Delivered:
+
+- QBOA visual polish: classification grid, reporting context flow, account structure model, review checkpoint, ambiguity → confidence arc
+- QBOA design focus section at `#classification-to-confidence`
+- Ask Ardavan suggested-next prompt chips (V1.5)
+- Share-preview validation SOT (`share-preview-validation.md`)
+- Updated claims log, roadmap, production QA log, and changelog
+
+Still deferred:
+
+- Manual LinkedIn / Slack / iMessage share-preview validation (documented in SOT)
+- Route-specific OG images (`public/og-ies.png`, `public/og-qboa.png`) — optional future sprint
+
+## Next sprint candidate — Sprint 7
 
 Potential deliverables:
 
-- QBOA visual polish and verified artifacts
-- Share-preview validation (LinkedIn Post Inspector)
+- Manual share-preview validation pass (LinkedIn Post Inspector)
 - Route-specific OG images for case studies (optional)
-- Ask Ardavan suggested next prompts
 - Leadership narrative layer visual (if approved)
+- Verified earlier experience / résumé expansion after approval
+- Private interview walkthrough (outside public repo if needed)
 
 ## Out of scope
 

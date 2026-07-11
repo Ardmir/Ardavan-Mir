@@ -1,6 +1,6 @@
 # Portfolio Claims Log
 
-Version: 1.6  
+Version: 1.7  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -19,7 +19,8 @@ Status: Public-safe
 | QBOA ~20% engagement lift. | VERIFY / DO_NOT_PUBLISH | Do not use until Ardavan verifies. | Referenced in SOT-01/SOT-11; never publish without confirmation. |
 | QBOA ~26% engagement claim. | DO_NOT_PUBLISH | Do not use. | Unverified; do not publish. |
 | QBOA case study qualitative claims (IA, classification, reporting clarity). | PUBLIC_SAFE (conservative) | Shaped advanced accounting workflows that help teams understand multi-dimensional classification, reporting, and decision-making inside a complex financial product. | Use “shaped” and “contributed to,” not “led” or “launched.” |
-| QBOA launch, adoption, or revenue impact. | DO_NOT_PUBLISH | Do not use. | Not verified. |
+| QBOA case study can describe classification ambiguity and reporting confidence. | PUBLIC_SAFE when abstracted | Shaped advanced accounting workflows that made multi-dimensional classification, reporting, and decision-making easier to understand. | Do not publish metrics or adoption claims. |
+| QBOA launch, adoption, or revenue impact. | DO_NOT_PUBLISH unless verified | Do not use. | Use qualitative public-safe wording only. |
 | QBOA exact role, dates, and artifact ownership. | VERIFY | Confirm before expanding case study or résumé. | Track verification here only. |
 | Résumé employment dates (Intuit, Iranians Who Design, earlier roles). | VERIFY | Omit or confirm exact dates before next résumé PDF update. | Verification tracked here only — not in `content/resume.md`. |
 | Ardavan contributes to future-state IES exploration. | PRIVATE_CONTEXT / VERIFY | Contributed to future-state enterprise product explorations. | Do not name internal team or exact initiative until approved. |

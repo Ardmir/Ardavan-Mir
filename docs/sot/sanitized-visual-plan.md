@@ -1,6 +1,6 @@
 # Sanitized Visual Plan
 
-Version: 1.3  
+Version: 1.4  
 Last updated: 2026-07-10  
 Status: Public-safe
 
@@ -23,6 +23,17 @@ Create case study visuals that show thinking and craft without exposing confiden
 2. Reporting context layer
 3. Account structure model
 4. Review and confirmation moment
+5. Classification ambiguity → reporting confidence arc
+
+## Sprint 6 QBOA visual polish (implemented)
+
+All QBOA visuals in `components/QboaCaseStudyVisuals.tsx`:
+
+1. **Dimensional classification grid** — six-column synthetic grid with review state emphasis
+2. **Reporting context layer** — Source → Dimension → Report lens → Decision context → Review flow
+3. **Account structure model** — hierarchy with Account, Dimension, Category, Relationship, Report grouping
+4. **Review and confirmation moment** — checkpoint with Classification, Impact, Review, Confirm, Recorded
+5. **Classification ambiguity → reporting confidence arc** — Ambiguity → Structure → Context → Review → Confidence
 
 ## Homepage project-card thumbnails
 
@@ -47,7 +58,7 @@ Implemented in `components/ProjectCardVisual.tsx` (decorative, aria-hidden).
 ## V1 implementation
 
 - IES: `components/IesCaseStudyVisuals.tsx` — polished Sprint 3 with captions and human judgment checkpoint
-- QBOA: `components/QboaCaseStudyVisuals.tsx` — abstract classification and reporting diagrams
+- QBOA: `components/QboaCaseStudyVisuals.tsx` — polished Sprint 6 with arc, flow diagrams, and improved captions
 - Homepage cards: `components/ProjectCardVisual.tsx`
 
 ## Future visual concepts — Executive storytelling / future prototypes

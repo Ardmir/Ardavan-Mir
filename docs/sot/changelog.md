@@ -1,5 +1,16 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-10 — Portfolio Sprint 6 — QBOA Polish + Share Validation
+
+- Polished QBOA case study visuals and added classification ambiguity → reporting confidence arc
+- Added design focus section at `#classification-to-confidence`
+- Added Ask Ardavan suggested-next prompt chips (V1.5)
+- Created `share-preview-validation.md` with manual validation workflow
+- Updated QBOA SOT, sanitized visual plan, claims log, roadmap, and production QA log
+- Preserved public-safe claim guardrails; no metrics, launch, or adoption claims
+- No résumé PDF, IES body, homepage positioning, deploy config, or dependency changes
+- Route-specific OG images deferred (optional future improvement)
+
 ## 2026-07-10 — Portfolio Sprint 5B — IES Future-State Depth
 
 - Expanded IES case study with public-safe future-state exploration section at `#future-state-exploration`
