@@ -8,6 +8,7 @@ import ClarityEngine from "@/components/portfolio/clarity-engine"
 import IALogotype from "@/components/ia-logotype"
 import PortfolioChat from "@/components/PortfolioChat"
 import ProjectCardVisual from "@/components/ProjectCardVisual"
+import { RESEARCH_ENTRIES, RESEARCH_SECTION } from "@/content/research"
 
 const NAV = [
   { id: "work", label: "Work" },
@@ -444,6 +445,74 @@ export default function Home() {
               </a>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Research & Strategy */}
+      <section
+        id="research-strategy"
+        aria-labelledby="research-strategy-heading"
+        className="border-t border-[rgba(255,255,255,0.12)] px-6 py-16 lg:px-8 lg:py-20"
+      >
+        <div className="mx-auto max-w-6xl">
+          <p className="font-mono text-xs uppercase tracking-[0.16em] text-[#7CE7D6]">
+            {RESEARCH_SECTION.eyebrow}
+          </p>
+          <h2 id="research-strategy-heading" className="monolith-title monolith-title--section mt-4">
+            {RESEARCH_SECTION.heading}
+          </h2>
+          <p className="mt-4 max-w-3xl font-body text-[15px] leading-relaxed text-[#A8B3B0] sm:text-base">
+            {RESEARCH_SECTION.intro}
+          </p>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {RESEARCH_ENTRIES.map((entry, i) => (
+              <article
+                key={entry.id}
+                className="research-card flex flex-col rounded-[6px] border border-[rgba(255,255,255,0.12)] bg-[#111719] p-6"
+              >
+                <span className="font-display text-sm text-[#31F5D4]">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div className="research-card__visual mt-3" aria-hidden="true">
+                  <span className="research-card__visual-line" />
+                  <span className="research-card__visual-node" />
+                </div>
+                <h3 className="monolith-title monolith-title--card-sm mt-4">{entry.title}</h3>
+                <p className="mt-2 font-ui text-[11px] uppercase tracking-[0.1em] text-[#7CE7D6]/90">
+                  {entry.eyebrow}
+                </p>
+                <p className="mt-3 flex-1 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
+                  {entry.summary}
+                </p>
+                <div className="mt-5 flex flex-col gap-2">
+                  <Link
+                    href={entry.href}
+                    className="font-ui text-[11px] uppercase tracking-[0.12em] text-[#31F5D4] transition-colors hover:text-[#7CE7D6]"
+                  >
+                    {entry.ctaLabel} →
+                  </Link>
+                  {entry.externalHref && entry.externalCtaLabel ? (
+                    <a
+                      href={entry.externalHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-ui text-[11px] uppercase tracking-[0.12em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4]"
+                    >
+                      {entry.externalCtaLabel} ↗
+                    </a>
+                  ) : null}
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <Link
+            href={RESEARCH_SECTION.ctaHref}
+            className="mt-8 inline-flex font-ui text-[11px] uppercase tracking-[0.12em] text-[#31F5D4] transition-colors hover:text-[#7CE7D6]"
+          >
+            {RESEARCH_SECTION.ctaLabel} →
+          </Link>
         </div>
       </section>
 

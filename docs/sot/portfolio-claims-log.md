@@ -1,7 +1,7 @@
 # Portfolio Claims Log
 
-Version: 1.7  
-Last updated: 2026-07-10  
+Version: 1.8  
+Last updated: 2026-07-11  
 Status: Public-safe
 
 | Claim | Status | Public wording | Notes |
@@ -43,3 +43,9 @@ Status: Public-safe
 | IES case study can describe future-state exploration. | PUBLIC_SAFE when abstracted | Helped make future-state product direction easier to understand, discuss, and evaluate through frameworks, prototypes, and leadership-ready narratives. | Do not name exact teams, product acronyms, executive audiences, event names, prototype names, or roadmap details. |
 | IES case study can describe framework transfer. | PUBLIC_SAFE when abstracted / VERIFY for specifics | Translated core AI-native experience concepts into reusable patterns that could be explored across related enterprise product contexts. | Do not name adjacent product area until approved. |
 | IES case study can describe executive-facing prototype/storytelling work. | PUBLIC_SAFE when abstracted / PRIVATE_CONTEXT for details | Used functional prototypes and polished artifacts to make abstract product direction easier for teams to understand, critique, and refine. | Do not name exact demo context, executives, or internal event names. |
+| Ardavan created a public AI-native strategy guide. | PUBLIC_SAFE if the v0 site is approved for linking | Created a public AI-native strategy guide exploring what enterprise software becomes when AI shifts from feature layer to operating model. | Verify whether to link to the current v0 URL or migrate/sanitize into the portfolio. |
+| Ardavan created or wrote a white paper about GitHub-based design collaboration. | PRIVATE_CONTEXT / VERIFY | Explored how GitHub-based workflows can help design teams bring multiple product workstreams into one integrated, AI-ready prototype model. | Do not name internal reviewers or publish raw white paper text without approval. |
+| Design leadership found the GitHub collaboration research useful. | PRIVATE_CONTEXT / VERIFY | Used to help frame team conversations around AI-ready design workflows. | Do not name individuals or quote feedback without approval. |
+| Ardavan researches AI-native platform patterns. | PUBLIC_SAFE when abstracted | Synthesized AI-native platform patterns around Observe → Act → Build, context, grounding, trust, review, permissions, human control, and moving from suggestion to action. | Keep public wording at pattern/research level unless specific artifacts are approved. |
+| Research work demonstrates design operating-model thinking. | PUBLIC_SAFE | Creates strategic research and operating models that help teams design, prototype, and govern AI-native product work. | Useful for Research & Strategy section. |
+| Research work drove adoption, automation impact, or measurable productivity gains. | DO_NOT_PUBLISH unless verified | Do not use. | No unverified metrics or outcome claims. |

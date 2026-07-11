@@ -1,6 +1,6 @@
 # Portfolio Roadmap
 
-Version: 1.7  
+Version: 1.8  
 Last updated: 2026-07-11  
 Status: Public-safe
 
@@ -14,6 +14,7 @@ Status: Public-safe
 - QBOA public-safe case study is live at `/work/quickbooks-dimensional-chart-of-accounts` (visual polish in Sprint 6)
 - OG image, favicon, and share metadata are live (Sprint 3.2)
 - Executive storytelling proof layer homepage section is live (Sprint 4)
+- Research & Strategy layer in progress (Sprint 8)
 
 ## Priority order
 
@@ -139,6 +140,33 @@ Still deferred:
 - Manual LinkedIn / Slack / iMessage unfurl validation (steps documented for Ardavan)
 - Route-specific OG images (optional)
 - Apex domain redirect verification outside repo
+
+## Sprint 8 — Research & Strategy Layer: AI-native operating models
+
+**Priority:** P1 after launch polish and two flagship case studies.
+
+**Rationale:**  
+The portfolio already has product case-study depth through IES and QBOA. The next strategic layer should show Ardavan's research, operating-model thinking, and AI-native design strategy without adding too many full case studies.
+
+**Deliverables:**
+
+- Research & Strategy SOT (`research-strategy-sot.md`)
+- Research claims log entries
+- `content/research.ts` source
+- Compact homepage Research & Strategy section
+- `/research` route
+- Ask Ardavan research prompt
+- Sanitized research visual direction
+- Changelog update
+
+**Future backlog:**
+
+- P2 — GitHub-Based Design Collaboration detail page
+- P2 — AI-Native Platform Patterns detail page / pattern library
+- P2 — Architectures of Intent deeper page or external link
+- P2 — Research artifact visuals
+- P3 — Publish excerpts only if approved
+- P3 — Add research links to résumé only if verified and relevant
 
 ## Next sprint candidate — Portfolio maintenance
 
