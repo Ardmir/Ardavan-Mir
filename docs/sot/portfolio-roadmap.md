@@ -1,7 +1,7 @@
 # Portfolio Roadmap
 
-Version: 1.6  
-Last updated: 2026-07-10  
+Version: 1.7  
+Last updated: 2026-07-11  
 Status: Public-safe
 
 ## Current status
@@ -125,13 +125,27 @@ Still deferred:
 - Manual LinkedIn / Slack / iMessage share-preview validation (documented in SOT)
 - Route-specific OG images (`public/og-ies.png`, `public/og-qboa.png`) — optional future sprint
 
-## Next sprint candidate — Sprint 7
+## Next sprint — Sprint 7 — Share Validation + Final Launch Audit — **Completed**
+
+Delivered:
+
+- Production launch audit: live routes, résumé PDF, OG/favicon assets, share metadata
+- Updated `share-preview-validation.md` with Sprint 7 automated results and manual TODOs
+- Updated production QA log, roadmap, and changelog
+- No code changes required — portfolio share-ready on `www`
+
+Still deferred:
+
+- Manual LinkedIn / Slack / iMessage unfurl validation (steps documented for Ardavan)
+- Route-specific OG images (optional)
+- Apex domain redirect verification outside repo
+
+## Next sprint candidate — Portfolio maintenance
 
 Potential deliverables:
 
-- Manual share-preview validation pass (LinkedIn Post Inspector)
-- Route-specific OG images for case studies (optional)
-- Leadership narrative layer visual (if approved)
+- Complete manual share-preview pass and update SOT results log
+- Optional route-specific OG images
 - Verified earlier experience / résumé expansion after approval
 - Private interview walkthrough (outside public repo if needed)
 
