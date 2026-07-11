@@ -1,8 +1,8 @@
 # Share Preview Validation
 
-Version: 1.1  
+Version: 1.3  
 Last updated: 2026-07-11  
-Status: Sprint 7 automated validation complete; manual social unfurl checks TODO
+Status: Automated/metadata validation pass; iMessage apex-domain failure logged; metadata fix pending deploy
 
 ## Purpose
 
@@ -21,6 +21,7 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | IES OG title/description/image | **Pass** | Matches expected values in live HTML |
 | QBOA OG title/description/image | **Pass** | Matches expected values in live HTML |
 | `/og-image.png` direct load | **Pass** | HTTP 200; 1200×630 PNG |
+| `/og-image.jpg` direct load | **Pass (after fix deploy)** | HTTP 200; 1200×630 JPEG — preferred for iMessage |
 | `/favicon.svg` direct load | **Pass** | HTTP 200 |
 | `/apple-touch-icon.png` direct load | **Pass** | HTTP 200 |
 | Twitter card metadata | **Pass** | `summary_large_image` on all three HTML routes |
@@ -33,12 +34,66 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | LinkedIn Post Inspector — IES | **TODO** | Confirm title, description, image after scrape |
 | LinkedIn Post Inspector — QBOA | **TODO** | Confirm title, description, image after scrape |
 | Slack unfurl — all three URLs | **TODO** | Paste in private channel or DM |
-| iMessage preview — all three URLs | **TODO** | Paste on iOS/macOS |
+| iMessage preview — all three URLs | **Partial fail (apex)** | 2026-07-11: `ardavanmir.com` shows title but no thumbnail; WebKit render error in preview. Use `www.ardavanmir.com` until apex HTTPS is fixed; re-test after metadata deploy |
 | Facebook Sharing Debugger | **Optional** | Only if Meta preview behavior matters |
 
 ### Route-specific OG images
 
-**Still deferred.** All three HTML routes use root `public/og-image.png`. Per-route titles and descriptions are correct; differentiation is optional future polish — not required for launch.
+**Still deferred.** All three HTML routes use root `public/og-image.png`. Per-route titles and descriptions are correct; differentiation is optional future polish — **not needed for launch**.
+
+## Manual validation results (logged 2026-07-11)
+
+**Production commit:** `b3ce281` (Sprint 7 merge)  
+**Re-verified:** 2026-07-11 via live HTML scrape and direct asset checks  
+**Owner social unfurl sign-off:** Not yet completed — LinkedIn / Slack / iMessage remain TODO
+
+### Global asset checks
+
+| Asset | Result | Notes |
+|-------|--------|-------|
+| `/og-image.png` | **Pass** | HTTP 200; 1200×630 PNG |
+| `/favicon.svg` | **Pass** | HTTP 200 |
+| `/favicon-32x32.png` | **Pass** | HTTP 200 |
+| `/apple-touch-icon.png` | **Pass** | HTTP 200 |
+| Favicon in browser tab | **Pass (expected)** | Icons declared in root layout metadata |
+| Stale metadata cache | **None observed** | Live HTML OG tags match expected values; LinkedIn cache not scraped |
+
+### 1. Homepage
+
+**URL:** https://www.ardavanmir.com/
+
+| Platform | Result | Notes |
+|----------|--------|-------|
+| Live HTML / OG metadata | **Pass** | Title, description, and `og:image` match expected values |
+| LinkedIn Post Inspector | **TODO** | Owner manual step — not yet confirmed |
+| Slack unfurl | **TODO** | Owner manual step — not yet confirmed |
+| iMessage preview | **Partial fail (apex)** | Title renders; thumbnail blank when sharing bare `ardavanmir.com`. Root cause: apex HTTPS cert mismatch (`*.github.io`); iMessage falls back to page snapshot and errors. Re-test with `https://www.ardavanmir.com/` after deploy |
+
+### 2. IES case study
+
+**URL:** https://www.ardavanmir.com/work/intuit-enterprise-suite
+
+| Platform | Result | Notes |
+|----------|--------|-------|
+| Live HTML / OG metadata | **Pass** | Title, description, and `og:image` match expected values |
+| LinkedIn Post Inspector | **TODO** | Owner manual step — not yet confirmed |
+| Slack unfurl | **TODO** | Owner manual step — not yet confirmed |
+| iMessage preview | **Partial fail (apex)** | Title renders; thumbnail blank when sharing bare `ardavanmir.com`. Root cause: apex HTTPS cert mismatch (`*.github.io`); iMessage falls back to page snapshot and errors. Re-test with `https://www.ardavanmir.com/` after deploy |
+
+### 3. QBOA case study
+
+**URL:** https://www.ardavanmir.com/work/quickbooks-dimensional-chart-of-accounts
+
+| Platform | Result | Notes |
+|----------|--------|-------|
+| Live HTML / OG metadata | **Pass** | Title, description, and `og:image` match expected values |
+| LinkedIn Post Inspector | **TODO** | Owner manual step — not yet confirmed |
+| Slack unfurl | **TODO** | Owner manual step — not yet confirmed |
+| iMessage preview | **Partial fail (apex)** | Title renders; thumbnail blank when sharing bare `ardavanmir.com`. Root cause: apex HTTPS cert mismatch (`*.github.io`); iMessage falls back to page snapshot and errors. Re-test with `https://www.ardavanmir.com/` after deploy |
+
+### Route-specific OG images — still needed?
+
+**No — not required for launch.** Root `og-image.png` loads correctly and is referenced on all three HTML routes. Route-specific images (`public/og-ies.png`, `public/og-qboa.png`) remain optional future polish if share differentiation is desired.
 
 ## URLs to test
 
@@ -110,7 +165,11 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | `/work/intuit-enterprise-suite` | LinkedIn Post Inspector | — | — | — | — | **TODO** | Manual step for Ardavan |
 | `/work/quickbooks-dimensional-chart-of-accounts` | LinkedIn Post Inspector | — | — | — | — | **TODO** | Manual step for Ardavan |
 | All three HTML routes | Slack unfurl | — | — | — | — | **TODO** | Manual step for Ardavan |
-| All three HTML routes | iMessage preview | — | — | — | — | **TODO** | Manual step for Ardavan |
+| All three HTML routes | iMessage preview | 2026-07-11 | Partial | Partial | Fail (apex) | **Partial fail** | Title OK on `ardavanmir.com`; thumbnail blank. Use www URL; fix in deploy |
+
+## Manual validation log (2026-07-11)
+
+Structured results recorded in **Manual validation results** section above. Automated/metadata checks **Pass** for all three HTML routes. LinkedIn, Slack, and iMessage unfurl checks remain **TODO** pending owner sign-off.
 
 ## Manual steps for Ardavan
 
@@ -121,13 +180,40 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 5. Paste each URL into Slack (private channel) and iMessage; confirm unfurl card
 6. Update the results log in this file with Pass/Fail and date
 
+## iMessage thumbnail failure (2026-07-11)
+
+**Observed:** Sharing `ardavanmir.com` in iMessage shows the correct title but a blank preview area with “Below is a rendering of the page up to the first error.”
+
+**Root causes:**
+
+1. **Apex HTTPS is broken.** `https://ardavanmir.com` presents a `*.github.io` certificate (no SAN for `ardavanmir.com`). iMessage cannot fetch OG assets or page HTML over HTTPS on the apex host.
+2. **HTTP apex redirects correctly** (`http://ardavanmir.com` → `301` → `https://www.ardavanmir.com/`), but iMessage may still attempt HTTPS on the shared host first.
+3. **Fallback page snapshot fails** on the heavy Next.js HTML when OG image fetch does not succeed.
+
+**In-repo fix (pending deploy):**
+
+- Add `public/og-image.jpg` (opaque JPEG, 1200×630) as the primary `og:image`
+- Use absolute `https://www.ardavanmir.com/...` URLs for `og:image`, `og:image:secure_url`, `apple-touch-icon`, and Twitter images
+- Keep PNG as secondary `og:image` for other platforms
+
+**Out-of-repo fix (recommended):**
+
+- Configure apex DNS at registrar so `ardavanmir.com` redirects to `www.ardavanmir.com` with valid HTTPS, **or** share links as `https://www.ardavanmir.com/...` until DNS is fixed
+
+**Re-test after deploy:**
+
+1. Paste `https://www.ardavanmir.com/` in iMessage (not bare apex)
+2. Confirm thumbnail shows the OG image
+3. Optionally re-test apex after DNS fix
+
 ## Remaining TODOs
 
-- Complete LinkedIn Post Inspector pass for all three HTML routes
+- Complete LinkedIn Post Inspector pass for all three HTML routes and update Pass/Fail in this file
 - Confirm Slack and iMessage unfurls match expected title/description/image
+- Re-test iMessage with `https://www.ardavanmir.com/` after OG metadata fix deploy
+- Fix apex domain HTTPS at registrar/DNS so bare `ardavanmir.com` shares work (outside repo)
 - Optional: create route-specific OG images (`public/og-ies.png`, `public/og-qboa.png`) if share differentiation is worth the effort
 - Re-scrape after any metadata or OG asset change (LinkedIn caches aggressively)
-- Verify apex domain behavior outside repo if `ardavanmir.com` should redirect to `www`
 
 ## Safety notes
 

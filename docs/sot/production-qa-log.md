@@ -1,8 +1,8 @@
 # Production QA Log
 
-Version: 1.3  
+Version: 1.4  
 Last updated: 2026-07-11  
-Sprint: 7 — Share Validation + Final Launch Audit
+Sprint: 7 — Share Validation + Final Launch Audit (+ share-preview metadata fix)
 
 ## Build
 
@@ -76,6 +76,8 @@ Sprint: 7 — Share Validation + Final Launch Audit
 | `metadataBase` + canonical | **Added in Sprint 3.1** (`https://www.ardavanmir.com`) |
 | Open Graph `url` / `siteName` | **Added in Sprint 3.1** |
 | OG image (`og:image`) | **Added in Sprint 3.2** — `public/og-image.png` (1200×630) + `public/og-image.svg` |
+| OG image JPEG fallback | **Added 2026-07-11** — `public/og-image.jpg` (1200×630); primary `og:image` for share crawlers |
+| Absolute share asset URLs | **Added 2026-07-11** — `og:image`, `og:image:secure_url`, Twitter images, favicon, apple-touch-icon use `https://www.ardavanmir.com/...` |
 | Favicon / apple-touch-icon | **Added in Sprint 3.2** — `favicon.svg`, `favicon-32x32.png`, `apple-touch-icon.png` |
 | Per-route OG overrides for case studies | **Added in Sprint 3.2** — IES and QBOA set title, description, canonical, OG/Twitter metadata |
 
@@ -248,14 +250,43 @@ Recommend browser DevTools console check on `/`, IES, and QBOA after deploy for 
 
 **None.** Audit passed without code changes.
 
+### Manual share-preview results logged (2026-07-11)
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| Live OG metadata — `/`, IES, QBOA | **Pass** | Re-verified post Sprint 7 merge (`b3ce281`) |
+| `/og-image.png` | **Pass** | HTTP 200; 1200×630 |
+| `/favicon.svg` + PNG + apple-touch | **Pass** | HTTP 200 |
+| Stale metadata cache | **None observed** | Live HTML matches expected; LinkedIn cache not scraped |
+| Route-specific OG images needed? | **No** | Root OG sufficient for launch |
+| LinkedIn Post Inspector | **TODO** | Owner sign-off pending |
+| Slack unfurl | **TODO** | Owner sign-off pending |
+| iMessage preview | **TODO** | Owner sign-off pending |
+
+See `share-preview-validation.md` — **Manual validation results** section.
+
+### Share-preview metadata fix (2026-07-11)
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| iMessage preview — bare apex `ardavanmir.com` | **Partial fail** | Title renders; thumbnail blank. Apex HTTPS cert mismatch (`*.github.io`); iMessage falls back to page snapshot and errors |
+| `public/og-image.jpg` added | **Pass** | 1200×630 JPEG; listed first in `og:image` |
+| Absolute OG/Twitter/apple-touch URLs | **Pass** | All share assets use `https://www.ardavanmir.com/...` via `lib/site.ts` |
+| PNG OG fallback retained | **Pass** | Secondary `og:image` for other platforms |
+| `pnpm build` | **Pass** | 6 static pages; `out/og-image.jpg` exported |
+| Homepage / case-study body content | **Unchanged** | Metadata-only change |
+| CNAME / deploy workflow | **Unchanged** | Apex DNS/TLS fix remains outside repo |
+| iMessage re-test (www URL) | **TODO** | Owner: paste `https://www.ardavanmir.com/` after deploy |
+| LinkedIn / Slack unfurl | **TODO** | Owner sign-off pending |
+
 ## Remaining issues
 
 - Ask Ardavan start prompt links to QBOA but not IES (IES has dedicated prompt — acceptable)
 - Production apex vs `www` redirect — verify DNS outside repo (see SOT-07)
 - Route-specific OG images not created (root image used for all routes)
 - Manual share-preview validation not yet run — see `share-preview-validation.md`
-- Apex domain (`ardavanmir.com`) does not serve portfolio on HTTPS from audit; verify DNS/redirect outside repo
-- Route-specific OG images not created (root image used for all routes)
+- iMessage re-test with `https://www.ardavanmir.com/` pending after metadata fix deploy
+- Apex domain (`ardavanmir.com`) HTTPS/TLS broken — fix at registrar/DNS outside repo; share `www` URLs until fixed
 
 ## Deployment config
 
