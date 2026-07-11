@@ -1,8 +1,8 @@
 # Production QA Log
 
-Version: 1.2  
-Last updated: 2026-07-10  
-Sprint: 6 — QBOA Polish + Share Validation
+Version: 1.3  
+Last updated: 2026-07-11  
+Sprint: 7 — Share Validation + Final Launch Audit
 
 ## Build
 
@@ -129,12 +129,133 @@ See `docs/sot/share-preview-validation.md` for full workflow. Run after deploy:
 - Slack / iMessage unfurl check
 - Direct `/og-image.png` and `/favicon.svg` browser check
 
+## Sprint 7 — Share Validation + Final Launch Audit
+
+**Audit date:** 2026-07-11  
+**Production commit:** `21c302a` (Sprint 6 merge)
+
+### Build
+
+| Check | Result |
+|-------|--------|
+| `pnpm build` (Sprint 7) | **Pass** — 6 static pages |
+| Static export `out/` | **Pass** |
+| Code changes in Sprint 7 | **None** — documentation-only audit |
+
+### Live route status
+
+| Route | HTTP | Content | Anchor |
+|-------|------|---------|--------|
+| `https://www.ardavanmir.com/` | 200 | Pass — hero, proof strip, work, Ask Ardavan present | `#what-teams-bring-me-in-for` present |
+| `/work/intuit-enterprise-suite` | 200 | Pass | `#future-state-exploration` present |
+| `/work/quickbooks-dimensional-chart-of-accounts` | 200 | Pass | `#classification-to-confidence` present |
+| `/resume-ardavan-mir.pdf` | 200 | Pass — 3367 bytes, 1 page, matches local | — |
+| `/og-image.png` | 200 | Pass — 1200×630 | — |
+| `/favicon.svg` | 200 | Pass | — |
+| `/apple-touch-icon.png` | 200 | Pass | — |
+
+### Link status (live HTML verification)
+
+| Link | Status |
+|------|--------|
+| Homepage IES card | **Pass** |
+| Homepage QBOA card | **Pass** |
+| Iranians Who Design | **Pass** (external) |
+| Contact email | **Pass** |
+| Résumé | **Pass** |
+| IES future-state anchor | **Pass** |
+| QBOA classification-to-confidence anchor | **Pass** |
+| IES/QBOA back to work / get in touch | **Pass** |
+
+### Share metadata (automated)
+
+| Route | OG title | OG description | OG image | Result |
+|-------|----------|----------------|----------|--------|
+| `/` | Pass | Pass | Pass | **Pass** |
+| IES | Pass | Pass | Pass | **Pass** |
+| QBOA | Pass | Pass | Pass | **Pass** |
+
+Manual LinkedIn / Slack / iMessage unfurl checks: **TODO** — see `share-preview-validation.md`
+
+### Domain behavior
+
+| Host | Result | Notes |
+|------|--------|-------|
+| `https://www.ardavanmir.com` | **Pass** | Portfolio serves correctly |
+| `http://www.ardavanmir.com` | **Pass** | Redirects to HTTPS (301) |
+| `https://ardavanmir.com` (apex) | **Issue noted** | TLS handshake error from audit environment (`tlsv1 unrecognized name`); apex may not serve portfolio on HTTPS |
+| `http://ardavanmir.com` (apex) | **Not portfolio** | Returns small response; does not serve GitHub Pages site |
+| `public/CNAME` | **Unchanged** | `www.ardavanmir.com` |
+
+DNS/apex redirect configuration is outside repo scope. Verify with domain registrar if apex should redirect to `www`.
+
+### Ask Ardavan QA (code review + prior live pass)
+
+| Check | Result |
+|-------|--------|
+| Floating trigger | **Pass** |
+| Open / close / Escape | **Pass** |
+| Start over | **Pass** |
+| All primary prompt chips | **Pass** |
+| Suggested-next chips after answer | **Pass** |
+| Suggested-next reuses approved prompts only | **Pass** |
+| Suggested-next excludes active prompt | **Pass** |
+| Keyboard-accessible buttons | **Pass** |
+| `aria-expanded` / `aria-controls` / `aria-labelledby` | **Pass** |
+| IES future-state anchor link | **Pass** |
+| QBOA case study link | **Pass** |
+| Resume / contact links | **Pass** |
+| No free-text input | **Pass** |
+| No backend/API/OpenAI | **Pass** |
+
+### Accessibility QA
+
+| Check | Result |
+|-------|--------|
+| One `h1` per page | **Pass** |
+| Semantic sections | **Pass** |
+| Focus states on links/buttons | **Pass** |
+| Chat dialog labeling | **Pass** |
+| Informative visuals captioned / labelled | **Pass** |
+| Decorative visuals `aria-hidden` | **Pass** |
+| Reduced motion | **Pass** |
+| No keyboard trap | **Pass** (Escape closes chat) |
+
+### Mobile QA (code + prior passes)
+
+| Check | Result |
+|-------|--------|
+| Page-level `overflow-x-hidden` | **Pass** |
+| QBOA grid scroll in `.qboa-visual__grid-wrap` | **Pass** |
+| Ask Ardavan suggestions wrap | **Pass** |
+| Contact section reachable | **Pass** |
+
+### Console / hydration QA
+
+| Check | Result |
+|-------|--------|
+| Static case study pages (IES, QBOA) | **Low risk** — server components |
+| Homepage client components | **No known hydration errors** in prior passes |
+| Broken asset references | **None observed** on live routes |
+
+Recommend browser DevTools console check on `/`, IES, and QBOA after deploy for final sign-off.
+
+### Public-safety search
+
+**Pass** — no risky hits in `app/`, `components/` (public files), `content/`, `public/`. SOT guardrails only.
+
+### Small fixes applied (Sprint 7)
+
+**None.** Audit passed without code changes.
+
 ## Remaining issues
 
 - Ask Ardavan start prompt links to QBOA but not IES (IES has dedicated prompt — acceptable)
 - Production apex vs `www` redirect — verify DNS outside repo (see SOT-07)
 - Route-specific OG images not created (root image used for all routes)
 - Manual share-preview validation not yet run — see `share-preview-validation.md`
+- Apex domain (`ardavanmir.com`) does not serve portfolio on HTTPS from audit; verify DNS/redirect outside repo
+- Route-specific OG images not created (root image used for all routes)
 
 ## Deployment config
 
@@ -144,9 +265,9 @@ See `docs/sot/share-preview-validation.md` for full workflow. Run after deploy:
 
 ## Recommended next sprint
 
-**Sprint 7** — Manual share-preview validation pass + optional route-specific OG images
+**Portfolio maintenance / optional polish**
 
-Deferred polish:
-- Route-specific OG images for case studies
-- Verified earlier experience / résumé expansion
-- Leadership narrative layer visual (if approved)
+- Complete manual LinkedIn / Slack / iMessage share-preview pass (Ardavan)
+- Optional route-specific OG images for case studies
+- Verified earlier experience / résumé expansion after approval
+- Apex → www redirect verification outside repo

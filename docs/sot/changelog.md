@@ -1,5 +1,13 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-11 — Portfolio Sprint 7 — Share Validation + Final Launch Audit
+
+- Validated production routes, résumé PDF, OG/favicon assets, and live share metadata on `www.ardavanmir.com`
+- Documented automated share-preview pass (Pass) and manual LinkedIn/Slack/iMessage TODOs
+- Audited Ask Ardavan, accessibility, mobile, and console/hydration health — no code fixes required
+- Updated `share-preview-validation.md`, production QA log, roadmap, and changelog
+- Preserved claims and NDA guardrails; no résumé, deploy, dependency, or content changes
+
 ## 2026-07-10 — Portfolio Sprint 6 — QBOA Polish + Share Validation
 
 - Polished QBOA case study visuals and added classification ambiguity → reporting confidence arc
