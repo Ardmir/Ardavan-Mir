@@ -1,8 +1,8 @@
 # Production QA Log
 
-Version: 1.1  
+Version: 1.2  
 Last updated: 2026-07-10  
-Sprint: 3.2 — Share Polish
+Sprint: 6 — QBOA Polish + Share Validation
 
 ## Build
 
@@ -108,11 +108,33 @@ SOT guardrails in `docs/sot/` may reference verification topics — not publishe
 - Paste homepage and case-study URLs into Slack / iMessage and confirm card renders
 - Optional future polish: route-specific OG images for IES and QBOA
 
+## Sprint 6 — QBOA polish + share validation
+
+| Check | Result |
+|-------|--------|
+| QBOA visuals polished | Pass — arc, flow diagrams, six-column grid, review checkpoint |
+| QBOA `#classification-to-confidence` section | Pass |
+| Ask Ardavan suggested-next chips | Pass — keyboard-accessible buttons, no free-text |
+| Share-preview validation SOT | Pass — `share-preview-validation.md` created |
+| Route-specific OG images | Deferred — root `og-image.png` used |
+| `pnpm build` | Pass — verify locally before merge |
+| IES page unchanged | Pass — no body content changes |
+| Résumé PDF unchanged | Pass |
+
+### Manual share-preview TODOs (Sprint 6)
+
+See `docs/sot/share-preview-validation.md` for full workflow. Run after deploy:
+
+- LinkedIn Post Inspector on `/`, IES, and QBOA URLs
+- Slack / iMessage unfurl check
+- Direct `/og-image.png` and `/favicon.svg` browser check
+
 ## Remaining issues
 
 - Ask Ardavan start prompt links to QBOA but not IES (IES has dedicated prompt — acceptable)
 - Production apex vs `www` redirect — verify DNS outside repo (see SOT-07)
 - Route-specific OG images not created (root image used for all routes)
+- Manual share-preview validation not yet run — see `share-preview-validation.md`
 
 ## Deployment config
 
@@ -122,9 +144,9 @@ SOT guardrails in `docs/sot/` may reference verification topics — not publishe
 
 ## Recommended next sprint
 
-**Sprint 4 — Executive Storytelling Proof Layer** (per portfolio roadmap)
+**Sprint 7** — Manual share-preview validation pass + optional route-specific OG images
 
-Optional parallel polish:
+Deferred polish:
 - Route-specific OG images for case studies
-- Ask Ardavan V1.5 suggested next prompts
-- “What teams bring me in for” homepage section (after verification)
+- Verified earlier experience / résumé expansion
+- Leadership narrative layer visual (if approved)

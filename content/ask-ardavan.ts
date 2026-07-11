@@ -34,6 +34,7 @@ export type AskArdavanPrompt = {
   assistantTitle: string
   answer: string
   links?: AskArdavanLink[]
+  suggestedNext?: AskArdavanPromptId[]
 }
 
 export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
@@ -50,6 +51,7 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
         href: "/work/quickbooks-dimensional-chart-of-accounts",
       },
     ],
+    suggestedNext: ["ies", "trustworthy-ai"],
   },
   {
     id: "ai-native",
@@ -58,6 +60,7 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
     assistantTitle: "AI-native work",
     answer:
       "I focus on making complex systems legible before making them smart. My AI-native work is about trust, evidence, explainability, human judgment, and designing workflows where people understand what the system is doing and why it matters.",
+    suggestedNext: ["ies", "teams-bring-in"],
   },
   {
     id: "trustworthy-ai",
@@ -66,6 +69,7 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
     assistantTitle: "Trustworthy AI",
     answer:
       "Trustworthy AI should make reasoning visible, keep people in control, and support judgment rather than replace it. In high-trust financial workflows, evidence, context, authorization, and clear next steps matter more than generic automation.",
+    suggestedNext: ["contact"],
   },
   {
     id: "ies",
@@ -84,6 +88,7 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
         href: "/work/intuit-enterprise-suite#future-state-exploration",
       },
     ],
+    suggestedNext: ["ai-native", "teams-bring-in"],
   },
   {
     id: "teams-bring-in",
@@ -98,6 +103,7 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
         href: "/#what-teams-bring-me-in-for",
       },
     ],
+    suggestedNext: ["ies", "contact"],
   },
   {
     id: "founder",
@@ -113,6 +119,7 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
         external: true,
       },
     ],
+    suggestedNext: ["contact"],
   },
   {
     id: "contact",
@@ -134,5 +141,6 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
         external: true,
       },
     ],
+    suggestedNext: ["start"],
   },
 ]

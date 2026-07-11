@@ -1,6 +1,6 @@
 # QBOA Case Study SOT — Public-Safe Version
 
-Version: 1.0  
+Version: 1.1  
 Last updated: 2026-07-10  
 Status: Public-safe case study
 
@@ -23,9 +23,10 @@ Shaped advanced accounting workflows that help teams understand multi-dimensiona
 3. My role
 4. Design principles
 5. Sanitized patterns
-6. Abstract visuals
-7. What changed
-8. Reflection
+6. Design focus — classification to confidence
+7. Abstract visuals
+8. What changed
+9. Reflection
 
 ## Approved public-safe themes
 
@@ -60,3 +61,21 @@ Shaped advanced accounting workflows that help teams understand multi-dimensiona
 - Which artifacts can be shown publicly
 - Whether any product screenshots are approved
 - Whether this should be a full case study or shorter case study
+
+## Sprint 6 — QBOA Polish notes
+
+**Status:** Implemented in Sprint 6 — QBOA Polish + Share Validation
+
+### What shipped publicly
+
+- QBOA visuals polished in `components/QboaCaseStudyVisuals.tsx`
+- Added classification ambiguity → reporting confidence arc
+- Added design focus section at `#classification-to-confidence`
+- Improved captions, hierarchy, and visual clarity across all QBOA diagrams
+
+### Public-safe boundaries preserved
+
+- QBOA visuals improved; page clarified around classification ambiguity → reporting confidence
+- No metrics or launch/adoption claims added
+- Public-safe abstractions only
+- No confidential screenshots, internal product UI, or unverified outcomes
