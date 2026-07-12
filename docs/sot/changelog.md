@@ -1,8 +1,19 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-12 — Manual share-preview platform checks pending
+
+- Logged status as **manual platform checks pending** — not final PASS
+- iMessage / LinkedIn / Slack remain **TODO** on `/`, `/research`, IES, and QBOA until owner provides real results
+- `/og-image-v2.jpg`: **Pass** — live asset resolves; primary in metadata per automated validation
+- Stale metadata: not observed in automated HTML checks; manual social-platform cache checks still TODO
+- Old `/og-image.jpg`: **No** in live metadata; still hosted as deprecated asset
+- Route-specific OG images: **No** — not needed for launch based on current validation
+- Apex DNS/TLS: still broken — external follow-up; share `www` URLs only
+- Docs-only; no final sign-off PR until real platform results are provided
+
 ## 2026-07-11 — Log final share-preview validation results
 
-- Logged final manual share-preview validation results after OG image v2 fix.
+- Logged automated share-preview validation results after OG image v2 fix (manual platform checks still pending)
 - Re-verified production post PR #20 deploy (`77d3172`): automated/metadata **Pass** on `/`, `/research`, IES, and QBOA
 - `/og-image-v2.jpg` resolves HTTP 200; primary `og:image` on all four HTML routes
 - Old `/og-image.jpg` not referenced in live metadata (deprecated asset still hosted)

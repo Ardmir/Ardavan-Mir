@@ -307,18 +307,34 @@ See `share-preview-validation.md` — **Manual validation results** section.
 | Stale metadata cache | **None observed** | Live HTML matches expected; LinkedIn cache not scraped |
 | Route-specific OG images needed? | **No** | Root v2 JPEG sufficient for launch |
 | Apex domain HTTPS | **Still broken** | `https://ardavanmir.com` fails; share `www` URLs |
-| LinkedIn Post Inspector | **TODO** | Owner sign-off pending — all four routes |
-| Slack unfurl | **TODO** | Owner sign-off pending — all four routes |
-| iMessage preview | **TODO** | Owner sign-off pending — use full www URLs |
+| LinkedIn Post Inspector | **TODO** | Not manually tested yet — all four routes |
+| Slack unfurl | **TODO** | Not manually tested yet — all four routes |
+| iMessage preview | **TODO** | Not manually tested yet — use full www URLs |
 
-See `share-preview-validation.md` — **Final validation results** section.
+See `share-preview-validation.md` — **Final validation results** / **Manual platform checks — pending**.
+
+### Manual platform checks pending (2026-07-12)
+
+**Status:** Manual platform checks pending — **not** final PASS for iMessage / LinkedIn / Slack.
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| `/og-image-v2.jpg` | **Pass** | Live asset resolves; primary in metadata per automated validation |
+| Stale metadata (automated HTML) | **Not observed** | Manual social-platform cache checks still **TODO** |
+| Old `/og-image.jpg` in live metadata | **No** | Still hosted as deprecated asset |
+| Route-specific OG images needed? | **No** | Not needed for launch based on current validation |
+| Apex DNS/TLS | **Yes — still broken** | External follow-up; share `www` URLs only |
+| Homepage — iMessage / LinkedIn / Slack | **TODO** | Not manually tested yet |
+| Research — iMessage / LinkedIn / Slack | **TODO** | Not manually tested yet |
+| IES — iMessage / LinkedIn / Slack | **TODO** | Not manually tested yet |
+| QBOA — iMessage / LinkedIn / Slack | **TODO** | Not manually tested yet |
 
 ## Remaining issues
 
 - Ask Ardavan start prompt links to QBOA but not IES (IES has dedicated prompt — acceptable)
 - Production apex vs `www` redirect — verify DNS outside repo (see SOT-07)
 - Route-specific OG images not created (root v2 image used for all routes)
-- Owner manual LinkedIn / Slack / iMessage unfurl pass pending — see `share-preview-validation.md`
+- **Manual platform checks pending** — iMessage / LinkedIn / Slack not final PASS until owner provides real results
 - Apex domain (`ardavanmir.com`) HTTPS/TLS broken — fix at registrar/DNS outside repo; share `www` URLs until fixed
 
 ## Deployment config
