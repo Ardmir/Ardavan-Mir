@@ -146,7 +146,7 @@ export const ARCHITECTURES_OF_INTENT_SECTIONS: ArticleSection[] = [
       },
       {
         type: "p",
-        text: "Perplexity and NotebookLM both make source grounding part of the experience, not an afterthought. NotebookLM's original product framing is especially direct: it grounds the model in the sources a person selects, accompanies responses with citations, and makes source checking part of the workflow.{{4}} GitHub Copilot and Cursor show a related pattern in a different medium: before code becomes part of the work, the change is made visible as something a person can inspect, reject, or revise.{{2}}{{3}}",
+        text: "Perplexity and NotebookLM both make source grounding part of the experience, not an appendix. NotebookLM's original product framing is especially direct: it grounds the model in the sources a person selects, accompanies responses with citations, and makes source checking part of the workflow.{{4}} GitHub Copilot and Cursor show a related pattern in a different medium: before code becomes part of the work, the change is made visible as something a person can inspect, reject, or revise.{{2}}{{3}}",
       },
       {
         type: "p",
@@ -176,7 +176,7 @@ export const ARCHITECTURES_OF_INTENT_SECTIONS: ArticleSection[] = [
       },
       {
         type: "p",
-        text: "An ungrounded answer that sounds confident can propagate into consequential decisions, downstream systems, and other people's work. Evidence cannot be an afterthought. It has to be load-bearing: a citation someone can open, a scope they can see, a source they can trace, a recommendation they can challenge.",
+        text: "An ungrounded answer that sounds confident can propagate into consequential decisions, downstream systems, and other people's work. Evidence cannot be an appendix. It has to be load-bearing: a citation someone can open, a scope they can see, a source they can trace, a recommendation they can challenge.",
       },
     ],
   },
