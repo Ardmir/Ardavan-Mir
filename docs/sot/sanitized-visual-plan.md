@@ -126,3 +126,18 @@ Implemented in `components/ResearchStrategyVisuals.tsx`:
 - No internal repo names
 - No internal team names
 - No metrics
+
+## Architectures of Intent article visuals (Sprint 9A — implemented)
+
+Implemented in `components/ArchitecturesOfIntentVisuals.tsx`:
+
+1. **AI-enabled → AI-first → AI-native spectrum**  
+   Two abstract shapes move from barely overlapping, to substantially overlapping, to merged.  
+   Labels: AI-enabled / Feature augmentation; AI-first / Intelligence-driven workflow; AI-native / AI-dependent value loop
+
+2. **AI-native experience archetype map**  
+   Center: AI-native experience. Surrounding archetypes with generic job descriptions only (no product names).
+
+3. **Trust / autonomy loop**  
+   Intent → Context & Grounding → Proposal → Evidence → Human Review → Authorized Action → Feedback / Recovery  
+   Human Review is visually and textually distinct; Feedback / Recovery returns to Intent or Context & Grounding.

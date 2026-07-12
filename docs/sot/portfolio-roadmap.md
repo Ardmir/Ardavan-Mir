@@ -1,7 +1,7 @@
 # Portfolio Roadmap
 
-Version: 1.8  
-Last updated: 2026-07-11  
+Version: 1.9  
+Last updated: 2026-07-12  
 Status: Public-safe
 
 ## Current status
@@ -14,7 +14,8 @@ Status: Public-safe
 - QBOA public-safe case study is live at `/work/quickbooks-dimensional-chart-of-accounts` (visual polish in Sprint 6)
 - OG image, favicon, and share metadata are live (Sprint 3.2)
 - Executive storytelling proof layer homepage section is live (Sprint 4)
-- Research & Strategy layer in progress (Sprint 8)
+- Research & Strategy layer live (Sprint 8)
+- Architectures of Intent full essay implemented at `/research/ai-native-strategy` (Sprint 9A — pending PR review)
 
 ## Priority order
 
@@ -163,10 +164,27 @@ The portfolio already has product case-study depth through IES and QBOA. The nex
 
 - P2 — GitHub-Based Design Collaboration detail page
 - P2 — AI-Native Platform Patterns detail page / pattern library
-- P2 — Architectures of Intent deeper page or external link
+- ~~P2 — Architectures of Intent deeper page or external link~~ → **Sprint 9A implemented** (`/research/ai-native-strategy`)
 - P2 — Research artifact visuals
 - P3 — Publish excerpts only if approved
 - P3 — Add research links to résumé only if verified and relevant
+
+## Sprint 9A — Architectures of Intent public research article — **Implemented (pending PR review)**
+
+Delivered:
+
+- Public essay route `/research/ai-native-strategy`
+- Locked approved article converted to typed content source (no MDX dependency)
+- Nine verified public endnotes and source list
+- Three sanitized visuals (spectrum, archetype map, trust loop)
+- Research index, homepage card, and Ask Ardavan discovery links
+- Publication SOT (`architectures-of-intent-publication-sot.md`)
+
+Still deferred:
+
+- Route-specific OG image for the essay
+- Other research detail pages
+- Apex DNS/TLS fix (outside repo)
 
 ## Next sprint candidate — Portfolio maintenance
 

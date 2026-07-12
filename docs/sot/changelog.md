@@ -1,5 +1,15 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-12 — Sprint 9A — Architectures of Intent public research article
+
+- Published public-safe Architectures of Intent essay at `/research/ai-native-strategy`
+- Converted locked approved article into typed content source (no new Markdown/MDX dependency)
+- Added nine verified public endnotes and source list
+- Added three sanitized abstract visuals (spectrum, archetype map, trust loop)
+- Updated Research index, homepage research card href, and Ask Ardavan research links
+- Added publication SOT and updated research, roadmap, claims, and visual-plan docs
+- No raw research, private claims map, redaction log, review report, résumé, CNAME, deploy, or dependency changes
+
 ## 2026-07-11 — Log final share-preview validation results
 
 - Logged final manual share-preview validation results after OG image v2 fix.
