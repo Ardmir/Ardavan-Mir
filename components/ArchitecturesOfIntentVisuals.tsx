@@ -122,7 +122,7 @@ function SpectrumVisual() {
           </div>
         ))}
       </div>
-      <ol className="aoi-visual__sr-list">
+      <ol className="aoi-visual__sr-list" aria-hidden="true">
         {SPECTRUM_STAGES.map((stage) => (
           <li key={stage.label}>
             {stage.label}: {stage.sub}
@@ -141,11 +141,7 @@ function ArchetypesVisual() {
         Recurring jobs-to-be-done across AI-native products. Naming the job makes unlike systems
         comparable on the same terms.
       </p>
-      <div
-        className="aoi-visual__archetypes"
-        role="img"
-        aria-label="A map of seven AI-native experience archetypes arranged around a center labeled AI-native experience."
-      >
+      <div className="aoi-visual__archetypes">
         <div className="aoi-visual__archetype-center" aria-hidden="true">
           <span>AI-native experience</span>
         </div>
@@ -158,13 +154,6 @@ function ArchetypesVisual() {
           ))}
         </ul>
       </div>
-      <ol className="aoi-visual__sr-list">
-        {ARCHETYPES.map((item) => (
-          <li key={item.name}>
-            {item.name}: {item.job}
-          </li>
-        ))}
-      </ol>
     </figure>
   )
 }
