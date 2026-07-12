@@ -548,6 +548,553 @@
 .sourceList li > span { color: var(--weft); font-family: var(--font-mono), monospace; font-size: 0.7rem; padding-top: 0.2rem; }
 .sourceList a { color: var(--ink); text-decoration-color: var(--weft); text-underline-offset: 0.2rem; }
 
+/* Folio exhibits
+ * The legacy case-study diagrams retain their semantic markup and accessible
+ * descriptions, while this shared layer translates them into the manuscript's
+ * paper, ink, rule, and woven-accent language.
+ */
+.manuscriptFrame :global(.ies-visuals-grid),
+.manuscriptFrame :global(.case-visuals-grid) {
+  gap: 0;
+}
+
+.manuscriptFrame :global(.ies-visuals-grid__pair),
+.manuscriptFrame :global(.case-visuals-grid__pair) {
+  gap: 0;
+  border-top: 1px solid var(--rule-strong);
+}
+
+.manuscriptFrame :global(.ies-visuals-grid > .ies-visuals-grid__pair:last-child),
+.manuscriptFrame :global(.case-visuals-grid > .case-visuals-grid__pair:last-child),
+.manuscriptFrame :global(.ies-visuals-grid > .ies-visuals-grid__pair + .ies-visual),
+.manuscriptFrame :global(.case-visuals-grid > .case-visuals-grid__pair + .case-visual) {
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.manuscriptFrame :global(.ies-visual),
+.manuscriptFrame :global(.case-visual),
+.manuscriptFrame :global(.research-visual),
+.manuscriptFrame :global(.aoi-visual) {
+  position: relative;
+  margin: 0;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  overflow-x: auto;
+  border: 0;
+  border-radius: 0;
+  background:
+    linear-gradient(90deg, var(--weft-faint), transparent 22%),
+    transparent;
+  box-shadow: none;
+  color: var(--ink);
+}
+
+.manuscriptFrame :global(.ies-visuals-grid__pair > .ies-visual),
+.manuscriptFrame :global(.case-visuals-grid__pair > .case-visual) {
+  min-width: 0;
+}
+
+/* Adjacent folios share one spacing interval instead of stacking two full
+ * component paddings at every handoff. */
+.manuscriptFrame :global(.ies-visuals-grid > .ies-visual),
+.manuscriptFrame :global(.case-visuals-grid > .case-visual),
+.manuscriptFrame :global(.ies-visuals-grid__pair > .ies-visual),
+.manuscriptFrame :global(.case-visuals-grid__pair > .case-visual) {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.manuscriptFrame :global(.ies-visuals-grid > .ies-visual:first-child),
+.manuscriptFrame :global(.case-visuals-grid > .case-visual:first-child) {
+  padding-top: 2rem;
+}
+
+.manuscriptFrame :global(.ies-visuals-grid > .ies-visual:last-child),
+.manuscriptFrame :global(.case-visuals-grid > .case-visual:last-child),
+.manuscriptFrame :global(.ies-visuals-grid > .ies-visuals-grid__pair:last-child > .ies-visual),
+.manuscriptFrame :global(.case-visuals-grid > .case-visuals-grid__pair:last-child > .case-visual) {
+  padding-bottom: 2rem;
+}
+
+.manuscriptFrame :global(.ies-visuals-grid__pair > .ies-visual:first-child),
+.manuscriptFrame :global(.case-visuals-grid__pair > .case-visual:first-child) {
+  padding-right: clamp(1rem, 3vw, 2.25rem);
+}
+
+.manuscriptFrame :global(.ies-visuals-grid__pair > .ies-visual:last-child),
+.manuscriptFrame :global(.case-visuals-grid__pair > .case-visual:last-child) {
+  padding-left: clamp(1rem, 3vw, 2.25rem);
+}
+
+.manuscriptFrame :global(.ies-visual__caption),
+.manuscriptFrame :global(.case-visual__caption),
+.manuscriptFrame :global(.research-visual__caption),
+.manuscriptFrame :global(.aoi-visual__caption) {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0 0 0.7rem;
+  color: var(--weft);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__caption)::before,
+.manuscriptFrame :global(.ies-visual--packet .ies-visual__caption)::before,
+.manuscriptFrame :global(figure[aria-labelledby="qboa-review-title"] .case-visual__caption)::before,
+.manuscriptFrame :global(.research-visual--platform .research-visual__caption)::before,
+.manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__caption)::before {
+  width: 0.52rem;
+  height: 0.52rem;
+  flex: 0 0 auto;
+  border: 1px solid currentColor;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.manuscriptFrame :global(.ies-visual__blurb),
+.manuscriptFrame :global(.case-visual__blurb),
+.manuscriptFrame :global(.research-visual__blurb),
+.manuscriptFrame :global(.aoi-visual__blurb) {
+  max-width: 48rem;
+  margin: 0 0 1.4rem;
+  color: var(--ink-soft);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.manuscriptFrame :global(.research-visual__blurb),
+.manuscriptFrame :global(.aoi-visual__blurb) {
+  margin-top: 0;
+}
+
+.manuscriptFrame :global(.ies-visual__svg),
+.manuscriptFrame :global(.case-visual__svg),
+.manuscriptFrame :global(.research-visual__svg) {
+  margin-top: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.manuscriptFrame :global(.ies-visual__svg--map),
+.manuscriptFrame :global(.qboa-visual__svg--flow) {
+  height: clamp(8rem, 14vw, 10.5rem);
+  margin-top: 0.35rem;
+}
+
+.manuscriptFrame :global(.ies-visual svg stop),
+.manuscriptFrame :global(.case-visual svg stop),
+.manuscriptFrame :global(.research-visual svg stop) {
+  stop-color: var(--weft);
+  stop-opacity: 0.55;
+}
+
+.manuscriptFrame :global(.ies-visual svg circle),
+.manuscriptFrame :global(.case-visual svg circle),
+.manuscriptFrame :global(.research-visual svg circle) {
+  fill: var(--paper-light);
+  stroke: var(--weft);
+  stroke-opacity: 0.85;
+}
+
+.manuscriptFrame :global(.ies-visual svg text),
+.manuscriptFrame :global(.case-visual svg text),
+.manuscriptFrame :global(.research-visual svg text) {
+  fill: var(--ink-soft);
+}
+
+.manuscriptFrame :global(.ies-visual svg text[fill="#F4F7F6"]),
+.manuscriptFrame :global(.case-visual svg text[fill="#F4F7F6"]) {
+  fill: var(--ink);
+}
+
+.manuscriptFrame :global(.ies-visual svg [stroke="#FF7A66"]),
+.manuscriptFrame :global(.case-visual svg [stroke="#FF7A66"]),
+.manuscriptFrame :global(.research-visual svg [stroke="#FF7A66"]) {
+  stroke: var(--ink);
+}
+
+.manuscriptFrame :global(.case-visual svg rect) {
+  fill: var(--paper-light);
+  stroke: var(--rule-strong);
+  rx: 0;
+}
+
+.manuscriptFrame :global(.case-visual svg line:not(.ies-flow-line)) {
+  stroke: var(--rule-strong);
+}
+
+.manuscriptFrame :global(.ies-flow-line),
+.manuscriptFrame :global(.research-flow-line) {
+  animation: none;
+  stroke: var(--weft);
+  stroke-opacity: 0.62;
+}
+
+.manuscriptFrame :global(.ies-visual__rail-item) {
+  min-height: 2.8rem;
+  padding: 0.65rem 0;
+  color: var(--ink-soft);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 0.8rem;
+}
+
+.manuscriptFrame :global(.ies-visual__rail) {
+  gap: 0.1rem;
+}
+
+.manuscriptFrame :global(.ies-visual__rail-label) {
+  min-width: clamp(7rem, 12vw, 9rem);
+}
+
+.manuscriptFrame :global(.ies-visual__rail-dot) {
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 0;
+  background: var(--weft);
+}
+
+.manuscriptFrame :global(.research-visual__pipeline-node) {
+  border-radius: 50%;
+  background: var(--weft);
+}
+
+.manuscriptFrame :global(.ies-visual__rail-bar),
+.manuscriptFrame :global(.ies-visual__transfer-line),
+.manuscriptFrame :global(.research-visual__pipeline-connector) {
+  height: 1px;
+  border-radius: 0;
+  background: var(--weft);
+  opacity: 0.55;
+}
+
+.manuscriptFrame :global(.ies-visual__rail-bar) {
+  max-width: none;
+}
+
+.manuscriptFrame :global(.ies-visual__packet),
+.manuscriptFrame :global(.ies-visual__receipt),
+.manuscriptFrame :global(.case-visual__fields) {
+  gap: 0.15rem;
+}
+
+.manuscriptFrame :global(.ies-visual__packet-row),
+.manuscriptFrame :global(.ies-visual__receipt-row),
+.manuscriptFrame :global(.case-visual__field-row) {
+  min-height: 2.65rem;
+  padding: 0.65rem 0;
+}
+
+.manuscriptFrame :global(.ies-visual__packet-row dt),
+.manuscriptFrame :global(.ies-visual__receipt-row dt),
+.manuscriptFrame :global(.case-visual__field-row dt),
+.manuscriptFrame :global(.qboa-visual__grid-header span) {
+  color: var(--weft);
+  font-family: var(--font-mono), monospace;
+}
+
+.manuscriptFrame :global(.ies-visual__packet-row dd),
+.manuscriptFrame :global(.ies-visual__receipt-row dd),
+.manuscriptFrame :global(.case-visual__field-row dd) {
+  color: var(--ink-soft);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 0.82rem;
+}
+
+.manuscriptFrame :global(.ies-visual__packet-row--highlight),
+.manuscriptFrame :global(.case-visual__field-row--highlight) {
+  position: relative;
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
+  border-left: 0;
+  border-radius: 0;
+  background: var(--weft-faint);
+}
+
+.manuscriptFrame :global(.ies-visual__packet-row--highlight)::before,
+.manuscriptFrame :global(.case-visual__field-row--highlight)::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -0.65rem;
+  width: 3px;
+  background: var(--weft);
+  content: "";
+}
+
+.manuscriptFrame :global(.ies-visual__checkpoint-node),
+.manuscriptFrame :global(.ies-visual__transfer-node),
+.manuscriptFrame :global(.ies-visual__alignment-label),
+.manuscriptFrame :global(.qboa-visual__review-node),
+.manuscriptFrame :global(.qboa-visual__grid-cell),
+.manuscriptFrame :global(.qboa-visual__layer) {
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  background: var(--paper-light);
+  color: var(--ink-soft);
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.manuscriptFrame :global(.ies-visual__checkpoint-gate),
+.manuscriptFrame :global(.qboa-visual__review-gate) {
+  border: 1px solid var(--weft);
+  border-radius: 0;
+  background: var(--weft-faint);
+}
+
+.manuscriptFrame :global(.ies-visual__checkpoint-gate-label),
+.manuscriptFrame :global(.qboa-visual__review-gate),
+.manuscriptFrame :global(.ies-visual__alignment-step--accent .ies-visual__alignment-label),
+.manuscriptFrame :global(.qboa-visual__grid-cell--accent) {
+  border-color: var(--weft);
+  background: var(--weft-faint);
+  color: var(--weft);
+}
+
+.manuscriptFrame :global(.ies-visual__checkpoint-actions li),
+.manuscriptFrame :global(.ies-visual__receipt-stamp),
+.manuscriptFrame :global(.qboa-visual__review-btn) {
+  border: 1px solid var(--rule-strong);
+  border-radius: 0;
+  background: transparent;
+  color: var(--weft);
+  font-family: var(--font-mono), monospace;
+}
+
+.manuscriptFrame :global(.ies-visual--receipt) {
+  margin-top: 0;
+}
+
+.manuscriptFrame :global(.ies-visual__receipt) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(1.5rem, 5vw, 4rem);
+}
+
+.manuscriptFrame :global(.ies-visual__receipt-stamp) {
+  border: 0;
+  background: var(--weft-soft);
+}
+
+.manuscriptFrame :global(.ies-visual__checkpoint-arrow),
+.manuscriptFrame :global(.ies-visual__alignment-index),
+.manuscriptFrame :global(.ies-visual__alignment-arrow),
+.manuscriptFrame :global(.qboa-visual__review-arrow) {
+  color: var(--weft);
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint) {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.65fr) minmax(20rem, 1fr);
+  grid-template-rows: auto 1fr;
+  column-gap: clamp(2rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__caption),
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__blurb) {
+  grid-column: 1;
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__checkpoint) {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 100%;
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__checkpoint-lane) {
+  margin-bottom: 1.25rem;
+}
+
+.manuscriptFrame :global(.ies-visual__transfer-core) {
+  min-height: 5rem;
+  border: 1px solid var(--weft);
+  border-radius: 0;
+  background:
+    repeating-linear-gradient(135deg, transparent 0 8px, var(--weft-faint) 8px 9px),
+    var(--paper-light);
+}
+
+.manuscriptFrame :global(.ies-visual__transfer-core-label) {
+  color: var(--ink);
+  font-family: var(--font-mono), monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.manuscriptFrame :global(.qboa-visual__grid) {
+  gap: 0;
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.manuscriptFrame :global(.qboa-visual__grid-header),
+.manuscriptFrame :global(.qboa-visual__grid-row) {
+  gap: 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.manuscriptFrame :global(.qboa-visual__grid-header span),
+.manuscriptFrame :global(.qboa-visual__grid-cell) {
+  min-width: 0;
+  padding: 0.6rem 0.5rem;
+  border: 0;
+}
+
+.manuscriptFrame :global(.research-visual) {
+  margin-top: 1.5rem;
+}
+
+.manuscriptFrame :global(.research-visual__pipeline-label) {
+  color: var(--ink-soft);
+}
+
+.manuscriptFrame :global(.research-visual__pipeline) {
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+.manuscriptFrame :global(.aoi-visual__spectrum-stage) {
+  padding-top: 1rem;
+}
+
+.manuscriptFrame :global(.aoi-visual__shapes ellipse) {
+  fill: var(--weft-faint);
+  stroke: var(--weft);
+}
+
+.manuscriptFrame :global(.aoi-visual__stage-label),
+.manuscriptFrame :global(.aoi-visual__archetype-item strong),
+.manuscriptFrame :global(.aoi-visual__loop-label) {
+  color: var(--ink);
+}
+
+.manuscriptFrame :global(.aoi-visual__stage-sub),
+.manuscriptFrame :global(.aoi-visual__archetype-item span),
+.manuscriptFrame :global(.aoi-visual__loop-arrow),
+.manuscriptFrame :global(.aoi-visual__loop-return) {
+  color: var(--ink-soft);
+}
+
+.manuscriptFrame :global(.aoi-visual__archetype-center) {
+  border: 1px solid var(--weft);
+  background:
+    repeating-linear-gradient(135deg, transparent 0 8px, var(--weft-faint) 8px 9px),
+    var(--paper-light);
+  color: var(--weft);
+}
+
+.manuscriptFrame :global(.aoi-visual__archetype-item) {
+  border-top: 0;
+}
+
+.manuscriptFrame :global(.aoi-visual__loop-step) {
+  border: 1px solid var(--rule);
+  background: var(--paper-light);
+}
+
+.manuscriptFrame :global(.aoi-visual__loop-step--review) {
+  border-color: var(--weft);
+  background: var(--weft-faint);
+}
+
+.manuscriptFrame :global(.aoi-visual__loop-index),
+.manuscriptFrame :global(.aoi-visual__loop-step--review .aoi-visual__loop-index) {
+  color: var(--weft);
+}
+
+/* Dark folios mark a genuine transition: human review, a core framework,
+ * a dimensional taxonomy, or a closed-loop trust system. */
+.manuscriptFrame :global(.ies-visual--checkpoint),
+.manuscriptFrame :global(.ies-visual--transfer),
+.manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"]),
+.manuscriptFrame :global(.research-visual--platform),
+.manuscriptFrame :global(.aoi-visual--trust-loop) {
+  border-top-color: color-mix(in srgb, var(--paper) 28%, transparent);
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--weft) 18%, transparent), transparent 28%),
+    var(--ink);
+  color: var(--paper);
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__caption),
+.manuscriptFrame :global(.ies-visual--transfer .ies-visual__caption),
+.manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"] .case-visual__caption),
+.manuscriptFrame :global(.research-visual--platform .research-visual__caption),
+.manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__caption) {
+  color: color-mix(in srgb, var(--weft) 62%, var(--paper));
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__blurb),
+.manuscriptFrame :global(.ies-visual--transfer .ies-visual__blurb),
+.manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"] .case-visual__blurb),
+.manuscriptFrame :global(.research-visual--platform .research-visual__blurb),
+.manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__blurb) {
+  color: color-mix(in srgb, var(--paper) 72%, transparent);
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__checkpoint-node),
+.manuscriptFrame :global(.ies-visual--transfer .ies-visual__transfer-node),
+.manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"] .qboa-visual__grid-cell),
+.manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__loop-step) {
+  border-color: color-mix(in srgb, var(--paper) 20%, transparent);
+  background: color-mix(in srgb, var(--paper) 4%, transparent);
+  color: color-mix(in srgb, var(--paper) 75%, transparent);
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__checkpoint-gate),
+.manuscriptFrame :global(.ies-visual--transfer .ies-visual__transfer-core),
+.manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"] .qboa-visual__grid-cell--accent),
+.manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__loop-step--review) {
+  border-color: color-mix(in srgb, var(--weft) 68%, var(--paper));
+  background: color-mix(in srgb, var(--weft) 20%, transparent);
+  color: var(--paper);
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__checkpoint-gate-label),
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__checkpoint-arrow),
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__checkpoint-actions li),
+.manuscriptFrame :global(.ies-visual--transfer .ies-visual__transfer-core-label),
+.manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__loop-index) {
+  color: color-mix(in srgb, var(--weft) 55%, var(--paper));
+}
+
+.manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__checkpoint-actions li) {
+  border-color: color-mix(in srgb, var(--paper) 26%, transparent);
+}
+
+.manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"] .qboa-visual__grid-header),
+.manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"] .qboa-visual__grid-row) {
+  border-bottom-color: color-mix(in srgb, var(--paper) 16%, transparent);
+}
+
+.manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"] .qboa-visual__grid-header span),
+.manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"] .qboa-visual__grid-cell) {
+  border-right-color: color-mix(in srgb, var(--paper) 14%, transparent);
+}
+
+.manuscriptFrame :global(.research-visual--platform svg circle) {
+  fill: var(--ink);
+  stroke: color-mix(in srgb, var(--weft) 58%, var(--paper));
+}
+
+.manuscriptFrame :global(.research-visual--platform svg text) {
+  fill: color-mix(in srgb, var(--paper) 72%, transparent);
+}
+
+.manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__loop-label) {
+  color: var(--paper);
+}
+
+.manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__loop-arrow),
+.manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__loop-return) {
+  color: color-mix(in srgb, var(--paper) 64%, transparent);
+}
+
 @media (max-width: 960px) {
   .heroGrid,
   .stageHeader,
@@ -556,6 +1103,10 @@
   .metaLedger > div:nth-child(3) { border-left: 0; }
   .articleShell { grid-template-columns: 1fr; }
   .toc { position: static; }
+  .manuscriptFrame :global(.ies-visual--checkpoint) { grid-template-columns: 1fr; }
+  .manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__caption),
+  .manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__blurb),
+  .manuscriptFrame :global(.ies-visual--checkpoint .ies-visual__checkpoint) { grid-column: 1; grid-row: auto; }
 }
 
 @media (max-width: 720px) {
@@ -588,6 +1139,15 @@
   .researchEntry { grid-template-columns: 1fr; gap: 1rem; }
   .articlePrinciples { grid-template-columns: 1fr; }
   .articlePrinciples li:nth-child(even) { border-left: 0; padding-left: 0; }
+  .manuscriptFrame :global(.ies-visuals-grid__pair > .ies-visual:first-child),
+  .manuscriptFrame :global(.case-visuals-grid__pair > .case-visual:first-child) { padding-right: 1.25rem; }
+  .manuscriptFrame :global(.ies-visuals-grid__pair > .ies-visual:last-child),
+  .manuscriptFrame :global(.case-visuals-grid__pair > .case-visual:last-child) { border-left: 0; padding-left: 1.25rem; }
+  .manuscriptFrame :global(.ies-visual),
+  .manuscriptFrame :global(.case-visual),
+  .manuscriptFrame :global(.research-visual),
+  .manuscriptFrame :global(.aoi-visual) { padding-right: 1.25rem; padding-left: 1.25rem; }
+  .manuscriptFrame :global(.ies-visual__receipt) { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 390px) {
