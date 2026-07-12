@@ -55,6 +55,8 @@ const SECTIONS = [
       "Systems-level product thinking",
     ],
     visual: "architectures-of-intent" as const,
+    detailHref: "/research/ai-native-strategy",
+    detailLabel: "Read the full research",
     externalHref: "https://v0-ai-native-strategy-research.vercel.app/",
     externalLabel: "Open interactive guide",
   },
@@ -204,16 +206,28 @@ export default function ResearchPage() {
               <ResearchStrategyVisuals variant={section.visual} />
             </div>
 
-            {"externalHref" in section && section.externalHref ? (
-              <a
-                href={section.externalHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 inline-flex font-ui text-[11px] uppercase tracking-[0.12em] text-[#31F5D4] transition-colors hover:text-[#7CE7D6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#31F5D4]"
-              >
-                {section.externalLabel} ↗
-              </a>
-            ) : null}
+            <div className="mt-8 flex flex-wrap gap-4">
+              {"detailHref" in section && section.detailHref ? (
+                <Link
+                  href={section.detailHref}
+                  className="inline-flex font-ui text-[11px] uppercase tracking-[0.12em] text-[#31F5D4] transition-colors hover:text-[#7CE7D6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#31F5D4]"
+                >
+                  {section.detailLabel} →
+                </Link>
+              ) : null}
+              {"externalHref" in section && section.externalHref ? (
+                <a
+                  href={section.externalHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex font-ui text-[11px] uppercase tracking-[0.12em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#31F5D4]"
+                >
+                  {section.externalLabel}{" "}
+                  <span aria-hidden="true">↗</span>
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </a>
+              ) : null}
+            </div>
           </section>
         ))}
 

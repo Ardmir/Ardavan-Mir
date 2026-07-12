@@ -1,11 +1,12 @@
 # Portfolio Claims Log
 
-Version: 1.8  
-Last updated: 2026-07-11  
+Version: 1.9  
+Last updated: 2026-07-12  
 Status: Public-safe
 
 | Claim | Status | Public wording | Notes |
 |-------|--------|----------------|-------|
+| Architectures of Intent public research article | PUBLIC_SAFE | A research essay exploring what enterprise software becomes when AI shifts from feature layer to operating model, with emphasis on context, grounding, evidence, permissions, human review, and governed action. | Live at `/research/ai-native-strategy`. Do not add internal influence, launch, adoption, or company-decision claims. |
 | Ardavan designs AI-native enterprise products that make financial complexity legible. | PUBLIC_SAFE | I design AI-native enterprise products that make financial complexity legible. | Current homepage positioning. |
 | IES work involved AI-native enterprise finance direction. | PUBLIC_SAFE (conservative) | Helped define and communicate AI-native product direction for complex enterprise finance workflows. | Use “helped define and communicate,” not “led” or “launched.” |
 | IES work involved IA, workflow clarity, trust, evidence, authorization, human judgment, prototype direction, and leadership storytelling. | PUBLIC_SAFE when abstracted | The work focused on making complex financial workflows clearer through information architecture, trust patterns, evidence, human judgment, prototypes, and product storytelling. | Do not name internal frameworks or prototypes. |

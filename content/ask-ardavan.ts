@@ -115,6 +115,10 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
       "I create strategic research and operating models that help teams make sense of AI-native product work. Recent public-safe examples include an AI-native strategy guide, a GitHub-based collaboration model for integrated prototype work, and research on platform patterns like context, grounding, trust, review, permissions, human control, and moving from suggestion to action.",
     links: [
       {
+        label: "Read Architectures of Intent",
+        href: "/research/ai-native-strategy",
+      },
+      {
         label: "View Research & Strategy",
         href: "/research",
       },

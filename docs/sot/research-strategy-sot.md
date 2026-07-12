@@ -23,6 +23,8 @@ This work shows Ardavan contributing to the operating models, frameworks, and re
 **Public-safe summary:**  
 A public AI-native strategy guide exploring what enterprise software becomes when AI stops being treated as a feature and starts becoming the operating model.
 
+**Live route:** `/research/ai-native-strategy` (Sprint 9A)
+
 **What it proves:**
 
 - AI-native product strategy
@@ -38,6 +40,8 @@ A public AI-native strategy guide exploring what enterprise software becomes whe
 - Intelligence-as-infrastructure map
 - “Feature → operating model” transition model
 - Architecture-of-intent visual
+- Full public essay (implemented)
+- Spectrum, archetype map, and trust-loop visuals (implemented)
 
 ### Track 2: GitHub-Based Design Collaboration
 
