@@ -1,6 +1,6 @@
 # SOT-09 — Decision Log
 
-Version: 0.2  
+Version: 0.3
 Last updated: 2026-07-12  
 Status: Active
 
@@ -33,7 +33,7 @@ Implications: Use `[VERIFY]` placeholders or qualitative outcome language.
 ## D-004 — Visual identity direction
 
 Date: 2026-06-13  
-Status: Active  
+Status: Superseded by D-018
 Decision: Use a dark charcoal, soft white, electric teal, optional warm coral visual system with generous spacing and restrained AI-native diagrams.  
 Rationale: Supports premium enterprise AI × financial clarity positioning.  
 Implications: Avoid generic light templates, flashy AI imagery, robots, and heavy 3D.
@@ -41,7 +41,7 @@ Implications: Avoid generic light templates, flashy AI imagery, robots, and heav
 ## D-005 — Launch strategy
 
 Date: 2026-06-13  
-Status: Active  
+Status: Completed; superseded as current phase by D-018
 Decision: Launch a polished one-page portfolio first, then expand into full case studies.  
 Rationale: The site needs to be recruiter-ready quickly; full case studies can follow.  
 Implications: Homepage must clearly state who Ardavan is, what he does, selected work, approach, about, and contact.
@@ -60,7 +60,7 @@ Date: 2026-06-13
 Status: Active  
 Decision: Express AI-native thinking through IA, workflow models, explainability, trust, and decision support — not through chatbot gimmicks or generic AI visuals.  
 Rationale: Stronger fit for senior enterprise product design roles.  
-Implications: Use “Clarity Engine” / decision layer visual metaphors rather than robots, brains, or chat bubbles.
+Implications: Use Decision Space, evidence, provenance, explainability, and human-control patterns rather than robots, brains, generic chat bubbles, or talking-avatar spectacle.
 
 ## Decision template
 
@@ -79,7 +79,7 @@ Related changelog entries:
 ## D-008 — Adopt the Legibility Layer as the portfolio system
 
 Date: 2026-06-13  
-Status: Active  
+Status: Superseded by D-018
 Decision: Adopt Legibility Layer as the portfolio design system and narrative structure, with one controlled hero interaction showing complexity resolving into clarity.  
 Rationale: Reinforces the positioning ("make financial complexity legible") and the principle ("make the system legible before making it smart") through a single, restrained, enterprise-appropriate motif rather than decorative or looping animation.  
 Implications: One-time sweep only (no infinite loops); decorative SVG is aria-hidden; reduced-motion users see the resolved state immediately; keep palette to dark charcoal + soft white + electric teal with coral used sparingly.  
@@ -89,7 +89,7 @@ Related changelog entries: 2026-06-13 v0.2
 ## D-009 — Use the in-repo Next.js build; retire the static rescue artifacts
 
 Date: 2026-06-13  
-Status: Active  
+Status: Active for repository choice; visual-system wording superseded by D-018
 Decision: The canonical portfolio is the Next.js app in repo Ardmir/Ardavan-Mir. The Legibility Layer is implemented there (app/page.tsx + components/portfolio/clarity-engine.tsx). The separate static HTML/CSS/JS files generated earlier in the Claude session are retired and must not be copied into the repo.  
 Rationale: The live site is Next.js + Tailwind with a GitHub Actions static-export deploy. Dropping static files in would not integrate and would risk breaking the build. The existing in-repo implementation already matches the intended direction and conventions.  
 Implications: All future homepage edits happen in the Next.js files. Keep docs/sot/ in the repo so the source of truth travels with the code. PRs target main; deployment is via .github/workflows/deploy.yml (branch trigger to be confirmed before merge).  
@@ -108,7 +108,7 @@ Related changelog entries: 2026-06-19 v0.4
 ## D-011 — IES case study first
 
 Date: 2026-06-19  
-Status: Active  
+Status: Completed; superseded as backlog by D-018
 Decision: Develop the Intuit Enterprise Suite case study before other detailed case studies.  
 Rationale: Strongest match for target positioning: enterprise SaaS, AI-native workflows, IA, financial systems, senior product judgment.  
 Implications: P1-01/P1-02 take priority; DCoA follows.  
@@ -117,7 +117,7 @@ Related changelog entries: 2026-06-19 v0.4
 ## D-012 — Preserve the Clarity Engine
 
 Date: 2026-06-19  
-Status: Active  
+Status: Superseded by D-018
 Decision: Keep the Clarity Engine as the signature conceptual interaction.  
 Constraint: It must support Work evidence rather than overshadow or delay it.  
 Implications: P2-02 evaluates hierarchy only as a proposal; no removal without decision.  
@@ -126,7 +126,7 @@ Related changelog entries: 2026-06-19 v0.4
 ## D-013 — Use the current wordmark
 
 Date: 2026-06-19  
-Status: Active  
+Status: Superseded by D-018
 Decision: Continue with “ARDAVAN / MIR” as the portfolio identity (`IALogotype`).  
 Rationale: Shipped and cohesive with Glass Monolith system.  
 Implications: No logotype redesign in current phase.  
@@ -141,23 +141,23 @@ Rationale: Homepage positioning is sufficient; hiring signal now depends on proo
 Implications: P1 backlog prioritized over new visual experiments.  
 Related changelog entries: 2026-06-19 v0.4
 
-## D-015 — GitHub Pages is production; Vercel disconnect deferred
+## D-015 — Production host ownership requires verification
 
 Date: 2026-06-19  
-Status: Active  
-Decision: GitHub Pages on `main` is the production deployment source of truth. Vercel/v0 integration will be disconnected later.  
-Rationale: Verified live site on GitHub Pages after merge; Vercel is legacy noise on PR checks.  
-Implications: Do not treat Vercel preview as production; follow SOT-11 disconnect checklist when ready.  
-Supersedes: Open question in D-006 about which host serves production.  
+Status: Requires explicit verification
+Decision: Do not designate GitHub Pages, Vercel, or another service as canonical custom-domain owner until domain, deployment authority, and rollback ownership are explicitly verified.
+Rationale: The repository contains a GitHub Pages deployment workflow and successful deployments have been observed, while Vercel also exists in the operating context. Deployment success alone does not prove which service owns the custom domain.
+Implications: Production host ownership requires explicit verification; a successful Vercel deployment does not by itself establish canonical custom-domain ownership. Preserve CNAME and deployment configuration until the owner records the canonical host.
+Supersedes: The unverified ownership assertion in the previous D-015 wording.
 Related changelog entries: 2026-06-19 v0.4
 
 ## D-016 — Prototype the Progressive Woven Manuscript
 
 Date: 2026-07-12  
-Status: Active  
+Status: Superseded by D-018
 Decision: Begin an isolated prototype program for a next-generation Adaptive Decision Space using Living Manuscript as the stable canonical interface and The Weave as a progressively earned identity/relationship layer.  
 Rationale: The live portfolio now has flagship case studies, research, résumé, proof, and Ask Ardavan depth. The new direction can use that evidence to demonstrate AI-native adaptation through intent, depth, provenance, and human control rather than decorative AI styling.  
-Implications: The production Glass Monolith remains live. Prototype work must happen on an isolated route or branch and pass usability, accessibility, content-integrity, performance, and recruiter-comprehension gates before any replacement decision.  
+Implications at the time: The production Glass Monolith remained live while prototype work stayed isolated. D-018 later authorized and recorded the replacement.
 Supersedes: D-010 and D-014 as current phase priorities; does not yet supersede D-004, D-008, or D-012 in production.  
 Related changelog entries: 2026-07-12 — Progressive Woven Manuscript direction and execution plan
 
@@ -179,3 +179,22 @@ Rationale: Ardavan reviewed the working prototype, described it as beautiful, ex
 Implications: `/` now hosts the adaptive portfolio; IES, QBOA, Research & Strategy, and Architectures of Intent use a shared manuscript frame, six-stage rail, paper/ink/weft tokens, provenance language, and editorial evidence rhythm. Canonical facts, URLs, metadata, citations, public-safe boundaries, CNAME, and hosting configuration remain unchanged. External recruiter testing, screen-reader review, independent contrast review, and cultural-integrity review remain useful follow-up validation rather than migration blockers.  
 Supersedes: D-016 as the production phase decision and the Glass Monolith portion of D-004, D-008, and D-012. D-017 remains active.  
 Related changelog entries: 2026-07-12 — Adaptive Decision Space production migration
+
+## D-019 — Adopt the adaptive motion baseline and semantic color roles
+
+Date: 2026-07-12
+Status: Active
+Decision: Treat commit `ab704c3` as the production adaptive-motion baseline. Keep `#765026` as the canonical warm accent and use `#314A87` only as an experimental semantic accent for AI/research intent.
+Rationale: Motion now makes stage, lens, depth, and evidence relationships more legible, while semantic color supports intent without replacing the manuscript’s core identity.
+Implications: No essential meaning may depend on motion; `prefers-reduced-motion` remains mandatory. Promoting `#314A87` beyond semantic use requires contrast and system review.
+Related changelog entries: 2026-07-12 — Adaptive motion baseline and Design Twin planning
+
+## D-020 — Explore a text-first Ardavan Design Twin
+
+Date: 2026-07-12
+Status: Experiment approved; production not approved
+Decision: Explore Ardavan’s AI Design Twin as a separate, deliberately entered, text-first interface grounded only in approved public material. Use RAG plus authored identity/behaviour instructions before considering fine-tuning. Preserve explicit AI disclosure, visible citations, abstention, and the current static Ask Ardavan fallback.
+Rationale: A bounded evidence-discovery interface may help visitors navigate work and design thinking, but value and safety must be demonstrated before adding production complexity or identity media.
+Implications: The Design Twin does not replace the Adaptive Decision Space, manuscript, homepage hero, or human conversation. It makes no autonomous commitments. No private corpus, API implementation, production route, voice clone, face/avatar upload, or identity-media vendor upload is approved.
+Progression: Phase 0 corpus governance → Phase 1 preview-only cited text prototype → conditional Phase 2 production text route → optional generic voice experiment → separately reviewed consented voice or visual avatar.
+Related SOT: `ardavan-design-twin-sot.md`

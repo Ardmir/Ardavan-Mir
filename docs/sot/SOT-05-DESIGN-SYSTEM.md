@@ -1,8 +1,8 @@
 # SOT-05 — Design System
 
-Version: 0.2  
+Version: 0.3
 Last updated: 2026-07-12  
-Status: Active draft
+Status: Active — production system
 
 ## Current production design direction
 
@@ -14,7 +14,29 @@ The production system is the **Progressive Woven Manuscript** within the **Adapt
 - Structural rules, grids, sigla, evidence ledgers, and woven density replace decorative cards and dashboard chrome.
 - Detailed work and research pages are deeper folios of the same system, not separate visual themes.
 
-## Historical Glass Monolith direction
+## Production semantic colors
+
+| Token | Value | Status | Use |
+|---|---|---|---|
+| Warm umber | `#765026` | Canonical accent | Default weave, rules, provenance emphasis, and manuscript interaction |
+| Muted blueberry | `#314A87` | Experimental semantic accent | AI-thinking and research intent only |
+
+`#314A87` is not the new primary color. Promotion beyond semantic AI/research use requires an independent contrast check and full system review.
+
+## Production motion baseline
+
+Commit `ab704c3` is the production adaptive-motion baseline.
+
+- Motion expresses the shared **setting → threading → resolving** vocabulary.
+- Stage progress, lens selection, reading depth, evidence emphasis, and provenance may transition within this vocabulary.
+- No essential meaning may depend on motion.
+- `prefers-reduced-motion` must present the same resolved state without transitional movement.
+- Motion changes must preserve focus, reading order, and usable scroll position.
+- No motion library, autoplay media, canvas, or WebGL is required for the baseline.
+
+## Historical Glass Monolith direction — superseded
+
+Everything in this historical section through the legacy component list documents the June Glass Monolith system and is reference material only. It is not the current palette, typography, component model, or motion specification.
 
 The portfolio should feel like:
 
@@ -146,7 +168,7 @@ Avoid:
 
 The site should feel polished enough to send to recruiters immediately, even before full case studies are complete.
 
-## Proposed successor system — Progressive Woven Manuscript
+## Production system — Progressive Woven Manuscript
 
 Status: `[APPROVED]` for production on 2026-07-12. The Glass Monolith tokens above are retained as historical reference only.
 
@@ -201,3 +223,12 @@ Use one coherent transformation family: **setting → threading → resolving**.
 - Preserve static-export compatibility.
 
 Full concept and execution requirements: `docs/sot/adaptive-decision-space-sot.md`.
+
+## Future Design Twin media constraints
+
+- The Design Twin begins as a text-only experimental interface on a separate deliberate route.
+- The production manuscript and current guided Ask Ardavan remain available without generation.
+- Do not auto-play voice or video.
+- No voice clone, face upload, visual avatar, lip sync, or biometric identity media is approved.
+- Any later generic voice experiment must retain text equivalents, complete keyboard operation, screen-reader status, and reduced-motion behavior.
+- Any identity-media experiment requires separate value, consent, privacy, retention/deletion, accessibility, and system reviews.

@@ -1,8 +1,8 @@
 # SOT-04 — Portfolio IA and Copy
 
-Version: 0.2  
+Version: 0.3
 Last updated: 2026-07-12  
-Status: Active draft
+Status: Active — production reconciled
 
 ## Current homepage snapshot (Adaptive Decision Space — 2026-07-12)
 
@@ -17,6 +17,7 @@ Current navigation and IA:
 - Contextual deterministic Ask Ardavan apparatus.
 - Colophon with verified Email, LinkedIn, and Résumé paths.
 - Detailed work and research routes continue the same folio, stage, provenance, and editorial grammar.
+- A unified “Shape your reading” console makes Reading Lens selection prominent; the sticky header exposes the active lens and returns visitors to the console.
 
 ## Historical shipped homepage snapshot (Glass Monolith — 2026-06-19)
 
@@ -52,10 +53,14 @@ Current navigation and IA:
 
 ---
 
-## Portfolio format
+## Historical launch-planning copy
 
-Immediate launch format: one-page portfolio with anchor navigation.  
-Future format: one-page homepage plus individual case study pages.
+The sections below preserve the pre-case-study launch brief and are not the current production IA or current homepage copy. The production IA above and `adaptive-decision-space-sot.md` are authoritative.
+
+## Historical portfolio format
+
+Historical immediate launch format: one-page portfolio with anchor navigation.
+Current format: adaptive homepage plus individual work and research folios.
 
 ## Recommended navigation
 
@@ -164,7 +169,7 @@ Outcome framing:
 The work helped clarify enterprise financial workflows and create a stronger foundation for intelligent assistance, decision-making, and cross-system navigation. [VERIFY outcome]
 ```
 
-CTA:
+Historical CTA at the time:
 
 ```text
 Case study coming soon
@@ -196,7 +201,7 @@ Outcome framing:
 The work helped make complex accounting structures easier to understand and act on for advanced business users. [VERIFY outcome]
 ```
 
-CTA:
+Historical CTA at the time:
 
 ```text
 Case study coming soon

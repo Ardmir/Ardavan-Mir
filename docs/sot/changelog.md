@@ -1,5 +1,16 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-12 — Adaptive motion baseline and Design Twin roadmap
+
+- Recorded `ab704c3` as the production Adaptive Decision Space motion baseline; reduced motion remains mandatory.
+- Reconciled production documentation with the live adaptive homepage, shared work/research folios, résumé, and merged Sprint 9A.
+- Recorded warm umber `#765026` as the canonical accent and muted blueberry `#314A87` as an experimental semantic AI/research accent only.
+- Completed the Design Twin documentation investigation with decision status `PROCEED_WITH_TEXT_PROTOTYPE`.
+- Defined a text-first, cited, public-source-only, separately entered experiment with static Ask Ardavan fallback.
+- No Design Twin implementation, API, route, dependency, vendor upload, voice, face, avatar, or production approval was performed.
+- Kept manual iMessage, LinkedIn, and Slack share-preview checks as TODO pending dated evidence.
+- Marked production-host ownership, repository-wide TypeScript, current QA evidence, and PR #24 closure as P0 stabilization work.
+
 ## 2026-07-12 — Adaptive Decision Space production migration
 
 - Promoted the approved adaptive manuscript to `/`.

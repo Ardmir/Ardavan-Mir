@@ -1,10 +1,36 @@
 # Production QA Log
 
-Version: 1.4  
-Last updated: 2026-07-11  
-Sprint: 7 — Share Validation + Final Launch Audit (+ share-preview metadata fix)
+Version: 1.5
+Last updated: 2026-07-12
+Sprint: 9A.1 — Adaptive Decision Space stabilization
 
-## Build
+## Current Adaptive Decision Space baseline
+
+Production source baseline: `7463498`
+Motion baseline: `ab704c3`
+
+The detailed Sprint 7 and pre-Adaptive records below are retained as historical evidence. They do not replace a current production pass.
+
+| Check | Current status | Evidence required |
+|---|---|---|
+| Motion behavior and stage/lens/depth transitions | **TODO** | Date, commit/URL, viewport, interaction path, result, issue/evidence note |
+| `prefers-reduced-motion` resolved state | **TODO** | OS/browser setting, tested paths, result, evidence note |
+| Keyboard-only navigation and focus | **TODO** | Route/control matrix, focus-order result, evidence note |
+| Screen-reader behavior | **TODO** | Assistive technology/browser, route/control matrix, announcements/issues |
+| Contrast and non-color state equivalents | **TODO** | Token/state audit and independent contrast results |
+| Mobile / tablet / desktop | **TODO** | Tested widths/devices, route matrix, overflow/layout evidence |
+| Lighthouse | **TODO** | Mobile/desktop reports with URL, date, and environment |
+| localStorage returning-session behavior | **TODO** | Lens/depth/passages/question/stage persistence, reset, corrupt-state recovery |
+| Console, hydration, and framework error overlays | **TODO** | Route matrix and browser evidence |
+| Social share previews | **TODO** | Date, full URL, platform, result, evidence note; see `share-preview-validation.md` |
+| Recruiter comprehension | **TODO** | Participant/task protocol and result summary |
+| Cultural-integrity review | **TODO** | Reviewer/context, issues, disposition |
+
+Production host ownership requires explicit verification; a successful Vercel deployment does not by itself establish canonical custom-domain ownership.
+
+Repository-wide TypeScript is not clean. Known errors remain in unused `components/ui/calendar.tsx` and `components/ui/chart.tsx`; the production build currently skips type validation.
+
+## Historical build baseline
 
 | Check | Result |
 |-------|--------|

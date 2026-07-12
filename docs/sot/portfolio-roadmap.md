@@ -1,249 +1,129 @@
 # Portfolio Roadmap
 
-Version: 2.0  
-Last updated: 2026-07-12  
-Status: Public-safe
+Version: 3.0
+Last updated: 2026-07-12
+Status: Public-safe planning SOT
 
-## Current status
+## Current production baseline
 
-- Homepage is live with AI-native legibility positioning
-- Résumé PDF is live at `/resume-ardavan-mir.pdf` (regenerated from source in Sprint 5A.1)
-- Résumé markdown source aligned with portfolio positioning (`content/resume.md`)
-- Static guided Ask Ardavan chat is live
-- IES public-safe case study is live at `/work/intuit-enterprise-suite` (future-state depth added in Sprint 5B)
-- QBOA public-safe case study is live at `/work/quickbooks-dimensional-chart-of-accounts` (visual polish in Sprint 6)
-- OG image, favicon, and share metadata are live (Sprint 3.2)
-- Executive storytelling proof layer homepage section is live (Sprint 4)
-- Research & Strategy layer live (Sprint 8)
-- Architectures of Intent full essay implemented at `/research/ai-native-strategy` (Sprint 9A — pending PR review)
-- Adaptive Decision Space / Progressive Woven Manuscript approved for production by Ardavan on 2026-07-12
-- Adaptive portfolio implemented at `/`; the isolated `/explorations/adaptive-decision-space` route remains as a `noindex` reference edition
-- IES, QBOA, Research & Strategy, and Architectures of Intent now share the manuscript/weave folio system and six-stage Decision Space
-- Static build plus desktop/mobile route, console, overflow, lens, depth, and contextual Ask checks passed
+- The Adaptive Decision Space / Progressive Woven Manuscript is production at `/`.
+- The motion system at `ab704c3` is the production adaptive-motion baseline.
+- The reading-lens discoverability refinement at `7463498` is live.
+- IES and QBOA public-safe case studies are live and use the shared manuscript frame.
+- Research & Strategy and Architectures of Intent are live; Sprint 9A is merged, not pending review.
+- The résumé PDF is live at `/resume-ardavan-mir.pdf`.
+- The isolated Adaptive Decision Space route remains a `noindex` reference edition.
+- Guided Ask Ardavan remains deterministic, approved, and static.
+- Manual iMessage, LinkedIn, and Slack share-preview checks remain `TODO` pending evidence.
+- Repository-wide TypeScript is not clean because of known unused calendar/chart component errors.
+- Production host ownership is unresolved in the SOT and requires explicit verification.
 
-## Priority order
+## Sequencing rule
 
-### P0 — Keep live site stable
+The current order is stabilization first, then public-content work and bounded experimentation.
 
-- Preserve accessibility, mobile responsiveness, static export, CNAME, and deployment config
-- Avoid confidential content and unverified claims
-- Complete external recruiter, screen-reader, contrast, and cultural-integrity follow-up validation
+> The Design Twin is the next experimental track, not the next production feature.
 
-### P1 — Case study depth
+## P0 — Sprint 9A.1 Adaptive Decision Space Stabilization
 
-- Polish IES sanitized visuals
-- Build QBOA public case study foundation
-- Link homepage and Ask Ardavan to QBOA case study
-- Add project-card abstract thumbnails
+Status: **IN PROGRESS — blocks Sprint 9B and production Design Twin work**
 
-### P2 — Expand portfolio depth
+Required outcomes:
 
-- Executive storytelling and future-state prototype narrative (see `executive-storytelling-and-future-prototypes-sot.md`)
-- Ask Ardavan V1.5 suggested next prompts
-- Add “What teams bring me in for” proof section
-- Deeper private interview walkthrough for sensitive work (outside public repo if needed)
+1. Reconcile SOTs with the current Adaptive Decision Space production state.
+2. Record `ab704c3` as the production motion baseline and preserve reduced-motion requirements.
+3. Close PR #24 unmerged; its manual share-preview PASS assertions lack evidence and its branch predates the adaptive production baseline.
+4. Verify canonical production-host ownership without inferring it from a successful GitHub Pages or Vercel deployment.
+5. Restore a clean repository-wide `pnpm exec tsc --noEmit` result; current calendar/chart errors remain open.
+6. Establish a current production QA baseline covering motion, reduced motion, keyboard, screen reader, contrast, responsive layouts, Lighthouse, localStorage return behavior, and social-share evidence.
+7. Complete an independent claims/copy proofread and retain existing NDA and no-unverified-metrics guardrails.
+8. Complete recruiter, accessibility, contrast, and cultural-integrity follow-up validation.
 
-### P3 — Polish and legacy work
+Exit gate:
 
-- Add writing/thinking note
-- Add OG/social preview polish
-- Add older projects only after scope and claims are verified
+- PR #24 closed unmerged;
+- host ownership explicitly verified and documented;
+- TypeScript clean without ignored errors;
+- current QA log completed with evidence;
+- no unresolved P0 documentation contradiction.
 
-## Sprint 3 scope
+## P1 — Sprint 9B Shared Release Prototypes v2
 
-Portfolio Sprint 3 — IES visual polish + QBOA case study foundation
+Status: **BLOCKED until P0 completes**
 
-- IES visual polish (human judgment checkpoint, captions, hierarchy)
-- QBOA case study route at `/work/quickbooks-dimensional-chart-of-accounts`
-- QBOA sanitized visuals
-- Homepage QBOA link
-- Ask Ardavan QBOA link (where supported)
-- Project-card abstract thumbnails
-- Updated SOT docs and claims log
+This is the next public-content track.
 
-## Later backlog
+Planned scope:
 
-- QBOA visual polish and verified artifacts
-- Ask Ardavan suggested next prompts
-- Proof section expansion
-- OG/social preview assets
-- IES deeper visual narrative
+- create a versioned v2 private publication packet rather than overwrite the existing packet;
+- reconcile it with the latest portfolio/source audit;
+- preserve private-source, redaction, claims, and citation controls;
+- produce public-safe article, visual, deck, and implementation materials;
+- do not implement a public route until a later explicit approval.
 
-### P2 — Executive storytelling and future-state prototype narrative
+## P1 Experimental — Sprint 10A Design Twin Foundations
 
-Document and later develop a public-safe portfolio treatment around future-state IES exploration, cross-product concept adaptation, executive-facing functional prototypes, and investor-facing leadership demos.
+Status: **EXPERIMENT APPROVED / PRODUCTION NOT APPROVED**
 
-Reference: `docs/sot/executive-storytelling-and-future-prototypes-sot.md`
+May run in parallel with Sprint 9B after P0 completes.
 
-## Future sprint candidate — Sprint 4 or later
+Planned scope:
 
-**Executive Storytelling Proof Layer** — **Completed in Sprint 4**
+- approved-public corpus manifest and classifications;
+- source/owner approval record;
+- 40–60 golden questions plus prompt-injection/private-source tests;
+- preview-only cited text proof of concept;
+- 5–8 recruiter/design-leader sessions;
+- explicit AI disclosure, citations, abstention, and static Ask Ardavan fallback;
+- no production navigation or integration.
 
-Delivered:
+Reference: `ardavan-design-twin-sot.md`.
 
-- “What teams bring me in for” homepage section (`/#what-teams-bring-me-in-for`)
-- Ask Ardavan V1.5 prompt: “What do teams bring you in for?”
-- Abstract ambiguity → alignment arc visual
-- Updated SOT docs and claims log
+## P2 Conditional — Sprint 10B Portfolio-ready Text Design Twin
 
-Still deferred:
+Status: **BLOCKED by Phase 1 evaluation thresholds**
 
-- IES case study expansion around future-state exploration
-- Private interview walkthrough for executive prototype work
-- Sanitized visual storytelling artifacts beyond homepage arc
-- Public résumé PDF regeneration from updated source
+Required before implementation:
 
-## Sprint 5A — Verified Résumé Polish — **Completed**
+- every Design Twin launch threshold passes;
+- secure backend and server-only secrets;
+- rate limits, abuse controls, kill switch, and static fallback;
+- minimal/redacted logging and approved retention rules;
+- separate deliberate route;
+- explicit production approval.
 
-Delivered:
+The text Design Twin cannot replace the Adaptive Decision Space, manuscript, case studies, résumé, or homepage hero.
 
-- Updated `content/resume.md` with AI-native enterprise finance positioning
-- Added `resume-claims-review.md`
-- Updated claims log, roadmap, and changelog
-- Did not replace `public/resume-ardavan-mir.pdf` (no safe generation workflow in repo)
+## P3 — Optional voice experiment
 
-## Next sprint — Sprint 5B — IES Future-State Depth — **Completed**
+Status: **DEFERRED**
 
-Delivered:
+- Consider only after the production text experience demonstrates value.
+- Begin with a clearly synthetic generic voice.
+- Do not clone Ardavan’s voice initially.
+- Do not auto-play voice or video.
+- Require a separate accessibility and privacy review.
 
-- IES case study expansion around future-state exploration (public-safe, abstract)
-- Sanitized executive storytelling visuals: framework transfer map, prototype-to-storyboard arc, executive alignment map, future-state exploration model
-- Ask Ardavan IES anchor link to `#future-state-exploration`
-- Updated SOT docs and claims log
+## P4 — Visual avatar
 
-Still deferred:
+Status: **DEFERRED / NO CURRENT EVIDENCE OF PORTFOLIO VALUE**
 
-- Route-specific OG images for case studies (optional)
-- Private interview walkthrough for executive prototype work
-- Naming of adjacent product areas, leadership audiences, or investor-facing events
+- No face/avatar upload is approved.
+- Any future experiment requires separate consent, biometric privacy, retention/deletion, accessibility, and value reviews.
+- A talking-avatar homepage treatment is out of scope.
 
-## Next sprint — Sprint 6 — QBOA Polish + Share Validation — **Completed**
+## Completed milestones retained as history
 
-Delivered:
+- Sprint 3–8: flagship case studies, résumé, research layer, share assets, and recruiter-facing proof.
+- Sprint 9A: Architectures of Intent published at `/research/ai-native-strategy` and merged through PR #25.
+- Adaptive Decision Space: promoted to production and extended across work/research folios.
+- `ab704c3`: adaptive motion system promoted to production.
+- `7463498`: reading-lens console and persistent return control deployed.
 
-- QBOA visual polish: classification grid, reporting context flow, account structure model, review checkpoint, ambiguity → confidence arc
-- QBOA design focus section at `#classification-to-confidence`
-- Ask Ardavan suggested-next prompt chips (V1.5)
-- Share-preview validation SOT (`share-preview-validation.md`)
-- Updated claims log, roadmap, production QA log, and changelog
+## Global guardrails
 
-Still deferred:
-
-- Manual LinkedIn / Slack / iMessage share-preview validation (documented in SOT)
-- Route-specific OG images (`public/og-ies.png`, `public/og-qboa.png`) — optional future sprint
-
-## Next sprint — Sprint 7 — Share Validation + Final Launch Audit — **Completed**
-
-Delivered:
-
-- Production launch audit: live routes, résumé PDF, OG/favicon assets, share metadata
-- Updated `share-preview-validation.md` with Sprint 7 automated results and manual TODOs
-- Updated production QA log, roadmap, and changelog
-- No code changes required — portfolio share-ready on `www`
-
-Still deferred:
-
-- Manual LinkedIn / Slack / iMessage unfurl validation (steps documented for Ardavan)
-- Route-specific OG images (optional)
-- Apex domain redirect verification outside repo
-
-## Sprint 8 — Research & Strategy Layer: AI-native operating models
-
-**Priority:** P1 after launch polish and two flagship case studies.
-
-**Rationale:**  
-The portfolio already has product case-study depth through IES and QBOA. The next strategic layer should show Ardavan's research, operating-model thinking, and AI-native design strategy without adding too many full case studies.
-
-**Deliverables:**
-
-- Research & Strategy SOT (`research-strategy-sot.md`)
-- Research claims log entries
-- `content/research.ts` source
-- Compact homepage Research & Strategy section
-- `/research` route
-- Ask Ardavan research prompt
-- Sanitized research visual direction
-- Changelog update
-
-**Future backlog:**
-
-- P2 — GitHub-Based Design Collaboration detail page
-- P2 — AI-Native Platform Patterns detail page / pattern library
-- ~~P2 — Architectures of Intent deeper page or external link~~ → **Sprint 9A implemented** (`/research/ai-native-strategy`)
-- P2 — Research artifact visuals
-- P3 — Publish excerpts only if approved
-- P3 — Add research links to résumé only if verified and relevant
-
-## Sprint 9A — Architectures of Intent public research article — **Implemented (pending PR review)**
-
-Delivered:
-
-- Public essay route `/research/ai-native-strategy`
-- Locked approved article converted to typed content source (no MDX dependency)
-- Nine verified public endnotes and source list
-- Three sanitized visuals (spectrum, archetype map, trust loop)
-- Research index, homepage card, and Ask Ardavan discovery links
-- Publication SOT (`architectures-of-intent-publication-sot.md`)
-
-Still deferred:
-
-- Route-specific OG image for the essay
-- Other research detail pages
-- Apex DNS/TLS fix (outside repo)
-
-## Next sprint candidate — Portfolio maintenance
-
-Potential deliverables:
-
-- Complete manual share-preview pass and update SOT results log
-- Optional route-specific OG images
-- Verified earlier experience / résumé expansion after approval
-- Private interview walkthrough (outside public repo if needed)
-
-## Next-generation experience program — Adaptive Decision Space
-
-**Status:** Approved and implemented for production on 2026-07-12.
-
-**Reference:** `docs/sot/adaptive-decision-space-sot.md`
-
-### Working direction
-
-- Living Manuscript is the stable canonical interface.
-- The Weave emerges progressively through explicit lens, depth, Decision Space stage, and disclosed local returning-visit state.
-- The system remains deterministic, explainable, reversible, and backed by one approved content model.
-- The Adaptive Decision Space is production; Glass Monolith is historical context.
-
-### Completed sequence and follow-up
-
-1. Consolidate complete V4/V5 handoff sources.
-2. Define adaptive content metadata and provenance treatments.
-3. Test typography and structural cultural treatments.
-4. Prototype three representative scenes.
-5. Validate recruiter comprehension, accessibility, cultural integrity, and performance.
-6. Build the full responsive portfolio and shared detailed-route folios — complete.
-7. Record explicit production approval and reversible Git migration — complete.
-8. Complete external recruiter, screen-reader, contrast, and cultural-integrity follow-up validation.
-
-### First prototype scope
-
-**Implementation status:** Representative prototype retained as a `noindex` reference; production experience implemented at `/` on 2026-07-12.
-
-- Opening + Reading Lens.
-- Evidence stage + Reading Dial.
-- Ask Ardavan + provenance.
-- Default, lens-selected, medium/deep, mobile, keyboard, screen-reader, and reduced-motion states.
-
-### Production guardrails
-
-- Preserve canonical case-study routes, CNAME, metadata, and deployment configuration.
-- No new public claims or generated factual copy.
-- No random or undisclosed personalization.
-- No production merge without validated preview and explicit approval.
-
-## Out of scope
-
-- Real AI chat
-- Backend/API routes
-- Confidential materials in repo
-- Unverified metrics
-- Production merge without review
+- No unverified metrics, launch/adoption claims, or inflated ownership language.
+- No private feedback, recognition files, internal decks, screenshots, customer data, raw handoffs, or confidential repositories in public or AI corpora.
+- Preserve canonical routes, metadata, résumé, CNAME, deployment, and static export unless separately approved.
+- Manual social-preview checks remain TODO until date, URL, platform, and evidence are recorded.
+- No Design Twin implementation, API, vendor upload, secret creation, voice clone, or avatar work is authorized by this roadmap update.

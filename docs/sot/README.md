@@ -1,6 +1,6 @@
 # Ardavan Portfolio Project — Source of Truth Pack
 
-Version: 0.3  
+Version: 0.4
 Last updated: 2026-07-12  
 Owner: Ardavan Mirhosseini  
 Project: Portfolio update / résumé update / recruiter-ready positioning  
@@ -59,16 +59,16 @@ Use these labels everywhere:
 - `SOT-09-DECISION-LOG.md` — strategic and implementation decisions.
 - `SOT-10-AI-PROMPTS.md` — reusable prompts for ChatGPT, Claude, Cursor, v0.
 - `SOT-11-BACKLOG-TODOS.md` — prioritized P0/P1/P2 backlog, verification list, next actions.
-- `adaptive-decision-space-sot.md` — approved prototype direction and gated execution plan for the Progressive Woven Manuscript.
+- `adaptive-decision-space-sot.md` — production Adaptive Decision Space rules, motion baseline, provenance, accessibility, and extension boundaries.
+- `ardavan-design-twin-sot.md` — text-first experimental Design Twin scope, corpus rules, evaluation thresholds, and no-go conditions.
 - `PORTFOLIO_PROJECT_SOTS_CONSOLIDATED.md` — all SOTs in one file.
 
 ## Next actions (summary)
 
 See `SOT-11-BACKLOG-TODOS.md` for full detail.
 
-- **P0:** Keep the live site, claims, accessibility, static export, and deployment stable.
-- **NX-0:** Consolidate the complete Living Manuscript / The Weave handoff assets.
-- **NX-1:** Define the canonical adaptive-content schema and provenance treatments.
-- **NX-2:** Prototype Opening + Lens, Evidence + Dial, and Ask Ardavan + provenance.
-- **NX-3:** Complete external recruiter, screen-reader, contrast, and cultural-integrity follow-up validation.
-- **Deferred:** Disconnect Vercel/v0; update root README.
+- **P0:** Reconcile SOTs, close PR #24 unmerged, verify production-host ownership, restore TypeScript, establish current QA, and document motion.
+- **P1:** Begin Shared Release Prototypes v2 only after P0.
+- **P1 Experimental:** Run Design Twin corpus and preview-only text foundations after P0; no production integration.
+- **P2 Conditional:** Consider a secure production text Design Twin only after thresholds and explicit approval.
+- **P3/P4:** Voice and visual avatar remain deferred.
