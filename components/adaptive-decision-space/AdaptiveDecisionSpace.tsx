@@ -42,6 +42,18 @@ const QUESTIONS_BY_LENS: Record<ReadingLens | "default", AskArdavanPromptId[]> =
   "systems-craft": ["ies", "research", "start"],
 }
 
+const MOTION_STAGE_TARGETS: ReadonlyArray<{
+  selector: string
+  stage: DecisionStage
+}> = [
+  { selector: "#opening", stage: "ambiguity" },
+  { selector: "#decision-spine-structure", stage: "structure" },
+  { selector: "#decision-spine-prototype", stage: "prototype" },
+  { selector: "#evidence", stage: "evidence" },
+  { selector: "#apparatus", stage: "story" },
+  { selector: "#colophon", stage: "alignment" },
+]
+
 type AdaptiveDecisionSpaceProps = {
   edition?: "prototype" | "production"
 }
@@ -57,6 +69,8 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
   )
   const [currentStage, setCurrentStage] = useState<DecisionStage>(DEFAULT_READING.currentStage)
   const [persistenceReady, setPersistenceReady] = useState(false)
+  const [motionReady, setMotionReady] = useState(false)
+  const [decisionSpineResolved, setDecisionSpineResolved] = useState(false)
 
   useEffect(() => {
     try {
@@ -105,6 +119,51 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(reading))
   }, [currentStage, depth, expandedPassages, lens, openQuestion, persistenceReady])
 
+  useEffect(() => {
+    if (!("IntersectionObserver" in window)) return
+
+    const targets = MOTION_STAGE_TARGETS.flatMap(({ selector, stage }) => {
+      const element = document.querySelector<HTMLElement>(selector)
+      return element ? [{ element, stage }] : []
+    })
+    if (!targets.length) return
+
+    const stageByElement = new Map(targets.map(({ element, stage }) => [element, stage]))
+    const visibleStages = new Map<Element, DecisionStage>()
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const stage = stageByElement.get(entry.target as HTMLElement)
+          if (!stage) return
+
+          if (entry.isIntersecting) {
+            visibleStages.set(entry.target, stage)
+            if (stage === "structure" || stage === "prototype") {
+              setDecisionSpineResolved(true)
+            }
+          } else {
+            visibleStages.delete(entry.target)
+          }
+        })
+
+        const readingLine = window.innerHeight * 0.5
+        const closestStage = Array.from(visibleStages.entries()).sort(
+          ([first], [second]) =>
+            Math.abs(first.getBoundingClientRect().top - readingLine) -
+            Math.abs(second.getBoundingClientRect().top - readingLine)
+        )[0]
+
+        if (closestStage) setCurrentStage(closestStage[1])
+      },
+      { rootMargin: "-42% 0px -42% 0px", threshold: 0 }
+    )
+
+    targets.forEach(({ element }) => observer.observe(element))
+    setMotionReady(true)
+
+    return () => observer.disconnect()
+  }, [])
+
   const activeLens = READING_LENSES.find((item) => item.id === lens)
   const questionIds = QUESTIONS_BY_LENS[lens ?? "default"]
   const weaveLevel = lens ? (depth === "deep" ? "dense" : depth === "standard" ? "medium" : "selected") : "latent"
@@ -134,6 +193,8 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
       data-depth={depth}
       data-stage={currentStage}
       data-weave={weaveLevel}
+      data-motion="active"
+      data-motion-ready={motionReady ? "ready" : undefined}
     >
       <a href="#prototype-content" className={styles.skipLink}>Skip to portfolio content</a>
 
@@ -151,7 +212,11 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
         </div>
       </header>
 
-      <DecisionRail currentStage={currentStage} onStageChange={setCurrentStage} />
+      <DecisionRail
+        currentStage={currentStage}
+        onStageChange={setCurrentStage}
+        motionEnabled
+      />
 
       <main id="prototype-content" className={styles.manuscript}>
         <section id="opening" className={styles.opening} aria-labelledby="opening-title">
@@ -189,15 +254,29 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
           <ReadingLensControl value={lens} onChange={setLens} />
         </section>
 
-        <section id="decision-spine" className={styles.decisionSpine} aria-labelledby="decision-title">
-          <p className={styles.sectionNumber}>Decision Space · 01—06</p>
+        <section
+          id="decision-spine"
+          className={styles.decisionSpine}
+          aria-labelledby="decision-title"
+          data-motion-resolved={decisionSpineResolved}
+        >
+          <p
+            id="decision-spine-structure"
+            className={styles.sectionNumber}
+          >
+            Decision Space · 01—06
+          </p>
           <h2 id="decision-title">The portfolio is the method.</h2>
           <p>
             The manuscript moves from ambiguity to alignment. Structure and relationships become
             more visible only as the reading earns them; Evidence remains the densest stage and is
             always one interaction away.
           </p>
-          <div className={styles.inscriptionBand} aria-hidden="true">
+          <div
+            id="decision-spine-prototype"
+            className={styles.inscriptionBand}
+            aria-hidden="true"
+          >
             <span>setting</span><span>threading</span><span>resolving</span>
           </div>
         </section>

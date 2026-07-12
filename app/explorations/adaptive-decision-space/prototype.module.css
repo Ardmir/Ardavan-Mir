@@ -10,6 +10,12 @@
   --weft-faint: rgba(118, 80, 38, 0.07);
   --focus: #174b82;
   --weave-opacity: 0.15;
+  --motion-instant: 160ms;
+  --motion-response: 240ms;
+  --motion-structural: 520ms;
+  --motion-resolve: 680ms;
+  --motion-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --motion-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   min-height: 100vh;
   overflow-x: clip;
   background:
@@ -18,7 +24,9 @@
   color: var(--ink);
   font-family: var(--font-inter), system-ui, sans-serif;
   line-height: 1.6;
-  transition: background-color 420ms ease, color 420ms ease;
+  transition:
+    background-color var(--motion-structural) var(--motion-ease),
+    color var(--motion-structural) var(--motion-ease);
 }
 
 .prototype[data-lens="hiring"] {
@@ -157,13 +165,59 @@
 }
 
 .stageRail ol {
+  position: relative;
   display: grid;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.prototype[data-motion="active"] .stageRail ol::before,
+.prototype[data-motion="active"] .stageRail ol::after {
+  position: absolute;
+  z-index: 0;
+  top: 1.875rem;
+  bottom: 1.875rem;
+  left: 1px;
+  width: 1px;
+  content: "";
+  pointer-events: none;
+}
+
+.prototype[data-motion="active"] .stageRail ol::before {
+  background: var(--rule);
+}
+
+.prototype[data-motion="active"] .stageRail ol::after {
+  background: var(--weft);
+  transform: scaleY(0.04);
+  transform-origin: top;
+  transition: transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"][data-stage="structure"] .stageRail ol::after {
+  transform: scaleY(0.22);
+}
+
+.prototype[data-motion="active"][data-stage="prototype"] .stageRail ol::after {
+  transform: scaleY(0.4);
+}
+
+.prototype[data-motion="active"][data-stage="evidence"] .stageRail ol::after {
+  transform: scaleY(0.6);
+}
+
+.prototype[data-motion="active"][data-stage="story"] .stageRail ol::after {
+  transform: scaleY(0.8);
+}
+
+.prototype[data-motion="active"][data-stage="alignment"] .stageRail ol::after {
+  transform: scaleY(1);
+}
+
 .stageRail li {
+  position: relative;
+  z-index: 1;
   min-width: 0;
 }
 
@@ -175,17 +229,33 @@
   color: var(--ink-soft);
   font-size: 0;
   text-decoration: none;
+  transition:
+    background-color var(--motion-response) var(--motion-ease),
+    border-color var(--motion-response) var(--motion-ease),
+    color var(--motion-response) var(--motion-ease);
 }
 
 .stageRail a span {
   font-family: var(--font-mono), monospace;
   font-size: 0.65rem;
+  transition:
+    opacity var(--motion-response) var(--motion-ease),
+    transform var(--motion-response) var(--motion-ease-out);
 }
 
 .stageRail a[data-active="true"] {
   border-color: var(--weft);
   background: var(--weft-faint);
   color: var(--weft);
+}
+
+.prototype[data-motion="active"] .stageRail a:not([data-active="true"]) span {
+  opacity: 0.7;
+  transform: scale(0.92);
+}
+
+.prototype[data-motion="active"] .stageRail a[data-active="true"] span {
+  transform: translateX(0.12rem) scale(1.08);
 }
 
 .manuscript {
@@ -213,7 +283,9 @@
   content: "";
   pointer-events: none;
   opacity: var(--weave-opacity);
-  transition: opacity 480ms ease, transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition:
+    opacity var(--motion-structural) var(--motion-ease),
+    transform var(--motion-resolve) var(--motion-ease);
 }
 
 .opening::after {
@@ -330,11 +402,54 @@
 }
 
 .readingNote {
+  position: relative;
   border-top: 3px solid var(--weft);
   padding: 1.2rem 0 0 1.15rem;
   color: var(--ink-soft);
   font-family: var(--font-playfair), Georgia, serif;
   font-size: 0.95rem;
+}
+
+.prototype[data-motion="active"] .readingNote {
+  transition:
+    background-color var(--motion-structural) var(--motion-ease),
+    border-color var(--motion-response) var(--motion-ease);
+}
+
+.prototype[data-motion="active"] .readingNote::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  content: "";
+  background: var(--weft);
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition:
+    opacity var(--motion-response) var(--motion-ease),
+    transform var(--motion-resolve) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"][data-lens]:not([data-lens="default"]) .readingNote {
+  background: linear-gradient(90deg, var(--weft-faint), transparent 72%);
+}
+
+.prototype[data-motion="active"][data-lens]:not([data-lens="default"]) .readingNote::before {
+  opacity: 0.7;
+  transform: scaleY(1);
+}
+
+.prototype[data-motion="active"] .noteValue {
+  transition:
+    color var(--motion-instant) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"][data-lens]:not([data-lens="default"]) .noteValue {
+  color: var(--weft);
+  transform: translateX(0.18rem);
 }
 
 .readingNote p {
@@ -404,6 +519,44 @@
   border-bottom: 1px solid var(--rule);
 }
 
+.prototype[data-motion="active"] .lensOptions {
+  position: relative;
+  overflow: hidden;
+}
+
+.prototype[data-motion="active"] .lensOptions::after {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  width: calc(100% / 3);
+  height: 3px;
+  content: "";
+  background: var(--weft);
+  opacity: 0;
+  transform: translateX(0);
+  transform-origin: left;
+  transition:
+    background-color var(--motion-response) var(--motion-ease),
+    opacity var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"][data-lens="hiring"] .lensOptions::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.prototype[data-motion="active"][data-lens="ai-thinking"] .lensOptions::after {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+.prototype[data-motion="active"][data-lens="systems-craft"] .lensOptions::after {
+  opacity: 1;
+  transform: translateX(200%);
+}
+
 .lensOption {
   position: relative;
   display: grid;
@@ -419,6 +572,32 @@
   text-align: left;
 }
 
+.prototype[data-motion="active"] .lensOption {
+  overflow: hidden;
+  transition: color var(--motion-response) var(--motion-ease);
+}
+
+.prototype[data-motion="active"] .lensOption::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  content: "";
+  background:
+    repeating-linear-gradient(135deg, transparent 0 13px, var(--weft-faint) 13px 14px),
+    var(--weft-soft);
+  opacity: 0;
+  transform: scaleY(0.72);
+  transform-origin: bottom;
+  transition:
+    opacity var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"] .lensOption > span {
+  position: relative;
+  z-index: 1;
+}
+
 .lensOption + .lensOption {
   border-left: 1px solid var(--rule);
 }
@@ -427,6 +606,15 @@
   background:
     repeating-linear-gradient(135deg, transparent 0 13px, var(--weft-faint) 13px 14px),
     var(--weft-soft);
+}
+
+.prototype[data-motion="active"] .lensOption[data-active="true"] {
+  background: transparent;
+}
+
+.prototype[data-motion="active"] .lensOption[data-active="true"]::before {
+  opacity: 1;
+  transform: scaleY(1);
 }
 
 .lensMark {
@@ -439,10 +627,22 @@
   transform: rotate(45deg);
 }
 
+.prototype[data-motion="active"] .lensMark {
+  transition:
+    background-color var(--motion-response) var(--motion-ease),
+    border-color var(--motion-response) var(--motion-ease),
+    box-shadow var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
 .lensOption[data-active="true"] .lensMark {
   border-color: var(--weft);
   background: var(--weft);
   box-shadow: inset 0 0 0 3px var(--paper);
+}
+
+.prototype[data-motion="active"] .lensOption[data-active="true"] .lensMark {
+  transform: rotate(135deg) scale(0.86);
 }
 
 .lensLabel,
@@ -461,6 +661,18 @@
   color: var(--ink-soft);
   font-size: 0.76rem;
   line-height: 1.45;
+}
+
+.prototype[data-motion="active"] .lensLabel,
+.prototype[data-motion="active"] .lensDescription {
+  transition:
+    color var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"] .lensOption[data-active="true"] .lensLabel,
+.prototype[data-motion="active"] .lensOption[data-active="true"] .lensDescription {
+  transform: translateX(0.18rem);
 }
 
 .decisionSpine {
@@ -498,6 +710,7 @@
 }
 
 .inscriptionBand {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 4rem;
@@ -508,6 +721,87 @@
   font-size: 0.68rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+.prototype[data-motion="active"][data-motion-ready="ready"] .decisionSpine .sectionNumber,
+.prototype[data-motion="active"][data-motion-ready="ready"] .decisionSpine h2,
+.prototype[data-motion="active"][data-motion-ready="ready"] .decisionSpine > p:not(.sectionNumber),
+.prototype[data-motion="active"][data-motion-ready="ready"] .inscriptionBand {
+  opacity: 0;
+  transform: translateY(1rem);
+}
+
+.prototype[data-motion="active"][data-motion-ready="ready"] .decisionSpine[data-motion-resolved="true"] .sectionNumber,
+.prototype[data-motion="active"][data-motion-ready="ready"] .decisionSpine[data-motion-resolved="true"] h2,
+.prototype[data-motion="active"][data-motion-ready="ready"] .decisionSpine[data-motion-resolved="true"] > p:not(.sectionNumber),
+.prototype[data-motion="active"][data-motion-ready="ready"] .decisionSpine[data-motion-resolved="true"] .inscriptionBand {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.prototype[data-motion="active"] .decisionSpine .sectionNumber {
+  transition:
+    opacity var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"] .decisionSpine h2 {
+  transition:
+    opacity var(--motion-structural) var(--motion-ease),
+    transform var(--motion-resolve) var(--motion-ease-out);
+  transition-delay: 70ms;
+}
+
+.prototype[data-motion="active"] .decisionSpine > p:not(.sectionNumber) {
+  transition:
+    opacity var(--motion-structural) var(--motion-ease),
+    transform var(--motion-resolve) var(--motion-ease-out);
+  transition-delay: 140ms;
+}
+
+.prototype[data-motion="active"] .inscriptionBand {
+  transition:
+    opacity var(--motion-structural) var(--motion-ease),
+    transform var(--motion-resolve) var(--motion-ease-out);
+  transition-delay: 220ms;
+}
+
+.prototype[data-motion="active"] .inscriptionBand::after {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: color-mix(in srgb, var(--weft) 80%, #fff);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--motion-resolve) var(--motion-ease-out) 300ms;
+}
+
+.prototype[data-motion="active"] .decisionSpine[data-motion-resolved="true"] .inscriptionBand::after {
+  transform: scaleX(1);
+}
+
+.prototype[data-motion="active"] .inscriptionBand span {
+  opacity: 0.5;
+  transform: translateY(0.28rem);
+  transition:
+    opacity var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"] .decisionSpine[data-motion-resolved="true"] .inscriptionBand span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.prototype[data-motion="active"] .decisionSpine[data-motion-resolved="true"] .inscriptionBand span:nth-child(2) {
+  transition-delay: 320ms;
+}
+
+.prototype[data-motion="active"] .decisionSpine[data-motion-resolved="true"] .inscriptionBand span:nth-child(3) {
+  transition-delay: 420ms;
 }
 
 .inscriptionBand span {
@@ -557,12 +851,39 @@
 }
 
 .depthOptions {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   border: 1px solid var(--rule-strong);
 }
 
+.prototype[data-motion="active"] .depthOptions::after {
+  position: absolute;
+  z-index: 3;
+  right: auto;
+  bottom: -1px;
+  left: 0;
+  width: calc(100% / 3);
+  height: 3px;
+  content: "";
+  background: var(--weft);
+  transform: translateX(0);
+  transition:
+    background-color var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"][data-depth="standard"] .depthOptions::after {
+  transform: translateX(100%);
+}
+
+.prototype[data-motion="active"][data-depth="deep"] .depthOptions::after {
+  transform: translateX(200%);
+}
+
 .depthOption {
+  position: relative;
+  overflow: hidden;
   display: grid;
   min-width: 0;
   cursor: pointer;
@@ -574,6 +895,29 @@
   text-align: center;
 }
 
+.prototype[data-motion="active"] .depthOption {
+  transition: color var(--motion-response) var(--motion-ease);
+}
+
+.prototype[data-motion="active"] .depthOption::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  content: "";
+  background: var(--ink);
+  opacity: 0;
+  transform: scaleY(0.72);
+  transform-origin: bottom;
+  transition:
+    opacity var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"] .depthOption > span {
+  position: relative;
+  z-index: 1;
+}
+
 .depthOption + .depthOption {
   border-left: 1px solid var(--rule-strong);
 }
@@ -583,9 +927,34 @@
   color: var(--paper);
 }
 
+.prototype[data-motion="active"] .depthOption[data-active="true"] {
+  background: transparent;
+}
+
+.prototype[data-motion="active"] .depthOption[data-active="true"]::before {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
 .depthLabel {
   font-size: 0.72rem;
   font-weight: 700;
+}
+
+.prototype[data-motion="active"] .depthLabel,
+.prototype[data-motion="active"] .depthMetaphor {
+  transition:
+    letter-spacing var(--motion-structural) var(--motion-ease-out),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"] .depthOption[data-active="true"] .depthLabel {
+  transform: translateY(-0.08rem);
+}
+
+.prototype[data-motion="active"] .depthOption[data-active="true"] .depthMetaphor {
+  letter-spacing: 0.13em;
+  transform: translateY(0.05rem);
 }
 
 .depthMetaphor {
@@ -613,6 +982,12 @@
   border-bottom: 1px solid var(--rule-strong);
   padding: clamp(3rem, 7vw, 6rem) 0;
   transition: background-color 380ms ease, border-color 380ms ease;
+}
+
+.prototype[data-motion="active"] .evidencePassage {
+  transition:
+    background-color var(--motion-structural) var(--motion-ease),
+    border-color var(--motion-structural) var(--motion-ease);
 }
 
 .evidencePassage[data-recommended="true"] {
@@ -660,6 +1035,14 @@
   text-transform: uppercase;
 }
 
+.prototype[data-motion="active"] .recommended {
+  animation: recommendation-resolve var(--motion-structural) var(--motion-ease-out) both;
+}
+
+.prototype[data-motion="active"] .evidencePassage[data-recommended="true"] .signedKnot {
+  animation: knot-resolve var(--motion-structural) var(--motion-ease-out) both;
+}
+
 .evidenceTitle {
   max-width: 24ch;
   margin: 1rem 0 2rem;
@@ -680,6 +1063,18 @@
   padding-left: clamp(1rem, 3vw, 2.5rem);
 }
 
+.prototype[data-motion="active"] .passage {
+  animation: passage-resolve var(--motion-resolve) var(--motion-ease-out) both;
+}
+
+.prototype[data-motion="active"] .passage:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.prototype[data-motion="active"] .passage:nth-child(3) {
+  animation-delay: 160ms;
+}
+
 .passage::before {
   position: absolute;
   left: 0;
@@ -689,6 +1084,11 @@
   content: "";
   background: var(--weft);
   opacity: 0.45;
+}
+
+.prototype[data-motion="active"] .passage::before {
+  animation: evidence-thread var(--motion-resolve) var(--motion-ease-out) both;
+  transform-origin: top;
 }
 
 .passage[data-provenance="reflection"]::before {
@@ -735,6 +1135,11 @@
   transform: rotate(45deg);
 }
 
+.prototype[data-motion="active"] .passage .siglum::before,
+.prototype[data-motion="active"] .withheldNote .siglum::before {
+  animation: knot-resolve var(--motion-structural) var(--motion-ease-out) 120ms both;
+}
+
 .foldNotice {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -744,6 +1149,17 @@
   border-left: 4px solid var(--weft);
   background: var(--weft-faint);
   padding: 1rem 1.2rem;
+}
+
+.prototype[data-motion="active"] .foldNotice {
+  transition:
+    background-color var(--motion-structural) var(--motion-ease),
+    border-color var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-motion="active"][data-depth="standard"] .foldNotice {
+  transform: translateX(0.18rem);
 }
 
 .foldNotice p {
@@ -769,6 +1185,57 @@
   margin: 2rem 0 0;
   color: var(--ink-soft);
   font-size: 0.76rem;
+}
+
+.prototype[data-motion="active"] .withheldNote,
+.prototype[data-motion="active"] .refoldButton {
+  animation: passage-resolve var(--motion-structural) var(--motion-ease-out) both;
+}
+
+@keyframes recommendation-resolve {
+  from {
+    opacity: 0;
+    transform: translateX(-0.6rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes passage-resolve {
+  from {
+    opacity: 0;
+    transform: translateY(0.85rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes evidence-thread {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes knot-resolve {
+  from {
+    opacity: 0;
+    transform: rotate(25deg) scale(0.64);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
 }
 
 .manuscriptLink {
@@ -1071,6 +1538,11 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .prototype[data-motion="active"] .stageRail ol::before,
+  .prototype[data-motion="active"] .stageRail ol::after {
+    display: none;
+  }
+
   .stageRail a {
     min-height: auto;
     border-left: 0;
@@ -1116,6 +1588,11 @@
 
   .lensOptions {
     grid-template-columns: 1fr;
+  }
+
+  .prototype[data-motion="active"] .lensOptions::after,
+  .prototype[data-motion="active"] .depthOptions::after {
+    display: none;
   }
 
   .lensOption + .lensOption {
@@ -1211,5 +1688,44 @@
 
   .prototype {
     scroll-behavior: auto;
+  }
+
+  .prototype[data-motion="active"] .stageRail a,
+  .prototype[data-motion="active"] .stageRail a span,
+  .prototype[data-motion="active"] .stageRail ol::after,
+  .prototype[data-motion="active"] .decisionSpine .sectionNumber,
+  .prototype[data-motion="active"] .decisionSpine h2,
+  .prototype[data-motion="active"] .decisionSpine > p:not(.sectionNumber),
+  .prototype[data-motion="active"] .inscriptionBand,
+  .prototype[data-motion="active"] .inscriptionBand::after,
+  .prototype[data-motion="active"] .inscriptionBand span,
+  .prototype[data-motion="active"] .readingNote,
+  .prototype[data-motion="active"] .readingNote::before,
+  .prototype[data-motion="active"] .noteValue,
+  .prototype[data-motion="active"] .lensOptions::after,
+  .prototype[data-motion="active"] .lensOption,
+  .prototype[data-motion="active"] .lensOption::before,
+  .prototype[data-motion="active"] .lensMark,
+  .prototype[data-motion="active"] .lensLabel,
+  .prototype[data-motion="active"] .lensDescription,
+  .prototype[data-motion="active"] .depthOptions::after,
+  .prototype[data-motion="active"] .depthOption,
+  .prototype[data-motion="active"] .depthOption::before,
+  .prototype[data-motion="active"] .depthLabel,
+  .prototype[data-motion="active"] .depthMetaphor,
+  .prototype[data-motion="active"] .evidencePassage,
+  .prototype[data-motion="active"] .foldNotice {
+    transition: none;
+  }
+
+  .prototype[data-motion="active"] .recommended,
+  .prototype[data-motion="active"] .evidencePassage[data-recommended="true"] .signedKnot,
+  .prototype[data-motion="active"] .passage,
+  .prototype[data-motion="active"] .passage::before,
+  .prototype[data-motion="active"] .passage .siglum::before,
+  .prototype[data-motion="active"] .withheldNote,
+  .prototype[data-motion="active"] .withheldNote .siglum::before,
+  .prototype[data-motion="active"] .refoldButton {
+    animation: none;
   }
 }
