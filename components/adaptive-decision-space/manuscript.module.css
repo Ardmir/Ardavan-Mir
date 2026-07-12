@@ -1013,6 +1013,7 @@
 .manuscriptFrame :global(.ies-visual--transfer),
 .manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"]),
 .manuscriptFrame :global(.research-visual--platform),
+.manuscriptFrame :global(.aoi-visual--spectrum),
 .manuscriptFrame :global(.aoi-visual--trust-loop) {
   border-top-color: color-mix(in srgb, var(--paper) 28%, transparent);
   background:
@@ -1025,6 +1026,7 @@
 .manuscriptFrame :global(.ies-visual--transfer .ies-visual__caption),
 .manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"] .case-visual__caption),
 .manuscriptFrame :global(.research-visual--platform .research-visual__caption),
+.manuscriptFrame :global(.aoi-visual--spectrum .aoi-visual__caption),
 .manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__caption) {
   color: color-mix(in srgb, var(--weft) 62%, var(--paper));
 }
@@ -1033,6 +1035,7 @@
 .manuscriptFrame :global(.ies-visual--transfer .ies-visual__blurb),
 .manuscriptFrame :global(figure[aria-labelledby="qboa-grid-title"] .case-visual__blurb),
 .manuscriptFrame :global(.research-visual--platform .research-visual__blurb),
+.manuscriptFrame :global(.aoi-visual--spectrum .aoi-visual__blurb),
 .manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__blurb) {
   color: color-mix(in srgb, var(--paper) 72%, transparent);
 }
@@ -1084,6 +1087,19 @@
 
 .manuscriptFrame :global(.research-visual--platform svg text) {
   fill: color-mix(in srgb, var(--paper) 72%, transparent);
+}
+
+.manuscriptFrame :global(.aoi-visual--spectrum .aoi-visual__shapes ellipse) {
+  fill: color-mix(in srgb, var(--weft) 20%, transparent);
+  stroke: color-mix(in srgb, var(--weft) 58%, var(--paper));
+}
+
+.manuscriptFrame :global(.aoi-visual--spectrum .aoi-visual__stage-label) {
+  color: var(--paper);
+}
+
+.manuscriptFrame :global(.aoi-visual--spectrum .aoi-visual__stage-sub) {
+  color: color-mix(in srgb, var(--paper) 68%, transparent);
 }
 
 .manuscriptFrame :global(.aoi-visual--trust-loop .aoi-visual__loop-label) {
