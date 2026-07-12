@@ -110,21 +110,6 @@ export default function ArchitecturesOfIntentPage() {
               {ARCHITECTURES_OF_INTENT_META.metadataLine}
             </p>
             <p className="aoi-abstract mt-8">{ARCHITECTURES_OF_INTENT_META.abstract}</p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a href="#opening-thesis" className="case-study-cta case-study-cta--primary">
-                Begin reading
-              </a>
-              <a
-                href={ARCHITECTURES_OF_INTENT_META.interactiveGuideHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="case-study-cta case-study-cta--secondary"
-              >
-                {ARCHITECTURES_OF_INTENT_META.interactiveGuideLabel}{" "}
-                <span aria-hidden="true">↗</span>
-                <span className="sr-only"> (opens in a new tab)</span>
-              </a>
-            </div>
           </header>
 
           <article className="aoi-article mt-16">
