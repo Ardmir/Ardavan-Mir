@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import IALogotype from "@/components/ia-logotype"
 import ResearchStrategyVisuals from "@/components/ResearchStrategyVisuals"
+import { ManuscriptFrame } from "@/components/adaptive-decision-space/ManuscriptFrame"
+import styles from "@/components/adaptive-decision-space/manuscript.module.css"
 import { openGraphShareImages, SITE_URL, twitterShareImages } from "@/lib/site"
 
 const ogImageAlt =
@@ -121,140 +122,133 @@ const SECTIONS = [
 
 export default function ResearchPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-[#05070A] text-[#F4F7F6]">
-      <header className="border-b border-[rgba(255,255,255,0.08)] bg-[#05070A]/90 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-3xl items-center justify-between px-6 lg:px-8">
-          <IALogotype />
-          <Link
-            href="/#work"
-            className="font-mono text-xs uppercase tracking-[0.16em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#31F5D4]"
-          >
-            Back to work
-          </Link>
-        </div>
-      </header>
-
-      <article className="mx-auto max-w-3xl px-6 py-16 lg:px-8 lg:py-24">
-        <p className="font-mono text-xs uppercase tracking-[0.16em] text-[#7CE7D6]">
-          Research & Strategy
-        </p>
-        <h1 className="monolith-title monolith-title--section mt-4">
-          Operating models for AI-native design
-        </h1>
-        <p className="mt-6 font-body text-base leading-relaxed text-[#A8B3B0] sm:text-lg">
-          A collection of public-safe research summaries and frameworks exploring how design teams
-          can collaborate, prototype, and govern AI-native product work.
-        </p>
-        <p className="mt-4 font-body text-[14px] leading-relaxed text-[#A8B3B0]/90">
-          These summaries are intentionally sanitized. They focus on public-safe themes, methods, and
-          patterns rather than internal documents, private feedback, or confidential workflow details.
-        </p>
-
-        {SECTIONS.map((section, index) => (
-          <section
-            key={section.id}
-            id={section.id}
-            className={`research-section ${index > 0 ? "mt-20 border-t border-[rgba(255,255,255,0.08)] pt-20" : "mt-16"}`}
-          >
-            <h2 className="monolith-title monolith-title--card">{section.title}</h2>
-            <p className="mt-2 font-ui text-[12px] uppercase tracking-[0.12em] text-[#7CE7D6]">
-              {section.subtitle}
-            </p>
-            {section.copy.map((paragraph) => (
-              <p
-                key={paragraph.slice(0, 40)}
-                className="mt-5 font-body text-[15px] leading-relaxed text-[#A8B3B0]"
-              >
-                {paragraph}
+    <ManuscriptFrame folio="Research · R.01—03" backHref="/#evidence" backLabel="Back to evidence">
+      <article>
+        <header id="ambiguity" className={styles.hero}>
+          <div className={styles.heroMeta}>
+            <p>Research &amp; Strategy · Public collection</p>
+            <p>Research folios R.01—03 · Adaptive edition</p>
+          </div>
+          <div className={styles.heroGrid}>
+            <div>
+              <p className={styles.eyebrow}>AI-native product strategy · Operating models</p>
+              <h1 className={styles.heroTitle}>
+                Operating models for <em>AI-native design</em>
+              </h1>
+              <p className={styles.heroDek}>
+                Public-safe research and frameworks exploring how design teams can collaborate,
+                prototype, and govern AI-native product work.
               </p>
-            ))}
-
-            <div className="mt-8 grid gap-8 sm:grid-cols-2">
-              <div>
-                <h3 className="font-ui text-[11px] uppercase tracking-[0.14em] text-[#F4F7F6]">
-                  What it covers
-                </h3>
-                <ul className="mt-3 space-y-2 font-body text-[14px] leading-relaxed text-[#A8B3B0]">
-                  {section.covers.map((item) => (
-                    <li key={item} className="flex gap-2">
-                      <span className="text-[#31F5D4]" aria-hidden="true">
-                        ·
-                      </span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-ui text-[11px] uppercase tracking-[0.14em] text-[#F4F7F6]">
-                  What it demonstrates
-                </h3>
-                <ul className="mt-3 space-y-2 font-body text-[14px] leading-relaxed text-[#A8B3B0]">
-                  {section.demonstrates.map((item) => (
-                    <li key={item} className="flex gap-2">
-                      <span className="text-[#31F5D4]" aria-hidden="true">
-                        ·
-                      </span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
+            <aside className={styles.heroAside} aria-label="Research publication note">
+              <p className={styles.apparatusLabel}>Publication boundary</p>
+              <p><strong>Methods and patterns remain visible.</strong></p>
+              <p>
+                Internal documents, private feedback, and confidential workflow details are
+                withheld; the strategic reasoning remains open to inspection.
+              </p>
+              <p className={styles.provenanceLine}>
+                <span className={styles.siglum} aria-hidden="true">A</span>
+                Approved research summaries
+              </p>
+            </aside>
+          </div>
+        </header>
 
-            <div className="mt-10">
-              <ResearchStrategyVisuals variant={section.visual} />
+        <section id="structure" className={`${styles.stage} ${styles.darkStage}`}>
+          <div className={styles.stageHeader}>
+            <div>
+              <p className={styles.stageNumber}>Stage 02 · Structure</p>
+              <h2 className={styles.stageHeading}>Research is another way of making the system legible.</h2>
             </div>
-
-            <div className="mt-8 flex flex-wrap gap-4">
-              {"detailHref" in section && section.detailHref ? (
-                <Link
-                  href={section.detailHref}
-                  className="inline-flex font-ui text-[11px] uppercase tracking-[0.12em] text-[#31F5D4] transition-colors hover:text-[#7CE7D6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#31F5D4]"
-                >
-                  {section.detailLabel} →
-                </Link>
-              ) : null}
-              {"externalHref" in section && section.externalHref ? (
-                <a
-                  href={section.externalHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex font-ui text-[11px] uppercase tracking-[0.12em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#31F5D4]"
-                >
-                  {section.externalLabel}{" "}
-                  <span aria-hidden="true">↗</span>
-                  <span className="sr-only"> (opens in a new tab)</span>
-                </a>
-              ) : null}
-            </div>
-          </section>
-        ))}
-
-        <section className="mt-20 border-t border-[rgba(255,255,255,0.08)] pt-16">
-          <h2 className="monolith-title monolith-title--card-sm">Why this work matters</h2>
-          <p className="mt-5 font-body text-[15px] leading-relaxed text-[#A8B3B0]">
-            This research supports the same principle behind my product work: make the system
-            legible before making it smart. Whether designing enterprise finance workflows or
-            AI-ready collaboration models, the goal is to create structures that help teams
-            understand, evaluate, and act with confidence.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Link
-              href="/#work"
-              className="inline-flex font-ui text-[11px] uppercase tracking-[0.12em] text-[#31F5D4] transition-colors hover:text-[#7CE7D6]"
-            >
-              Back to selected work →
-            </Link>
-            <Link
-              href="/#contact"
-              className="inline-flex font-ui text-[11px] uppercase tracking-[0.12em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4]"
-            >
-              Get in touch →
-            </Link>
+            <p className={styles.stageIntro}>
+              Across product strategy, team collaboration, and trustworthy AI patterns, the work
+              looks for the operating model beneath the interface: what the system understands,
+              what evidence it exposes, where judgment lives, and how action stays governed.
+            </p>
           </div>
         </section>
+
+        {SECTIONS.map((section, index) => {
+          const stageIds = ["prototype", "evidence", "story"] as const
+          const stageLabels = ["Stage 03 · Prototype", "Stage 04 · Evidence", "Stage 05 · Story"]
+          return (
+            <section key={section.id} id={stageIds[index]} className={styles.stage}>
+              <div className={styles.stageHeader}>
+                <div>
+                  <p className={styles.stageNumber}>{stageLabels[index]}</p>
+                  <h2 className={styles.stageHeading}>{section.title}</h2>
+                </div>
+                <div>
+                  <p className={styles.eyebrow}>{section.subtitle}</p>
+                  {section.copy.map((paragraph) => (
+                    <p key={paragraph.slice(0, 40)} className={styles.bodyCopy}>{paragraph}</p>
+                  ))}
+                </div>
+              </div>
+
+              <div className={styles.contentColumns}>
+                <div className={styles.contentBlock}>
+                  <h3>What it covers</h3>
+                  <div className={styles.patternLedger}>
+                    {section.covers.map((item, itemIndex) => (
+                      <div key={item} className={styles.ledgerItem}>
+                        <span className={styles.ledgerIndex}>{String(itemIndex + 1).padStart(2, "0")}</span>
+                        <p>{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className={styles.contentBlock}>
+                  <h3>What it demonstrates</h3>
+                  <div className={styles.patternLedger}>
+                    {section.demonstrates.map((item, itemIndex) => (
+                      <div key={item} className={styles.ledgerItem}>
+                        <span className={styles.ledgerIndex}>D.{itemIndex + 1}</span>
+                        <p>{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.exhibit}>
+                <p className={styles.exhibitLabel}>Research exhibit R.0{index + 1}</p>
+                <ResearchStrategyVisuals variant={section.visual} />
+              </div>
+
+              <div className={styles.linkRow}>
+                {"detailHref" in section && section.detailHref ? (
+                  <Link href={section.detailHref}>{section.detailLabel} →</Link>
+                ) : null}
+                {"externalHref" in section && section.externalHref ? (
+                  <a href={section.externalHref} target="_blank" rel="noopener noreferrer">
+                    {section.externalLabel} <span aria-hidden="true">↗</span>
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                ) : null}
+              </div>
+            </section>
+          )
+        })}
+
+        <footer id="alignment" className={styles.closing}>
+          <div>
+            <p className={styles.stageNumber}>Stage 06 · Alignment</p>
+            <h2>Research returns to the same product principle.</h2>
+            <p>
+              Make the system legible before making it smart. Whether designing enterprise finance
+              workflows or AI-ready collaboration models, the goal is to help teams understand,
+              evaluate, and act with confidence.
+            </p>
+          </div>
+          <nav className={styles.closingLinks} aria-label="Continue reading">
+            <Link href="/research/ai-native-strategy">Read Architectures of Intent</Link>
+            <Link href="/work/intuit-enterprise-suite">Related evidence · IES</Link>
+            <Link href="/#evidence">Return to the portfolio manuscript</Link>
+          </nav>
+        </footer>
       </article>
-    </main>
+    </ManuscriptFrame>
   )
 }

@@ -1,7 +1,7 @@
 # SOT-08 — Changelog
 
-Version: 0.1  
-Last updated: 2026-06-19  
+Version: 0.2  
+Last updated: 2026-07-12  
 Status: Active
 
 Use this file every time something changes.
@@ -105,3 +105,39 @@ Code impact: None.
 Deployment impact: None (documentation only).  
 Verification needed: résumé PDF, exact Intuit title/dates, IES/DCOA source packs, apex DNS, OG metadata.  
 Next action: Import IES source pack and complete P0 recruiter-facing fixes.
+
+### 2026-07-12 — v0.5 — Progressive Woven Manuscript direction and execution plan
+Type: Strategy / Design / IA / Planning  
+Changed by: Codex / Ardavan  
+Files affected: `SOT-00-MASTER-BRIEF.md`, `SOT-04-PORTFOLIO-IA-AND-COPY.md`, `SOT-05-DESIGN-SYSTEM.md`, `SOT-08-CHANGELOG.md`, `SOT-09-DECISION-LOG.md`, `SOT-11-BACKLOG-TODOS.md`, `portfolio-roadmap.md`, `adaptive-decision-space-sot.md`, `README.md`  
+Summary: Approved an isolated prototype program combining Living Manuscript as the canonical source-of-truth interface with The Weave as a progressively earned layer driven by explicit lens, depth, narrative stage, and local returning-visit state. Documented IA invariants, deterministic adaptation rules, accessibility/performance constraints, success criteria, and a gated six-phase execution plan.  
+Decision links: D-016, D-017  
+Claim impact: No new public claims introduced.  
+Code impact: None; documentation only.  
+Deployment impact: None; Glass Monolith remains production.  
+Verification needed: Full V4/V5 Claude handoff assets; type specimens; interaction comprehension; accessibility; performance; cultural-integrity review.  
+Next action: Complete Phase 0 source consolidation, then prototype Opening + Lens, Evidence + Dial, and Ask Ardavan + provenance on an isolated route/branch.
+
+### 2026-07-12 — v0.6 — First Adaptive Decision Space prototype
+Type: Design / IA / Content / Tech / Verification  
+Changed by: Codex  
+Files affected: `app/explorations/adaptive-decision-space/*`, `components/adaptive-decision-space/*`, `content/adaptive-decision-space.ts`, `artifacts/adaptive-decision-space/*`, `adaptive-decision-space-sot.md`, `SOT-08-CHANGELOG.md`, `SOT-11-BACKLOG-TODOS.md`, `portfolio-roadmap.md`, `changelog.md`  
+Summary: Implemented the isolated Progressive Woven Manuscript prototype with Opening + Reading Lens, Evidence + Reading Depth, contextual Ask Ardavan, provenance, manual disclosures, local-only persistence/reset, and responsive desktop/tablet/mobile behavior. Preserved production routes and canonical content.  
+Decision links: D-016, D-017  
+Claim impact: No new metrics, roles, product names, or confidential details introduced; adaptive passages derive from existing public-safe sources.  
+Code impact: New isolated `noindex` route and scoped components/styles only.  
+Deployment impact: None; production homepage, CNAME, deployment configuration, dependencies, and canonical routes unchanged.  
+Verification needed: Complete Claude V4/V5 source handoff, screen-reader pass, independent contrast/cultural review, and NX-04 participant testing.  
+Next action: Run NX-04 comparative validation before authorizing any full-homepage prototype or production migration.
+
+### 2026-07-12 — v0.7 — Adaptive Decision Space production migration
+Type: Design / IA / Content / Tech / Verification  
+Changed by: Codex / Ardavan  
+Files affected: `app/page.tsx`, `app/work/*`, `app/research/*`, `components/adaptive-decision-space/*`, `content/adaptive-decision-space.ts`, and Adaptive Decision Space SOT records  
+Summary: Promoted the owner-approved Adaptive Decision Space to `/` and replaced the legacy dark click-through templates with one shared Progressive Woven Manuscript system across IES, QBOA, Research & Strategy, and Architectures of Intent. Detailed routes now use the six-stage Decision Space, folio navigation, paper/ink/weft tokens, provenance boundaries, editorial evidence ledgers, and aligned closing actions.  
+Decision links: D-017, D-018  
+Claim impact: No new metrics, roles, dates, product names, or confidential details introduced; existing approved case-study and research content was restructured without changing factual claims.  
+Code impact: Production homepage replacement plus shared detailed-route frame and responsive stage rail.  
+Deployment impact: Production UI changes after merge to `main`; CNAME, canonical routes, metadata, dependencies, and deployment configuration unchanged.  
+Verification: Static production build passed; five public routes passed desktop/mobile layout, H1/title, console, and overflow checks; adaptive lens, depth, and Ask interactions passed. Repository-wide TypeScript remains blocked by the previously recorded UI-library errors only.  
+Next action: Monitor production deployment, then complete external recruiter, screen-reader, contrast, and cultural-integrity follow-up validation.

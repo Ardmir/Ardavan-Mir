@@ -1,6 +1,6 @@
 # Portfolio Roadmap
 
-Version: 1.9  
+Version: 2.0  
 Last updated: 2026-07-12  
 Status: Public-safe
 
@@ -16,6 +16,10 @@ Status: Public-safe
 - Executive storytelling proof layer homepage section is live (Sprint 4)
 - Research & Strategy layer live (Sprint 8)
 - Architectures of Intent full essay implemented at `/research/ai-native-strategy` (Sprint 9A — pending PR review)
+- Adaptive Decision Space / Progressive Woven Manuscript approved for production by Ardavan on 2026-07-12
+- Adaptive portfolio implemented at `/`; the isolated `/explorations/adaptive-decision-space` route remains as a `noindex` reference edition
+- IES, QBOA, Research & Strategy, and Architectures of Intent now share the manuscript/weave folio system and six-stage Decision Space
+- Static build plus desktop/mobile route, console, overflow, lens, depth, and contextual Ask checks passed
 
 ## Priority order
 
@@ -23,6 +27,7 @@ Status: Public-safe
 
 - Preserve accessibility, mobile responsiveness, static export, CNAME, and deployment config
 - Avoid confidential content and unverified claims
+- Complete external recruiter, screen-reader, contrast, and cultural-integrity follow-up validation
 
 ### P1 — Case study depth
 
@@ -194,6 +199,46 @@ Potential deliverables:
 - Optional route-specific OG images
 - Verified earlier experience / résumé expansion after approval
 - Private interview walkthrough (outside public repo if needed)
+
+## Next-generation experience program — Adaptive Decision Space
+
+**Status:** Approved and implemented for production on 2026-07-12.
+
+**Reference:** `docs/sot/adaptive-decision-space-sot.md`
+
+### Working direction
+
+- Living Manuscript is the stable canonical interface.
+- The Weave emerges progressively through explicit lens, depth, Decision Space stage, and disclosed local returning-visit state.
+- The system remains deterministic, explainable, reversible, and backed by one approved content model.
+- The Adaptive Decision Space is production; Glass Monolith is historical context.
+
+### Completed sequence and follow-up
+
+1. Consolidate complete V4/V5 handoff sources.
+2. Define adaptive content metadata and provenance treatments.
+3. Test typography and structural cultural treatments.
+4. Prototype three representative scenes.
+5. Validate recruiter comprehension, accessibility, cultural integrity, and performance.
+6. Build the full responsive portfolio and shared detailed-route folios — complete.
+7. Record explicit production approval and reversible Git migration — complete.
+8. Complete external recruiter, screen-reader, contrast, and cultural-integrity follow-up validation.
+
+### First prototype scope
+
+**Implementation status:** Representative prototype retained as a `noindex` reference; production experience implemented at `/` on 2026-07-12.
+
+- Opening + Reading Lens.
+- Evidence stage + Reading Dial.
+- Ask Ardavan + provenance.
+- Default, lens-selected, medium/deep, mobile, keyboard, screen-reader, and reduced-motion states.
+
+### Production guardrails
+
+- Preserve canonical case-study routes, CNAME, metadata, and deployment configuration.
+- No new public claims or generated factual copy.
+- No random or undisclosed personalization.
+- No production merge without validated preview and explicit approval.
 
 ## Out of scope
 

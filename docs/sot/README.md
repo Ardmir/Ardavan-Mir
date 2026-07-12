@@ -1,16 +1,16 @@
 # Ardavan Portfolio Project — Source of Truth Pack
 
-Version: 0.2  
-Last updated: 2026-06-19  
+Version: 0.3  
+Last updated: 2026-07-12  
 Owner: Ardavan Mirhosseini  
 Project: Portfolio update / résumé update / recruiter-ready positioning  
-Current phase: Post-deployment QA, evidence development, and case-study expansion
+Current phase: Adaptive Decision Space production integration and validation
 
 ## Purpose
 
 This folder is the living source of truth for the ChatGPT Portfolio Project. Use it to keep portfolio strategy, résumé copy, case study claims, design direction, deployment notes, and change history synchronized across ChatGPT, Claude, Cursor, v0, GitHub, and Vercel.
 
-`[CONFIRMED]` Production homepage deployed 2026-06-19 via GitHub Pages on `main`.
+`[DECIDED]` Ardavan approved the Adaptive Decision Space for production on 2026-07-12 and requested commit and merge to `main`.
 
 ## How to use this in ChatGPT Projects
 
@@ -59,13 +59,16 @@ Use these labels everywhere:
 - `SOT-09-DECISION-LOG.md` — strategic and implementation decisions.
 - `SOT-10-AI-PROMPTS.md` — reusable prompts for ChatGPT, Claude, Cursor, v0.
 - `SOT-11-BACKLOG-TODOS.md` — prioritized P0/P1/P2 backlog, verification list, next actions.
+- `adaptive-decision-space-sot.md` — approved prototype direction and gated execution plan for the Progressive Woven Manuscript.
 - `PORTFOLIO_PROJECT_SOTS_CONSOLIDATED.md` — all SOTs in one file.
 
 ## Next actions (summary)
 
 See `SOT-11-BACKLOG-TODOS.md` for full detail.
 
-- **P0:** Copy QA, contact/résumé clarity, project pathways, accessibility pass, claim audit.
-- **P1:** Import IES/DCOA source packs; build case-study SOTs; artifact inventory.
-- **P2:** Navigation and Clarity Engine hierarchy proposals, device QA, résumé alignment.
+- **P0:** Keep the live site, claims, accessibility, static export, and deployment stable.
+- **NX-0:** Consolidate the complete Living Manuscript / The Weave handoff assets.
+- **NX-1:** Define the canonical adaptive-content schema and provenance treatments.
+- **NX-2:** Prototype Opening + Lens, Evidence + Dial, and Ask Ardavan + provenance.
+- **NX-3:** Complete external recruiter, screen-reader, contrast, and cultural-integrity follow-up validation.
 - **Deferred:** Disconnect Vercel/v0; update root README.

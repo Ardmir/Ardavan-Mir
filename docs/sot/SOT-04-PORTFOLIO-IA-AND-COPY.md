@@ -1,10 +1,24 @@
 # SOT-04 — Portfolio IA and Copy
 
-Version: 0.1  
-Last updated: 2026-06-19  
+Version: 0.2  
+Last updated: 2026-07-12  
 Status: Active draft
 
-## Shipped homepage snapshot (Glass Monolith — 2026-06-19)
+## Current homepage snapshot (Adaptive Decision Space — 2026-07-12)
+
+`[DECIDED]` The Adaptive Decision Space is the production IA. The June 2026 Glass Monolith snapshot below is retained as historical context.
+
+Current navigation and IA:
+
+- Full-name wordmark with direct Work, Research, and Contact paths.
+- Optional Reading Lens: Hiring, AI thinking, Systems & craft.
+- Decision Space spine: Ambiguity → Structure → Prototype → Evidence → Story → Alignment.
+- Evidence-first work list with pre-authored Reading Depth, manual passage disclosure, and provenance.
+- Contextual deterministic Ask Ardavan apparatus.
+- Colophon with verified Email, LinkedIn, and Résumé paths.
+- Detailed work and research routes continue the same folio, stage, provenance, and editorial grammar.
+
+## Historical shipped homepage snapshot (Glass Monolith — 2026-06-19)
 
 `[OBSERVED]` The following reflects `app/page.tsx` merged to `main`. Earlier draft copy in this file may differ.
 
@@ -262,3 +276,61 @@ Links:
 - Avoid buzzword overload.
 - Make IES and QuickBooks the main story.
 - Treat Iranians Who Design as differentiation, not the core hiring claim.
+
+## Production IA — Adaptive Decision Space
+
+Status: `[APPROVED]` for production by Ardavan on 2026-07-12.
+
+### Stable content hierarchy
+
+The project hierarchy remains unchanged:
+
+1. Intuit Enterprise Suite.
+2. QuickBooks Online Advanced — Dimensional Chart of Accounts.
+3. Iranians Who Design as a supporting founder initiative.
+4. Research & Strategy as evidence of systems and AI-native thinking.
+
+### Narrative spine
+
+The homepage organizes the same canonical content through:
+
+1. Ambiguity.
+2. Structure.
+3. Prototype.
+4. Evidence.
+5. Story.
+6. Alignment.
+
+Evidence must remain the largest stage, and Work must remain reachable in one interaction or less. The stage model must not prevent direct access to projects, research, résumé, About, or Contact.
+
+### Adaptive controls
+
+**Reading Lens** answers “Why are you here?”
+
+- Hiring.
+- AI thinking.
+- Systems & craft.
+
+**Reading Dial** answers “How deeply should this be explained?”
+
+- ≈2 minutes.
+- ≈10 minutes.
+- Whole story.
+
+Lens changes may re-weight emphasis, ordering, annotations, recommended paths, and contextual questions. Depth changes may fold/unfold pre-authored layers. Neither may alter facts, create unsupported copy, or permanently hide essential evidence.
+
+### Contextual Ask Ardavan
+
+Ask Ardavan moves from a floating panel to contextual footnotes/marginal prompts. Answers remain deterministic, approved, source-linked, and visibly distinct from authored portfolio passages.
+
+### Required IA invariants
+
+- Stable navigation and canonical URLs.
+- Stable heading hierarchy and reading order.
+- Direct deep links remain understandable outside the homepage journey.
+- Lens/depth state is visible, reversible, and optional.
+- The default experience works without personalization.
+- Contact and résumé access never depend on completing the Decision Space journey.
+- Short views name omitted material and allow per-passage expansion.
+
+Reference: `docs/sot/adaptive-decision-space-sot.md`.

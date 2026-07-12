@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import IALogotype from "@/components/ia-logotype"
 import IesCaseStudyVisuals from "@/components/IesCaseStudyVisuals"
 import IesFutureStateVisuals from "@/components/IesFutureStateVisuals"
+import { ManuscriptFrame } from "@/components/adaptive-decision-space/ManuscriptFrame"
+import styles from "@/components/adaptive-decision-space/manuscript.module.css"
 import { openGraphShareImages, SITE_URL, twitterShareImages } from "@/lib/site"
 
 const ogImageAlt =
@@ -106,200 +107,192 @@ const META = [
 
 export default function IesCaseStudyPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-[#05070A] text-[#F4F7F6]">
-      <header className="border-b border-[rgba(255,255,255,0.08)] bg-[#05070A]/90 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-3xl items-center justify-between px-6 lg:px-8">
-          <IALogotype />
-          <Link
-            href="/#work"
-            className="font-mono text-xs uppercase tracking-[0.16em] text-[#A8B3B0] transition-colors hover:text-[#31F5D4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#31F5D4]"
-          >
-            Back to work
-          </Link>
-        </div>
-      </header>
-
-      <article className="mx-auto max-w-3xl px-6 py-16 lg:px-8 lg:py-24">
-        <p className="font-mono text-xs uppercase tracking-[0.16em] text-[#5E6865]">
-          Intuit Enterprise Suite · Enterprise SaaS · AI-native workflows
-        </p>
-        <h1 className="case-study-title mt-4">
-          Defining an AI-native target state for enterprise finance
-        </h1>
-        <p className="mt-6 font-body text-base leading-relaxed text-[#A8B3B0] sm:text-lg">
-          I helped define and communicate AI-native product direction for complex enterprise
-          finance workflows — translating ambiguity into clearer information architecture, trust
-          patterns, prototype concepts, and leadership-ready product narratives.
-        </p>
-        <p className="mt-4 rounded-[4px] border border-[rgba(49,245,212,0.18)] bg-[#111719] p-4 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
-          This public case study is intentionally sanitized. It focuses on approach, systems
-          thinking, and design patterns rather than confidential product details, internal
-          screenshots, or roadmap specifics.
-        </p>
-
-        <dl className="mt-10 grid gap-4 sm:grid-cols-2">
-          {META.map((item) => (
-            <div key={item.label} className="rounded-[6px] border border-[rgba(255,255,255,0.12)] bg-[#111719] p-4">
-              <dt className="font-ui text-[10px] uppercase tracking-[0.14em] text-[#31F5D4]">
-                {item.label}
-              </dt>
-              <dd className="mt-2 font-body text-[13px] leading-relaxed text-[#F4F7F6]">
-                {item.value}
-              </dd>
+    <ManuscriptFrame folio="Case study · E.01" backHref="/#evidence" backLabel="Back to evidence">
+      <article>
+        <header id="ambiguity" className={styles.hero}>
+          <div className={styles.heroMeta}>
+            <p>Intuit Enterprise Suite · Enterprise SaaS</p>
+            <p>Evidence folio E.01 · Public-safe edition</p>
+          </div>
+          <div className={styles.heroGrid}>
+            <div>
+              <p className={styles.eyebrow}>AI-native workflows · Financial systems</p>
+              <h1 className={styles.heroTitle}>
+                Defining an AI-native <em>target state</em> for enterprise finance
+              </h1>
+              <p className={styles.heroDek}>
+                I helped define and communicate AI-native product direction for complex enterprise
+                finance workflows — translating ambiguity into clearer information architecture,
+                trust patterns, prototype concepts, and leadership-ready product narratives.
+              </p>
             </div>
-          ))}
-        </dl>
+            <aside className={styles.heroAside} aria-label="Public case-study note">
+              <p className={styles.apparatusLabel}>What remains visible</p>
+              <p><strong>Method, structure, and judgment.</strong></p>
+              <p>
+                Confidential product details, internal screenshots, and roadmap specifics remain
+                withheld while the design reasoning stays inspectable.
+              </p>
+              <p className={styles.provenanceLine}>
+                <span className={styles.siglum} aria-hidden="true">A</span>
+                Approved public portfolio copy
+              </p>
+            </aside>
+          </div>
+          <dl className={styles.metaLedger}>
+            {META.map((item) => (
+              <div key={item.label}>
+                <dt>{item.label}</dt>
+                <dd>{item.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </header>
 
-        <section className="case-study-section">
-          <h2 className="case-study-heading">Context</h2>
-          <p className="case-study-body">
-            Enterprise finance workflows are dense, high-stakes, and full of dependencies. People
-            need to understand what changed, why it matters, what evidence supports it, who needs to
-            act, and what happens after an action is taken.
-          </p>
-          <p className="case-study-body mt-4">
-            As AI becomes more present in business software, the design challenge is not simply
-            making systems more automated. The challenge is making intelligent systems
-            understandable, trustworthy, and useful in moments where human judgment still matters.
-          </p>
+        <section id="structure" className={styles.stage}>
+          <div className={styles.stageHeader}>
+            <div>
+              <p className={styles.stageNumber}>Stage 02 · Structure</p>
+              <h2 className={styles.stageHeading}>The challenge was not “add AI.” It was make AI legible.</h2>
+            </div>
+            <p className={styles.stageIntro}>
+              Enterprise finance workflows are dense, high-stakes, and full of dependencies. People
+              need to understand what changed, why it matters, what evidence supports it, who needs
+              to act, and what happens after an action is taken.
+            </p>
+          </div>
+          <div className={styles.contentColumns}>
+            <div className={styles.contentBlock}>
+              <h3>Context</h3>
+              <p className={styles.bodyCopy}>
+                As AI becomes more present in business software, the design challenge is not simply
+                making systems more automated. The challenge is making intelligent systems
+                understandable, trustworthy, and useful where human judgment still matters.
+              </p>
+            </div>
+            <div className={styles.contentBlock}>
+              <h3>Design problem</h3>
+              <p className={styles.bodyCopy}>
+                A smart recommendation is only useful if people can evaluate it. The experience
+                needed to make reasoning visible, clarify risk, show supporting evidence, and
+                preserve user control before meaningful action.
+              </p>
+            </div>
+          </div>
+          <blockquote className={styles.callout}>Make the system legible before making it smart.</blockquote>
         </section>
 
-        <section className="case-study-section">
-          <h2 className="case-study-heading">The challenge was not &ldquo;add AI.&rdquo; It was make AI legible.</h2>
-          <p className="case-study-body">
-            In high-trust financial workflows, a smart recommendation is only useful if people can
-            evaluate it. The experience needed to make reasoning visible, clarify risk, show
-            supporting evidence, and preserve user control before any meaningful decision or
-            action.
-          </p>
-          <blockquote className="case-study-callout mt-6">
-            Make the system legible before making it smart.
-          </blockquote>
-        </section>
-
-        <section className="case-study-section">
-          <h2 className="case-study-heading">My role</h2>
-          <p className="case-study-body">
-            I contributed to the product direction by translating complex enterprise finance
-            concepts into clearer experience models, information architecture, prototype concepts,
-            and leadership-ready narratives. My work focused on helping teams reason through
-            ambiguity, trust, evidence, authorization, and the role of human oversight in AI-native
-            workflows.
-          </p>
-        </section>
-
-        <section className="case-study-section">
-          <h2 className="case-study-heading">How I made the system legible</h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            {PRINCIPLES.map((p, i) => (
-              <div key={p.title} className="rounded-[6px] bg-[#111719] p-5">
-                <span className="font-display text-sm text-[#31F5D4]">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-2 font-ui text-sm text-[#F4F7F6]">{p.title}</h3>
-                <p className="mt-2 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
-                  {p.copy}
-                </p>
+        <section id="prototype" className={`${styles.stage} ${styles.darkStage}`}>
+          <div className={styles.stageHeader}>
+            <div>
+              <p className={styles.stageNumber}>Stage 03 · Prototype</p>
+              <h2 className={styles.stageHeading}>Four moves made the direction discussable.</h2>
+            </div>
+            <p className={styles.stageIntro}>
+              My role was to translate complex enterprise finance concepts into experience models,
+              information architecture, prototype concepts, and leadership-ready narratives.
+            </p>
+          </div>
+          <div className={styles.principleLedger}>
+            {PRINCIPLES.map((principle, index) => (
+              <div key={principle.title} className={styles.ledgerItem}>
+                <span className={styles.ledgerIndex}>{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{principle.title}</h3>
+                  <p>{principle.copy}</p>
+                </div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="case-study-section">
-          <h2 className="case-study-heading">Sanitized design patterns</h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            {PATTERNS.map((p) => (
-              <div
-                key={p.title}
-                className="rounded-[6px] border border-[rgba(255,255,255,0.08)] bg-[#0B0F10] p-5"
-              >
-                <h3 className="font-ui text-[11px] uppercase tracking-[0.12em] text-[#7CE7D6]">
-                  {p.title}
-                </h3>
-                <p className="mt-2 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
-                  {p.copy}
-                </p>
+        <section id="evidence" className={styles.evidenceStage}>
+          <div className={styles.stageHeader}>
+            <div>
+              <p className={styles.stageNumber}>Stage 04 · Evidence</p>
+              <h2 className={styles.stageHeading}>Patterns leave the design logic visible.</h2>
+            </div>
+            <p className={styles.stageIntro}>
+              The public evidence is intentionally abstracted: generic labels, synthetic diagrams,
+              and the decision architecture behind trust—never confidential product UI.
+            </p>
+          </div>
+          <div className={styles.patternLedger}>
+            {PATTERNS.map((pattern, index) => (
+              <div key={pattern.title} className={styles.ledgerItem}>
+                <span className={styles.ledgerIndex}>P.{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{pattern.title}</h3>
+                  <p>{pattern.copy}</p>
+                </div>
               </div>
             ))}
           </div>
+          <div className={styles.exhibit}>
+            <p className={styles.exhibitLabel}>Exhibit E.01a · Trust-pattern studies</p>
+            <IesCaseStudyVisuals />
+          </div>
+          <p className={styles.sourceNote}>
+            <span className={styles.provenanceLine}>
+              <span className={styles.siglum} aria-hidden="true">W</span>
+              Withheld / NDA material
+            </span>
+            Internal screenshots, roadmap details, and confidential demo material are intentionally omitted.
+          </p>
         </section>
 
-        <section id="future-state-exploration" className="case-study-section scroll-mt-24">
-          <p className="font-mono text-xs uppercase tracking-[0.16em] text-[#7CE7D6]">
-            Future-state exploration
-          </p>
-          <h2 className="case-study-heading mt-3">
-            Turning future product direction into something teams could evaluate
-          </h2>
-          <p className="case-study-body mt-6">
-            Part of the work was helping make future-state product direction easier to understand,
-            discuss, and evaluate. Rather than treating AI as a layer of automation, the
-            exploration focused on how complex financial workflows could become more legible through
-            structure, evidence, controls, and human judgment.
-          </p>
-          <p className="case-study-body mt-4">
-            The public version is intentionally abstracted. It focuses on the design approach and
-            storytelling patterns rather than internal prototypes, roadmap details, or confidential
-            demo material.
-          </p>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            {FUTURE_STATE_CARDS.map((card) => (
-              <div
-                key={card.title}
-                className="rounded-[6px] border border-[rgba(255,255,255,0.08)] bg-[#0B0F10] p-5"
-              >
-                <h3 className="font-ui text-[11px] uppercase tracking-[0.12em] text-[#7CE7D6]">
-                  {card.title}
-                </h3>
-                <p className="mt-2 font-body text-[13px] leading-relaxed text-[#A8B3B0]">
-                  {card.copy}
-                </p>
+        <section id="story" className={styles.stage}>
+          <div className={styles.stageHeader}>
+            <div>
+              <p className={styles.stageNumber}>Stage 05 · Story</p>
+              <h2 className={styles.stageHeading}>Future direction became something teams could evaluate.</h2>
+            </div>
+            <div>
+              <p className={styles.stageIntro}>
+                Rather than treating AI as a layer of automation, the exploration focused on how
+                financial workflows could become more legible through structure, evidence,
+                controls, and human judgment.
+              </p>
+              <p className={styles.bodyCopy}>
+                The public version focuses on the design approach and storytelling patterns rather
+                than internal prototypes or roadmap details.
+              </p>
+            </div>
+          </div>
+          <div className={styles.patternLedger}>
+            {FUTURE_STATE_CARDS.map((card, index) => (
+              <div key={card.title} className={styles.ledgerItem}>
+                <span className={styles.ledgerIndex}>S.{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{card.title}</h3>
+                  <p>{card.copy}</p>
+                </div>
               </div>
             ))}
           </div>
-          <div className="mt-8">
+          <div className={styles.exhibit}>
+            <p className={styles.exhibitLabel}>Exhibit E.01b · From ambiguity to alignment</p>
             <IesFutureStateVisuals />
           </div>
         </section>
 
-        <section className="case-study-section">
-          <h2 className="case-study-heading">Abstract visuals</h2>
-          <p className="case-study-body mb-6">
-            Synthetic diagrams showing the thinking behind trust patterns — generic labels only, no
-            confidential product UI.
-          </p>
-          <IesCaseStudyVisuals />
-        </section>
-
-        <section className="case-study-section">
-          <h2 className="case-study-heading">What changed</h2>
-          <p className="case-study-body">
-            The work helped make an abstract AI-native ambition easier to understand, evaluate,
-            and discuss. By turning complex financial workflows into clearer frameworks, patterns,
-            and narratives, the direction became more tangible for cross-functional partners and
-            leadership audiences.
-          </p>
-        </section>
-
-        <section className="case-study-section">
-          <h2 className="case-study-heading">Reflection</h2>
-          <p className="case-study-body">
-            The most important lesson was that trustworthy AI is not only about model capability.
-            It is about the surrounding experience: the information architecture, evidence,
-            controls, language, and moments of human judgment that help people understand what the
-            system is doing and why it matters.
-          </p>
-        </section>
-
-        <footer className="mt-16 flex flex-wrap gap-4 border-t border-[rgba(255,255,255,0.12)] pt-10">
-          <Link href="/#work" className="case-study-cta case-study-cta--primary">
-            Back to selected work
-          </Link>
-          <Link href="/#contact" className="case-study-cta case-study-cta--secondary">
-            Get in touch
-          </Link>
+        <footer id="alignment" className={styles.closing}>
+          <div>
+            <p className={styles.stageNumber}>Stage 06 · Alignment</p>
+            <h2>The system became clearer enough to discuss and decide.</h2>
+            <p>
+              The work helped make an abstract AI-native ambition easier to understand, evaluate,
+              and discuss. The enduring lesson is that trustworthy AI depends on the surrounding
+              information architecture, evidence, controls, language, and moments of human judgment.
+            </p>
+          </div>
+          <nav className={styles.closingLinks} aria-label="Continue reading">
+            <Link href="/work/quickbooks-dimensional-chart-of-accounts">Next evidence · QBOA</Link>
+            <Link href="/research/ai-native-strategy">Related research · Architectures of Intent</Link>
+            <Link href="/#evidence">Return to the portfolio manuscript</Link>
+          </nav>
         </footer>
       </article>
-    </main>
+    </ManuscriptFrame>
   )
 }

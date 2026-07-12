@@ -1,5 +1,32 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-12 — Adaptive Decision Space production migration
+
+- Promoted the approved adaptive manuscript to `/`.
+- Unified IES, QBOA, research index, and research essay routes through one manuscript/weave folio system.
+- Preserved canonical claims, URLs, metadata, citations, public-safe boundaries, and deployment configuration.
+- Verified static build, desktop/mobile route rendering, console output, responsive overflow, Reading Lens, Reading Depth, and contextual Ask Ardavan.
+- Recorded Ardavan's explicit production approval in D-018.
+
+## 2026-07-12 — Adaptive Decision Space representative prototype
+
+- Added isolated `/explorations/adaptive-decision-space` route; production homepage unchanged
+- Implemented Opening + Reading Lens, Evidence + Reading Depth, and contextual Ask Ardavan + provenance
+- Added one typed canonical adaptive-content model sourced from existing public-safe portfolio copy
+- Added manual passage disclosure, local-only reading persistence, and Reset my reading
+- Verified all lens/depth states, keyboard activation, desktop/tablet/mobile layouts, console health, static export, and canonical route regression loads
+- Recorded complete V4/V5 Claude handoff as unavailable; visual decisions remain explicitly provisional
+- Left NX-04 user comprehension, screen-reader, contrast, and cultural-integrity validation open
+
+## 2026-07-12 — Adaptive Decision Space / Progressive Woven Manuscript planning
+
+- Approved an isolated next-generation portfolio prototype program; no production redesign was implemented
+- Defined Living Manuscript as the stable canonical interface and The Weave as a progressively earned identity/relationship layer
+- Defined Reading Lens, Reading Dial, Decision Space stage, contextual Ask Ardavan, provenance, and local returning-visit behavior
+- Required all adaptation to be deterministic, explainable, reversible, accessible, and backed by one approved content model
+- Added a dedicated concept SOT, IA/design-system updates, decisions D-016/D-017, and gated NX-00–NX-06 execution backlog
+- Preserved the live Glass Monolith site, public claims, routes, CNAME, deployment, dependencies, and application code
+
 ## 2026-07-12 — Sprint 9A — Architectures of Intent public research article
 
 - Published public-safe Architectures of Intent essay at `/research/ai-native-strategy`
