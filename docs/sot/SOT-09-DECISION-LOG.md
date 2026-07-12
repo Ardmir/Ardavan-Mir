@@ -1,7 +1,7 @@
 # SOT-09 — Decision Log
 
-Version: 0.1  
-Last updated: 2026-06-19  
+Version: 0.2  
+Last updated: 2026-07-12  
 Status: Active
 
 Use this file for decisions that should persist across ChatGPT/Claude/Cursor sessions.
@@ -99,7 +99,7 @@ Related changelog entries: 2026-06-13 v0.3
 ## D-010 — No homepage redesign at this stage
 
 Date: 2026-06-19  
-Status: Active  
+Status: Superseded by D-016  
 Decision: Do not redesign the portfolio homepage again at this stage.  
 Rationale: The deployed Glass Monolith homepage establishes strong identity, positioning, visual system, and hierarchy.  
 Implications: Next focus is evidence, case-study depth, recruiter pathways, accessibility, and polish — not another visual concept pass.  
@@ -135,7 +135,7 @@ Related changelog entries: 2026-06-19 v0.4
 ## D-014 — Evidence over additional visual exploration
 
 Date: 2026-06-19  
-Status: Active  
+Status: Superseded as a phase priority by D-016  
 Decision: Prioritize case-study evidence, artifacts, decisions, and outcomes over further aesthetic concepting.  
 Rationale: Homepage positioning is sufficient; hiring signal now depends on proof depth.  
 Implications: P1 backlog prioritized over new visual experiments.  
@@ -150,3 +150,32 @@ Rationale: Verified live site on GitHub Pages after merge; Vercel is legacy nois
 Implications: Do not treat Vercel preview as production; follow SOT-11 disconnect checklist when ready.  
 Supersedes: Open question in D-006 about which host serves production.  
 Related changelog entries: 2026-06-19 v0.4
+
+## D-016 — Prototype the Progressive Woven Manuscript
+
+Date: 2026-07-12  
+Status: Active  
+Decision: Begin an isolated prototype program for a next-generation Adaptive Decision Space using Living Manuscript as the stable canonical interface and The Weave as a progressively earned identity/relationship layer.  
+Rationale: The live portfolio now has flagship case studies, research, résumé, proof, and Ask Ardavan depth. The new direction can use that evidence to demonstrate AI-native adaptation through intent, depth, provenance, and human control rather than decorative AI styling.  
+Implications: The production Glass Monolith remains live. Prototype work must happen on an isolated route or branch and pass usability, accessibility, content-integrity, performance, and recruiter-comprehension gates before any replacement decision.  
+Supersedes: D-010 and D-014 as current phase priorities; does not yet supersede D-004, D-008, or D-012 in production.  
+Related changelog entries: 2026-07-12 — Progressive Woven Manuscript direction and execution plan
+
+## D-017 — Adaptation must be deterministic, explainable, and reversible
+
+Date: 2026-07-12  
+Status: Active  
+Decision: Dynamic portfolio changes may respond to explicit Reading Lens, Reading Dial, Decision Space stage, opened evidence, and disclosed local returning-visit state. They must not respond randomly or alter canonical facts.  
+Rationale: Meaningful adaptation can demonstrate AI-native design judgment; unpredictable themes, hidden personalization, or content drift would reduce trust and usability.  
+Implications: Active state is always visible and changeable; essential navigation and content remain stable; local persistence includes reset controls; color and motion are never the sole state indicators; curated editions correspond to real editorial events.  
+Related changelog entries: 2026-07-12 — Progressive Woven Manuscript direction and execution plan
+
+## D-018 — Promote Adaptive Decision Space and unify detailed folios
+
+Date: 2026-07-12  
+Status: Active  
+Decision: Replace the production Glass Monolith homepage with the approved Adaptive Decision Space and carry its manuscript/weave grammar through every public work and research route.  
+Rationale: Ardavan reviewed the working prototype, described it as beautiful, explicitly approved it, and requested commit and merge. The legacy dark case-study template created a conceptual and visual break after visitors entered the work.  
+Implications: `/` now hosts the adaptive portfolio; IES, QBOA, Research & Strategy, and Architectures of Intent use a shared manuscript frame, six-stage rail, paper/ink/weft tokens, provenance language, and editorial evidence rhythm. Canonical facts, URLs, metadata, citations, public-safe boundaries, CNAME, and hosting configuration remain unchanged. External recruiter testing, screen-reader review, independent contrast review, and cultural-integrity review remain useful follow-up validation rather than migration blockers.  
+Supersedes: D-016 as the production phase decision and the Glass Monolith portion of D-004, D-008, and D-012. D-017 remains active.  
+Related changelog entries: 2026-07-12 — Adaptive Decision Space production migration

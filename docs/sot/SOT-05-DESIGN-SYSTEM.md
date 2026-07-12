@@ -1,10 +1,20 @@
 # SOT-05 — Design System
 
-Version: 0.1  
-Last updated: 2026-06-13  
+Version: 0.2  
+Last updated: 2026-07-12  
 Status: Active draft
 
-## Design direction
+## Current production design direction
+
+The production system is the **Progressive Woven Manuscript** within the **Adaptive Decision Space** architecture.
+
+- Paper `#F2EFE5`, ink `#171914`, softened ink `#55584E`, and restrained weft accents.
+- Inter for structural display and interface text, Playfair Display for manuscript voice and italic emphasis, and JetBrains Mono for folio metadata, stage labels, and provenance.
+- A persistent desktop Decision Space rail becomes a 3×2 inline orientation rail on mobile.
+- Structural rules, grids, sigla, evidence ledgers, and woven density replace decorative cards and dashboard chrome.
+- Detailed work and research pages are deeper folios of the same system, not separate visual themes.
+
+## Historical Glass Monolith direction
 
 The portfolio should feel like:
 
@@ -135,3 +145,59 @@ Avoid:
 ## Quality bar
 
 The site should feel polished enough to send to recruiters immediately, even before full case studies are complete.
+
+## Proposed successor system — Progressive Woven Manuscript
+
+Status: `[APPROVED]` for production on 2026-07-12. The Glass Monolith tokens above are retained as historical reference only.
+
+### System thesis
+
+- **Living Manuscript** is the stable typographic, editorial, and provenance foundation.
+- **The Weave** is a progressively earned layer expressing visitor intent, depth, accumulated relationships, and Ardavan's cultural identity.
+- The page begins predominantly Manuscript and becomes more woven only when visitor choices or narrative position justify the added structure.
+
+### Dynamic visual rules
+
+- Reading Lens introduces labeled emphasis and a restrained weft/accent system.
+- Reading Dial changes typographic density and woven/knot density together.
+- Decision Space stages progressively structure the page; Evidence and Story may carry the strongest woven expression.
+- Ask Ardavan begins as footnote apparatus and may expand into restrained cartouches.
+- Provenance uses clear authored/approved/condensed/withheld treatments; signed-knot or siglum marks require textual labels.
+- The Weave must remain structural and must not become ornamental carpet decoration.
+
+### Initial balance targets
+
+- Entry: approximately 85% Manuscript / 15% Weave.
+- Lens selected: approximately 70% / 30%.
+- Medium or deep reading: approximately 60% / 40%.
+- Evidence/Story peak: no more than approximately 50% / 50%.
+
+These are prototype heuristics, not production design tokens.
+
+### Motion vocabulary
+
+Use one coherent transformation family: **setting → threading → resolving**.
+
+- Type may re-set to express depth.
+- Rules, marks, and relationships may thread into place to express lens/stage.
+- Evidence may resolve with provenance marks.
+- Avoid simultaneous competing “page reset” and “carpet reweave” spectacles.
+- Reduced-motion mode presents the resolved state immediately.
+
+### Accessibility additions
+
+- Test variable-weight emphasis with screen readers before using semantic `<strong>` dynamically.
+- Do not allow typographic re-weighting to create layout instability or unreadable line-length changes.
+- Lens and depth require semantic controls, textual state, and non-color equivalents.
+- Woven marks, cartouches, sigla, and signed knots require accessible names.
+- Preserve scroll position and focus when visual state changes.
+- Default content and navigation must remain usable without JavaScript.
+
+### Performance additions
+
+- Prefer CSS custom properties, SVG/CSS patterns, and shared React state.
+- Do not introduce separate content trees or renderers that duplicate copy.
+- Avoid canvas/WebGL and large ornamental image assets in the first prototype.
+- Preserve static-export compatibility.
+
+Full concept and execution requirements: `docs/sot/adaptive-decision-space-sot.md`.

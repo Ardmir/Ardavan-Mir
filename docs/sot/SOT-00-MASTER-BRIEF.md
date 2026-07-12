@@ -1,7 +1,7 @@
 # SOT-00 — Master Brief
 
-Version: 0.2  
-Last updated: 2026-06-19  
+Version: 0.3  
+Last updated: 2026-07-12  
 Status: Active
 
 ## Project objective
@@ -12,13 +12,15 @@ The portfolio must communicate senior-level product judgment, enterprise product
 
 ## Current project phase
 
-**Post-deployment QA, evidence development, and case-study expansion.**
+**Adaptive Decision Space production integration and validation.**
 
 `[CONFIRMED]` The portfolio homepage has been implemented, committed, and deployed (Glass Monolith re-skin merged to `main`, 2026-06-19; GitHub Pages deploy succeeded).
 
 `[CONFIRMED]` The project has moved from homepage implementation into recruiter-facing polish, accessibility review, case-study development, and claim verification.
 
-`[CONFIRMED]` Do not redesign the homepage again at this stage. Next focus: evidence, pathways, polish, and case-study depth.
+`[OBSERVED]` Since the June phase decision, the résumé, flagship case studies, Ask Ardavan, executive-storytelling proof, and Research & Strategy layer have been implemented.
+
+`[DECIDED]` Ardavan approved the Adaptive Decision Space / Progressive Woven Manuscript for production on 2026-07-12 and requested commit and merge. The adaptive manuscript is now the current implementation direction.
 
 ## Primary positioning
 
@@ -40,9 +42,23 @@ The portfolio must communicate senior-level product judgment, enterprise product
 
 ## Current design direction
 
-`[CONFIRMED]` Premium, editorial, dark, restrained, AI-native, with electric teal accents (Glass Monolith system).
+`[CONFIRMED]` Editorial paper-and-ink manuscript with restrained weft accents, adaptive reading behavior, visible provenance, and a six-stage Decision Space.
 
 `[OBSERVED]` Background `#05070A`; primary text `#F4F7F6`; teal accent `#31F5D4`; muted metadata `#5E6865`; Inter ultralight monolith typography for hero, section headings, and project titles.
+
+## Next-generation design exploration
+
+`[DECIDED]` Prototype the **Progressive Woven Manuscript** within the **Adaptive Decision Space** architecture.
+
+- Living Manuscript is the stable source-of-truth interface.
+- The Weave emerges through explicit visitor choices and reading behavior.
+- Decision Space provides the Ambiguity → Structure → Prototype → Evidence → Story → Alignment spine.
+- Reading Lens controls emphasis and recommended paths.
+- Reading Dial controls pre-authored information depth.
+- Contextual Ask Ardavan provides deterministic approved guidance.
+- Adaptation must be deterministic, explainable, reversible, accessible, and local-only where persistence is used.
+
+Reference: `docs/sot/adaptive-decision-space-sot.md`.
 
 ## Current identity
 

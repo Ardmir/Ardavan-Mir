@@ -1,7 +1,7 @@
 # SOT-11 — Backlog and TODOs
 
-Version: 0.2  
-Last updated: 2026-06-19  
+Version: 0.3  
+Last updated: 2026-07-12  
 Status: Active
 
 ## Status label reference
@@ -34,7 +34,7 @@ Use: `[CONFIRMED]` `[OBSERVED]` `[DECIDED]` `[PROPOSED]` `[INFERRED]` `[VERIFY]`
 
 **ID:** P0-01  
 **Priority:** P0  
-**Status:** `[TODO]`  
+**Status:** `[PARTIAL 2026-07-12]` — migrated copy was reviewed during route QA; an independent final proofread remains open  
 **Action:** Verify and fix any spelling/grammar issues and complete a full copy review across hero, Work, Approach, About, and Contact.  
 **Reason:** Recruiter-facing polish; prior review flagged a possible “tunning” typo (now verified fixed in repo).  
 **Acceptance criteria:**
@@ -52,7 +52,7 @@ Use: `[CONFIRMED]` `[OBSERVED]` `[DECIDED]` `[PROPOSED]` `[INFERRED]` `[VERIFY]`
 
 **ID:** P0-02  
 **Priority:** P0  
-**Status:** `[TODO]`  
+**Status:** `[DONE 2026-07-12]`  
 **Action:** Confirm that Email, LinkedIn, and Résumé are visible, labeled, keyboard accessible, and functional.  
 **Reason:** `[OBSERVED]` Contact section uses icon-only circular buttons with `aria-label` only; résumé is a disabled dashed icon (“coming soon”).  
 **Acceptance criteria:**
@@ -63,7 +63,7 @@ Use: `[CONFIRMED]` `[OBSERVED]` `[DECIDED]` `[PROPOSED]` `[INFERRED]` `[VERIFY]`
 **Dependencies:** Résumé PDF asset and path from Ardavan.  
 **Claims affected:** Contact/résumé claims in SOT-01.  
 **Files likely affected later:** `app/page.tsx`  
-**Notes:** Email and LinkedIn are functional; résumé blocked on asset.
+**Notes:** Email, LinkedIn, and the résumé PDF are visible, labeled, and linked from the adaptive colophon.
 
 ---
 
@@ -71,7 +71,7 @@ Use: `[CONFIRMED]` `[OBSERVED]` `[DECIDED]` `[PROPOSED]` `[INFERRED]` `[VERIFY]`
 
 **ID:** P0-03  
 **Priority:** P0  
-**Status:** `[TODO]`  
+**Status:** `[DONE 2026-07-12]`  
 **Action:** Add or confirm a clear action on the IES and QuickBooks cards.  
 **Reason:** `[OBSERVED]` Flagship cards have no href and no visible CTA; recruiters cannot tell what happens next.  
 **Acceptance criteria:**
@@ -295,6 +295,81 @@ Use: `[CONFIRMED]` `[OBSERVED]` `[DECIDED]` `[PROPOSED]` `[INFERRED]` `[VERIFY]`
 **Claims affected:** SOT-03, SOT-01.  
 **Files likely affected later:** `docs/sot/SOT-03-RESUME-SOT.md`; résumé PDF.  
 **Notes:** `[BLOCKED]` on résumé file until provided.
+
+---
+
+## NX — Adaptive Decision Space / Progressive Woven Manuscript
+
+The items below govern the proposed successor experience. They do not authorize production replacement. Full requirements and gates live in `adaptive-decision-space-sot.md`.
+
+### NX-00 — Consolidate Living Manuscript and The Weave sources
+
+**Priority:** NX-0  
+**Status:** `[BLOCKED]`  
+**Action:** Add the promised V4/V5 production specs, interactive board exports, editable sources, and runtime notes to an approved design-reference location.  
+**Acceptance criteria:** Lens, depth, Ask Ardavan, provenance, desktop, mobile, reduced-motion, and keyboard states can be inspected for both systems.  
+**Dependencies:** Complete Claude Design handoff package.  
+**Production impact:** None.
+**2026-07-12 note:** Complete V4/V5 exports were not attached. The representative prototype proceeded from `adaptive-decision-space-sot.md`; inferred decisions are recorded there and must not be mistaken for handoff-validated behavior.
+
+### NX-01 — Define canonical adaptive-content schema
+
+**Priority:** NX-1  
+**Status:** `[DONE 2026-07-12]`  
+**Action:** Inventory current homepage, case studies, research, résumé, and Ask Ardavan content; assign stage, lens, depth, provenance, and relationship metadata without duplicating claims.  
+**Acceptance criteria:** Every adaptive output maps to one approved content block; no separate copy tree per lens.  
+**Dependencies:** Current `content/*` and SOT claim sources.  
+**Production impact:** None during schema design.
+**Implementation:** `content/adaptive-decision-space.ts` defines one typed source model for project, research, stage, lens, depth, provenance, questions, and relationships.
+
+### NX-02 — Produce type and cultural-system specimens
+
+**Priority:** NX-1  
+**Status:** `[PARTIAL 2026-07-12]`  
+**Action:** Test long-form English reading, display hierarchy, weft colors, sigla/signed knots, colophon, knot-density scale, and structural woven treatments.  
+**Acceptance criteria:** Type remains comfortable for long English passages; cultural references are structural and specific rather than ornamental; all state colors pass contrast.  
+**Dependencies:** NX-00 helpful; cultural-integrity review.  
+**Production impact:** None.
+**Implementation:** Provisional manuscript typography, weft colors, sigla, signed knots, colophon, density states, and structural woven treatments are implemented. Independent contrast, type, and cultural-integrity review remain open.
+
+### NX-03 — Build three representative adaptive scenes
+
+**Priority:** NX-2  
+**Status:** `[PARTIAL 2026-07-12]`  
+**Action:** On an isolated route or branch, prototype Opening + Reading Lens, Evidence + Reading Dial, and Ask Ardavan + provenance.  
+**Acceptance criteria:** Includes default, all lenses, all depths, manual overrides, mobile, keyboard, screen-reader, and reduced-motion states.  
+**Dependencies:** NX-01 and NX-02.  
+**Production impact:** No modification to the production homepage.
+**Implementation:** All three scenes, lenses, depths, manual disclosures, contextual answers, persistence/reset, keyboard operation, reduced-motion CSS, and responsive layouts are implemented at `/explorations/adaptive-decision-space`. A real screen-reader pass and participant validation remain open, so NX-03 is not marked fully done.
+
+### NX-04 — Validate the interaction model
+
+**Priority:** NX-3  
+**Status:** `[PARTIAL 2026-07-12]` — owner comparison and production approval complete; external participant sessions remain open  
+**Action:** Test 30-second recruiter comprehension, hiring-manager evidence discovery, lens/depth understanding, reading comfort, metaphor comprehension, accessibility, performance, and comparison against the current site.  
+**Acceptance criteria:** Visitors understand why the page changes; Work remains reachable in one interaction; no fact or essential evidence becomes inaccessible; hybrid improves clarity and memorability.  
+**Dependencies:** NX-03.  
+**Production impact:** None.
+
+### NX-05 — Build full responsive prototype
+
+**Priority:** NX-4  
+**Status:** `[DONE 2026-07-12]`  
+**Action:** Implement the full Decision Space spine and integrate current projects, research, About, résumé, Contact, and local-only continuation/reset behavior.  
+**Acceptance criteria:** Static export, responsive layout, canonical URLs, direct deep links, accessibility, performance, and content-integrity checks pass.  
+**Dependencies:** NX-04 gate passes.  
+**Production impact:** Promoted to `/` after explicit owner approval; shared folio system added to all detailed routes.
+
+### NX-06 — Record production go/no-go decision
+
+**Priority:** NX-5  
+**Status:** `[DONE 2026-07-12]`  
+**Action:** Compare the validated prototype with production and record an explicit migration or stop decision.  
+**Acceptance criteria:** Approved preview, migration and rollback plan, updated SOT status, QA plan, metadata/share-asset scope, and explicit Ardavan approval.  
+**Dependencies:** NX-05.  
+**Production impact:** Approved for commit and merge; decision recorded in D-018.
+
+**2026-07-12 outcome:** Ardavan explicitly approved the prototype and requested commit and merge. The adaptive experience is now implemented at `/`; all work and research routes share the manuscript/weave grammar. Build, route, console, interaction, desktop, and mobile checks passed. D-018 records the production decision.
 
 ---
 
