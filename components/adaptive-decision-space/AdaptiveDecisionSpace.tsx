@@ -206,6 +206,18 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
           <span className={styles.prototypeLabel}>
             {edition === "prototype" ? "Isolated prototype" : "Adaptive portfolio"}
           </span>
+          <a
+            href="#reading-lens"
+            className={styles.lensShortcut}
+            data-active={lens ? "true" : "false"}
+            aria-label={`Reading lens: ${activeLens?.label ?? "not selected"}. Choose or change lens.`}
+          >
+            <span className={styles.lensShortcutMark} aria-hidden="true" />
+            <span className={styles.lensShortcutFull}>
+              Lens · {activeLens?.shortLabel ?? "Choose"}
+            </span>
+            <span className={styles.lensShortcutCompact} aria-hidden="true">Lens</span>
+          </a>
           <a href="#evidence">Work</a>
           <Link href="/research">Research</Link>
           <a href="#colophon">Contact</a>
@@ -242,16 +254,9 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
               </div>
             </div>
 
-            <aside className={styles.readingNote} aria-label="Current reading">
-              <p className={styles.noteLabel}>Current reading</p>
-              <p className={styles.noteValue}>{activeLens?.label ?? "Canonical manuscript"}</p>
-              <p>{activeLens?.pathNote ?? "No lens selected. The complete portfolio remains available."}</p>
-              <p className={styles.localNote}>Choices are stored on this device only. No tracking or account.</p>
-              <button type="button" onClick={resetReading}>Reset my reading</button>
-            </aside>
           </div>
 
-          <ReadingLensControl value={lens} onChange={setLens} />
+          <ReadingLensControl value={lens} onChange={setLens} onReset={resetReading} />
         </section>
 
         <section

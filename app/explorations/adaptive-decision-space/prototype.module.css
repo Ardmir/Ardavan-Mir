@@ -94,8 +94,9 @@
 }
 
 .header {
-  position: relative;
+  position: sticky;
   z-index: 20;
+  top: 0;
   display: flex;
   min-height: 4.5rem;
   align-items: center;
@@ -135,6 +136,50 @@
   letter-spacing: 0.12em;
   padding-right: 1.25rem;
   text-transform: uppercase;
+}
+
+.lensShortcut {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border-right: 1px solid var(--rule);
+  background: var(--weft-faint);
+  color: var(--weft) !important;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color var(--motion-response) var(--motion-ease),
+    color var(--motion-response) var(--motion-ease);
+}
+
+.lensShortcut:hover,
+.lensShortcut:focus-visible,
+.lensShortcut[data-active="true"] {
+  background: var(--weft-soft);
+}
+
+.lensShortcutMark {
+  width: 0.52rem;
+  height: 0.52rem;
+  border: 1px solid currentColor;
+  transform: rotate(45deg);
+  transition:
+    background-color var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.lensShortcut[data-active="true"] .lensShortcutMark {
+  background: var(--weft);
+  box-shadow: inset 0 0 0 2px var(--paper);
+  transform: rotate(135deg) scale(0.9);
+}
+
+.lensShortcutCompact {
+  display: none;
 }
 
 .stageRail {
@@ -325,10 +370,7 @@
 .openingGrid {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.34fr);
-  gap: clamp(2.5rem, 7vw, 8rem);
-  align-items: end;
+  display: block;
 }
 
 .kicker,
@@ -401,61 +443,6 @@
   text-underline-offset: 0.35rem;
 }
 
-.readingNote {
-  position: relative;
-  border-top: 3px solid var(--weft);
-  padding: 1.2rem 0 0 1.15rem;
-  color: var(--ink-soft);
-  font-family: var(--font-playfair), Georgia, serif;
-  font-size: 0.95rem;
-}
-
-.prototype[data-motion="active"] .readingNote {
-  transition:
-    background-color var(--motion-structural) var(--motion-ease),
-    border-color var(--motion-response) var(--motion-ease);
-}
-
-.prototype[data-motion="active"] .readingNote::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 1px;
-  content: "";
-  background: var(--weft);
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition:
-    opacity var(--motion-response) var(--motion-ease),
-    transform var(--motion-resolve) var(--motion-ease-out);
-}
-
-.prototype[data-motion="active"][data-lens]:not([data-lens="default"]) .readingNote {
-  background: linear-gradient(90deg, var(--weft-faint), transparent 72%);
-}
-
-.prototype[data-motion="active"][data-lens]:not([data-lens="default"]) .readingNote::before {
-  opacity: 0.7;
-  transform: scaleY(1);
-}
-
-.prototype[data-motion="active"] .noteValue {
-  transition:
-    color var(--motion-instant) var(--motion-ease),
-    transform var(--motion-structural) var(--motion-ease-out);
-}
-
-.prototype[data-motion="active"][data-lens]:not([data-lens="default"]) .noteValue {
-  color: var(--weft);
-  transform: translateX(0.18rem);
-}
-
-.readingNote p {
-  margin: 0 0 0.7rem;
-}
-
 .noteValue {
   color: var(--ink);
   font-family: var(--font-inter), system-ui, sans-serif;
@@ -464,13 +451,6 @@
   line-height: 1.2;
 }
 
-.localNote {
-  font-family: var(--font-inter), system-ui, sans-serif;
-  font-size: 0.74rem;
-  line-height: 1.45;
-}
-
-.readingNote button,
 .foldNotice button,
 .refoldButton {
   border: 0;
@@ -495,9 +475,112 @@
 .lensFieldset {
   position: relative;
   z-index: 1;
-  margin-top: clamp(4rem, 10vw, 8rem);
-  border-top: 1px solid var(--rule-strong);
-  padding-top: 1.4rem;
+  overflow: hidden;
+  scroll-margin-top: 5.5rem;
+  margin-top: clamp(3rem, 6vw, 5.5rem);
+  border-top: 3px solid var(--weft);
+  border-bottom: 1px solid var(--rule-strong);
+  background: color-mix(in srgb, var(--paper) 94%, var(--weft) 6%);
+  transition:
+    background-color var(--motion-structural) var(--motion-ease),
+    border-color var(--motion-response) var(--motion-ease);
+}
+
+.lensConsoleHeader {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+  border-bottom: 1px solid var(--rule);
+  background:
+    linear-gradient(90deg, transparent 0 70%, var(--weft-faint)),
+    repeating-linear-gradient(90deg, transparent 0 39px, color-mix(in srgb, var(--weft) 10%, transparent) 39px 40px);
+}
+
+.lensInvitation {
+  padding: 1.55rem clamp(1.25rem, 3vw, 2.5rem) 1.6rem;
+}
+
+.lensInvitation .controlLegend,
+.lensInvitation .controlIntro,
+.lensStatus p {
+  margin-top: 0;
+}
+
+.lensPrompt {
+  max-width: 19ch;
+  margin: 0.45rem 0 0.65rem;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: clamp(1.65rem, 3vw, 2.8rem);
+  font-weight: 560;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.lensStatus {
+  position: relative;
+  border-left: 1px solid var(--rule);
+  background: linear-gradient(135deg, var(--weft-faint), transparent 68%);
+  padding: 1.55rem 1.5rem 1.35rem 3rem;
+}
+
+.lensStatusMark {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.35rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 1px solid var(--weft);
+  transform: rotate(45deg);
+  transition:
+    background-color var(--motion-response) var(--motion-ease),
+    transform var(--motion-structural) var(--motion-ease-out);
+}
+
+.prototype[data-lens]:not([data-lens="default"]) .lensStatusMark {
+  background: var(--weft);
+  box-shadow: inset 0 0 0 2px var(--paper);
+  transform: rotate(135deg) scale(0.92);
+}
+
+.lensStatus .noteValue {
+  margin-bottom: 0.45rem;
+  color: var(--weft);
+}
+
+.lensStatusNote {
+  max-width: 30rem;
+  margin-bottom: 1rem;
+  color: var(--ink-soft);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.lensStatusActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--ink-soft);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.lensStatusActions button {
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  color: var(--weft);
+  cursor: pointer;
+  font: inherit;
+  padding: 0.1rem 0;
+  text-transform: uppercase;
+}
+
+.lensStatusCue {
+  color: var(--weft);
 }
 
 .controlLegend {
@@ -507,7 +590,7 @@
 
 .controlIntro {
   max-width: 42rem;
-  margin: 0.5rem 0 1.2rem;
+  margin: 0;
   color: var(--ink-soft);
   font-size: 0.8rem;
 }
@@ -515,8 +598,7 @@
 .lensOptions {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--paper) 97%, var(--weft) 3%);
 }
 
 .prototype[data-motion="active"] .lensOptions {
@@ -614,6 +696,12 @@
 
 .prototype[data-motion="active"] .lensOption[data-active="true"]::before {
   opacity: 1;
+  transform: scaleY(1);
+}
+
+.prototype[data-motion="active"] .lensOption:hover::before,
+.prototype[data-motion="active"] .lensOption:focus-visible::before {
+  opacity: 0.55;
   transform: scaleY(1);
 }
 
@@ -1463,12 +1551,13 @@
     grid-template-columns: 1fr;
   }
 
-  .openingGrid {
-    align-items: start;
+  .lensConsoleHeader {
+    grid-template-columns: 1fr;
   }
 
-  .readingNote {
-    max-width: 32rem;
+  .lensStatus {
+    border-top: 1px solid var(--rule);
+    border-left: 0;
   }
 
   .apparatus {
@@ -1513,6 +1602,14 @@
 
   .prototypeLabel {
     display: none;
+  }
+
+  .lensShortcutFull {
+    display: none;
+  }
+
+  .lensShortcutCompact {
+    display: inline;
   }
 
   .stageRail {
@@ -1655,6 +1752,35 @@
   }
 }
 
+@media (max-width: 520px) {
+  .headerActions > a:not(.lensShortcut) {
+    display: none;
+  }
+
+  .lensShortcut {
+    border-right: 0;
+    padding-right: 0.55rem;
+    padding-left: 0.55rem;
+  }
+
+  .lensInvitation,
+  .lensStatus {
+    padding-right: 1rem;
+  }
+
+  .lensInvitation {
+    padding-left: 1rem;
+  }
+
+  .lensStatus {
+    padding-left: 2.7rem;
+  }
+
+  .lensStatusMark {
+    left: 1rem;
+  }
+}
+
 @media (max-width: 390px) {
   .opening,
   .decisionSpine,
@@ -1699,9 +1825,10 @@
   .prototype[data-motion="active"] .inscriptionBand,
   .prototype[data-motion="active"] .inscriptionBand::after,
   .prototype[data-motion="active"] .inscriptionBand span,
-  .prototype[data-motion="active"] .readingNote,
-  .prototype[data-motion="active"] .readingNote::before,
-  .prototype[data-motion="active"] .noteValue,
+  .lensShortcut,
+  .lensShortcutMark,
+  .lensFieldset,
+  .lensStatusMark,
   .prototype[data-motion="active"] .lensOptions::after,
   .prototype[data-motion="active"] .lensOption,
   .prototype[data-motion="active"] .lensOption::before,
