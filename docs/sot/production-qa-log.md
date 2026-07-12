@@ -307,34 +307,33 @@ See `share-preview-validation.md` — **Manual validation results** section.
 | Stale metadata cache | **None observed** | Live HTML matches expected; LinkedIn cache not scraped |
 | Route-specific OG images needed? | **No** | Root v2 JPEG sufficient for launch |
 | Apex domain HTTPS | **Still broken** | `https://ardavanmir.com` fails; share `www` URLs |
-| LinkedIn Post Inspector | **TODO** | Not manually tested yet — all four routes |
-| Slack unfurl | **TODO** | Not manually tested yet — all four routes |
-| iMessage preview | **TODO** | Not manually tested yet — use full www URLs |
+| LinkedIn Post Inspector | **Pass** | Owner sign-off 2026-07-12 — all four routes |
+| Slack unfurl | **Pass** | Owner sign-off 2026-07-12 — all four routes |
+| iMessage preview | **Pass** | Owner sign-off 2026-07-12 — all four routes (`www` URLs) |
 
-See `share-preview-validation.md` — **Final validation results** / **Manual platform checks — pending**.
+See `share-preview-validation.md` — **Final validation results** / **Manual platform checks — signed off**.
 
-### Manual platform checks pending (2026-07-12)
+### Manual share-preview sign-off (2026-07-12)
 
-**Status:** Manual platform checks pending — **not** final PASS for iMessage / LinkedIn / Slack.
+**Status:** Final PASS for iMessage / LinkedIn / Slack on all four routes.
 
 | Check | Result | Notes |
 |-------|--------|-------|
-| `/og-image-v2.jpg` | **Pass** | Live asset resolves; primary in metadata per automated validation |
-| Stale metadata (automated HTML) | **Not observed** | Manual social-platform cache checks still **TODO** |
-| Old `/og-image.jpg` in live metadata | **No** | Still hosted as deprecated asset |
-| Route-specific OG images needed? | **No** | Not needed for launch based on current validation |
+| `/og-image-v2.jpg` | **Pass** | 200 and clean image |
+| Stale metadata | **No** | None observed |
+| Old `/og-image.jpg` appeared | **No** | Not in live metadata; deprecated asset still hosted |
+| Route-specific OG images needed? | **No** | Not needed for launch |
 | Apex DNS/TLS | **Yes — still broken** | External follow-up; share `www` URLs only |
-| Homepage — iMessage / LinkedIn / Slack | **TODO** | Not manually tested yet |
-| Research — iMessage / LinkedIn / Slack | **TODO** | Not manually tested yet |
-| IES — iMessage / LinkedIn / Slack | **TODO** | Not manually tested yet |
-| QBOA — iMessage / LinkedIn / Slack | **TODO** | Not manually tested yet |
+| Homepage — iMessage / LinkedIn / Slack | **Pass** | Correct title, description, og-image-v2 thumbnail |
+| Research — iMessage / LinkedIn / Slack | **Pass** | Correct title, description, og-image-v2 thumbnail |
+| IES — iMessage / LinkedIn / Slack | **Pass** | Correct title, description, og-image-v2 thumbnail |
+| QBOA — iMessage / LinkedIn / Slack | **Pass** | Correct title, description, og-image-v2 thumbnail |
 
 ## Remaining issues
 
 - Ask Ardavan start prompt links to QBOA but not IES (IES has dedicated prompt — acceptable)
 - Production apex vs `www` redirect — verify DNS outside repo (see SOT-07)
-- Route-specific OG images not created (root v2 image used for all routes)
-- **Manual platform checks pending** — iMessage / LinkedIn / Slack not final PASS until owner provides real results
+- Route-specific OG images not created (root v2 image used for all routes) — optional polish only
 - Apex domain (`ardavanmir.com`) HTTPS/TLS broken — fix at registrar/DNS outside repo; share `www` URLs until fixed
 
 ## Deployment config
@@ -347,7 +346,7 @@ See `share-preview-validation.md` — **Final validation results** / **Manual pl
 
 **Portfolio maintenance / optional polish**
 
-- Complete manual LinkedIn / Slack / iMessage share-preview pass (Ardavan)
 - Optional route-specific OG images for case studies
+- Optional remove deprecated `/og-image.jpg` from hosting
 - Verified earlier experience / résumé expansion after approval
-- Apex → www redirect verification outside repo
+- Apex → www redirect / DNS/TLS fix outside repo

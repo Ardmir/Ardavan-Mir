@@ -1,8 +1,8 @@
 # Share Preview Validation
 
-Version: 1.6  
+Version: 1.7  
 Last updated: 2026-07-12  
-Status: Automated/metadata **Pass** post PR #20; **manual platform checks pending** — iMessage / LinkedIn / Slack not final PASS until owner provides real results
+Status: Manual share-preview sign-off complete — all four routes **Pass** on iMessage / LinkedIn / Slack; apex DNS/TLS remains external
 
 ## Purpose
 
@@ -27,55 +27,55 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | `/apple-touch-icon.png` direct load | **Pass** | HTTP 200 |
 | Twitter card metadata | **Pass** | `summary_large_image` on all three HTML routes |
 
-### Manual checks (TODO — run by Ardavan)
+### Manual checks (owner sign-off — 2026-07-12)
 
-**Status: manual platform checks pending — not final PASS.**
+**Status: complete — final PASS.**
 
 | Check | Result | Notes |
 |-------|--------|-------|
-| LinkedIn Post Inspector — `/` | **TODO** | Not manually tested yet |
-| LinkedIn Post Inspector — `/research` | **TODO** | Not manually tested yet |
-| LinkedIn Post Inspector — IES | **TODO** | Not manually tested yet |
-| LinkedIn Post Inspector — QBOA | **TODO** | Not manually tested yet |
-| Slack unfurl — all four URLs | **TODO** | Not manually tested yet |
-| iMessage preview — all four URLs | **TODO** | Not manually tested yet; use `https://www.ardavanmir.com/...` |
+| LinkedIn Post Inspector — `/` | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| LinkedIn Post Inspector — `/research` | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| LinkedIn Post Inspector — IES | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| LinkedIn Post Inspector — QBOA | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| Slack unfurl — all four URLs | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| iMessage preview — all four URLs | **Pass** | Correct title, description, and og-image-v2 thumbnail (`www` URLs) |
 | Facebook Sharing Debugger | **Optional** | Only if Meta preview behavior matters |
 
 ### Route-specific OG images
 
-**Still deferred.** All four HTML routes use root `og-image-v2.jpg` (primary) with PNG fallback. Per-route titles and descriptions are correct; differentiation is optional future polish — **not needed for launch**.
+**Still deferred / not needed for launch.** All four HTML routes use root `og-image-v2.jpg` (primary) with PNG fallback. Per-route titles and descriptions are correct.
 
-## Final validation results (post PR #20 deploy — 2026-07-11)
+## Final validation results (post PR #20 deploy — 2026-07-11; manual sign-off 2026-07-12)
 
 **Production commit:** `77d3172` (PR #20 — Replace broken social preview image)  
-**Re-verified:** 2026-07-11 via live HTML scrape and direct asset checks on production (PR #23 docs)  
-**Owner social unfurl sign-off:** **Manual platform checks pending** — not final PASS
+**Automated re-verify:** 2026-07-11 (PR #23 docs)  
+**Owner social unfurl sign-off:** **Pass** — 2026-07-12
 
 ### Summary
 
 | Question | Answer |
 |----------|--------|
-| Stale metadata appeared? | **Not observed** in automated HTML/metadata checks; manual social-platform cache checks still **TODO** |
-| Route-specific OG images still needed? | **No** — not needed for launch based on current validation |
-| Apex domain still broken? | **Yes** — external DNS/TLS follow-up; share `www` URLs only |
-| `/og-image-v2.jpg` resolved successfully? | **Yes / Pass** — live asset resolves; primary in metadata per automated validation |
-| Old broken `/og-image.jpg` appeared anywhere? | **No** — not in live metadata; still hosted as deprecated asset |
+| Stale metadata appeared? | **No** |
+| Route-specific OG images still needed? | **No** |
+| Apex domain still broken? | **Yes** — still external DNS/TLS issue; share `www` URLs only |
+| `/og-image-v2.jpg` resolved successfully? | **Yes / Pass** — 200 and clean image; primary in metadata |
+| Old broken `/og-image.jpg` appeared anywhere? | **No** |
 
 ### Global asset checks
 
 | Asset | Result | Notes |
 |-------|--------|-------|
-| `/og-image-v2.jpg` | **Pass** | Live asset resolves and is primary in metadata per automated validation |
+| `/og-image-v2.jpg` | **Pass** | 200 and clean image; primary share image |
 | `/og-image.png` | **Pass** | HTTP 200; 1200×630 PNG — secondary fallback |
-| `/og-image.jpg` | **Deprecated** | Still HTTP 200 on server; not referenced in live metadata |
+| `/og-image.jpg` | **Deprecated** | Still hosted; not referenced in live metadata |
 | `/favicon.svg` | **Pass** | HTTP 200 |
 | `/favicon-32x32.png` | **Pass** | HTTP 200 |
 | `/apple-touch-icon.png` | **Pass** | HTTP 200 |
-| Stale metadata cache | **Not observed (automated)** | Manual social-platform cache checks still **TODO** |
+| Stale metadata cache | **No** | None observed on automated or manual platform checks |
 
-### Manual platform checks — pending (2026-07-12)
+### Manual platform checks — signed off (2026-07-12)
 
-**Status:** Manual platform checks pending. Do **not** treat iMessage / LinkedIn / Slack as final PASS until owner provides real results.
+**Status:** Final PASS. All 4 routes × iMessage / LinkedIn / Slack passed with correct title, description, and og-image-v2 thumbnail.
 
 #### 1. Homepage
 
@@ -84,10 +84,10 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | Platform | Result | Notes |
 |----------|--------|-------|
 | Direct HTML / metadata | **Pass** | Automated — primary `og:image` → `og-image-v2.jpg` |
-| `/og-image-v2.jpg` direct asset | **Pass** | Live asset resolves; primary in metadata per automated validation |
-| iMessage | **TODO** | Not manually tested yet |
-| LinkedIn Post Inspector | **TODO** | Not manually tested yet |
-| Slack unfurl | **TODO** | Not manually tested yet |
+| `/og-image-v2.jpg` direct asset | **Pass** | 200 and clean image |
+| iMessage | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| LinkedIn Post Inspector | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| Slack unfurl | **Pass** | Correct title, description, and og-image-v2 thumbnail |
 
 #### 2. Research
 
@@ -96,9 +96,9 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | Platform | Result | Notes |
 |----------|--------|-------|
 | Direct HTML / metadata | **Pass** | Automated — primary `og:image` → `og-image-v2.jpg` |
-| iMessage | **TODO** | Not manually tested yet |
-| LinkedIn Post Inspector | **TODO** | Not manually tested yet |
-| Slack unfurl | **TODO** | Not manually tested yet |
+| iMessage | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| LinkedIn Post Inspector | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| Slack unfurl | **Pass** | Correct title, description, and og-image-v2 thumbnail |
 
 #### 3. IES case study
 
@@ -107,9 +107,9 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | Platform | Result | Notes |
 |----------|--------|-------|
 | Direct HTML / metadata | **Pass** | Automated — primary `og:image` → `og-image-v2.jpg` |
-| iMessage | **TODO** | Not manually tested yet |
-| LinkedIn Post Inspector | **TODO** | Not manually tested yet |
-| Slack unfurl | **TODO** | Not manually tested yet |
+| iMessage | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| LinkedIn Post Inspector | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| Slack unfurl | **Pass** | Correct title, description, and og-image-v2 thumbnail |
 
 #### 4. QBOA case study
 
@@ -118,13 +118,13 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | Platform | Result | Notes |
 |----------|--------|-------|
 | Direct HTML / metadata | **Pass** | Automated — primary `og:image` → `og-image-v2.jpg` |
-| iMessage | **TODO** | Not manually tested yet |
-| LinkedIn Post Inspector | **TODO** | Not manually tested yet |
-| Slack unfurl | **TODO** | Not manually tested yet |
+| iMessage | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| LinkedIn Post Inspector | **Pass** | Correct title, description, and og-image-v2 thumbnail |
+| Slack unfurl | **Pass** | Correct title, description, and og-image-v2 thumbnail |
 
 ### Route-specific OG images — still needed?
 
-**No — not needed for launch based on current validation.** Root `og-image-v2.jpg` is referenced on all four HTML routes. Route-specific images remain optional future polish.
+**No.** Root `og-image-v2.jpg` is sufficient for launch on all four HTML routes.
 
 ## URLs to test
 
@@ -205,13 +205,13 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 | `/og-image.png` | Browser/curl | 2026-07-11 | — | — | 1200×630 | **Pass** | HTTP 200; secondary fallback |
 | `/og-image.jpg` | Browser/curl | 2026-07-11 | — | — | — | **Deprecated** | Still hosted; not in live metadata |
 | `/favicon.svg` | Browser/curl | 2026-07-11 | — | — | — | **Pass** | HTTP 200 |
-| All four HTML routes | LinkedIn Post Inspector | 2026-07-12 | — | — | — | **TODO** | Not manually tested yet |
-| All four HTML routes | Slack unfurl | 2026-07-12 | — | — | — | **TODO** | Not manually tested yet |
-| All four HTML routes | iMessage preview | 2026-07-12 | — | — | — | **TODO** | Not manually tested yet; use www URLs |
+| All four HTML routes | LinkedIn Post Inspector | 2026-07-12 | Pass | Pass | Pass (v2) | **Pass** | Owner sign-off — correct title, description, og-image-v2 thumbnail |
+| All four HTML routes | Slack unfurl | 2026-07-12 | Pass | Pass | Pass (v2) | **Pass** | Owner sign-off — correct title, description, og-image-v2 thumbnail |
+| All four HTML routes | iMessage preview | 2026-07-12 | Pass | Pass | Pass (v2) | **Pass** | Owner sign-off — correct title, description, og-image-v2 thumbnail (`www` URLs) |
 
 ## Manual validation log (2026-07-12)
 
-**Manual platform checks pending** — not final PASS. Automated/metadata checks **Pass** for all four HTML routes post PR #20 / PR #23. iMessage, LinkedIn, and Slack remain **TODO** until owner provides real results.
+**Manual share-preview sign-off complete.** All four HTML routes **Pass** on iMessage, LinkedIn Post Inspector, and Slack. Direct `/og-image-v2.jpg` **Pass** (200, clean image). Stale metadata: **No**. Old `/og-image.jpg`: **No**. Route-specific OG images: **No**. Apex DNS/TLS: still external.
 
 ## Manual steps for Ardavan
 
@@ -265,9 +265,6 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 
 ## Remaining TODOs
 
-- Complete LinkedIn Post Inspector pass for all four HTML routes and update Pass/Fail in this file
-- Confirm Slack and iMessage unfurls match expected title/description/image on all four routes
-- Re-test iMessage with full `https://www.ardavanmir.com/...` URLs (not bare apex)
 - Fix apex domain HTTPS at registrar/DNS so bare `ardavanmir.com` shares work (outside repo)
 - Optional: remove deprecated `/og-image.jpg` from hosting if no longer needed (low priority)
 - Optional: create route-specific OG images (`public/og-ies.png`, `public/og-qboa.png`) if share differentiation is worth the effort
