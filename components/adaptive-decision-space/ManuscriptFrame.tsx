@@ -13,7 +13,7 @@ type ManuscriptFrameProps = {
 export function ManuscriptFrame({ children, folio, backHref, backLabel }: ManuscriptFrameProps) {
   return (
     <div className={styles.manuscriptFrame}>
-      <a href="#ambiguity" className={styles.skipLink}>Skip to manuscript</a>
+      <a href="#manuscript-content" className={styles.skipLink}>Skip to manuscript</a>
       <header className={styles.siteHeader}>
         <Link href="/" className={styles.wordmark} aria-label="Ardavan Mirhosseini, home">
           Ardavan Mirhosseini
@@ -25,7 +25,7 @@ export function ManuscriptFrame({ children, folio, backHref, backLabel }: Manusc
         </nav>
       </header>
       <ManuscriptStageRail />
-      <main className={styles.manuscript}>{children}</main>
+      <main id="manuscript-content" className={styles.manuscript} tabIndex={-1}>{children}</main>
     </div>
   )
 }

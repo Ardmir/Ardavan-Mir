@@ -1,12 +1,12 @@
 # Adaptive Decision Space — Progressive Woven Manuscript SOT
 
-Version: 0.2  
+Version: 0.3
 Last updated: 2026-07-12  
 Status: `[APPROVED]` for production by Ardavan on 2026-07-12
 
 ## Purpose
 
-Define the next-generation portfolio concept, its invariant content rules, dynamic behavior, information architecture, accessibility constraints, and gated execution plan.
+Define the production portfolio concept, its invariant content rules, dynamic behavior, information architecture, accessibility constraints, and future extension boundaries.
 
 The Adaptive Decision Space is now the production portfolio source of truth. The Glass Monolith remains historical implementation context only.
 
@@ -59,6 +59,16 @@ The experience demonstrates AI-native principles through behavior:
 10. The Weave remains structural—density, relationship, signature, inscription—not ornamental carpet decoration.
 11. Ask Ardavan uses approved deterministic answers unless a separately reviewed real-AI system is explicitly authorized later.
 12. Production migration requires explicit owner approval, successful static build, content-integrity review, route regression QA, and a reversible Git history.
+
+## Production motion baseline
+
+Commit `ab704c3` is the production Adaptive Decision Space motion baseline.
+
+- Stage progress, lens state, reading depth, evidence emphasis, and provenance use the shared **setting → threading → resolving** vocabulary.
+- Motion reinforces relationships already available through text, structure, and state; it never carries essential meaning alone.
+- `prefers-reduced-motion` is mandatory and must reveal the same resolved information immediately.
+- Focus, reading order, scroll position, and direct navigation must remain usable during and after transitions.
+- Motion changes require responsive, keyboard, reduced-motion, and performance regression checks.
 
 ## Dynamic state model
 
@@ -323,8 +333,8 @@ The complete V4 Living Manuscript / V5 The Weave Claude Design exports were not 
 - Keyboard activation for lens, depth, disclosure, and Ask controls: pass.
 - Horizontal overflow at approximately 1440px, 768px, and 390px CSS widths: none observed.
 - Reduced-motion stylesheet contract: present; transitions disabled and resolved transform supplied.
-- Repository-wide TypeScript check: blocked by pre-existing errors in `components/ui/calendar.tsx` and `components/ui/chart.tsx`; no prototype-specific errors reported.
-- Lint: repository has no configured ESLint setup; `next lint` opens the interactive initializer and cannot run unattended.
+- Repository-wide TypeScript check: restored on PR #26 after resolving current DayPicker/Recharts compatibility in the unused UI components.
+- Lint: restored on PR #26 with a non-interactive Next core-web-vitals configuration; no warnings or errors.
 
 ### Phase 3 — Comparative validation
 
@@ -392,7 +402,7 @@ Verification at migration:
 - `pnpm build`: pass, including static export;
 - all five public routes: correct title/H1, no console errors, and no observed horizontal overflow at desktop or mobile test widths;
 - lens, Whole story depth, and contextual approved-answer interaction: pass;
-- repository-wide TypeScript remains blocked only by the previously recorded `calendar.tsx` and `chart.tsx` dependency/type issues;
+- repository-wide TypeScript was blocked at migration by `calendar.tsx` and `chart.tsx` dependency/type issues; PR #26 resolves them and removes build-time suppression;
 - React structure, hook cleanup, semantic HTML, keyboard operation, stable keys, and route composition reviewed with no migration-specific blocker.
 
 ## Success criteria
@@ -400,10 +410,24 @@ Verification at migration:
 - A recruiter can find flagship work in one interaction or less.
 - A visitor can explain what lens and depth changed.
 - No adaptive state changes a fact or hides essential evidence permanently.
-- Evidence and provenance are more legible than in the current site.
+- Evidence and provenance remain more legible than in the previous production baseline.
 - The cultural identity feels structurally specific, not ornamental.
 - The default experience remains calm, fast, readable, and accessible.
-- The system is clearly more memorable than the production Glass Monolith without becoming harder to use.
+- The system remains more memorable than the previous Glass Monolith baseline without becoming harder to use.
+
+## Design Twin relationship
+
+Status: experimental track approved; production integration not approved.
+
+- A future text Design Twin may become a contextual evidence-discovery path into the manuscript.
+- It cannot replace the Adaptive Decision Space, portfolio evidence, homepage hero, case-study routes, résumé, or human conversation.
+- A separate, deliberately entered route is preferred over a floating chatbot or talking-avatar treatment.
+- The existing deterministic Ask Ardavan remains the static fallback.
+- Any generated answer must disclose that it is AI, expose public-source provenance, distinguish fact from reflection/summary, and abstain when evidence is unavailable.
+- Only approved public content may enter the retrieval corpus.
+- No homepage talking avatar, voice clone, face upload, private corpus, autonomous commitment, or production API work is approved.
+
+Reference: `docs/sot/ardavan-design-twin-sot.md`.
 
 ## Open questions
 
@@ -415,10 +439,10 @@ Verification at migration:
 - Whether the session reading pattern is useful, shareable, or unnecessary decoration.
 - How much local state should persist and for how long.
 - Whether curated editions belong in the first release or a later phase.
-- Whether the Clarity Engine is absorbed into Decision Space or retained as a named subcomponent.
+- The Clarity Engine question is resolved: it is superseded historical context; Decision Space is the production interaction model.
 
 ## Source references
 
 - Claude Design handoff: Adaptive Decision Space visual-system divergence, July 2026.
 - User-approved synthesis: Living Manuscript foundation + progressively earned Weave layer, 2026-07-12.
-- Related decisions: D-016 and D-017.
+- Related decisions: D-017, D-018, D-019, and D-020.

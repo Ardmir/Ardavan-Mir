@@ -295,7 +295,6 @@
 }
 
 .prototype[data-motion="active"] .stageRail a:not([data-active="true"]) span {
-  opacity: 0.7;
   transform: scale(0.92);
 }
 

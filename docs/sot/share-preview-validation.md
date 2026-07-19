@@ -1,12 +1,23 @@
 # Share Preview Validation
 
-Version: 1.5  
-Last updated: 2026-07-11  
-Status: Final validation logged post PR #20 deploy (`77d3172`); automated/metadata **Pass** on four HTML routes; owner social unfurl sign-off **TODO**
+Version: 1.6
+Last updated: 2026-07-12
+Status: Pre-Adaptive automated metadata baseline retained; current manual social unfurl sign-off **TODO**
 
 ## Purpose
 
 Document how to validate Open Graph, Twitter card, and link-preview behavior after metadata or share-asset changes. Automated checks in CI cannot fully verify how LinkedIn, Slack, or iMessage render previews.
+
+## Adaptive Decision Space reconciliation
+
+- The automated metadata and asset results below were recorded before the Adaptive Decision Space production migration. They remain useful historical evidence but are not a current end-to-end share baseline.
+- The migration preserved canonical metadata and share assets, but current production social previews still require evidence-backed re-validation.
+- iMessage, LinkedIn Post Inspector, and Slack manual checks remain `TODO` for every public HTML route.
+- PR #24 was closed unmerged on 2026-07-19. Its manual platform PASS claims lacked screenshots, inspector records, tested dates/URLs, or other supporting evidence and predated the adaptive production baseline.
+- Future manual results must record: test date, full tested URL, platform/client, result, and an evidence note or artifact reference.
+- Do not infer platform PASS from HTML metadata, direct asset checks, a successful deployment, or another platform’s result.
+
+The sections below preserve the 2026-07-11 automated baseline. Any “Pass” applies only to the named automated/asset check, not to iMessage, LinkedIn, or Slack rendering.
 
 ## Sprint 7 validation status
 

@@ -1,6 +1,6 @@
 # SOT-00 — Master Brief
 
-Version: 0.3  
+Version: 0.4
 Last updated: 2026-07-12  
 Status: Active
 
@@ -12,11 +12,11 @@ The portfolio must communicate senior-level product judgment, enterprise product
 
 ## Current project phase
 
-**Adaptive Decision Space production integration and validation.**
+**Adaptive Decision Space stabilization and evidence validation.**
 
-`[CONFIRMED]` The portfolio homepage has been implemented, committed, and deployed (Glass Monolith re-skin merged to `main`, 2026-06-19; GitHub Pages deploy succeeded).
+`[CONFIRMED]` The Adaptive Decision Space / Progressive Woven Manuscript is the production homepage and shared work/research folio system. Glass Monolith is historical context only.
 
-`[CONFIRMED]` The project has moved from homepage implementation into recruiter-facing polish, accessibility review, case-study development, and claim verification.
+`[CONFIRMED]` The current production baseline includes the live IES and QBOA case studies, Research & Strategy, Architectures of Intent, résumé, deterministic Ask Ardavan, adaptive reading controls, and the motion system recorded at `ab704c3`.
 
 `[OBSERVED]` Since the June phase decision, the résumé, flagship case studies, Ask Ardavan, executive-storytelling proof, and Research & Strategy layer have been implemented.
 
@@ -28,27 +28,23 @@ The portfolio must communicate senior-level product judgment, enterprise product
 
 ## Core message
 
-`[CONFIRMED]` “I design intelligent products that turn financial complexity into confident action.”
+`[OBSERVED]` “I make complex systems legible before making them smart.”
 
 ## Design philosophy
 
 `[CONFIRMED]` “Make the system legible before making it smart.”
 
-`[OBSERVED]` This philosophy appears in the Clarity Engine footer on the deployed homepage. It is no longer a separate hero line.
-
-## Shipped hero subcopy (2026-06-19)
-
-`[OBSERVED]` “I work across enterprise SaaS, AI-native workflows, and financial systems — making complexity legible.”
+`[OBSERVED]` The philosophy is now the production hero thesis and is demonstrated through the Decision Space, Reading Lens, Reading Depth, provenance, and human-controlled disclosure.
 
 ## Current design direction
 
 `[CONFIRMED]` Editorial paper-and-ink manuscript with restrained weft accents, adaptive reading behavior, visible provenance, and a six-stage Decision Space.
 
-`[OBSERVED]` Background `#05070A`; primary text `#F4F7F6`; teal accent `#31F5D4`; muted metadata `#5E6865`; Inter ultralight monolith typography for hero, section headings, and project titles.
+`[OBSERVED]` Paper `#F2EFE5`, ink `#171914`, softened ink `#55584E`, canonical warm umber `#765026`, and lens-specific semantic accents. Inter provides structure, Playfair Display provides manuscript voice, and JetBrains Mono provides folio/provenance metadata.
 
-## Next-generation design exploration
+## Production experience architecture
 
-`[DECIDED]` Prototype the **Progressive Woven Manuscript** within the **Adaptive Decision Space** architecture.
+`[DECIDED]` Maintain the **Progressive Woven Manuscript** within the production **Adaptive Decision Space** architecture.
 
 - Living Manuscript is the stable source-of-truth interface.
 - The Weave emerges through explicit visitor choices and reading behavior.
@@ -62,15 +58,16 @@ Reference: `docs/sot/adaptive-decision-space-sot.md`.
 
 ## Current identity
 
-`[CONFIRMED]` Wordmark: **ARDAVAN / MIR** (`components/ia-logotype.tsx`; “Mir” muted `#5E6865`).
+`[OBSERVED]` Wordmark: **Ardavan Mirhosseini**, presented as an editorial full-name mark in the shared adaptive header.
 
 ## Current flagship hierarchy
 
 `[CONFIRMED]` `[OBSERVED]`
 
-1. Intuit Enterprise Suite — flagship card (`01`, role label “Senior Product Designer”).
-2. QuickBooks Online Advanced — Dimensional Chart of Accounts — flagship card (`02`, role label “Product Designer”).
-3. Iranians Who Design — supporting founder initiative (de-emphasized row; external link live).
+1. Intuit Enterprise Suite — flagship public-safe evidence and detailed folio.
+2. QuickBooks Online Advanced — Dimensional Chart of Accounts — systems evidence and detailed folio.
+3. Architectures of Intent / Research & Strategy — design-research evidence.
+4. Iranians Who Design — supporting founder initiative.
 
 ## Recruiter perception goal
 
@@ -92,9 +89,9 @@ After reading the work section, hiring managers should see Ardavan as someone wh
 - Work in enterprise SaaS and financial/accounting contexts.
 - Tell a clear product story without overclaiming confidential metrics.
 
-## Professional review findings (2026-06-19)
+## Historical Glass Monolith review findings (2026-06-19)
 
-Verified against current repo (`app/page.tsx`, `app/globals.css`, `components/portfolio/clarity-engine.tsx`) and production HTML at `https://www.ardavanmir.com` after merge.
+The table below is retained as a dated audit of the superseded Glass Monolith implementation. It must not be used as the current production description or backlog without re-verification.
 
 | Finding | Status | Notes |
 |--------|--------|-------|
@@ -167,12 +164,12 @@ Enterprise AI × calm financial clarity × senior design craft.
 
 ## Current working concept
 
-Concept name: Clarity Engine
+Concept name: Adaptive Decision Space / Progressive Woven Manuscript
 
-Creative thesis: Ardavan designs the layer between complex business systems, AI intelligence, and human judgment — making enterprise financial workflows understandable, trustworthy, and actionable.
+Creative thesis: The portfolio itself demonstrates Ardavan's method—moving from ambiguity to alignment while keeping evidence, provenance, and human control visible.
 
-`[DECIDED]` Keep the Clarity Engine as the signature conceptual interaction, but it must support Work evidence rather than delay it (see D-013).
+`[DECIDED]` The superseded Clarity Engine is historical. Decision Space, adaptive reading, and evidence provenance are the production interaction model.
 
 ## Source basis
 
-This SOT is based on the current ChatGPT project context, competitive portfolio research, the portfolio update plan, Ardavan’s clarifications on IES IA and AI work, and the post-deployment Glass Monolith implementation merged 2026-06-19.
+This SOT is reconciled to the Adaptive Decision Space production state and the PR #26 stabilization candidate as of 2026-07-19. Historical sections remain only where explicitly labeled. GitHub Pages ownership for canonical `www` and strict repository TypeScript/lint/build validation are verified on PR #26. Manual social previews, apex HTTPS remediation, screen-reader review, recruiter comprehension, and cultural-integrity validation remain open stabilization items.

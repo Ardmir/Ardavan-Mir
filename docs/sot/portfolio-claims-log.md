@@ -1,11 +1,12 @@
 # Portfolio Claims Log
 
-Version: 1.9  
+Version: 2.0
 Last updated: 2026-07-12  
 Status: Public-safe
 
 | Claim | Status | Public wording | Notes |
 |-------|--------|----------------|-------|
+| Ardavan’s AI Design Twin | PLANNED / NOT_PUBLIC | Ardavan’s AI Design Twin is a proposed, explicitly disclosed interface grounded in approved public portfolio material. | Do not claim it exists, is trained, is live, improves recruiter outcomes, or uses Ardavan’s voice or face. |
 | Architectures of Intent public research article | PUBLIC_SAFE | A research essay exploring what enterprise software becomes when AI shifts from feature layer to operating model, with emphasis on context, grounding, evidence, permissions, human review, and governed action. | Live at `/research/ai-native-strategy`. Do not add internal influence, launch, adoption, or company-decision claims. |
 | Ardavan designs AI-native enterprise products that make financial complexity legible. | PUBLIC_SAFE | I design AI-native enterprise products that make financial complexity legible. | Current homepage positioning. |
 | IES work involved AI-native enterprise finance direction. | PUBLIC_SAFE (conservative) | Helped define and communicate AI-native product direction for complex enterprise finance workflows. | Use “helped define and communicate,” not “led” or “launched.” |

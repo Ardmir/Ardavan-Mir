@@ -210,7 +210,7 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
             href="#reading-lens"
             className={styles.lensShortcut}
             data-active={lens ? "true" : "false"}
-            aria-label={`Reading lens: ${activeLens?.label ?? "not selected"}. Choose or change lens.`}
+            aria-label={`Lens · ${activeLens?.shortLabel ?? "Choose"}. Reading lens: ${activeLens?.label ?? "not selected"}. Choose or change lens.`}
           >
             <span className={styles.lensShortcutMark} aria-hidden="true" />
             <span className={styles.lensShortcutFull}>
@@ -230,7 +230,7 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
         motionEnabled
       />
 
-      <main id="prototype-content" className={styles.manuscript}>
+      <main id="prototype-content" className={styles.manuscript} tabIndex={-1}>
         <section id="opening" className={styles.opening} aria-labelledby="opening-title">
           <div className={styles.openingMeta}>
             <p>Senior Product Designer · Toronto</p>

@@ -114,7 +114,7 @@ Summary: Approved an isolated prototype program combining Living Manuscript as t
 Decision links: D-016, D-017  
 Claim impact: No new public claims introduced.  
 Code impact: None; documentation only.  
-Deployment impact: None; Glass Monolith remains production.  
+Deployment impact at that time: None; Glass Monolith remained production until the later D-018 migration.
 Verification needed: Full V4/V5 Claude handoff assets; type specimens; interaction comprehension; accessibility; performance; cultural-integrity review.  
 Next action: Complete Phase 0 source consolidation, then prototype Opening + Lens, Evidence + Dial, and Ask Ardavan + provenance on an isolated route/branch.
 
@@ -141,3 +141,28 @@ Code impact: Production homepage replacement plus shared detailed-route frame an
 Deployment impact: Production UI changes after merge to `main`; CNAME, canonical routes, metadata, dependencies, and deployment configuration unchanged.  
 Verification: Static production build passed; five public routes passed desktop/mobile layout, H1/title, console, and overflow checks; adaptive lens, depth, and Ask interactions passed. Repository-wide TypeScript remains blocked by the previously recorded UI-library errors only.  
 Next action: Monitor production deployment, then complete external recruiter, screen-reader, contrast, and cultural-integrity follow-up validation.
+
+### 2026-07-12 — v0.8 — Adaptive motion baseline and Design Twin planning
+Type: Strategy / Design / Motion / Verification / Planning
+Changed by: Codex / Ardavan
+Files affected: Portfolio SOT and roadmap documents only
+Summary: Reconciled the SOT pack with the production Adaptive Decision Space, live detailed folios and résumé, merged Sprint 9A, and the `ab704c3` adaptive-motion baseline. Recorded warm umber `#765026` as the canonical accent and muted blueberry `#314A87` as an experimental semantic AI/research accent. Recorded the Ardavan Design Twin decision as `PROCEED_WITH_TEXT_PROTOTYPE`: text first, public corpus only, visible citations, explicit disclosure, abstention, separate deliberate route, static Ask Ardavan fallback, and no production approval.
+Decision links: D-018, D-019, D-020
+Claim impact: Added only planned/not-public wording for a proposed Design Twin; no existence, training, outcome, voice, face, or production claim.
+Code impact: None; documentation only.
+Deployment impact: None.
+Verification needed: Close PR #24 unmerged; verify canonical production-host ownership; restore repository-wide TypeScript; complete the current motion, reduced-motion, keyboard, screen-reader, contrast, responsive, Lighthouse, localStorage, recruiter, and evidence-backed social-share QA baseline.
+Next action: Complete Sprint 9A.1 stabilization before Sprint 9B or a preview-only Design Twin prototype.
+
+### 2026-07-19 — v0.9 — Production stabilization and SOT closure candidate
+Type: Tech / Deployment / Verification / Accessibility / Documentation
+Changed by: Codex
+Files affected: `app/robots.ts`, `app/sitemap.ts`, `components/adaptive-decision-space/*`, `app/explorations/adaptive-decision-space/prototype.module.css`, `components/ui/calendar.tsx`, `components/ui/chart.tsx`, `next.config.mjs`, `package.json`, lockfile, `README.md`, SOT deployment/QA/backlog/changelog files
+Summary: Audited PR #26, the repository, and live production; closed PR #24 without merge; verified GitHub Pages as the `www` production authority; restored strict lint/type/build checks; fixed skip-target focus, accessible naming, mobile stage contrast, calendar/chart dependency compatibility, and missing robots/sitemap exports; and reconciled deployment and QA records.
+Decision links: D-018; no new strategy decision
+Claim impact: No public claim changes. No metrics, private sources, internal names, customer evidence, or expanded ownership language added.
+Code impact: Release-quality and metadata fixes only; no redesign, live AI, RAG, voice, avatar, or Design Twin implementation.
+Deployment impact: Candidate changes remain on PR #26. CNAME and deployment workflow are unchanged; no merge or manual deployment performed.
+Verification: Strict lint, TypeScript, and static build pass. Five public HTML routes pass at 1440×1000, 768×1024, and 390×844 with zero console errors or overflow. Candidate Lighthouse accessibility is 100 mobile/desktop with no binary failures.
+Verification needed: Evidence-backed LinkedIn/Slack/iMessage previews; VoiceOver/screen-reader review; recruiter comprehension; cultural-integrity review; external apex HTTPS remediation.
+Next action: Review and merge PR #26 through the normal workflow, then complete the bounded manual production sign-off.

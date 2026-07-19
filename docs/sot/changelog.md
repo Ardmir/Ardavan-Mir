@@ -1,5 +1,29 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-19 — Production stabilization and QA closure candidate
+
+- Continued on PR #26 after verifying it open, mergeable, clean, one commit ahead of `main`, and the intended SOT/stabilization branch.
+- Closed conflicting PR #24 without merge; its manual social-preview signoff lacked dated platform evidence.
+- Restored strict TypeScript, ESLint, and production-build validation; resolved unused calendar/chart dependency API mismatches.
+- Fixed keyboard skip-target focus, reading-lens accessible naming, and inactive mobile stage-number contrast.
+- Added static `robots.txt` and `sitemap.xml` outputs while keeping the exploration route noindex and out of the sitemap.
+- Verified five public HTML routes at desktop/tablet/mobile, local-only adaptive persistence and corrupt-state recovery, reduced motion, metadata, OG assets, résumé, console health, and canonical `www` hosting.
+- Replaced the obsolete v0/Vercel README and reconciled SOT-07, QA, and backlog records to the GitHub Pages / Adaptive Decision Space production state.
+- Preserved the approved résumé, CNAME, deployment workflow, public-safe claims, and deterministic Ask model.
+- Kept manual LinkedIn/Slack/iMessage, screen-reader, recruiter-comprehension, cultural-integrity, and apex HTTPS remediation open.
+- No visual redesign or Design Twin backend was implemented.
+
+## 2026-07-12 — Adaptive motion baseline and Design Twin roadmap
+
+- Recorded `ab704c3` as the production Adaptive Decision Space motion baseline; reduced motion remains mandatory.
+- Reconciled production documentation with the live adaptive homepage, shared work/research folios, résumé, and merged Sprint 9A.
+- Recorded warm umber `#765026` as the canonical accent and muted blueberry `#314A87` as an experimental semantic AI/research accent only.
+- Completed the Design Twin documentation investigation with decision status `PROCEED_WITH_TEXT_PROTOTYPE`.
+- Defined a text-first, cited, public-source-only, separately entered experiment with static Ask Ardavan fallback.
+- No Design Twin implementation, API, route, dependency, vendor upload, voice, face, avatar, or production approval was performed.
+- Kept manual iMessage, LinkedIn, and Slack share-preview checks as TODO pending dated evidence.
+- Marked production-host ownership, repository-wide TypeScript, current QA evidence, and PR #24 closure as P0 stabilization work.
+
 ## 2026-07-12 — Adaptive Decision Space production migration
 
 - Promoted the approved adaptive manuscript to `/`.
