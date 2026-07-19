@@ -87,10 +87,10 @@ function SystemMap() {
 
 function EvidenceRail() {
   const items = [
-    { label: "Source context", strength: 1 },
-    { label: "Policy check", strength: 0.85 },
-    { label: "Materiality signal", strength: 0.7 },
-    { label: "Confidence note", strength: 0.55 },
+    { label: "Source context", state: "Attached" },
+    { label: "Freshness", state: "Current" },
+    { label: "Policy check", state: "Satisfied" },
+    { label: "Review state", state: "Human review due" },
   ]
   return (
     <figure className="ies-visual ies-visual--rail" aria-labelledby="ies-visual-rail-title">
@@ -105,11 +105,7 @@ function EvidenceRail() {
           <li key={item.label} className="ies-visual__rail-item">
             <span className="ies-visual__rail-dot" aria-hidden="true" />
             <span className="ies-visual__rail-label">{item.label}</span>
-            <span
-              className="ies-visual__rail-bar"
-              style={{ width: `${item.strength * 100}%` }}
-              aria-hidden="true"
-            />
+            <span className="ies-visual__rail-state">{item.state}</span>
           </li>
         ))}
       </ul>
@@ -120,8 +116,8 @@ function EvidenceRail() {
 function DecisionPacket() {
   const fields = [
     { label: "Recommendation", value: "Review classification variance", highlight: true },
-    { label: "Evidence", value: "3 supporting signals attached" },
-    { label: "Risk", value: "Medium — requires human review" },
+    { label: "Evidence", value: "Supporting sources attached" },
+    { label: "Impact", value: "Material change — review required" },
     { label: "Human review", value: "Pending approval" },
     { label: "Approval state", value: "Awaiting decision" },
   ]
