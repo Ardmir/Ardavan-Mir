@@ -166,3 +166,15 @@ Deployment impact: Candidate changes remain on PR #26. CNAME and deployment work
 Verification: Strict lint, TypeScript, and static build pass. Five public HTML routes pass at 1440×1000, 768×1024, and 390×844 with zero console errors or overflow. Candidate Lighthouse accessibility is 100 mobile/desktop with no binary failures.
 Verification needed: Evidence-backed LinkedIn/Slack/iMessage previews; VoiceOver/screen-reader review; recruiter comprehension; cultural-integrity review; external apex HTTPS remediation.
 Next action: Review and merge PR #26 through the normal workflow, then complete the bounded manual production sign-off.
+
+### 2026-07-19 — v1.0 — IES enterprise framework expansion candidate
+Type: Content / Design / IA / Documentation / Verification
+Changed by: Codex / Ardavan
+Files affected: IES SOT, claims, sanitized visual plan, executive-storytelling SOT, roadmap, backlog, changelogs, IES route and sanitized visual component/styles
+Summary: Documented and implemented the approved public-safe expansion of the existing IES case study: AI-native diagnostic, research synthesis, five-part enterprise framework, scoped environment model, governed decision lifecycle, and role-adapted governed object. “Enterprise Power” remains private; the public heading is “From AI-enabled features to a governed enterprise system.”
+Claim impact: Adds only the approved conservative contribution and outcome language. The work remains a team-created proposal, not a shipped product. Granular artifact authorship remains VERIFY.
+Code impact: Existing IES route and original abstract exhibit components only; no new route, asset, dependency, homepage, résumé, QBOA, research, or Design Twin change.
+Deployment impact: None. Feature remains a draft-PR candidate and must not be merged or deployed directly.
+Verification: Strict lint, TypeScript, production build, diff check, source/built publication-safety scans, desktop/tablet/mobile layout, keyboard focus, reduced motion, adaptive reading/lens behavior, and route regressions pass. Screenshots remain review artifacts outside the repository.
+Verification needed: Manual screen-reader, recruiter-comprehension, cultural-integrity, social-preview, and bare-apex DNS/TLS conditions remain tracked.
+Next action: Review the feature draft PR and resolve any publication or granular-authorship follow-up before merge.

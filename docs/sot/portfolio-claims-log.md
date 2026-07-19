@@ -1,7 +1,7 @@
 # Portfolio Claims Log
 
-Version: 2.0
-Last updated: 2026-07-12  
+Version: 2.1
+Last updated: 2026-07-19
 Status: Public-safe
 
 | Claim | Status | Public wording | Notes |
@@ -11,6 +11,10 @@ Status: Public-safe
 | Ardavan designs AI-native enterprise products that make financial complexity legible. | PUBLIC_SAFE | I design AI-native enterprise products that make financial complexity legible. | Current homepage positioning. |
 | IES work involved AI-native enterprise finance direction. | PUBLIC_SAFE (conservative) | Helped define and communicate AI-native product direction for complex enterprise finance workflows. | Use “helped define and communicate,” not “led” or “launched.” |
 | IES work involved IA, workflow clarity, trust, evidence, authorization, human judgment, prototype direction, and leadership storytelling. | PUBLIC_SAFE when abstracted | The work focused on making complex financial workflows clearer through information architecture, trust patterns, evidence, human judgment, prototypes, and product storytelling. | Do not name internal frameworks or prototypes. |
+| Internal IES framework presentation name | PRIVATE_CONTEXT / DO_NOT_PUBLISH | Do not use “Enterprise Power” as a public heading. | Approved public heading: “From AI-enabled features to a governed enterprise system.” |
+| Ardavan contributed to the IES enterprise framework proposal. | PUBLIC_SAFE (approved wording) | I helped synthesize recurring interaction decisions across product research, strategy literature, and customer evidence, then translate them into a framework for enterprise finance. | Team-created proposal. Do not claim sole authorship of the presentation, research, prototype, or framework. Granular artifact authorship remains VERIFY. |
+| IES framework proposal outcome | PUBLIC_SAFE (approved wording) | The proposal gave the team a shared language and reusable foundation for subsequent AI-native exploration. | Do not expand into company-wide adoption, roadmap approval, launch, implementation, customer impact, or leadership approval. |
+| IES framework research counts | DO_NOT_PUBLISH | We examined patterns across enterprise products, strategy research, and customer evidence. | Do not publish 39+, 8, 17, 20, or similar figures. |
 | The IES concepts shipped, launched, or drove adoption. | DO_NOT_PUBLISH | Do not use. | Not verified. |
 | The IES work improved business metrics. | DO_NOT_PUBLISH | Do not use. | No unverified metrics. |
 | Recognitions praised executive storytelling and making complex capabilities tangible. | PRIVATE_CONTEXT | Recognized for turning complex AI and enterprise finance concepts into clear, tangible product stories. | Do not publish raw screenshots or private quotes. |

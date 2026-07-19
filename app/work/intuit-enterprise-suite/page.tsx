@@ -1,6 +1,13 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import IesCaseStudyVisuals from "@/components/IesCaseStudyVisuals"
+import {
+  AiNativeDiagnostic,
+  EnterpriseSystemModel,
+  GovernedLifecycle,
+  ResearchToFramework,
+  RoleAdaptedObject,
+} from "@/components/IesEnterpriseFrameworkVisuals"
 import IesFutureStateVisuals from "@/components/IesFutureStateVisuals"
 import { ManuscriptFrame } from "@/components/adaptive-decision-space/ManuscriptFrame"
 import styles from "@/components/adaptive-decision-space/manuscript.module.css"
@@ -89,6 +96,29 @@ const PATTERNS = [
   {
     title: "Approval receipt",
     copy: "A closing artifact that records what was approved, what changed, and where the user can review it later.",
+  },
+]
+
+const FRAMEWORK_ELEMENTS = [
+  {
+    title: "Intent",
+    copy: "Begin with the outcome and let the system compose a path through the work.",
+  },
+  {
+    title: "Environment",
+    copy: "AI operates through a scoped product environment rather than living in a separate assistant.",
+  },
+  {
+    title: "Artifact",
+    copy: "Consequential work persists in a governed object shared across roles—not in a transient conversation.",
+  },
+  {
+    title: "Evidence",
+    copy: "Claims remain connected to their sources, freshness, policy context, and review state.",
+  },
+  {
+    title: "Gate",
+    copy: "Authorization becomes available only after scope, evidence, policy, and expected impact are understood.",
   },
 ]
 
@@ -204,6 +234,23 @@ export default function IesCaseStudyPage() {
               </div>
             ))}
           </div>
+          <div className={styles.frameworkContribution}>
+            <p className={styles.eyebrow}>Framework contribution</p>
+            <h3 className={styles.frameworkHeading}>From AI-enabled features to a governed enterprise system</h3>
+            <p className={styles.frameworkIntro}>
+              AI-native could not mean adding an assistant to existing screens. We began with a
+              simple diagnostic: if the AI disappeared, would the product still behave essentially
+              the same way?
+            </p>
+            <p className={styles.frameworkIntro}>
+              I helped synthesize recurring interaction decisions across product research, strategy
+              literature, and customer evidence, then translate them into a framework for enterprise
+              finance. The work connected intent, durable work objects, evidence, context, role, and
+              governance into a shared model the team could build on.
+            </p>
+            <AiNativeDiagnostic />
+            <ResearchToFramework />
+          </div>
         </section>
 
         <section id="evidence" className={styles.evidenceStage}>
@@ -216,6 +263,41 @@ export default function IesCaseStudyPage() {
               The public evidence is intentionally abstracted: generic labels, synthetic diagrams,
               and the decision architecture behind trust—never confidential product UI.
             </p>
+          </div>
+          <div className={styles.frameworkContribution}>
+            <p className={styles.eyebrow}>Reusable interaction framework</p>
+            <h3 className={styles.frameworkHeading}>Five elements made the operating model concrete.</h3>
+            <p className={styles.frameworkIntro}>
+              A governed enterprise system did not mean giving AI unrestricted control. It meant
+              creating an environment where AI could work across complex financial contexts while
+              keeping its evidence, permissions, consequences, and moments of human judgment visible.
+            </p>
+            <div className={styles.frameworkLedger}>
+              {FRAMEWORK_ELEMENTS.map((element, index) => (
+                <div key={element.title} className={styles.ledgerItem}>
+                  <span className={styles.ledgerIndex}>F.{String(index + 1).padStart(2, "0")}</span>
+                  <div>
+                    <h4>{element.title}</h4>
+                    <p>{element.copy}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <blockquote className={styles.frameworkOutcome}>
+              The proposal gave the team a shared language and reusable foundation for subsequent
+              AI-native exploration.
+            </blockquote>
+            <EnterpriseSystemModel />
+            <GovernedLifecycle />
+            <RoleAdaptedObject />
+            <div className={styles.frameworkReflection}>
+              <p className={styles.apparatusLabel}>Design evolution</p>
+              <p>
+                Early concepts explored visual confidence tiers. As the framework matured, the
+                emphasis moved toward explicit evidence, freshness, policy, review, and authorization
+                states—signals people could interpret and act on more reliably.
+              </p>
+            </div>
           </div>
           <div className={styles.patternLedger}>
             {PATTERNS.map((pattern, index) => (

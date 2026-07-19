@@ -1,0 +1,340 @@
+.figure {
+  margin: 2rem 0 0;
+  border-top: 1px solid var(--rule-strong);
+  background: var(--paper);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--ink);
+}
+
+.caption {
+  margin: 0;
+  color: var(--weft);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.blurb {
+  max-width: 50rem;
+  margin: 0.65rem 0 1.5rem;
+  color: var(--ink-soft);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.diagnostic {
+  border: 1px solid var(--rule);
+  background: var(--paper-light);
+  padding: clamp(1rem, 2.4vw, 1.75rem);
+}
+
+.diagnosticQuestion {
+  max-width: 34ch;
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: clamp(1.2rem, 2.6vw, 1.8rem);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.sequence,
+.lifecycle {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 1.5rem 0 0;
+  padding: 1px;
+  background: var(--rule);
+  list-style: none;
+}
+
+.sequence li,
+.lifecycle li {
+  position: relative;
+  min-width: 0;
+  background: var(--paper);
+  padding: 1rem;
+}
+
+.index,
+.stateLabel {
+  display: block;
+  color: var(--weft);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sequence strong,
+.lifecycle strong {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+
+.sequence p,
+.lifecycle p {
+  margin: 0.5rem 0 0;
+  color: var(--ink-soft);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.synthesis {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) auto minmax(12rem, 0.75fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.sources {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sources li,
+.decision,
+.frameworkResult {
+  border: 1px solid var(--rule);
+  background: var(--paper-light);
+  padding: 0.85rem;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.arrow {
+  color: var(--weft);
+  font-family: var(--font-mono), monospace;
+  font-size: 1.2rem;
+}
+
+.synthesisResult {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.frameworkResult {
+  border-color: var(--weft);
+  font-weight: 700;
+}
+
+.model {
+  display: grid;
+  grid-template-columns: minmax(9rem, 0.28fr) minmax(0, 1fr);
+  border: 1px solid var(--rule-strong);
+  background: var(--paper-light);
+}
+
+.scopeRail {
+  display: grid;
+  align-content: start;
+  gap: 0.65rem;
+  border-right: 1px solid var(--rule);
+  padding: 1rem;
+}
+
+.scopeRail span,
+.canvasHeader span,
+.contextCommand,
+.objectState,
+.evidenceList li,
+.roleBadge {
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  padding: 0.55rem 0.65rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.61rem;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.environment {
+  min-width: 0;
+  padding: 1rem;
+}
+
+.environmentLabel {
+  margin: 0 0 0.75rem;
+  color: var(--weft);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.canvasHeader {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.governedObject {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(10rem, 0.4fr);
+  gap: 1rem;
+  margin-top: 1rem;
+  border: 1px solid var(--rule-strong);
+  padding: 1rem;
+}
+
+.objectTitle {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.objectState {
+  display: inline-block;
+  margin-top: 0.7rem;
+  border-color: var(--weft);
+}
+
+.evidenceList {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contextCommand {
+  margin-top: 1rem;
+  border-style: dashed;
+}
+
+.lifecycle {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.lifecycleReady {
+  border: 2px solid var(--weft);
+}
+
+.lifecycleLocked {
+  border: 1px dashed var(--rule-strong);
+}
+
+.conditionList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.conditionList li {
+  border: 1px solid var(--rule);
+  padding: 0.45rem 0.65rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+.roleObject {
+  border: 1px solid var(--rule-strong);
+  background: var(--paper-light);
+}
+
+.sharedObject {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  padding: 1px;
+  background: var(--rule);
+}
+
+.sharedObject div {
+  background: var(--paper);
+  padding: 0.85rem;
+}
+
+.sharedObject dt {
+  color: var(--weft);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sharedObject dd {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+}
+
+.roleViews {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.roleView {
+  padding: 1rem;
+}
+
+.roleView + .roleView {
+  border-left: 1px solid var(--rule);
+}
+
+.roleView h4 {
+  margin: 0.75rem 0 0.45rem;
+  font-size: 0.95rem;
+}
+
+.roleView p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 860px) {
+  .synthesis {
+    grid-template-columns: 1fr;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+    justify-self: center;
+  }
+
+  .lifecycle {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .sequence,
+  .lifecycle,
+  .sources,
+  .sharedObject,
+  .roleViews,
+  .model,
+  .governedObject {
+    grid-template-columns: 1fr;
+  }
+
+  .scopeRail,
+  .roleView + .roleView {
+    border: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arrow {
+    transform: none;
+  }
+}

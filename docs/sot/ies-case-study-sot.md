@@ -1,7 +1,7 @@
 # IES Case Study SOT — Public-Safe Version
 
-Version: 1.2  
-Last updated: 2026-07-10  
+Version: 1.3
+Last updated: 2026-07-19
 Status: Public-safe case study
 
 ## Public case study route
@@ -11,6 +11,40 @@ Status: Public-safe case study
 ## Working title
 
 Defining an AI-native target state for enterprise finance
+
+## Enterprise framework expansion
+
+**Status:** Approved for public-safe implementation on the existing IES route.
+
+- **Private/internal presentation name:** “Enterprise Power.” Record in private SOT only; do not use as a public heading.
+- **Public heading:** “From AI-enabled features to a governed enterprise system.”
+- **Nature of the work:** A team-created AI-native future-state proposal for IES. The team translated product research, strategy literature, and customer evidence into recurring interaction decisions and a reusable enterprise framework. This was a proposal and shared foundation, not a shipped product.
+- **Approved attribution:** “I helped synthesize recurring interaction decisions across product research, strategy literature, and customer evidence, then translate them into a framework for enterprise finance.”
+- **Approved outcome:** “The proposal gave the team a shared language and reusable foundation for subsequent AI-native exploration.”
+- **Authorship boundary:** Do not claim sole authorship of the presentation, research, prototype, or framework. Granular artifact authorship and co-authorship remain `[VERIFY]`.
+
+### Framework model
+
+1. **Intent** — begin with the outcome and compose a path through the work.
+2. **Environment** — AI acts through a scoped, persistent product environment; the shell is the environment, not the AI.
+3. **Artifact** — consequential work persists in a governed object shared across roles, not a transient conversation.
+4. **Evidence** — claims remain connected to source, freshness, policy context, and review state.
+5. **Gate** — authorization is available only after scope, evidence, policy, and expected impact are understood.
+
+Role, permission, context, and recovery behavior operate across all five elements.
+
+### Design evolution
+
+- Early concepts explored opacity-based confidence tiers; this was not the final model and must not be presented as current direction.
+- The later direction uses explicit evidence, freshness, policy, review, and authorization-readiness states.
+- Evidence remains adjacent or directly accessible without promising a specific click count.
+
+### Publication restrictions
+
+- Original confidential presentation images remain private and uncommitted.
+- Do not publish research counts, including 39+, 8, 17, 20, or similar figures.
+- Internal people, scenarios, interfaces, branding, logos, roadmap language, and metrics remain excluded.
+- All public exhibits must be newly created abstractions using synthetic labels.
 
 ## Public-safe one-liner
 
@@ -64,6 +98,7 @@ Helped define and communicate AI-native product direction for complex enterprise
 - Which sanitized artifacts Ardavan personally wants to claim
 - Whether “Intuit Enterprise Suite” can appear in the public case study title
 - Whether any outcomes can be verified later
+- Granular authorship and co-authorship for individual framework artifacts
 
 ## Future expansion opportunities
 

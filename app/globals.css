@@ -1017,6 +1017,18 @@ img {
   max-width: 5rem;
 }
 
+.ies-visual__rail-state {
+  margin-left: auto;
+  border: 1px solid rgba(49, 245, 212, 0.25);
+  border-radius: 9999px;
+  padding: 0.2rem 0.45rem;
+  color: #7ce7d6;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.5625rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .ies-visual__packet-row--highlight {
   padding: 0.35rem 0.5rem;
   margin: -0.35rem -0.5rem;

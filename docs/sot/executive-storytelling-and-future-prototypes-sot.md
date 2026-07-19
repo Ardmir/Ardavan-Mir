@@ -1,7 +1,7 @@
 # Executive Storytelling and Future-State Prototypes SOT — Public-Safe Backlog
 
-Version: 1.0  
-Last updated: 2026-07-10  
+Version: 1.1
+Last updated: 2026-07-19
 Status: PRIVATE_CONTEXT / VERIFY — not for public publication until approved
 
 ## Purpose
@@ -112,3 +112,14 @@ The Sprint 5B public treatment uses sanitized patterns only:
 - Trust-before-automation framing
 
 Implemented in the IES case study at `/work/intuit-enterprise-suite#future-state-exploration`. No exact internal team names, adjacent product acronyms, executive audiences, event names, prototype details, or roadmap details appear in public copy.
+
+## IES enterprise framework expansion — approved boundary
+
+- “Enterprise Power” is the private/internal presentation name and remains excluded from public headings and copy.
+- The public treatment uses “From AI-enabled features to a governed enterprise system.”
+- The source presentation and framework are team-created; no sole-authorship claim is approved.
+- Approved contribution: “I helped synthesize recurring interaction decisions across product research, strategy literature, and customer evidence, then translate them into a framework for enterprise finance.”
+- Approved outcome: “The proposal gave the team a shared language and reusable foundation for subsequent AI-native exploration.”
+- Exact research counts remain excluded.
+- Granular artifact authorship remains `[VERIFY]`.
+- Original confidential slides remain private and uncommitted; public visuals are newly created abstractions.
