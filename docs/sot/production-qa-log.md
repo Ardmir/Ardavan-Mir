@@ -1,34 +1,49 @@
 # Production QA Log
 
-Version: 1.5
-Last updated: 2026-07-12
+Version: 1.6
+Last updated: 2026-07-19
 Sprint: 9A.1 — Adaptive Decision Space stabilization
 
 ## Current Adaptive Decision Space baseline
 
 Production source baseline: `7463498`
 Motion baseline: `ab704c3`
+Stabilization candidate: PR #26, starting commit `c2a7be7`
 
-The detailed Sprint 7 and pre-Adaptive records below are retained as historical evidence. They do not replace a current production pass.
+The 2026-07-19 audit used the live `www` site plus a locally built PR #26 candidate in Chromium 151. Live checks establish the deployed baseline; local checks verify candidate fixes before deployment. Detailed Sprint 7 and pre-Adaptive records below remain historical evidence.
 
 | Check | Current status | Evidence required |
 |---|---|---|
-| Motion behavior and stage/lens/depth transitions | **TODO** | Date, commit/URL, viewport, interaction path, result, issue/evidence note |
-| `prefers-reduced-motion` resolved state | **TODO** | OS/browser setting, tested paths, result, evidence note |
-| Keyboard-only navigation and focus | **TODO** | Route/control matrix, focus-order result, evidence note |
+| Motion behavior and stage/lens/depth transitions | **PASS** | Live lens, medium depth, deterministic Ask, stage updates, and persisted state exercised on 2026-07-19 |
+| `prefers-reduced-motion` resolved state | **PASS** | Chromium emulation matched `reduce`, reported zero active animations and `scroll-behavior: auto` |
+| Keyboard-only navigation and focus | **PASS on candidate** | Skip links expose a visible 3px focus outline and transfer focus to the target `main` on homepage and shared folios |
 | Screen-reader behavior | **TODO** | Assistive technology/browser, route/control matrix, announcements/issues |
-| Contrast and non-color state equivalents | **TODO** | Token/state audit and independent contrast results |
-| Mobile / tablet / desktop | **TODO** | Tested widths/devices, route matrix, overflow/layout evidence |
-| Lighthouse | **TODO** | Mobile/desktop reports with URL, date, and environment |
-| localStorage returning-session behavior | **TODO** | Lens/depth/passages/question/stage persistence, reset, corrupt-state recovery |
-| Console, hydration, and framework error overlays | **TODO** | Route matrix and browser evidence |
+| Contrast and non-color state equivalents | **PASS on candidate** | Live Lighthouse found inactive mobile stage-number contrast at 3.24:1; candidate removes opacity reduction and Lighthouse reports no binary failures |
+| Mobile / tablet / desktop | **PASS** | Five HTML routes checked at 1440×1000, 768×1024, and 390×844 with no horizontal overflow, one H1, and one main each |
+| Lighthouse | **PASS with environment note** | Live mobile 98/96/100/100 and desktop 100/100/100/100; local static candidate mobile 74/100/100/100 and desktop 99/100/100/100. Local mobile performance is not comparable because the temporary server has no production compression/cache |
+| localStorage returning-session behavior | **PASS** | Hiring lens and medium depth persisted across reload; malformed JSON recovered to canonical lens and quick depth using device-local storage only |
+| Console, hydration, and framework error overlays | **PASS** | Zero console/page errors across five routes and three viewports in the candidate audit |
 | Social share previews | **TODO** | Date, full URL, platform, result, evidence note; see `share-preview-validation.md` |
 | Recruiter comprehension | **TODO** | Participant/task protocol and result summary |
 | Cultural-integrity review | **TODO** | Reviewer/context, issues, disposition |
 
-Production host ownership requires explicit verification; a successful Vercel deployment does not by itself establish canonical custom-domain ownership.
+`www.ardavanmir.com` is served by GitHub Pages (`server: GitHub.com`) using `public/CNAME` and the repository Pages workflow. Bare-apex HTTP redirects to `www`; bare-apex HTTPS still fails certificate-name verification and remains an external DNS/certificate action.
 
-Repository-wide TypeScript is not clean. Known errors remain in unused `components/ui/calendar.tsx` and `components/ui/chart.tsx`; the production build currently skips type validation.
+The PR #26 candidate restores repository-wide TypeScript and lint validation. Calendar and chart compatibility errors are resolved, `ignoreBuildErrors` and `ignoreDuringBuilds` are removed, and the static build exports `robots.txt` and `sitemap.xml`.
+
+## 2026-07-19 stabilization findings and fixes
+
+- **Fixed:** React DayPicker 9 calendar chevron API mismatch.
+- **Fixed:** Recharts 3 tooltip and legend content type incompatibilities.
+- **Fixed:** Build configuration masking TypeScript and lint failures.
+- **Fixed:** Lint command entering interactive setup instead of validating.
+- **Fixed:** Homepage and folio skip links scrolled without transferring keyboard focus.
+- **Fixed:** Reading-lens shortcut visible-label/accessibility-name mismatch.
+- **Fixed:** Inactive mobile stage numbers failed Lighthouse contrast at 3.24:1.
+- **Fixed:** `robots.txt` and `sitemap.xml` returned 404; static metadata routes now export both.
+- **Verified unchanged:** 2026 résumé PDF, CNAME, deployment workflow, public claims, deterministic Ask model, and canonical OG asset.
+- **External condition:** bare-apex HTTPS certificate mismatch cannot be fixed in this repository.
+- **Manual condition:** LinkedIn, Slack, iMessage, screen-reader, recruiter-comprehension, and cultural-integrity checks remain open and must not be reported as passed.
 
 ## Historical build baseline
 
@@ -341,23 +356,22 @@ See `share-preview-validation.md` — **Final validation results** section.
 
 ## Remaining issues
 
-- Ask Ardavan start prompt links to QBOA but not IES (IES has dedicated prompt — acceptable)
-- Production apex vs `www` redirect — verify DNS outside repo (see SOT-07)
-- Route-specific OG images not created (root v2 image used for all routes)
+- PR #24 was closed without merge on 2026-07-19; its unsupported manual share assertions were not accepted.
 - Owner manual LinkedIn / Slack / iMessage unfurl pass pending — see `share-preview-validation.md`
 - Apex domain (`ardavanmir.com`) HTTPS/TLS broken — fix at registrar/DNS outside repo; share `www` URLs until fixed
+- Screen-reader, recruiter-comprehension, and cultural-integrity review require human participants or assistive technology evidence.
 
 ## Deployment config
 
 - `CNAME`: `www.ardavanmir.com` — unchanged
 - `.github/workflows/deploy.yml` — unchanged
-- `next.config.mjs` — unchanged
+- `next.config.mjs` — static export preserved; type/lint suppression removed
 
 ## Recommended next sprint
 
-**Portfolio maintenance / optional polish**
+**Manual production sign-off after PR #26 deploys through the normal workflow**
 
-- Complete manual LinkedIn / Slack / iMessage share-preview pass (Ardavan)
-- Optional route-specific OG images for case studies
-- Verified earlier experience / résumé expansion after approval
-- Apex → www redirect verification outside repo
+- Complete manual LinkedIn / Slack / iMessage previews with dated evidence.
+- Run VoiceOver/Safari keyboard and screen-reader checks.
+- Run bounded recruiter-comprehension and cultural-integrity review.
+- Repair apex HTTPS externally, then verify the apex-to-`www` redirect.

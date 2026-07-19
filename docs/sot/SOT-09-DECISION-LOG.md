@@ -144,12 +144,14 @@ Related changelog entries: 2026-06-19 v0.4
 ## D-015 — Production host ownership requires verification
 
 Date: 2026-06-19  
-Status: Requires explicit verification
+Verified: 2026-07-19
+Status: Verified for canonical `www`; apex remediation remains external
 Decision: Do not designate GitHub Pages, Vercel, or another service as canonical custom-domain owner until domain, deployment authority, and rollback ownership are explicitly verified.
 Rationale: The repository contains a GitHub Pages deployment workflow and successful deployments have been observed, while Vercel also exists in the operating context. Deployment success alone does not prove which service owns the custom domain.
-Implications: Production host ownership requires explicit verification; a successful Vercel deployment does not by itself establish canonical custom-domain ownership. Preserve CNAME and deployment configuration until the owner records the canonical host.
+Verification evidence: `www.ardavanmir.com` returned HTTP 200 with `server: GitHub.com`; `public/CNAME` names `www.ardavanmir.com`; `.github/workflows/deploy.yml` deploys `out/` to GitHub Pages from `main`; Vercel checks remain previews. HTTP bare apex redirects to `www`, while HTTPS bare apex fails certificate-name verification.
+Implications: GitHub Pages is the canonical `www` production authority and standard reviewed commits/reverts on `main` are the rollback path. Preserve CNAME and the Pages workflow. Treat Vercel as preview-only. Repair apex HTTPS through external DNS/domain controls before claiming the apex path is healthy.
 Supersedes: The unverified ownership assertion in the previous D-015 wording.
-Related changelog entries: 2026-06-19 v0.4
+Related changelog entries: 2026-06-19 v0.4; 2026-07-19 v0.9
 
 ## D-016 — Prototype the Progressive Woven Manuscript
 

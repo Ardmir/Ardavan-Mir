@@ -172,4 +172,4 @@ Creative thesis: The portfolio itself demonstrates Ardavan's method—moving fro
 
 ## Source basis
 
-This SOT is reconciled to the Adaptive Decision Space production state on 2026-07-12. Historical sections remain only where explicitly labeled. Production host ownership, repository-wide TypeScript, manual social previews, and independent accessibility/recruiter validation remain open stabilization items.
+This SOT is reconciled to the Adaptive Decision Space production state and the PR #26 stabilization candidate as of 2026-07-19. Historical sections remain only where explicitly labeled. GitHub Pages ownership for canonical `www` and strict repository TypeScript/lint/build validation are verified on PR #26. Manual social previews, apex HTTPS remediation, screen-reader review, recruiter comprehension, and cultural-integrity validation remain open stabilization items.

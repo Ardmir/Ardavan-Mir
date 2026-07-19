@@ -153,3 +153,16 @@ Code impact: None; documentation only.
 Deployment impact: None.
 Verification needed: Close PR #24 unmerged; verify canonical production-host ownership; restore repository-wide TypeScript; complete the current motion, reduced-motion, keyboard, screen-reader, contrast, responsive, Lighthouse, localStorage, recruiter, and evidence-backed social-share QA baseline.
 Next action: Complete Sprint 9A.1 stabilization before Sprint 9B or a preview-only Design Twin prototype.
+
+### 2026-07-19 — v0.9 — Production stabilization and SOT closure candidate
+Type: Tech / Deployment / Verification / Accessibility / Documentation
+Changed by: Codex
+Files affected: `app/robots.ts`, `app/sitemap.ts`, `components/adaptive-decision-space/*`, `app/explorations/adaptive-decision-space/prototype.module.css`, `components/ui/calendar.tsx`, `components/ui/chart.tsx`, `next.config.mjs`, `package.json`, lockfile, `README.md`, SOT deployment/QA/backlog/changelog files
+Summary: Audited PR #26, the repository, and live production; closed PR #24 without merge; verified GitHub Pages as the `www` production authority; restored strict lint/type/build checks; fixed skip-target focus, accessible naming, mobile stage contrast, calendar/chart dependency compatibility, and missing robots/sitemap exports; and reconciled deployment and QA records.
+Decision links: D-018; no new strategy decision
+Claim impact: No public claim changes. No metrics, private sources, internal names, customer evidence, or expanded ownership language added.
+Code impact: Release-quality and metadata fixes only; no redesign, live AI, RAG, voice, avatar, or Design Twin implementation.
+Deployment impact: Candidate changes remain on PR #26. CNAME and deployment workflow are unchanged; no merge or manual deployment performed.
+Verification: Strict lint, TypeScript, and static build pass. Five public HTML routes pass at 1440×1000, 768×1024, and 390×844 with zero console errors or overflow. Candidate Lighthouse accessibility is 100 mobile/desktop with no binary failures.
+Verification needed: Evidence-backed LinkedIn/Slack/iMessage previews; VoiceOver/screen-reader review; recruiter comprehension; cultural-integrity review; external apex HTTPS remediation.
+Next action: Review and merge PR #26 through the normal workflow, then complete the bounded manual production sign-off.

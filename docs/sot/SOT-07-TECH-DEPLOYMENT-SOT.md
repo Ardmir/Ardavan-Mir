@@ -1,132 +1,86 @@
 # SOT-07 — Tech and Deployment Source of Truth
 
-Version: 0.2  
-Last updated: 2026-06-19  
+Version: 0.3
+Last updated: 2026-07-19
 Status: Active
 
-## Deployment status (2026-06-19)
+## Authoritative production state
 
-### Confirmed
+- `[CONFIRMED]` Repository: `Ardmir/Ardavan-Mir`.
+- `[CONFIRMED]` Production branch: `main`.
+- `[CONFIRMED]` Production architecture: Adaptive Decision Space / Progressive Woven Manuscript.
+- `[CONFIRMED]` Deployment authority: GitHub Pages through `.github/workflows/deploy.yml`.
+- `[CONFIRMED]` Build artifact: Next.js static export in `out/`.
+- `[CONFIRMED]` Canonical URL and repository CNAME: `https://www.ardavanmir.com` / `www.ardavanmir.com`.
+- `[OBSERVED 2026-07-19]` `https://www.ardavanmir.com/` returns HTTP 200 from `server: GitHub.com`.
+- `[OBSERVED 2026-07-19]` `http://ardavanmir.com/` redirects to `https://www.ardavanmir.com/`.
+- `[OBSERVED 2026-07-19]` `https://ardavanmir.com/` fails certificate-name verification. This is an external apex DNS/certificate defect; share and canonical URLs must continue using `www` until it is remediated.
+- `[OBSERVED]` Vercel remains connected for preview checks. A successful Vercel preview does not establish production ownership and must not be treated as a production deployment.
 
-- `[CONFIRMED]` The Glass Monolith homepage has been **committed and deployed** to production.
-- `[CONFIRMED]` Merge: PR #5 (`glass-monolith-phase-1` → `main`), merge commit `d528004` (2026-06-19).
-- `[CONFIRMED]` GitHub Actions workflow **Deploy to GitHub Pages** succeeded on push to `main` (run `27807672539`).
-- `[CONFIRMED]` Production branch: **`main`**.
-- `[CONFIRMED]` Deployment source of truth: **GitHub Pages** via `.github/workflows/deploy.yml` (static export to `out/`).
-- `[CONFIRMED]` Canonical domain in repo `CNAME`: **`www.ardavanmir.com`**.
-- `[CONFIRMED]` Production HTML verified post-deploy: new hero subcopy (“I work across enterprise…”), no “View selected work” CTA, Glass Monolith section classes present.
-- `[CONFIRMED]` Next.js upgraded to **15.2.9** on feature branch before merge (security patch for RSC CVE advisories).
-- `[CONFIRMED]` Local dev: `PORT=3005 corepack pnpm dev`; production-like: `corepack pnpm build` (static export).
+## Production routes
 
-### Still verify
+- `/`
+- `/work/intuit-enterprise-suite`
+- `/work/quickbooks-dimensional-chart-of-accounts`
+- `/research`
+- `/research/ai-native-strategy`
+- `/resume-ardavan-mir.pdf`
 
-- `[VERIFY]` Final production URL behavior for **apex** `ardavanmir.com` vs **`www`** (redirect, DNS, and which is canonical in practice).
-- `[VERIFY]` Root-domain DNS / redirect configuration outside repo.
-- `[VERIFY]` OG image, favicon, and social preview metadata on production.
-- `[VERIFY]` Whether any Vercel project still holds a domain alias (disconnect deferred — see SOT-11).
+The reference route `/explorations/adaptive-decision-space` is `noindex` and intentionally excluded from `sitemap.xml`.
 
-### Decided
+## Technical context
 
-- `[DECIDED]` **GitHub Pages is the production deploy path.** Vercel project `v0-portfolio` is legacy v0 integration; disconnect deferred.
-- `[DECIDED]` Do **not** change `CNAME`, hosting configuration, DNS, or production branch during documentation/case-study work **without explicit approval from Ardavan**.
-
-## Known technical context
-
-- Domain: `ardavanmir.com` / `www.ardavanmir.com`.
-- GitHub repo: `Ardmir/Ardavan-Mir`.
-- Stack: Next.js 15.2.9 (post-merge), React 19, Tailwind, App Router, static export for GitHub Pages.
-- Key paths: `app/page.tsx`, `app/layout.tsx`, `app/globals.css`, `components/portfolio/clarity-engine.tsx`, `components/ia-logotype.tsx`, `.github/workflows/deploy.yml`, `CNAME`.
+- Next.js 15.2.9, React 19, TypeScript, Tailwind CSS, App Router.
+- Static export is required for GitHub Pages.
+- `public/CNAME` is copied into the export.
+- `app/robots.ts` and `app/sitemap.ts` provide crawler directives and the public route index.
+- Adaptive preferences use browser `localStorage` only; there is no portfolio API, live LLM, RAG backend, voice system, or avatar.
 
 ## Critical rules
 
-- Do not delete `CNAME`.
-- Do not remove or alter deployment workflows unless explicitly approved.
-- Do not reset or clean the repo.
-- Do not push to `main` without approval.
-- Do not change DNS, hosting, or production branch during SOT/case-study work without explicit approval.
-- Work in a branch for code changes; SOT updates may occur on any branch but must not include production code edits when scoped as docs-only.
+- Do not delete or replace `public/CNAME`.
+- Do not remove or alter `.github/workflows/deploy.yml` without explicit approval.
+- Do not change DNS, domain ownership, hosting, or the production branch without explicit approval.
+- Do not push directly to `main`, merge a PR, or trigger a production deployment as part of documentation or review work.
+- Do not publish private source packs, internal feedback, confidential screenshots, customer data, secrets, or unsupported claims.
+- Preserve the approved 2026 résumé at `public/resume-ardavan-mir.pdf` unless a separately reviewed replacement is approved.
 
-## Safe local workflow
-
-```bash
-git checkout main
-git pull origin main
-pnpm install
-PORT=3005 pnpm dev    # development
-pnpm build            # production static export test
-```
-
-For feature work:
-
-```bash
-git checkout -b feature/your-branch
-```
-
-## Build/test protocol
+## Local workflow
 
 ```bash
 corepack pnpm install --frozen-lockfile
-corepack pnpm build
+corepack pnpm dev
 ```
 
-Fix all build errors before deploy. GitHub Actions uses the same build on `main`.
+Required release checks:
 
-## Post-deployment QA checklist
+```bash
+corepack pnpm lint
+corepack pnpm typecheck
+corepack pnpm build
+git diff --check
+```
 
-Use after every production deploy:
+The build must validate TypeScript and lint successfully; `ignoreBuildErrors` and `ignoreDuringBuilds` must not be used to mask failures.
 
-- `[ ]` Production site loads (`https://www.ardavanmir.com`).
-- `[ ]` Custom domain resolves (www and root behavior documented).
-- `[ ]` No v0/Vercel starter content remains on production.
-- `[ ]` No broken in-page anchor routes (`#work`, `#approach`, `#about`, `#contact`).
-- `[ ]` Contact email mailto works (`ardavanmir@outlook.com`).
-- `[ ]` LinkedIn opens correctly.
-- `[ ]` Résumé works when published (currently disabled placeholder — track P0-02).
-- `[ ]` Mobile layout acceptable.
-- `[ ]` Keyboard focus visible on interactive elements.
-- `[ ]` Clarity Engine: tap/hover/focus expand behavior verified.
-- `[ ]` `pnpm build` succeeds on `main`.
-- `[ ]` No critical console errors on production.
-- `[ ]` Metadata title/description correct.
-- `[ ]` OG/social preview correct when OG assets exist.
+## Deployment and rollback
 
-## GitHub Pages notes
+- `.github/workflows/deploy.yml` triggers on push to `main` or manual `workflow_dispatch`.
+- The workflow installs frozen dependencies, builds the static export, uploads `out/`, and deploys it with `actions/deploy-pages`.
+- Normal rollback is a reviewed revert or corrective commit on `main`, followed by the standard GitHub Pages workflow. Do not manually replace production files.
+- GitHub repository Settings → Pages and the domain registrar remain the external operational controls.
 
-- Workflow: `.github/workflows/deploy.yml` triggers on **push to `main`** and `workflow_dispatch`.
-- Build output: `./out` uploaded via `actions/upload-pages-artifact`.
-- Keep `CNAME` in repo root (`www.ardavanmir.com`).
-- Confirm Pages source in repo Settings → Pages (GitHub Actions).
+## Post-deployment verification
 
-## Vercel / v0 notes (legacy)
+- Confirm all production routes and the résumé return HTTP 200.
+- Confirm `www` is canonical and document apex behavior.
+- Confirm CNAME, robots, sitemap, OG image, icons, titles, descriptions, canonicals, and Twitter metadata.
+- Exercise Reading Lens, Reading Depth, unfolded passages, deterministic Ask, Reset, and local persistence.
+- Check desktop, tablet, mobile, keyboard, skip links, reduced motion, contrast, console, and Lighthouse.
+- Record LinkedIn, Slack, and iMessage unfurl results only with dated platform evidence.
 
-- `[OBSERVED]` Vercel GitHub App still connected; preview deploys ran on PR #5. After Next.js 15.2.9 upgrade, Vercel check passed.
-- `[DECIDED]` Vercel is **not** the production source of truth.
-- `[TODO]` Disconnect Vercel when ready (see SOT-11 deferred infrastructure).
-- `[TODO]` Update root `README.md` (still describes v0 auto-sync and Vercel deployment).
-- Do not assume Vercel serves production until verified — production verified on GitHub Pages 2026-06-19.
+## Remaining external actions
 
-## Files likely to update in future code work
-
-- `app/page.tsx`, `app/globals.css`, `components/*`
-- `public/*` for résumé, images, OG image
-- Future case-study routes under `app/`
-
-## Files not to remove
-
-- `CNAME`
-- `.github/workflows/deploy.yml`
-- `package.json`, lockfile, Next.js config, Tailwind config
-
-## Deployment verification URLs
-
-After deployment, test:
-
-- https://www.ardavanmir.com
-- https://ardavanmir.com (document redirect behavior)
-- Section anchors: `#work`, `#approach`, `#about`, `#contact`
-
-## Open technical questions
-
-- `[VERIFY]` Apex vs www redirect and DNS at registrar.
-- `[VERIFY]` OG/Twitter card assets and metadata completeness.
-- `[TODO]` Disconnect Vercel and update README when approved.
+- `[TODO]` Repair or configure the bare-apex HTTPS certificate/DNS path, then verify redirect behavior.
+- `[TODO]` Complete evidence-backed LinkedIn, Slack, and iMessage unfurl checks using full `www` URLs.
+- `[DEFERRED]` Disconnect the legacy Vercel/v0 integration only after Ardavan approves that infrastructure change.

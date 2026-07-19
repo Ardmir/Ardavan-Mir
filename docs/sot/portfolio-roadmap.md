@@ -1,7 +1,7 @@
 # Portfolio Roadmap
 
-Version: 3.0
-Last updated: 2026-07-12
+Version: 3.1
+Last updated: 2026-07-19
 Status: Public-safe planning SOT
 
 ## Current production baseline
@@ -15,8 +15,8 @@ Status: Public-safe planning SOT
 - The isolated Adaptive Decision Space route remains a `noindex` reference edition.
 - Guided Ask Ardavan remains deterministic, approved, and static.
 - Manual iMessage, LinkedIn, and Slack share-preview checks remain `TODO` pending evidence.
-- Repository-wide TypeScript is not clean because of known unused calendar/chart component errors.
-- Production host ownership is unresolved in the SOT and requires explicit verification.
+- PR #26 restores repository-wide TypeScript, ESLint, and strict static-build validation and adds the current automated QA baseline.
+- GitHub Pages is verified as the canonical `www` production authority; bare-apex HTTPS remains an external certificate/DNS defect.
 
 ## Sequencing rule
 
@@ -33,18 +33,18 @@ Required outcomes:
 1. Reconcile SOTs with the current Adaptive Decision Space production state.
 2. Record `ab704c3` as the production motion baseline and preserve reduced-motion requirements.
 3. Close PR #24 unmerged; its manual share-preview PASS assertions lack evidence and its branch predates the adaptive production baseline.
-4. Verify canonical production-host ownership without inferring it from a successful GitHub Pages or Vercel deployment.
-5. Restore a clean repository-wide `pnpm exec tsc --noEmit` result; current calendar/chart errors remain open.
+4. Verify canonical production-host ownership without inferring it from a successful GitHub Pages or Vercel deployment. **Done on PR #26.**
+5. Restore a clean repository-wide `pnpm exec tsc --noEmit` result. **Done on PR #26.**
 6. Establish a current production QA baseline covering motion, reduced motion, keyboard, screen reader, contrast, responsive layouts, Lighthouse, localStorage return behavior, and social-share evidence.
 7. Complete an independent claims/copy proofread and retain existing NDA and no-unverified-metrics guardrails.
 8. Complete recruiter, accessibility, contrast, and cultural-integrity follow-up validation.
 
 Exit gate:
 
-- PR #24 closed unmerged;
-- host ownership explicitly verified and documented;
-- TypeScript clean without ignored errors;
-- current QA log completed with evidence;
+- PR #24 closed unmerged — **done 2026-07-19**;
+- host ownership explicitly verified and documented — **done on PR #26**;
+- TypeScript clean without ignored errors — **done on PR #26**;
+- automated QA log completed with evidence — **done on PR #26; named human checks remain**;
 - no unresolved P0 documentation contradiction.
 
 ## P1 — Sprint 9B Shared Release Prototypes v2

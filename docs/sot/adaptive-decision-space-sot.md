@@ -333,8 +333,8 @@ The complete V4 Living Manuscript / V5 The Weave Claude Design exports were not 
 - Keyboard activation for lens, depth, disclosure, and Ask controls: pass.
 - Horizontal overflow at approximately 1440px, 768px, and 390px CSS widths: none observed.
 - Reduced-motion stylesheet contract: present; transitions disabled and resolved transform supplied.
-- Repository-wide TypeScript check: blocked by pre-existing errors in `components/ui/calendar.tsx` and `components/ui/chart.tsx`; no prototype-specific errors reported.
-- Lint: repository has no configured ESLint setup; `next lint` opens the interactive initializer and cannot run unattended.
+- Repository-wide TypeScript check: restored on PR #26 after resolving current DayPicker/Recharts compatibility in the unused UI components.
+- Lint: restored on PR #26 with a non-interactive Next core-web-vitals configuration; no warnings or errors.
 
 ### Phase 3 — Comparative validation
 
@@ -402,7 +402,7 @@ Verification at migration:
 - `pnpm build`: pass, including static export;
 - all five public routes: correct title/H1, no console errors, and no observed horizontal overflow at desktop or mobile test widths;
 - lens, Whole story depth, and contextual approved-answer interaction: pass;
-- repository-wide TypeScript remains blocked only by the previously recorded `calendar.tsx` and `chart.tsx` dependency/type issues;
+- repository-wide TypeScript was blocked at migration by `calendar.tsx` and `chart.tsx` dependency/type issues; PR #26 resolves them and removes build-time suppression;
 - React structure, hook cleanup, semantic HTML, keyboard operation, stable keys, and route composition reviewed with no migration-specific blocker.
 
 ## Success criteria

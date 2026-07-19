@@ -124,7 +124,7 @@ RAG is preferred before fine-tuning because sources must remain inspectable, rem
 - Restrict corpus access to explicitly approved public sources.
 - Apply rate limits, abuse controls, bounded input/output sizes, and a kill switch.
 - Preserve a static fallback if the backend or model is unavailable.
-- Production host ownership must be verified before architecture or secret placement is approved.
+- GitHub Pages is verified as the canonical `www` production host. Any future backend architecture or secret placement still requires a separately approved server-side host; GitHub Pages cannot supply that runtime.
 - No API key creation, vendor upload, deployment, or dependency decision is authorized by this SOT.
 
 ## 8. Privacy and retention

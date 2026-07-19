@@ -1,7 +1,7 @@
 # Ardavan Portfolio Project — Source of Truth Pack
 
-Version: 0.4
-Last updated: 2026-07-12  
+Version: 0.5
+Last updated: 2026-07-19
 Owner: Ardavan Mirhosseini  
 Project: Portfolio update / résumé update / recruiter-ready positioning  
 Current phase: Adaptive Decision Space production integration and validation
@@ -67,7 +67,7 @@ Use these labels everywhere:
 
 See `SOT-11-BACKLOG-TODOS.md` for full detail.
 
-- **P0:** Reconcile SOTs, close PR #24 unmerged, verify production-host ownership, restore TypeScript, establish current QA, and document motion.
+- **P0 candidate in PR #26:** SOT reconciliation, `www` production-host verification, TypeScript/lint/build restoration, motion documentation, and automated QA are complete. Close PR #24 unmerged and complete the named manual/human checks.
 - **P1:** Begin Shared Release Prototypes v2 only after P0.
 - **P1 Experimental:** Run Design Twin corpus and preview-only text foundations after P0; no production integration.
 - **P2 Conditional:** Consider a secure production text Design Twin only after thresholds and explicit approval.

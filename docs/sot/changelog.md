@@ -1,5 +1,18 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-07-19 — Production stabilization and QA closure candidate
+
+- Continued on PR #26 after verifying it open, mergeable, clean, one commit ahead of `main`, and the intended SOT/stabilization branch.
+- Closed conflicting PR #24 without merge; its manual social-preview signoff lacked dated platform evidence.
+- Restored strict TypeScript, ESLint, and production-build validation; resolved unused calendar/chart dependency API mismatches.
+- Fixed keyboard skip-target focus, reading-lens accessible naming, and inactive mobile stage-number contrast.
+- Added static `robots.txt` and `sitemap.xml` outputs while keeping the exploration route noindex and out of the sitemap.
+- Verified five public HTML routes at desktop/tablet/mobile, local-only adaptive persistence and corrupt-state recovery, reduced motion, metadata, OG assets, résumé, console health, and canonical `www` hosting.
+- Replaced the obsolete v0/Vercel README and reconciled SOT-07, QA, and backlog records to the GitHub Pages / Adaptive Decision Space production state.
+- Preserved the approved résumé, CNAME, deployment workflow, public-safe claims, and deterministic Ask model.
+- Kept manual LinkedIn/Slack/iMessage, screen-reader, recruiter-comprehension, cultural-integrity, and apex HTTPS remediation open.
+- No visual redesign or Design Twin backend was implemented.
+
 ## 2026-07-12 — Adaptive motion baseline and Design Twin roadmap
 
 - Recorded `ab704c3` as the production Adaptive Decision Space motion baseline; reduced motion remains mandatory.

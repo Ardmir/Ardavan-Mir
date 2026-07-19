@@ -13,7 +13,7 @@ Document how to validate Open Graph, Twitter card, and link-preview behavior aft
 - The automated metadata and asset results below were recorded before the Adaptive Decision Space production migration. They remain useful historical evidence but are not a current end-to-end share baseline.
 - The migration preserved canonical metadata and share assets, but current production social previews still require evidence-backed re-validation.
 - iMessage, LinkedIn Post Inspector, and Slack manual checks remain `TODO` for every public HTML route.
-- PR #24 should close unmerged. It changes manual platform results to PASS without screenshots, inspector records, tested dates/URLs, or other supporting evidence and predates the adaptive production baseline.
+- PR #24 was closed unmerged on 2026-07-19. Its manual platform PASS claims lacked screenshots, inspector records, tested dates/URLs, or other supporting evidence and predated the adaptive production baseline.
 - Future manual results must record: test date, full tested URL, platform/client, result, and an evidence note or artifact reference.
 - Do not infer platform PASS from HTML metadata, direct asset checks, a successful deployment, or another platform’s result.
 
