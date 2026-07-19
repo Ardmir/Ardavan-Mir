@@ -214,3 +214,12 @@
 - Added sanitized abstract visual direction and components
 - Linked homepage IES card and Ask Ardavan IES prompt to case study
 - Preserved public-content and claims guardrails
+
+## 2026-07-19 — IES enterprise framework expansion — SOT and implementation
+
+- Recorded “Enterprise Power” as a private/internal presentation name and approved “From AI-enabled features to a governed enterprise system” for public use
+- Recorded the work as a team-created proposal and reusable framework, not a shipped product
+- Added the approved conservative contribution and outcome language; retained granular artifact authorship as VERIFY
+- Excluded all research counts, confidential slides, internal people, interfaces, scenarios, branding, roadmap language, and metrics
+- Planned and implemented original sanitized diagnostic, synthesis, system-model, governed-lifecycle, and role-adapted exhibits on the existing IES route
+- Preserved the homepage, résumé, QBOA, research collection, Design Twin, deployment configuration, and canonical route structure

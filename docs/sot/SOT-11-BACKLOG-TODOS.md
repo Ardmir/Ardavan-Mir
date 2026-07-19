@@ -1,8 +1,8 @@
 # SOT-11 — Backlog and TODOs
 
-Version: 0.5
+Version: 0.6
 Last updated: 2026-07-19
-Status: Active — P0 stabilization candidate in PR #26
+Status: Active — PR #26 merged; bounded IES framework expansion in progress
 
 ## Status labels
 
@@ -21,6 +21,14 @@ Use: `[CONFIRMED]` `[OBSERVED]` `[DECIDED]` `[PROPOSED]` `[INFERRED]` `[VERIFY]`
 - `[CONFIRMED]` GitHub Pages serves canonical `www.ardavanmir.com`; the repo Pages workflow is the deployment authority and Vercel is preview-only.
 - `[TODO]` Bare-apex HTTPS has a certificate-name mismatch and requires external DNS/domain remediation.
 - `[DONE on PR #26]` Repository-wide TypeScript, lint, and strict production build checks pass without masked errors.
+- `[DONE 2026-07-19]` PR #26 merged as `55320fc`; both GitHub Pages workflows succeeded and required production routes returned 200.
+
+## P1A — IES enterprise framework expansion
+
+**Status:** `[IN PROGRESS]` on `feature/ies-enterprise-framework`
+**Action:** Expand `/work/intuit-enterprise-suite` with the approved public-safe diagnostic, research synthesis, five-part framework, scoped environment model, governed lifecycle, team outcome, and design evolution.
+**Acceptance:** SOT updated first; original sanitized exhibits are responsive and accessible; no confidential source material or research counts appear; lint, typecheck, tests where supported, build, diff check, SOT/content validation, safety scan, and browser regression pass; draft PR opened without merge or deployment.
+**Remaining verification:** Granular authorship/co-authorship of individual artifacts.
 
 ## Open verification guardrails
 

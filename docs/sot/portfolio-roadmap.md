@@ -1,6 +1,6 @@
 # Portfolio Roadmap
 
-Version: 3.1
+Version: 3.2
 Last updated: 2026-07-19
 Status: Public-safe planning SOT
 
@@ -16,6 +16,7 @@ Status: Public-safe planning SOT
 - Guided Ask Ardavan remains deterministic, approved, and static.
 - Manual iMessage, LinkedIn, and Slack share-preview checks remain `TODO` pending evidence.
 - PR #26 restores repository-wide TypeScript, ESLint, and strict static-build validation and adds the current automated QA baseline.
+- PR #26 merged as `55320fc`; its GitHub Pages deployment completed successfully on 2026-07-19.
 - GitHub Pages is verified as the canonical `www` production authority; bare-apex HTTPS remains an external certificate/DNS defect.
 
 ## Sequencing rule
@@ -52,6 +53,17 @@ Exit gate:
 Status: **BLOCKED until P0 completes**
 
 This is the next public-content track.
+
+### Bounded IES enterprise framework expansion
+
+Status: **IN PROGRESS on `feature/ies-enterprise-framework`**
+
+- Expand the existing IES route; do not create a new project or route.
+- Document and present the proposal as a team-created reusable framework, not a shipped product.
+- Keep “Enterprise Power” private; use the approved public heading.
+- Add original sanitized diagnostic, research-synthesis, system-model, lifecycle, and optional role-adapted exhibits.
+- Exclude confidential slides, research counts, internal names/interfaces/scenarios, metrics, adoption, launch, roadmap approval, and customer-impact claims.
+- Finish as a draft PR only; do not merge or deploy the feature.
 
 Planned scope:
 

@@ -1,7 +1,7 @@
 # Sanitized Visual Plan
 
-Version: 1.5  
-Last updated: 2026-07-11  
+Version: 1.6
+Last updated: 2026-07-19
 Status: Public-safe
 
 ## Purpose
@@ -60,6 +60,25 @@ Implemented in `components/ProjectCardVisual.tsx` (decorative, aria-hidden).
 - IES: `components/IesCaseStudyVisuals.tsx` — polished Sprint 3 with captions and human judgment checkpoint
 - QBOA: `components/QboaCaseStudyVisuals.tsx` — polished Sprint 6 with arc, flow diagrams, and improved captions
 - Homepage cards: `components/ProjectCardVisual.tsx`
+
+## IES enterprise framework expansion
+
+**Status:** Approved for original, public-safe implementation on `/work/intuit-enterprise-suite`.
+
+1. **AI-enabled → AI-native diagnostic** — AI added to interface → AI shapes workflow → AI-native operating model, with the “remove the AI” diagnostic question.
+2. **Research → framework** — Product patterns + strategy research + customer evidence → recurring interaction decisions → shared enterprise framework. No counts.
+3. **Scoped environment and governed-object model** — Scope, persistent environment, governed object, adaptive canvas, evidence layer, contextual command, role, and permissions. The shell is the environment through which AI acts; it is not the AI.
+4. **Governed decision lifecycle** — Intent → Evidence → Policy → Impact → Authorization → Receipt. Authorization remains explicitly unavailable until preceding conditions are established.
+5. **Same object, role-adapted view** — Optional only if it materially improves comprehension. Shared evidence, state, and history; adaptive density, actions, and permissions for a finance leader and finance operator.
+
+Implementation rules:
+
+- Build new semantic HTML/CSS/SVG abstractions; do not use supplied confidential images as assets.
+- Use synthetic labels and no research counts, customer scenarios, confidential interfaces, internal branding, names, logos, metrics, or roadmap language.
+- Do not encode confidence or readiness through opacity, color alone, or scalar confidence scores.
+- Show explicit evidence, freshness, policy, review, and authorization states.
+- Keep evidence adjacent or directly accessible without promising a click count.
+- Match the Adaptive Decision Space manuscript language, remain responsive, and honor reduced motion.
 
 ## Future visual concepts — Executive storytelling / future prototypes
 
