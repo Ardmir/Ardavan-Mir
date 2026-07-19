@@ -361,6 +361,39 @@ See `share-preview-validation.md` — **Final validation results** section.
 - Apex domain (`ardavanmir.com`) HTTPS/TLS broken — fix at registrar/DNS outside repo; share `www` URLs until fixed
 - Screen-reader, recruiter-comprehension, and cultural-integrity review require human participants or assistive technology evidence.
 
+## IES enterprise framework feature candidate — 2026-07-19
+
+**Baseline:** `55320fc` (`origin/main` after PR #26)
+**Feature commits:** `fc73d14`, `5bb3c3d`
+**Route changed:** `/work/intuit-enterprise-suite` only
+
+### Automated verification
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| `corepack pnpm lint` | **Pass** | Zero warnings or errors |
+| `corepack pnpm typecheck` | **Pass** | Repository-wide TypeScript validation |
+| `corepack pnpm build` | **Pass** | 11 static pages; IES bundle generated |
+| `git diff --check` | **Pass** | No whitespace errors |
+| Public-source safety scan | **Pass** | No prohibited names, research counts, internal working title, `[VERIFY]`, or `[NDA]` markers in `app/`, `components/`, or `public/` |
+| Built-output safety scan | **Pass** | Same prohibited-term set absent from `out/` |
+| Test script | **Not present** | Repository defines no separate automated test command |
+
+### Browser verification
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| IES desktop 1440×1000 | **Pass** | One H1/main; no overflow; full-page visual inspection |
+| IES tablet 768×1024 | **Pass** | Exhibits remain legible and contained |
+| IES mobile 390×844 | **Pass** | `scrollWidth === clientWidth`; single-column exhibit flow |
+| Keyboard | **Pass** | First Tab exposes and focuses “Skip to manuscript” |
+| Reduced motion | **Pass** | Media query matched; zero active CSS animations |
+| Console | **Pass** | Zero warnings and errors; development-only informational messages excluded |
+| Homepage adaptive reading | **Pass** | Default, medium, and whole-story depths exercised; AI-thinking lens selected and correctly threaded recommendations/questions |
+| Route regression | **Pass** | `/`, IES, QBOA, and `/research` returned 200 with one H1/main and no overflow; résumé PDF returned 200 `application/pdf` |
+
+Review screenshots were captured outside the repository as `ies-desktop-1440.png`, `ies-tablet-768.png`, and `ies-mobile-390.png`. They are intentionally uncommitted.
+
 ## Deployment config
 
 - `CNAME`: `www.ardavanmir.com` — unchanged

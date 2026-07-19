@@ -175,5 +175,6 @@ Summary: Documented and implemented the approved public-safe expansion of the ex
 Claim impact: Adds only the approved conservative contribution and outcome language. The work remains a team-created proposal, not a shipped product. Granular artifact authorship remains VERIFY.
 Code impact: Existing IES route and original abstract exhibit components only; no new route, asset, dependency, homepage, résumé, QBOA, research, or Design Twin change.
 Deployment impact: None. Feature remains a draft-PR candidate and must not be merged or deployed directly.
-Verification needed: Repository checks, publication-safety scan, responsive/accessibility browser pass, and remaining manual screen-reader/recruiter/cultural reviews.
+Verification: Strict lint, TypeScript, production build, diff check, source/built publication-safety scans, desktop/tablet/mobile layout, keyboard focus, reduced motion, adaptive reading/lens behavior, and route regressions pass. Screenshots remain review artifacts outside the repository.
+Verification needed: Manual screen-reader, recruiter-comprehension, cultural-integrity, social-preview, and bare-apex DNS/TLS conditions remain tracked.
 Next action: Review the feature draft PR and resolve any publication or granular-authorship follow-up before merge.
