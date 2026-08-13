@@ -1,5 +1,22 @@
 # Portfolio Changelog (Sprint Docs)
 
+## 2026-08-13 — End-to-end Staff Product Designer framing and Ardavan Mir brand
+
+- Shortened the public portfolio wordmark and metadata name to Ardavan Mir while retaining Ardavan Mirhosseini on the résumé.
+- Framed the public role as end-to-end Staff Product Designer, connecting product vision to product quality.
+- Preserved Staff Designer as the official current Intuit title and Senior Product Designer as prior-title history.
+- Updated homepage supporting copy, résumé headline/profile/expertise, page metadata, and social-share artwork.
+- Diagnosed the apex-domain HTTPS failure as conflicting GoDaddy forwarding A records alongside GitHub Pages A records; no live DNS setting was changed.
+
+## 2026-08-13 — Staff Designer promotion update
+
+- Updated current portfolio positioning, metadata, and social-share artwork from Senior Product Designer to Staff Designer.
+- Added the Staff Designer role to the Intuit progression while preserving the prior Senior Product Designer tenure.
+- Rebuilt the one-page résumé in DOCX and PDF formats and replaced the downloadable portfolio PDF.
+- Validated TypeScript, lint, production export, résumé accessibility, PDF rendering, responsive behavior, and core portfolio controls.
+- Preserved existing case-study claims, visual system, CNAME, deployment workflow, and public-safe boundaries.
+- Exact promotion month/day remains unverified; current materials use year-level dates only.
+
 ## 2026-07-19 — Production stabilization and QA closure candidate
 
 - Continued on PR #26 after verifying it open, mergeable, clean, one commit ahead of `main`, and the intended SOT/stabilization branch.

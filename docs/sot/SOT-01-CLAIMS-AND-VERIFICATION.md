@@ -20,8 +20,10 @@ Status: Active
 ## Confirmed claims
 
 - `[CONFIRMED]` Name: Ardavan Mirhosseini.
+- `[CONFIRMED]` (2026-08-13) Public portfolio name/wordmark: Ardavan Mir. Retain Ardavan Mirhosseini on the résumé unless Ardavan requests otherwise.
 - `[CONFIRMED]` Location: Toronto.
-- `[CONFIRMED]` Professional positioning: Senior Product Designer.
+- `[CONFIRMED]` (2026-08-13) Current professional positioning and official current title: Staff Designer. Ardavan confirmed the promotion from Senior Product Designer.
+- `[CONFIRMED]` (2026-08-13) Public-facing positioning: end-to-end Staff Product Designer, with scope spanning product vision through product quality.
 - `[CONFIRMED]` Current portfolio/résumé direction should emphasize enterprise SaaS, AI-native workflows, financial systems, and complex workflow design.
 - `[CONFIRMED]` Recent/relevant work includes Intuit Enterprise Suite.
 - `[CONFIRMED]` Ardavan has done significant work on Intuit Enterprise Suite information architecture.
@@ -46,8 +48,9 @@ Status: Active
 
 `[CONFIRMED]` Safe to treat as live on `www.ardavanmir.com` after 2026-06-19 deploy:
 
-- Ardavan Mirhosseini
-- Senior Product Designer (positioning and IES card label)
+- Ardavan Mir (public portfolio name); Ardavan Mirhosseini (résumé name)
+- Staff Product Designer (public positioning); Staff Designer (official current title)
+- Senior Product Designer (confirmed prior title and historical IES card label)
 - Toronto (hero eyebrow)
 - Work connected to Intuit Enterprise Suite
 - Work connected to QuickBooks Online Advanced / Dimensional Chart of Accounts
@@ -58,7 +61,7 @@ Status: Active
 
 `[VERIFY]` before expanding copy or résumé:
 
-- Exact Intuit title (official HR)
+- Exact effective month/day of the Staff Designer promotion
 - Exact dates (employment and projects)
 - Exact AI features that may be named publicly
 - Exact IA artifacts that may be shown
@@ -89,10 +92,10 @@ Use these carefully, ideally with examples or evidence:
 - `[RESOLVED 2026-06-13 → CONFIRMED]` Exact email address: ardavanmir@outlook.com.
 - `[RESOLVED 2026-06-13 → CONFIRMED]` Exact LinkedIn URL: https://linkedin.com/in/ardavanmir.
 - `[VERIFY]` Exact résumé PDF filename/path.
-- `[PARTIALLY RESOLVED 2026-06-13]` Exact current title at Intuit. The portfolio *card label* "Senior Product Designer" for IES is confirmed for publication. Exact official HR title and employment dates for résumé use still `[VERIFY]`.
+- `[RESOLVED 2026-08-13 → CONFIRMED]` Exact current title at Intuit: Staff Designer. Ardavan confirmed the promotion from Senior Product Designer. Exact effective month/day and complete employment dates remain `[VERIFY]`.
 - `[VERIFY]` Exact employment dates for Intuit.
 - `[VERIFY]` Exact project dates for IES and QuickBooks Online Advanced.
-- `[RESOLVED 2026-06-13]` Exact role on IES: card copy uses "Designed" (safe verb). "Led"/"owned" remain `[DO NOT USE]` unless separately confirmed.
+- `[RESOLVED 2026-08-13 → CONFIRMED]` Current staff-level scope is end to end across product vision and product quality. Use precise ownership language only for the confirmed current scope; do not extend it to historical projects or unverified team outcomes.
 - `[VERIFY]` Exact AI experiences/features/surfaces on IES.
 - `[VERIFY]` Exact IA deliverables on IES.
 - `[VERIFY]` Exact title and scope for QuickBooks Classes 2.0.
@@ -107,7 +110,7 @@ Use these carefully, ideally with examples or evidence:
 - `[DO NOT USE]` “Increased engagement by 20%” or any similar metric unless Ardavan verifies it.
 - `[DO NOT USE]` Any revenue, adoption, time saved, NPS, CSAT, customer count, or launch metric not supplied by Ardavan.
 - `[DO NOT USE]` “Led design” unless Ardavan confirms he led the workstream.
-- `[DO NOT USE]` “Owned end-to-end” unless Ardavan confirms ownership.
+- `[CONFIRMED FOR CURRENT POSITIONING]` “End-to-end Staff Product Designer” and product-vision-to-product-quality framing. Do not imply sole ownership of team outcomes or retroactively apply this scope to earlier projects.
 - `[DO NOT USE]` Detailed confidential Intuit product information that cannot be made public.
 
 ## Verification workflow

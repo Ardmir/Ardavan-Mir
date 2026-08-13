@@ -24,16 +24,16 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 const ogImageAlt =
-  "Ardavan Mirhosseini — Senior Product Designer designing AI-native enterprise products that make financial complexity legible."
+  "Ardavan Mir — end-to-end Staff Product Designer shaping vision and product quality for AI-native enterprise products."
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Ardavan Mirhosseini — Senior Product Designer",
+  title: "Ardavan Mir — Staff Product Designer",
   description:
-    "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
+    "End-to-end Staff Product Designer shaping product vision and raising product quality across AI-native enterprise products and high-trust financial workflows.",
   keywords:
-    "product designer, senior product designer, enterprise SaaS, AI-native, financial systems, information architecture, fintech design, Toronto",
-  authors: [{ name: "Ardavan Mirhosseini" }],
+    "staff designer, product designer, enterprise SaaS, AI-native, financial systems, information architecture, fintech design, Toronto",
+  authors: [{ name: "Ardavan Mir" }],
   robots: "index, follow",
   alternates: {
     canonical: "/",
@@ -56,20 +56,20 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Ardavan Mirhosseini — Senior Product Designer",
+    title: "Ardavan Mir — Staff Product Designer",
     description:
-      "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
+      "End-to-end Staff Product Designer shaping product vision and raising product quality across AI-native enterprise products and high-trust financial workflows.",
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "Ardavan Mirhosseini",
+    siteName: "Ardavan Mir",
     images: openGraphShareImages(ogImageAlt),
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ardavan Mirhosseini — Senior Product Designer",
+    title: "Ardavan Mir — Staff Product Designer",
     description:
-      "Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences.",
+      "End-to-end Staff Product Designer shaping product vision and raising product quality across AI-native enterprise products and high-trust financial workflows.",
     images: twitterShareImages,
   },
 }

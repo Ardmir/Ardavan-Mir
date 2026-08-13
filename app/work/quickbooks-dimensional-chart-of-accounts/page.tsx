@@ -6,10 +6,10 @@ import styles from "@/components/adaptive-decision-space/manuscript.module.css"
 import { openGraphShareImages, SITE_URL, twitterShareImages } from "@/lib/site"
 
 const ogImageAlt =
-  "Ardavan Mirhosseini — Senior Product Designer designing AI-native enterprise products that make financial complexity legible."
+  "Ardavan Mir — Staff Product Designer shaping AI-native enterprise products that make financial complexity legible."
 
 export const metadata: Metadata = {
-  title: "Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini",
+  title: "Designing information architecture for advanced accounting workflows — Ardavan Mir",
   description:
     "A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture.",
   alternates: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini",
+      "Designing information architecture for advanced accounting workflows — Ardavan Mir",
     description:
       "A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture.",
     url: `${SITE_URL}/work/quickbooks-dimensional-chart-of-accounts`,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini",
+      "Designing information architecture for advanced accounting workflows — Ardavan Mir",
     description:
       "A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture.",
     images: twitterShareImages,

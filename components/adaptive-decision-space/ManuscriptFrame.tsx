@@ -15,8 +15,8 @@ export function ManuscriptFrame({ children, folio, backHref, backLabel }: Manusc
     <div className={styles.manuscriptFrame}>
       <a href="#manuscript-content" className={styles.skipLink}>Skip to manuscript</a>
       <header className={styles.siteHeader}>
-        <Link href="/" className={styles.wordmark} aria-label="Ardavan Mirhosseini, home">
-          Ardavan Mirhosseini
+        <Link href="/" className={styles.wordmark} aria-label="Ardavan Mir, home">
+          Ardavan Mir
         </Link>
         <nav className={styles.headerNav} aria-label="Portfolio navigation">
           <span>{folio}</span>

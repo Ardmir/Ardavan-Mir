@@ -3,7 +3,7 @@
 ## Header
 
 ARDAVAN MIRHOSSEINI  
-Senior Product Designer — Enterprise SaaS, AI-Native Workflows, Financial Systems  
+Staff Product Designer — End-to-End Product Vision and Quality
 Toronto, ON  
 Email: ardavanmir@outlook.com  
 LinkedIn: https://linkedin.com/in/ardavanmir  
@@ -11,20 +11,22 @@ Portfolio: ardavanmir.com
 
 ## Summary
 
-Senior Product Designer focused on enterprise SaaS, AI-native workflows, and financial systems. I translate complex customer and business challenges into legible, high-trust product experiences through information architecture, workflow design, prototyping, and product storytelling. My recent work spans Intuit Enterprise Suite and QuickBooks Online Advanced, with an emphasis on making complex financial systems clearer, more explainable, and easier to act on.
+End-to-end Staff Product Designer setting product vision and raising product quality across enterprise SaaS, AI-native workflows, and financial systems. I translate complex customer and business challenges into legible, high-trust experiences, working from early direction and information architecture through interaction design, prototyping, and product storytelling. My recent work spans Intuit Enterprise Suite and QuickBooks Online Advanced.
 
 ## Skills
 
-Product Design · Enterprise SaaS · AI Experience Design · Financial Systems · Fintech Workflows · Information Architecture · Workflow Design · Systems Thinking · Interaction Design · UX Strategy · Prototyping · Executive Storytelling · Visual Design · Research Synthesis · Cross-functional Collaboration · Design Systems · Figma
+End-to-End Product Design · Product Vision · Product Quality · Enterprise SaaS · AI Experience Design · Financial Systems · Fintech Workflows · Information Architecture · Workflow Design · Systems Thinking · Interaction Design · UX Strategy · Prototyping · Executive Storytelling · Visual Design · Research Synthesis · Cross-functional Collaboration · Design Systems · Figma
 
 ## Experience — Intuit
 
 **INTUIT**  
 Toronto, ON / Remote
 
-**Intuit Enterprise Suite | Senior Product Designer | 2023–Present**
+**Intuit Enterprise Suite**
+**Staff Designer | 2026–Present**
+**Senior Product Designer | 2023–2026**
 
-- Helped define and communicate AI-native product direction for Intuit Enterprise Suite, translating complex enterprise finance workflows into clearer information architecture, product narratives, and prototype concepts.
+- Own end-to-end product design across vision, information architecture, interaction models, prototyping, and product quality for AI-native enterprise finance experiences.
 - Designed IA and product experience concepts for high-trust financial workflows, with a focus on clarity, explainability, evidence, human judgment, and user control.
 - Created and synthesized evidence-backed frameworks, prototypes, and visual narratives that helped make AI-native finance concepts tangible for leadership and cross-functional audiences.
 - Contributed to future-state enterprise product explorations by translating early AI-native concepts into structured models, prototypes, and leadership-ready narratives.

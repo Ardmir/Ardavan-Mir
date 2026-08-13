@@ -1,12 +1,12 @@
 # SOT-00 — Master Brief
 
-Version: 0.4
-Last updated: 2026-07-12  
+Version: 0.5
+Last updated: 2026-08-13
 Status: Active
 
 ## Project objective
 
-Create a modern, elegant, AI-native, recruiter-ready portfolio and résumé for Ardavan Mirhosseini, a Senior Product Designer based in Toronto.
+Create a modern, elegant, AI-native, recruiter-ready portfolio and résumé for Ardavan Mirhosseini, publicly branded as Ardavan Mir, a Staff Designer based in Toronto.
 
 The portfolio must communicate senior-level product judgment, enterprise product experience, information architecture depth, and AI-native workflow design — especially in financial systems and complex business software.
 
@@ -24,7 +24,7 @@ The portfolio must communicate senior-level product judgment, enterprise product
 
 ## Primary positioning
 
-`[CONFIRMED]` Ardavan Mirhosseini is a Toronto-based Senior Product Designer focused on enterprise SaaS, AI-native workflows, financial systems, information architecture, and complex workflow design.
+`[CONFIRMED]` Ardavan Mirhosseini is a Toronto-based Staff Designer. His public portfolio positioning is **end-to-end Staff Product Designer**, emphasizing product vision and product quality across enterprise SaaS, AI-native workflows, financial systems, information architecture, and complex workflow design. Ardavan confirmed this framing on 2026-08-13.
 
 ## Core message
 
@@ -58,7 +58,7 @@ Reference: `docs/sot/adaptive-decision-space-sot.md`.
 
 ## Current identity
 
-`[OBSERVED]` Wordmark: **Ardavan Mirhosseini**, presented as an editorial full-name mark in the shared adaptive header.
+`[DECIDED]` Public portfolio wordmark: **Ardavan Mir**. The résumé retains the full professional name **Ardavan Mirhosseini**.
 
 ## Current flagship hierarchy
 
@@ -73,7 +73,7 @@ Reference: `docs/sot/adaptive-decision-space-sot.md`.
 
 Within 5 seconds, recruiters should understand:
 
-- Ardavan is a Senior Product Designer.
+- Ardavan is an end-to-end Staff Product Designer who connects product vision to product quality.
 - His strongest current domain is enterprise SaaS and financial systems.
 - He has recent Intuit / QuickBooks / Intuit Enterprise Suite experience.
 - He has worked on information architecture and AI-native experiences.
