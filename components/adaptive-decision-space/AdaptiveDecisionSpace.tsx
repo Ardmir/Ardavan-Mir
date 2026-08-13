@@ -199,8 +199,8 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
       <a href="#prototype-content" className={styles.skipLink}>Skip to portfolio content</a>
 
       <header className={styles.header}>
-        <Link href="/" className={styles.wordmark} aria-label="Ardavan Mirhosseini, home">
-          Ardavan Mirhosseini
+        <Link href="/" className={styles.wordmark} aria-label="Ardavan Mir, home">
+          Ardavan Mir
         </Link>
         <div className={styles.headerActions}>
           <span className={styles.prototypeLabel}>
@@ -233,7 +233,7 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
       <main id="prototype-content" className={styles.manuscript} tabIndex={-1}>
         <section id="opening" className={styles.opening} aria-labelledby="opening-title">
           <div className={styles.openingMeta}>
-            <p>Senior Product Designer · Toronto</p>
+            <p>Staff Product Designer · Toronto</p>
             <p>Manuscript 01 · Adaptive reading</p>
           </div>
 
@@ -244,9 +244,9 @@ export function AdaptiveDecisionSpace({ edition = "prototype" }: AdaptiveDecisio
                 I make complex systems <span>legible</span> before making them smart.
               </h1>
               <p className={styles.dek}>
-                I work across information architecture, AI experiences, and high-trust financial
-                workflows — turning complexity into product experiences people can understand,
-                trust, and act on.
+                I work end to end — from product vision and information architecture through
+                interaction design and product quality — turning complexity into experiences
+                people understand and trust.
               </p>
               <div className={styles.primaryPaths}>
                 <a href="#evidence">Read the evidence</a>

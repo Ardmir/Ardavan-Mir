@@ -21,7 +21,7 @@ export default function Hero() {
 
   // Full text content for typing animation
   const fullText =
-    "Senior Product Designer at Intuit, focused on shaping complex challenges into clearer product experiences that deliver meaningful value."
+    "End-to-end Staff Product Designer at Intuit, shaping product vision and raising quality from early direction through the final experience."
 
   useEffect(() => {
     // Check if user has visited before

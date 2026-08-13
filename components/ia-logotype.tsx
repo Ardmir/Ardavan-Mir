@@ -4,7 +4,7 @@ export default function IALogotype() {
   return (
     <a
       href="#top"
-      aria-label="Ardavan Mir, Senior Product Designer"
+      aria-label="Ardavan Mir, Staff Product Designer"
       className="ia-logotype group"
     >
       <span aria-hidden="true" className="ia-logotype__first">

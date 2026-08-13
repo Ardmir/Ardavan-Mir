@@ -1,7 +1,7 @@
 # SOT-04 — Portfolio IA and Copy
 
-Version: 0.3
-Last updated: 2026-07-12  
+Version: 0.4
+Last updated: 2026-08-13
 Status: Active — production reconciled
 
 ## Current homepage snapshot (Adaptive Decision Space — 2026-07-12)
@@ -10,7 +10,9 @@ Status: Active — production reconciled
 
 Current navigation and IA:
 
-- Full-name wordmark with direct Work, Research, and Contact paths.
+- Current public positioning: `Staff Product Designer · Toronto`.
+
+- Short professional wordmark `Ardavan Mir` with direct Work, Research, and Contact paths.
 - Optional Reading Lens: Hiring, AI thinking, Systems & craft.
 - Decision Space spine: Ambiguity → Structure → Prototype → Evidence → Story → Alignment.
 - Evidence-first work list with pre-authored Reading Depth, manual passage disclosure, and provenance.

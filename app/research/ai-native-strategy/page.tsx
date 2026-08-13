@@ -17,12 +17,12 @@ import {
 import { openGraphShareImages, SITE_URL, twitterShareImages } from "@/lib/site"
 
 const PAGE_PATH = "/research/ai-native-strategy"
-const PAGE_TITLE = "Architectures of Intent — Ardavan Mirhosseini"
+const PAGE_TITLE = "Architectures of Intent — Ardavan Mir"
 const PAGE_DESCRIPTION =
   "A research essay on designing enterprise software when AI becomes the operating model—across context, grounding, evidence, human review, permissions, and governed action."
 
 const ogImageAlt =
-  "Ardavan Mirhosseini — Architectures of Intent research on AI-native enterprise product strategy."
+  "Ardavan Mir — Architectures of Intent research on AI-native enterprise product strategy."
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: PAGE_DESCRIPTION,
     url: `${SITE_URL}${PAGE_PATH}`,
     type: "article",
-    siteName: "Ardavan Mirhosseini",
+    siteName: "Ardavan Mir",
     images: openGraphShareImages(ogImageAlt),
   },
   twitter: {

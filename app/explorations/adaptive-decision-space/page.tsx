@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { AdaptiveDecisionSpace } from "@/components/adaptive-decision-space/AdaptiveDecisionSpace"
 
 export const metadata: Metadata = {
-  title: "Adaptive Decision Space prototype — Ardavan Mirhosseini",
+  title: "Adaptive Decision Space prototype — Ardavan Mir",
   description:
     "An isolated prototype exploring reading lenses, depth, evidence, provenance, and contextual guidance.",
   robots: {
@@ -14,4 +14,3 @@ export const metadata: Metadata = {
 export default function AdaptiveDecisionSpacePage() {
   return <AdaptiveDecisionSpace />
 }
-

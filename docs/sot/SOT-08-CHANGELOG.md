@@ -1,7 +1,7 @@
 # SOT-08 — Changelog
 
-Version: 0.2  
-Last updated: 2026-07-12  
+Version: 0.3
+Last updated: 2026-08-13
 Status: Active
 
 Use this file every time something changes.
@@ -20,6 +20,24 @@ Next action:
 ```
 
 ## Change history
+
+### 2026-08-13 — v1.1 — End-to-end Staff Product Designer framing and Ardavan Mir portfolio brand
+Type: Strategy / Content / Resume / Design / Verification
+Changed by: Codex / Ardavan
+Files affected: homepage wordmark and positioning, metadata, social preview, résumé headline/profile/expertise, SOT-00, SOT-01, SOT-03, SOT-04, SOT-08, SOT-09, SOT-10
+Summary: Reframed the public role as end-to-end Staff Product Designer, emphasizing product vision through product quality. Shortened the public portfolio name to Ardavan Mir while preserving Staff Designer as the official current title and Ardavan Mirhosseini on the résumé.
+Decision links: D-022
+Verification needed: exact effective month/day of the promotion; complete Intuit employment dates.
+Next action: Review the local portfolio and résumé, then publish only after explicit approval.
+
+### 2026-08-13 — v1.0 — Staff Designer promotion update
+Type: Strategy / Content / Resume / Verification
+Changed by: Codex / Ardavan
+Files affected: homepage positioning, metadata, social preview, résumé source/PDF, README, SOT-00, SOT-01, SOT-03, SOT-04, SOT-08, SOT-09, SOT-10, résumé review/generation notes
+Summary: Ardavan confirmed his promotion from Senior Product Designer to Staff Designer. Updated the current public positioning while preserving Senior Product Designer as prior-title history and keeping all existing public-safe work claims unchanged.
+Decision links: D-021
+Verification needed: exact effective month/day of the promotion; complete Intuit employment dates.
+Next action: Review the local portfolio and résumé, then publish through the existing GitHub Pages workflow only after explicit approval.
 
 ### 2026-06-13 — v0.1 — Created Portfolio SOT pack
 Type: Strategy / Content / Design / Tech / Prompt  

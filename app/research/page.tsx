@@ -6,17 +6,17 @@ import styles from "@/components/adaptive-decision-space/manuscript.module.css"
 import { openGraphShareImages, SITE_URL, twitterShareImages } from "@/lib/site"
 
 const ogImageAlt =
-  "Ardavan Mirhosseini — Research and strategy for AI-native design, collaboration, and platform patterns."
+  "Ardavan Mir — Research and strategy for AI-native design, collaboration, and platform patterns."
 
 export const metadata: Metadata = {
-  title: "Research & Strategy — Ardavan Mirhosseini",
+  title: "Research & Strategy — Ardavan Mir",
   description:
     "Strategic research and operating models for AI-native design, GitHub-based collaboration, platform patterns, and high-trust product workflows.",
   alternates: {
     canonical: "/research",
   },
   openGraph: {
-    title: "Research & Strategy — Ardavan Mirhosseini",
+    title: "Research & Strategy — Ardavan Mir",
     description:
       "Strategic research and operating models for AI-native design, GitHub-based collaboration, platform patterns, and high-trust product workflows.",
     url: `${SITE_URL}/research`,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Research & Strategy — Ardavan Mirhosseini",
+    title: "Research & Strategy — Ardavan Mir",
     description:
       "Strategic research and operating models for AI-native design, GitHub-based collaboration, platform patterns, and high-trust product workflows.",
     images: twitterShareImages,

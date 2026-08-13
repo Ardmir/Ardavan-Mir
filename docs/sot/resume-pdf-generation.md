@@ -1,8 +1,8 @@
 # Résumé PDF Generation
 
-Version: 1.0  
-Last updated: 2026-07-10  
-Sprint: 5A.1 — Résumé PDF Regeneration
+Version: 1.1
+Last updated: 2026-08-13
+Current update: Staff Product Designer public framing; Staff Designer official title
 
 ## Source of truth
 
@@ -11,6 +11,20 @@ Sprint: 5A.1 — Résumé PDF Regeneration
 | Canonical résumé source | `content/resume.md` |
 | Public PDF | `public/resume-ardavan-mir.pdf` |
 | Public URL | `/resume-ardavan-mir.pdf` |
+
+## 2026-08-13 generation update
+
+**Method used:** Created a one-page, ATS-friendly DOCX from `content/resume.md`, rendered it through LibreOffice, visually inspected the page PNG, and used the matching exported PDF for the public résumé path.
+
+Checks completed:
+
+- Public headline is Staff Product Designer, framed as end-to-end scope from product vision through product quality.
+- Official current Intuit title remains Staff Designer in the experience chronology.
+- Prior Senior Product Designer title remains visible in the Intuit progression.
+- No new metrics, ownership claims, private names, or confidential screenshots were added.
+- DOCX and PDF are selectable/searchable and use a single-column structure with real bullets.
+- Final output is one US Letter page with no clipping, overlap, or missing glyphs.
+- Public path remains `/resume-ardavan-mir.pdf`.
 
 ## Repo workflow status
 
@@ -66,7 +80,7 @@ Steps performed:
 
 ## Remaining TODOs
 
-- Confirm Intuit role dates and official HR titles with Ardavan before next PDF update
+- Confirm the exact effective month/day of the Staff Designer promotion and complete Intuit employment dates
 - Confirm QBO Money bullet scope
 - Add verified earlier experience when approved
 - Optional: add a repo-local generation script only if ReportLab (or another tool) is approved as a dev dependency

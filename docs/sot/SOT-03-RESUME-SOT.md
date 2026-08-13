@@ -1,12 +1,12 @@
 # SOT-03 — Résumé Source of Truth
 
-Version: 0.1  
-Last updated: 2026-06-13  
-Status: Draft / Needs verification before publishing
+Version: 0.2
+Last updated: 2026-08-13
+Status: Active / Current title confirmed; exact promotion month remains to verify
 
 ## Resume positioning
 
-Present Ardavan as a senior enterprise product designer who can bring structure to ambiguous, high-complexity AI and financial systems.
+Present Ardavan as a staff-level enterprise product designer who can bring structure to ambiguous, high-complexity AI and financial systems.
 
 Primary signal:
 
@@ -16,7 +16,7 @@ Enterprise SaaS + information architecture + AI-native workflows + financial sys
 
 ```text
 ARDAVAN MIRHOSSEINI
-Senior Product Designer — Enterprise SaaS, AI-Native Workflows, Financial Systems
+Staff Product Designer — End-to-End Product Vision and Quality
 Toronto, ON
 Email: [VERIFY]
 LinkedIn: [VERIFY]
@@ -26,23 +26,26 @@ Portfolio: ardavanmir.com
 ## Summary
 
 ```text
-Senior Product Designer focused on enterprise SaaS, AI-native workflows, and financial systems. I design information architecture, workflow models, and intelligent product experiences that help people understand complexity, make confident decisions, and trust the systems they use. Recent work includes Intuit Enterprise Suite and QuickBooks Online Advanced, where I have worked across complex accounting, enterprise finance, IA, and AI experience problems.
+End-to-end Staff Product Designer setting product vision and raising product quality across enterprise SaaS, AI-native workflows, and financial systems. I translate complex customer and business challenges into legible, high-trust experiences, working from early direction and information architecture through interaction design, prototyping, and product storytelling.
 ```
 
 ## Skills line
 
 ```text
-Enterprise SaaS, AI-Native Product Design, Information Architecture, Financial Systems, Fintech UX, Accounting Workflows, Workflow Design, Interaction Design, UX Strategy, Product Strategy, Complex Systems Design, Human-Centered AI, Trust and Explainability, Design Systems [VERIFY], Prototyping, Figma [VERIFY], User Research [VERIFY], Cross-Functional Collaboration, Product Storytelling
+End-to-End Product Design, Product Vision, Product Quality, Enterprise SaaS, AI-Native Product Design, Information Architecture, Financial Systems, Fintech UX, Accounting Workflows, Workflow Design, Interaction Design, UX Strategy, Product Strategy, Complex Systems Design, Human-Centered AI, Trust and Explainability, Design Systems [VERIFY], Prototyping, Figma [VERIFY], User Research [VERIFY], Cross-Functional Collaboration, Product Storytelling
 ```
 
 ## Experience — Intuit
 
 ```text
 INTUIT
-Senior Product Designer [VERIFY exact title]
-Toronto, ON / Remote [VERIFY] | [VERIFY dates]
+Staff Designer [CONFIRMED current title]
+Promoted from Senior Product Designer in 2026 [VERIFY effective month]
+Toronto, ON / Remote [VERIFY] | [VERIFY complete dates]
 
 Selected work: Intuit Enterprise Suite; QuickBooks Online Advanced — Dimensional Chart of Accounts; QuickBooks Classes 2.0 [VERIFY]
+
+- Own end-to-end product design across vision, information architecture, interaction models, prototyping, and product quality for AI-native enterprise finance experiences. [CONFIRMED current scope]
 
 - Designed information architecture and AI-native experiences for Intuit Enterprise Suite, helping transform complex enterprise financial workflows into clearer, more navigable product experiences.
 

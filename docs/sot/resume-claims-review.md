@@ -1,7 +1,7 @@
 # Résumé Claims Review
 
-Version: 1.2  
-Last updated: 2026-07-10  
+Version: 1.3
+Last updated: 2026-08-13
 Sprint: 5A.1 — Résumé PDF Regeneration  
 Status: Public-safe review doc — not published as site copy
 
@@ -10,14 +10,14 @@ Status: Public-safe review doc — not published as site copy
 | Item | Status |
 |------|--------|
 | Markdown source | `content/resume.md` — updated in Sprint 5A |
-| Public PDF | `public/resume-ardavan-mir.pdf` — **regenerated in Sprint 5A.1** from source |
+| Public PDF | `public/resume-ardavan-mir.pdf` — **regenerated 2026-08-13** from source |
 | Homepage link | `/resume-ardavan-mir.pdf` |
 | PDF generation workflow in repo | **None** — local ReportLab used in Sprint 5A.1 (see `resume-pdf-generation.md`) |
-| PDF matches source | **Yes** — as of Sprint 5A.1 |
+| PDF matches source | **Yes** — as of 2026-08-13 promotion update |
 
 ## 2. Public-safe positioning
 
-Senior Product Designer focused on enterprise SaaS, AI-native workflows, and financial systems. Translates complex customer and business challenges into legible, high-trust product experiences through information architecture, workflow design, prototyping, and product storytelling.
+End-to-end Staff Product Designer setting product vision and raising product quality across enterprise SaaS, AI-native workflows, and financial systems. Translates complex customer and business challenges into legible, high-trust experiences from early direction and information architecture through interaction design, prototyping, and product storytelling.
 
 ### Public-safe themes
 
@@ -50,7 +50,7 @@ Senior Product Designer focused on enterprise SaaS, AI-native workflows, and fin
 ## 4. Claims requiring verification
 
 - Exact employment dates (Intuit, Iranians Who Design, earlier roles)
-- Exact title history and official HR title at Intuit
+- Exact effective month/day of the Staff Designer promotion
 - Exact internal awards or recognitions (wording, scope, audience)
 - Specific demo or event names
 - Specific executive audiences or reviewers

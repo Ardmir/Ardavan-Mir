@@ -1,12 +1,19 @@
 # Share Preview Validation
 
-Version: 1.6
-Last updated: 2026-07-12
-Status: Pre-Adaptive automated metadata baseline retained; current manual social unfurl sign-off **TODO**
+Version: 1.7
+Last updated: 2026-08-13
+Status: Staff Product Designer metadata and Ardavan Mir assets validated locally; post-deploy social unfurl sign-off **TODO**
 
 ## Purpose
 
 Document how to validate Open Graph, Twitter card, and link-preview behavior after metadata or share-asset changes. Automated checks in CI cannot fully verify how LinkedIn, Slack, or iMessage render previews.
+
+## Staff Product Designer framing and Ardavan Mir brand — local validation
+
+- Homepage title and description now identify Ardavan Mir as an end-to-end **Staff Product Designer**.
+- `public/og-image.svg`, `public/og-image-v2.jpg`, and `public/og-image.png` use the Ardavan Mir name and Staff Product Designer title.
+- The JPEG and PNG share assets are both 1200×630 and render cleanly in the local production export.
+- Post-deploy LinkedIn, Slack, and iMessage cache refresh checks remain **TODO**.
 
 ## Adaptive Decision Space reconciliation
 
@@ -171,15 +178,15 @@ The sections below preserve the 2026-07-11 automated baseline. Any “Pass” ap
 
 | Field | Expected value | Sprint 7 live |
 |-------|----------------|---------------|
-| Title | Ardavan Mirhosseini — Senior Product Designer | **Pass** |
-| Description | Senior Product Designer designing AI-native enterprise products, financial workflows, information architecture, and high-trust product experiences. | **Pass** |
+| Title | Ardavan Mir — Staff Product Designer | **Pass locally** |
+| Description | End-to-end Staff Product Designer shaping product vision and raising product quality across AI-native enterprise products and high-trust financial workflows. | **Pass locally** |
 | Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pass** |
 
 ### Research (`/research`)
 
 | Field | Expected value | Sprint 8 live |
 |-------|----------------|---------------|
-| Title | Research & Strategy — Ardavan Mirhosseini | **Pass** |
+| Title | Research & Strategy — Ardavan Mir | **Pass locally** |
 | Description | Public-safe research on AI-native product strategy, design collaboration, and platform patterns. | **Pass** |
 | Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pass** |
 
@@ -187,7 +194,7 @@ The sections below preserve the 2026-07-11 automated baseline. Any “Pass” ap
 
 | Field | Expected value | Sprint 7 live |
 |-------|----------------|---------------|
-| Title | Defining an AI-native target state for enterprise finance — Ardavan Mirhosseini | **Pass** |
+| Title | Defining an AI-native target state for enterprise finance — Ardavan Mir | **Pass locally** |
 | Description | A public-safe case study about shaping AI-native product direction, information architecture, trust patterns, and storytelling for complex enterprise finance workflows. | **Pass** |
 | Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pass** |
 
@@ -195,7 +202,7 @@ The sections below preserve the 2026-07-11 automated baseline. Any “Pass” ap
 
 | Field | Expected value | Sprint 7 live |
 |-------|----------------|---------------|
-| Title | Designing information architecture for advanced accounting workflows — Ardavan Mirhosseini | **Pass** |
+| Title | Designing information architecture for advanced accounting workflows — Ardavan Mir | **Pass locally** |
 | Description | A public-safe case study about shaping advanced accounting workflows, dimensional classification, reporting clarity, and information architecture. | **Pass** |
 | Image | `https://www.ardavanmir.com/og-image-v2.jpg` | **Pass** |
 

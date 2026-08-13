@@ -85,7 +85,7 @@ export default function Contact() {
           </div>
 
           <div className="text-center space-y-6">
-            <p className="font-ui text-soft-white/60 text-lg">Currently Senior Product Designer at Intuit</p>
+            <p className="font-ui text-soft-white/60 text-lg">Currently Staff Product Designer at Intuit</p>
             <p className="font-body text-soft-white/40">© 2024 Ardavan Mir. Crafted with care in San Francisco.</p>
           </div>
         </div>

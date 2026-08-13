@@ -1,6 +1,6 @@
-# Ardavan Mirhosseini — Portfolio
+# Ardavan Mir — Portfolio
 
-Production portfolio for Ardavan Mirhosseini, a Toronto-based Senior Product Designer working across enterprise SaaS, AI-native workflows, financial systems, and information architecture.
+Production portfolio for Ardavan Mir, a Toronto-based end-to-end Staff Product Designer working from product vision through product quality across enterprise SaaS, AI-native workflows, financial systems, and information architecture.
 
 ## Current experience
 

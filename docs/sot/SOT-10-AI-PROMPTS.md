@@ -1,7 +1,7 @@
 # SOT-10 — AI Prompts
 
-Version: 0.1  
-Last updated: 2026-06-13  
+Version: 0.2
+Last updated: 2026-08-13
 Status: Active
 
 ## General ChatGPT project prompt
@@ -9,7 +9,7 @@ Status: Active
 Use this at the start of a new ChatGPT session:
 
 ```text
-Use the uploaded Portfolio SOT files as the source of truth. Do not rely on memory if it conflicts with the SOTs. Keep Ardavan positioned as a Senior Product Designer in Toronto focused on enterprise SaaS, AI-native workflows, financial systems, information architecture, and complex workflow design. Prioritize Intuit Enterprise Suite, QuickBooks Online Advanced / Dimensional Chart of Accounts, and Iranians Who Design as the current project hierarchy. Do not invent metrics, dates, role titles, team names, or outcomes. Mark unverified claims as [VERIFY]. Update the relevant SOT and changelog whenever strategy, content, résumé, design, deployment, or verification status changes.
+Use the uploaded Portfolio SOT files as the source of truth. Do not rely on memory if it conflicts with the SOTs. Publicly position Ardavan Mir as an end-to-end Staff Product Designer in Toronto who connects product vision to product quality across enterprise SaaS, AI-native workflows, financial systems, information architecture, and complex workflow design. Keep Staff Designer as the official current title and Senior Product Designer as prior-title history. Retain Ardavan Mirhosseini on the résumé. Do not invent metrics, dates, team names, or outcomes. Mark unverified claims as [VERIFY]. Update the relevant SOT and changelog whenever strategy, content, résumé, design, deployment, or verification status changes.
 ```
 
 ## Prompt for Claude to create/update SOTs safely
@@ -17,7 +17,7 @@ Use the uploaded Portfolio SOT files as the source of truth. Do not rely on memo
 ```text
 You are helping me maintain source-of-truth documents for my portfolio and résumé project.
 
-I am Ardavan Mirhosseini, a Senior Product Designer based in Toronto. My portfolio and résumé are being updated around enterprise SaaS, AI-native workflows, financial systems, information architecture, and complex workflow design. My current priority projects are Intuit Enterprise Suite, QuickBooks Online Advanced / Dimensional Chart of Accounts, and Iranians Who Design as a secondary founder/community platform story.
+I am Ardavan Mirhosseini, publicly branded as Ardavan Mir. I am a Staff Designer based in Toronto, promoted from Senior Product Designer, and my public positioning is end-to-end Staff Product Designer with scope from product vision through product quality. My current priority projects are Intuit Enterprise Suite, QuickBooks Online Advanced / Dimensional Chart of Accounts, and Iranians Who Design as a secondary founder/community platform story.
 
 CRITICAL SAFETY RULE:
 Do not delete, overwrite, rename, move, reset, clean, or directly modify any existing project files unless I explicitly approve. First operate in read-only planning mode.
@@ -92,7 +92,7 @@ Create these files:
 - docs/sot/SOT-11-BACKLOG-TODOS.md
 
 SOT content must reflect:
-- Primary positioning: Senior Product Designer, Toronto, enterprise SaaS, AI-native workflows, financial systems, IA, complex workflow design.
+- Primary public positioning: Ardavan Mir, end-to-end Staff Product Designer, Toronto, product vision through product quality, enterprise SaaS, AI-native workflows, financial systems, IA, and complex workflow design. Keep Staff Designer as the official current title.
 - Core headline: “I design intelligent products that turn financial complexity into confident action.”
 - Principle: “Make the system legible before making it smart.”
 - Project hierarchy: IES first, QuickBooks Online Advanced / Dimensional Chart of Accounts second, Iranians Who Design third.
@@ -112,13 +112,13 @@ Final response after creating SOTs:
 ## Prompt for Claude/Cursor to update portfolio using SOTs
 
 ```text
-Use docs/sot as the source of truth before editing. Do not invent facts. Do not delete CNAME or deployment config. Work on a new branch. Update the homepage to reflect the current SOT positioning: Senior Product Designer, Toronto, enterprise SaaS, AI-native workflows, financial systems, IES IA and AI experiences, QuickBooks Online Advanced / Dimensional Chart of Accounts, and Iranians Who Design as a secondary founder initiative. After editing, update SOT-08-CHANGELOG.md and any affected SOT files. Run the build and report changed files, build status, and remaining [VERIFY] items. Do not push without approval.
+Use docs/sot as the source of truth before editing. Do not invent facts. Do not delete CNAME or deployment config. Work on a new branch. Update the homepage to reflect the current SOT positioning: Ardavan Mir, end-to-end Staff Product Designer, product vision through product quality, Toronto, enterprise SaaS, AI-native workflows, financial systems, IES IA and AI experiences, QuickBooks Online Advanced / Dimensional Chart of Accounts, and Iranians Who Design as a secondary founder initiative. Keep Staff Designer as the official current title and Senior Product Designer as prior-title history. After editing, update SOT-08-CHANGELOG.md and any affected SOT files. Run the build and report changed files, build status, and remaining [VERIFY] items. Do not push without approval.
 ```
 
 ## Prompt for résumé updates
 
 ```text
-Use the résumé SOT and claims verification SOT. Rewrite the résumé for senior product design recruiters while emphasizing enterprise SaaS, AI-native workflows, financial systems, information architecture, IES, and QuickBooks Online Advanced. Keep it ATS-friendly, one to two pages, no tables. Do not invent dates, metrics, titles, or outcomes. Mark anything uncertain as [VERIFY]. Keep Iranians Who Design as a small founder/community platform section unless scale metrics are verified.
+Use the résumé SOT and claims verification SOT. Rewrite the résumé for staff-level product design recruiters using Staff Product Designer as the public headline and product vision through product quality as the end-to-end scope. Keep Staff Designer as the official current experience title and Senior Product Designer as prior-title history. Emphasize enterprise SaaS, AI-native workflows, financial systems, information architecture, IES, and QuickBooks Online Advanced. Keep it ATS-friendly, one to two pages, no tables. Do not invent dates, metrics, titles, or outcomes. Mark anything uncertain as [VERIFY]. Keep Iranians Who Design as a small founder/community platform section unless scale metrics are verified.
 ```
 
 ## Prompt for case study expansion

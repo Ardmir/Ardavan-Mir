@@ -14,10 +14,10 @@ import styles from "@/components/adaptive-decision-space/manuscript.module.css"
 import { openGraphShareImages, SITE_URL, twitterShareImages } from "@/lib/site"
 
 const ogImageAlt =
-  "Ardavan Mirhosseini — Senior Product Designer designing AI-native enterprise products that make financial complexity legible."
+  "Ardavan Mir — Staff Product Designer shaping AI-native enterprise products that make financial complexity legible."
 
 export const metadata: Metadata = {
-  title: "Defining an AI-native target state for enterprise finance — Ardavan Mirhosseini",
+  title: "Defining an AI-native target state for enterprise finance — Ardavan Mir",
   description:
     "A public-safe case study about shaping AI-native product direction, information architecture, trust patterns, and storytelling for complex enterprise finance workflows.",
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Defining an AI-native target state for enterprise finance — Ardavan Mirhosseini",
+      "Defining an AI-native target state for enterprise finance — Ardavan Mir",
     description:
       "A public-safe case study about shaping AI-native product direction, information architecture, trust patterns, and storytelling for complex enterprise finance workflows.",
     url: `${SITE_URL}/work/intuit-enterprise-suite`,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Defining an AI-native target state for enterprise finance — Ardavan Mirhosseini",
+      "Defining an AI-native target state for enterprise finance — Ardavan Mir",
     description:
       "A public-safe case study about shaping AI-native product direction, information architecture, trust patterns, and storytelling for complex enterprise finance workflows.",
     images: twitterShareImages,

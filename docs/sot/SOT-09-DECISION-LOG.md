@@ -1,7 +1,7 @@
 # SOT-09 — Decision Log
 
-Version: 0.3
-Last updated: 2026-07-12  
+Version: 0.4
+Last updated: 2026-08-13
 Status: Active
 
 Use this file for decisions that should persist across ChatGPT/Claude/Cursor sessions.
@@ -9,7 +9,7 @@ Use this file for decisions that should persist across ChatGPT/Claude/Cursor ses
 ## D-001 — Primary positioning
 
 Date: 2026-06-13  
-Status: Active  
+Status: Superseded by D-021
 Decision: Position Ardavan as a Senior Product Designer focused on enterprise SaaS, AI-native workflows, financial systems, information architecture, and complex workflow design.  
 Rationale: This is the strongest, most recent, and most employable narrative based on IES and QuickBooks work.  
 Implications: Homepage, résumé, project cards, and case studies should reinforce this positioning.
@@ -200,3 +200,22 @@ Rationale: A bounded evidence-discovery interface may help visitors navigate wor
 Implications: The Design Twin does not replace the Adaptive Decision Space, manuscript, homepage hero, or human conversation. It makes no autonomous commitments. No private corpus, API implementation, production route, voice clone, face/avatar upload, or identity-media vendor upload is approved.
 Progression: Phase 0 corpus governance → Phase 1 preview-only cited text prototype → conditional Phase 2 production text route → optional generic voice experiment → separately reviewed consented voice or visual avatar.
 Related SOT: `ardavan-design-twin-sot.md`
+
+## D-021 — Promote Staff Designer positioning across portfolio and résumé
+
+Date: 2026-08-13
+Status: Active
+Decision: Position Ardavan as a Staff Designer focused on enterprise SaaS, AI-native workflows, financial systems, information architecture, and complex workflow design. Retain Senior Product Designer only as confirmed prior-title history.
+Rationale: Ardavan confirmed his promotion to Staff Designer on 2026-08-13. The portfolio and résumé should reflect the current level without inventing new scope, outcomes, or metrics.
+Implications: Update homepage copy, metadata, social preview copy, résumé source/PDF, and future AI prompts. Preserve project-role history and existing public-safe contribution language. The exact effective month/day remains to verify before using month-level date precision.
+Supersedes: D-001.
+Related changelog entries: 2026-08-13 — Staff Designer promotion update
+
+## D-022 — Frame the role as end-to-end Staff Product Designer and shorten the portfolio name
+
+Date: 2026-08-13
+Status: Active
+Decision: Use **Staff Product Designer** as the public-facing portfolio and résumé headline, supported by end-to-end scope from product vision through product quality. Keep **Staff Designer** as the official current Intuit title in the experience chronology. Use **Ardavan Mir** as the public portfolio wordmark and metadata name; retain **Ardavan Mirhosseini** on the résumé.
+Rationale: This is more legible to product-design recruiters, communicates the actual scope Ardavan described, and avoids weakening the role with “working towards.” It also preserves the official title and a consistent shortened portfolio brand tied to ardavanmir.com.
+Implications: Update homepage eyebrow and supporting copy, page metadata, social-preview artwork, résumé headline/profile/expertise, and current AI prompts. Do not imply sole ownership of team outcomes or apply current staff-level scope retroactively to earlier projects.
+Related changelog entries: 2026-08-13 — End-to-end Staff Product Designer framing and Ardavan Mir portfolio brand
