@@ -7,7 +7,8 @@ h1, h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 400; lett
 .mono, .eyebrow, .brand-mark, .date, .card-kicker, .result-meta, .exhibit-label, .scope-grid span, .scope-grid strong, .model-number, .legend, .diagram span { font-family: 'JetBrains Mono', monospace; }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #314A87; outline-offset: 4px; }
 .topbar { background: #F2EFE5; border-color: #c8c7b9; }
-.first-finding, .opening-gallery, .synthesis, .evidence { background: #171914; }
+.first-finding, .opening-gallery { background: #171914; }
+.first-finding .eyebrow, .first-finding .evidence-line i { color: #c3ceea; }
 .research-return { color: #171914; font-family: 'JetBrains Mono', monospace; background: #F2EFE5; }
 .brand-mark { display: none; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
