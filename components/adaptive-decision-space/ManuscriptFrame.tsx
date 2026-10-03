@@ -8,11 +8,12 @@ type ManuscriptFrameProps = {
   folio: string
   backHref: string
   backLabel: string
+  showStageRail?: boolean
 }
 
-export function ManuscriptFrame({ children, folio, backHref, backLabel }: ManuscriptFrameProps) {
+export function ManuscriptFrame({ children, folio, backHref, backLabel, showStageRail = true }: ManuscriptFrameProps) {
   return (
-    <div className={styles.manuscriptFrame}>
+    <div className={`${styles.manuscriptFrame} ${showStageRail ? "" : styles.withoutStageRail}`}>
       <a href="#manuscript-content" className={styles.skipLink}>Skip to manuscript</a>
       <header className={styles.siteHeader}>
         <Link href="/" className={styles.wordmark} aria-label="Ardavan Mir, home">
@@ -24,7 +25,7 @@ export function ManuscriptFrame({ children, folio, backHref, backLabel }: Manusc
           <Link href="/#colophon">Contact</Link>
         </nav>
       </header>
-      <ManuscriptStageRail />
+      {showStageRail ? <ManuscriptStageRail /> : null}
       <main id="manuscript-content" className={styles.manuscript} tabIndex={-1}>{children}</main>
     </div>
   )

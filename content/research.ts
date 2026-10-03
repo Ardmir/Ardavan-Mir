@@ -88,7 +88,7 @@ export const RESEARCH_ENTRIES: ResearchEntry[] = [
       "Decision architecture",
     ],
     status: "Public-safe research summary",
-    href: "/research#ai-native-platform-patterns",
-    ctaLabel: "View research summary",
+    href: "/research/visual-atlas",
+    ctaLabel: "Explore the visual research",
   },
 ]

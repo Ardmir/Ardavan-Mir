@@ -117,6 +117,8 @@ const SECTIONS = [
       "Platform-level design judgment",
     ],
     visual: "ai-native-platform-patterns" as const,
+    detailHref: "/research/visual-atlas",
+    detailLabel: "Explore the visual research",
   },
 ]
 
@@ -152,6 +154,9 @@ export default function ResearchPage() {
                 Approved research summaries
               </p>
             </aside>
+          </div>
+          <div className={styles.linkRow}>
+            <Link href="/research/visual-atlas">Open the AI-native visual research library →</Link>
           </div>
         </header>
 

@@ -1,0 +1,327 @@
+{
+  "edition": "Developer Builder Mechanism Audit — public edition",
+  "observed_date": "2026-09-03",
+  "evidence_records": 60,
+  "products": {
+    "OpenAI Codex": 9,
+    "Google AI Studio": 5,
+    "Google Stitch": 6,
+    "Vercel v0": 4,
+    "Replit Agent": 5,
+    "Retool": 5,
+    "Palantir AIP": 4,
+    "LangSmith Studio": 4,
+    "n8n": 3,
+    "Microsoft Copilot Studio": 5,
+    "Backstage": 5,
+    "Temporal": 1,
+    "Workato": 4
+  },
+  "image_files": 60,
+  "image_bytes": 13613869,
+  "images": [
+    {
+      "filename": "CODEX-01-command-center-projects-threads.png",
+      "bytes": 135888,
+      "sha256": "c660c896cf8ee8160e5f3a26863de59086569a794b7e2a806f440bf6db91c582"
+    },
+    {
+      "filename": "CODEX-02-project-selector.png",
+      "bytes": 106159,
+      "sha256": "af72a2ef9d9be68e76959d9ecee4d39bc99ccfae782e5d2521fde78891abc95e"
+    },
+    {
+      "filename": "CODEX-03-worktree-configuration.png",
+      "bytes": 43410,
+      "sha256": "8b76e28b0506908d52d4080be85c0f4e397adf77ae764c454d610effc5766178"
+    },
+    {
+      "filename": "CODEX-04-worktree-running.png",
+      "bytes": 93863,
+      "sha256": "fa1266435ebd64fdc7f60449e7f57e15c595bca1df9ff426054ad1fd73f316ea"
+    },
+    {
+      "filename": "CODEX-05-create-pr-result.png",
+      "bytes": 161206,
+      "sha256": "3eada2df8044704ac04f0f7d2910a9d791cf228c48a6080034efd200829ada16"
+    },
+    {
+      "filename": "CODEX-06-inline-diff-comment.png",
+      "bytes": 176574,
+      "sha256": "f9d2dbefa947199d1d880bc6a110a03dc4644dfbaa33b7cb6682f7606eb83266"
+    },
+    {
+      "filename": "CODEX-07-diff-review-thread-terminal.png",
+      "bytes": 278202,
+      "sha256": "aa165961e325752e88336013a4a43230af1cdb64bfa64371a984eae5139e500d"
+    },
+    {
+      "filename": "CODEX-08-automations-library.png",
+      "bytes": 214812,
+      "sha256": "bfd020e65b780615b2632049ded2b5518f7f6fba8ec429e5b63fec368a7abfb4"
+    },
+    {
+      "filename": "CODEX-09-create-automation.png",
+      "bytes": 175524,
+      "sha256": "e99b814882713a1a415e947f030817fd7d7f6efabcd578271faf2c60b7389c89"
+    },
+    {
+      "filename": "AISTUDIO-01-prompt.png",
+      "bytes": 202804,
+      "sha256": "2bc0fe83ed9e4b5e7e9995fa6c78dd508531a422f9cd920c9933bb1a4ded27b9"
+    },
+    {
+      "filename": "AISTUDIO-02-code-live-preview.png",
+      "bytes": 512977,
+      "sha256": "d6d5b571659c350c52996baf7f80cb04dacd03b3e25a85ee59db8f3ce21d3fda"
+    },
+    {
+      "filename": "AISTUDIO-03-version-diff.png",
+      "bytes": 384573,
+      "sha256": "609406eff4ede45a212f8b9cd1880515cc94c740aac4b1a8c79ec9d150272b16"
+    },
+    {
+      "filename": "AISTUDIO-04-annotation.png",
+      "bytes": 107261,
+      "sha256": "a81af32e0fd107e71b13359cc45f0518e8acb38bca7105c5eae355a5fed278af"
+    },
+    {
+      "filename": "AISTUDIO-05-deploy-cloud.png",
+      "bytes": 453107,
+      "sha256": "814902be2dfae91139573101d57252fee192359c43749d95386e504d1f701faa"
+    },
+    {
+      "filename": "STITCH-01-prompt.png",
+      "bytes": 112636,
+      "sha256": "57a0f7ba81dc97236330cc6e8472e4802b9a62eb6c6789e68e9019577ee8b3d0"
+    },
+    {
+      "filename": "STITCH-02-streaming-generation.png",
+      "bytes": 58251,
+      "sha256": "edba44b485afea35a1b2acd08a8dff882611202a7d3cd201a3eaf4cf34f4e170"
+    },
+    {
+      "filename": "STITCH-03-steer-generation.png",
+      "bytes": 84161,
+      "sha256": "d468eb842c03f9ebdf5ad41b10dae96ab4ddebbdfc6490e12f516d1a98c5cdf8"
+    },
+    {
+      "filename": "STITCH-04-connected-prototype.png",
+      "bytes": 325634,
+      "sha256": "b80199aa586917f7cb160d3b5cff398ab398498e1160b27ee0fe779ad50f3994"
+    },
+    {
+      "filename": "STITCH-05-design-md.png",
+      "bytes": 166360,
+      "sha256": "641aa52e9102e6cfa9243609fc79f7cf93471b8d2bb8eeb913af3b6b14004f0e"
+    },
+    {
+      "filename": "STITCH-06-export-mcp.png",
+      "bytes": 70932,
+      "sha256": "b176564ba386f7664840a8844884d45203bdfb28dae1f5ebf5491ce7cb254982"
+    },
+    {
+      "filename": "V0-01-preview-versions-publish.png",
+      "bytes": 1564780,
+      "sha256": "b636c21f18ee1d4c0dc1a38e018c7fc65a5bd93c51898c70a5b250e31fe33b38"
+    },
+    {
+      "filename": "V0-02-pr-preview-deploy.png",
+      "bytes": 72357,
+      "sha256": "05432ac35a42bfdc14dec8aed76e727d6a1b9de20995caa15e5e7f41b6f19101"
+    },
+    {
+      "filename": "V0-03-import-github.png",
+      "bytes": 40726,
+      "sha256": "1d4a32c22223c6ca1b0ec8a88ffa00e8d529d36f34c77f9b97466a95941fd2e6"
+    },
+    {
+      "filename": "V0-04-git-panel.png",
+      "bytes": 66368,
+      "sha256": "f236a2dc2bebefc653a3089b4cc5262cd2d946ee8818a95af0509657b777c95b"
+    },
+    {
+      "filename": "REPLIT-01-plan-ready.png",
+      "bytes": 54054,
+      "sha256": "35b3b026a6d73daff94f685db8d0a37b9b2340db85eb198809f84a45ba32bf6f"
+    },
+    {
+      "filename": "REPLIT-02-plan-details.png",
+      "bytes": 254697,
+      "sha256": "798968b1e4ac5ed21f2895adc354ccddb7c25ee9838fd82950ddd4aebb41b572"
+    },
+    {
+      "filename": "REPLIT-03-checkpoint.png",
+      "bytes": 80852,
+      "sha256": "e12f61700140ce5483e71af24f066eadbbcc822241eae194bc750b637e2d8b13"
+    },
+    {
+      "filename": "REPLIT-04-rollback.png",
+      "bytes": 167908,
+      "sha256": "26d797893ecee3e3e8a3830ca1ff6e3ce7d8dad905015c251d1d6db15443d95c"
+    },
+    {
+      "filename": "REPLIT-05-preview-publish.png",
+      "bytes": 273551,
+      "sha256": "4736110ab775b2cb7e68b6a5344e7cae75df82c1b104be0a1131a3f621a0d13c"
+    },
+    {
+      "filename": "RETOOL-01-resource-selection.png",
+      "bytes": 166291,
+      "sha256": "688007d1edf767d9a2cc77dc9ec46b82d2a76bd18580d01f792ba09baeb8ecb2"
+    },
+    {
+      "filename": "RETOOL-02-build-summary.png",
+      "bytes": 599729,
+      "sha256": "dad8d8217767ab92720f50376c551150114ffb665e68e746393fcd210c54c330"
+    },
+    {
+      "filename": "RETOOL-03-visible-code.png",
+      "bytes": 320415,
+      "sha256": "fb4a59b67edd6e00256507113c0ae7942cb284adf97e8d4095e84e0f236faa4a"
+    },
+    {
+      "filename": "RETOOL-04-preview-queries-publish.png",
+      "bytes": 285473,
+      "sha256": "1cc0f215be6db22d40ed8aaa01b7d7dc2be136f263a423a4d3368fb357947512"
+    },
+    {
+      "filename": "RETOOL-05-audit-logs.png",
+      "bytes": 252272,
+      "sha256": "8e2a19680f97aa484c3b5c99c5408ced97793dfb5c65646c90cd5025d3779791"
+    },
+    {
+      "filename": "PALANTIR-01-logic-ontology-query.png",
+      "bytes": 147980,
+      "sha256": "0936b88e0483623dee28f6a15f2d1fa740a2c4a56e44f7198910334108e8a2f4"
+    },
+    {
+      "filename": "PALANTIR-02-staged-write.png",
+      "bytes": 116521,
+      "sha256": "3aa24c846da070d7356f92d1f71d98cc4fba2932eb29e77b7e27499c424589e5"
+    },
+    {
+      "filename": "PALANTIR-03-action-deployment.png",
+      "bytes": 154889,
+      "sha256": "e22db5816e23a81bfc0b2c210a0bdda3ccda15d74a4dd3d4cf96685677a7ff08"
+    },
+    {
+      "filename": "PALANTIR-04-observability.png",
+      "bytes": 461011,
+      "sha256": "89ef37521883b9ba910412ed4b7fb5596621c57671dacaa7a32cc7ec4aa9a3fe"
+    },
+    {
+      "filename": "LANGSMITH-01-graph-trace.png",
+      "bytes": 118340,
+      "sha256": "872ef2a221b058a1fc37925a51616ff3397ad4b612262995c2a4d3ba3d381f71"
+    },
+    {
+      "filename": "LANGSMITH-02-interrupt-state.png",
+      "bytes": 76540,
+      "sha256": "81a0de6e7315b71889d94313b4b16ff9c8484fbbcdcd7786ed78819d5eec4110"
+    },
+    {
+      "filename": "LANGSMITH-03-experiment-result.png",
+      "bytes": 76054,
+      "sha256": "8c94e4e0e2195b117558a1bd0d1e1125d6dccc16a3a7578794e2a21628d0a8cb"
+    },
+    {
+      "filename": "LANGSMITH-04-experiment-compare-trace.png",
+      "bytes": 160383,
+      "sha256": "2bf21ee591b79eb8a5203d262c64426495a67fae269d025d2ba827bf400e82b2"
+    },
+    {
+      "filename": "N8N-01-node-input-output.png",
+      "bytes": 68585,
+      "sha256": "54c67fb5d165b6826cccb62d3827f94537ff31b659244330ee2abdcc42d9c5e3"
+    },
+    {
+      "filename": "N8N-02-execution-trace.png",
+      "bytes": 250997,
+      "sha256": "a1f6f7220796a63694648b6ec1d6e0b1c56b29955384c905a7c4f5c1b45de16f"
+    },
+    {
+      "filename": "N8N-03-environments-diff.png",
+      "bytes": 15249,
+      "sha256": "b3a3ad1e5b4bca94f545b2749e4dfc1f93e3f2a34e20c94720b7724f713d8033"
+    },
+    {
+      "filename": "COPILOT-01-agent-canvas.png",
+      "bytes": 123233,
+      "sha256": "b2a9c0facc4dbdd16d41e71c0d12daf8bd26f24bafe1fe889d276a315f68cd36"
+    },
+    {
+      "filename": "COPILOT-02-add-tools.png",
+      "bytes": 81715,
+      "sha256": "1d6f22381f76fb383ba124dd167d518e55431b68f86a9e48b668a1e9bf2feef0"
+    },
+    {
+      "filename": "COPILOT-03-flow-environment-publish.png",
+      "bytes": 200992,
+      "sha256": "fee99c25909c3ac646cc8375345181140ad8700d21b8374dfcf748529c75d735"
+    },
+    {
+      "filename": "COPILOT-04-data-policy-block.png",
+      "bytes": 17361,
+      "sha256": "dfedac99e79c64fca8f47653c0f9df59727967a226588fea413b087443f01468"
+    },
+    {
+      "filename": "COPILOT-05-admin-governance.png",
+      "bytes": 51765,
+      "sha256": "97cf032547d65912a8e28a0471b5292b98eca850b509dbe702bdfed5989a53ff"
+    },
+    {
+      "filename": "BACKSTAGE-01-catalog-owner.png",
+      "bytes": 301970,
+      "sha256": "d272360f105acb66066794e6f770855b5c2696eb4723bf469be0e02e05e6ab25"
+    },
+    {
+      "filename": "BACKSTAGE-02-entity-tooling.png",
+      "bytes": 102290,
+      "sha256": "8a008daec0de3f28f75ab64023a7503d440e15b661454b967d664ac447a6c0ee"
+    },
+    {
+      "filename": "BACKSTAGE-03-template-picker.png",
+      "bytes": 813793,
+      "sha256": "64f2bf9c910b3cf515fa82cbbebe60fad104bc6baedb3da9feb78e7c1f65c80e"
+    },
+    {
+      "filename": "BACKSTAGE-04-scaffolder-run.png",
+      "bytes": 1032792,
+      "sha256": "3fc0b87a694db73cfcd881a1b5018e67aa2217e93fb2fa313cfc8f60eeac2e95"
+    },
+    {
+      "filename": "BACKSTAGE-05-dependency-graph.png",
+      "bytes": 60402,
+      "sha256": "e2b05f616f00b6e7ed7454acde2962ebe7447bde1e28a44569f85fbeaa1b71ff"
+    },
+    {
+      "filename": "TEMPORAL-01-workflow-history.png",
+      "bytes": 219545,
+      "sha256": "32a9302572929c83e38502e559bdf1aa1cb2a1c109258da95df83bd485f8cb40"
+    },
+    {
+      "filename": "WORKATO-01-failed-job-repeat.png",
+      "bytes": 329889,
+      "sha256": "4cd3d777cc1d6e995687240edc80c165693d5da420df805fd2ab6fabd659018f"
+    },
+    {
+      "filename": "WORKATO-02-job-rerun.png",
+      "bytes": 250361,
+      "sha256": "451f2afa6bfdc37d1ecfa5931f6a3447c0b71afd35c87e0ad055e5d19818db1b"
+    },
+    {
+      "filename": "WORKATO-03-package-manifest.png",
+      "bytes": 212682,
+      "sha256": "ed596c8cb9a94035ca6ceca85c6d31158a80ba6f20a641a1bac949aa9b74b665"
+    },
+    {
+      "filename": "WORKATO-04-export-package-history.png",
+      "bytes": 104723,
+      "sha256": "af00ba84e35f1b59bb4e18deb943d65a88db69dd81a796b0911f6103d970a083"
+    }
+  ],
+  "image_hashes_match_sources": true,
+  "missing_dependencies": [],
+  "source_link_scope": "Product-level first-party source sets; multiple pages may contribute to each product reference set."
+}

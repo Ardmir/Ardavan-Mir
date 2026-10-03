@@ -219,3 +219,12 @@ Decision: Use **Staff Product Designer** as the public-facing portfolio and rés
 Rationale: This is more legible to product-design recruiters, communicates the actual scope Ardavan described, and avoids weakening the role with “working towards.” It also preserves the official title and a consistent shortened portfolio brand tied to ardavanmir.com.
 Implications: Update homepage eyebrow and supporting copy, page metadata, social-preview artwork, résumé headline/profile/expertise, and current AI prompts. Do not imply sole ownership of team outcomes or apply current staff-level scope retroactively to earlier projects.
 Related changelog entries: 2026-08-13 — End-to-end Staff Product Designer framing and Ardavan Mir portfolio brand
+
+## D-023 — External visual research in the portfolio grammar
+
+Date: 2026-10-03
+Status: Active; owner approved public content and publication
+Decision: Publish an external-only visual research hub with builder, developer-tool, and mobile/ambient galleries. Use the portfolio's manuscript typography, palette, and editorial rules while retaining screenshot-led presentation and source evidence. Keep the existing homepage navigation and link the visual hub from the Research collection.
+Rationale: The owner requested a durable place on the existing website to find the research, consistent visual grammar, and approval of the exact information before publishing.
+Implications: Exclude confidential material, internal applications, private links, and untraceable images. Preserve source attribution and dated evidence limitations. The owner approved the reviewed content on 2026-10-03. Publish through the existing repository workflow and keep production hosting and domain settings.
+Related publication record: visual-research-publication.md
