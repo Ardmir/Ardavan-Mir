@@ -2,7 +2,7 @@
 
 Prepared and approved: 2026-10-03. Status: owner approved the reviewed public content and publication through the existing GitHub Pages workflow.
 
-Initial publication: PR #29 merged; GitHub Pages run 37124161881 succeeded. The live Research navigation, visual hub, and all three gallery routes were verified. A follow-up style correction fixes intermediate-width overflow and restores intended light section backgrounds; it does not change public information or evidence images.
+Initial publication: PR #29 merged; GitHub Pages run 37124161881 succeeded. The live Research navigation, visual hub, and all three gallery routes were verified. A follow-up style correction fixes intermediate-width overflow and restores intended light section backgrounds; it does not change public information or evidence images. Content-hash versions on gallery stylesheet links ensure browsers fetch the corrected styles immediately.
 
 ## Proposed public scope
 
