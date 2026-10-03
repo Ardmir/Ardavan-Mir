@@ -144,6 +144,9 @@
 }
 
 .manuscript { margin-left: 4.5rem; }
+.withoutStageRail { background: var(--paper); }
+.withoutStageRail .manuscript { margin-left: 0; }
+.withoutStageRail .siteHeader { padding-left: 3rem; }
 
 .hero,
 .stage,

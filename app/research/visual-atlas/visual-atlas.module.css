@@ -1,0 +1,33 @@
+.atlas { color: #171914; }
+.intro { padding: 2rem clamp(1.5rem, 5vw, 5rem); border-bottom: 1px solid #c8c7b9; }
+.eyebrow, .scope, .number, .date, .open { font-family: var(--font-mono), monospace; }
+.eyebrow { margin: 0 0 1.5rem; font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: #55584e; }
+.intro h1 { max-width: 900px; margin: 0; font-size: clamp(2.3rem, 4.5vw, 3.8rem); font-weight: 500; line-height: 1.08; letter-spacing: -.045em; }
+.intro h1 em { color: #314a87; font-family: var(--font-playfair), Georgia, serif; font-weight: 400; }
+.intro > p:last-child { max-width: 730px; margin: 1.5rem 0 0; font-size: 1.12rem; line-height: 1.7; color: #55584e; }
+.collections { padding: 0 clamp(1.5rem, 5vw, 5rem); }
+.collection { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr) 8rem; gap: 1.5rem; padding: 2.5rem 0; border-bottom: 1px solid #c8c7b9; color: inherit; text-decoration: none; scroll-margin-top: 5rem; }
+.collection:hover h2, .collection:focus-visible h2 { color: #314a87; }
+.collection:focus-visible { outline: 2px solid #314a87; outline-offset: .5rem; }
+.number { color: #765026; font-size: 1.2rem; padding-top: .15rem; }
+.scope { margin: 0 0 .8rem; color: #55584e; font-size: .8rem; }
+.collection h2 { margin: 0 0 1rem; font-size: clamp(1.65rem, 3vw, 2.4rem); font-weight: 500; letter-spacing: -.03em; line-height: 1.18; }
+.previews { display: flex; gap: 1rem; margin: 1.5rem 0; padding: 1.2rem; border: 1px solid #c8c7b9; background: #e8e7de; }
+.previewImage { min-width: 0; flex: 1; width: 0; height: 270px; object-fit: contain; object-position: center; }
+.collection p:not(.scope) { max-width: 720px; margin: .65rem 0; font-size: 1rem; line-height: 1.7; }
+.examples { color: #55584e; }
+.date { font-size: .8rem; color: #55584e; line-height: 1.6; }
+.open { display: inline-block; margin-top: .8rem; color: #314a87; font-size: .85rem; border-bottom: 1px solid currentColor; padding-bottom: .2rem; }
+.note { padding: 3rem clamp(1.5rem, 5vw, 5rem) 4rem; }
+.note h2 { font-family: var(--font-playfair), Georgia, serif; font-weight: 400; font-size: 1.8rem; margin: 0 0 1rem; }
+.note p { max-width: 800px; font-size: 1rem; line-height: 1.7; color: #55584e; }
+@media (max-width: 720px) {
+  .intro { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+  .intro .eyebrow { margin-bottom: 1rem; }
+  .intro > p:last-child { margin-top: 1rem; font-size: 1rem; }
+  .collection { grid-template-columns: 2rem minmax(0, 1fr); gap: 1rem; padding: 1.5rem 0; }
+  .date { grid-column: 2; }
+  .previews { gap: .5rem; padding: .5rem; }
+  .previewImage { height: 170px; }
+  .previewImage:nth-child(n + 2) { display: none; }
+}

@@ -1,0 +1,263 @@
+{
+  "title": "AI Builder Landscape — Evidence Index",
+  "accessed": "2026-09-03",
+  "scope": "Category-level visual research about external product interfaces.",
+  "records": [
+    {
+      "product": "Lovable",
+      "archetype": "Prompt ↔ Artifact",
+      "state": "Project editor with chat, preview, design tools, code, history, and publish",
+      "product_source": "https://docs.lovable.dev/introduction/getting-started",
+      "visual_source": "https://lovable.dev/blog/2025-01-24-how-ai-tools-like-lovable-are-redefining-product-development-for-pms",
+      "image": "https://lovable.dev/content/news/prototype-lovable.png",
+      "tags": [
+        "ai-intent",
+        "live-preview",
+        "visual-editing",
+        "code",
+        "history",
+        "publish"
+      ]
+    },
+    {
+      "product": "v0",
+      "archetype": "Prompt ↔ Artifact",
+      "state": "Chat project with agent, full editor, design mode, preview, sandbox, and deploy/PR",
+      "product_source": "https://v0.app/docs/quickstart",
+      "visual_source": "https://addyo.substack.com/p/ai-driven-prototyping-v0-bolt-and",
+      "image": "https://substack-post-media.s3.amazonaws.com/public/images/ff6f9686-c718-40f2-9b71-c2309d5fd0ab_2960x1882.png",
+      "tags": [
+        "projects",
+        "agent",
+        "preview",
+        "design-mode",
+        "editor",
+        "deploy"
+      ]
+    },
+    {
+      "product": "Bolt",
+      "archetype": "Prompt ↔ Artifact",
+      "state": "Chat-plus-preview workbench with code, files, terminal, and built-in publishing",
+      "product_source": "https://support.bolt.new/building/using-bolt/code-view",
+      "visual_source": "https://hostadvice.com/ai-app-builders/bolt-review/",
+      "image": "https://cdn.hostadvice.com/2025/09/Bolt.new-expert-review-image-1.png",
+      "tags": [
+        "chat",
+        "preview",
+        "code",
+        "files",
+        "terminal",
+        "publish"
+      ]
+    },
+    {
+      "product": "Replit",
+      "archetype": "Prompt ↔ Artifact",
+      "state": "Project Editor with Agent, preview, Design Canvas, tools/files, task board, and publish",
+      "product_source": "https://docs.replit.com/learn/projects-and-artifacts/project-editor",
+      "visual_source": "https://www.figma.com/resource-library/ai-app-builders/",
+      "image": "https://cdn.sanity.io/images/599r6htc/regionalized/ae771c04fc39c917ee0ee21bedcdc5fe304b6e9c-2880x1382.jpg?auto=format&fit=max&h=1382&q=75&w=2880",
+      "tags": [
+        "agent",
+        "threads",
+        "preview",
+        "design-canvas",
+        "tools",
+        "tasks",
+        "publish"
+      ]
+    },
+    {
+      "product": "Google AI Studio",
+      "archetype": "Capability Studio",
+      "state": "Build home and workspace organized around Gemini models, prompts, starter apps, code, preview, and deployment",
+      "product_source": "https://developers.googleblog.com/en/google-ai-studio-native-code-generation-agentic-tools-upgrade/",
+      "visual_source": "https://codelabs.developers.google.com/gemini-for-developers",
+      "image": "https://codelabs.developers.google.com/static/gemini-for-developers/img/48fadc9d3d5f9500.png?hl=id",
+      "tags": [
+        "gallery",
+        "prompt",
+        "models",
+        "starter-apps",
+        "code",
+        "share",
+        "deploy"
+      ]
+    },
+    {
+      "product": "Google Stitch",
+      "archetype": "Canvas + AI",
+      "state": "Prompt/image generation into a multi-screen UI canvas with variants, themes, Figma, and code export",
+      "product_source": "https://developers.googleblog.com/en/stitch-a-new-way-to-design-uis/",
+      "visual_source": "https://zapier.com/blog/google-stitch/",
+      "image": "https://images.ctfassets.net/lzny33ho1g45/5BYudZmlBGzvefEk9EZvrm/04f1cc66007723c480209bd6d5f5809d/image3.png",
+      "tags": [
+        "projects",
+        "prompt",
+        "image-input",
+        "screen-canvas",
+        "variants",
+        "figma",
+        "code-export"
+      ]
+    },
+    {
+      "product": "Retool",
+      "archetype": "Canvas + AI",
+      "state": "App editor with component canvas, component library, inspector, queries, resources, preview, and deploy",
+      "product_source": "https://docs.retool.com/",
+      "visual_source": "https://retool.com/blog/building-an-sql-server-admin-panel-in-retool",
+      "image": "https://retool.com/_next/image?q=75&url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbclf52sw%2Fproduction%2Fd76af1153bdb1cfc7a30e01a4fdfd1f197c752a0-1400x730.webp&w=3840",
+      "tags": [
+        "apps",
+        "component-canvas",
+        "inspector",
+        "queries",
+        "resources",
+        "preview",
+        "deploy"
+      ]
+    },
+    {
+      "product": "Cursor",
+      "archetype": "IDE + Agent",
+      "state": "Repository IDE with files, editor, agent sidepane, terminal, diffs, background agents, and PR handoff",
+      "product_source": "https://docs.cursor.com/chat/overview",
+      "visual_source": "https://cursor.com/changelog/1-0",
+      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/changelog/changelog-1-0-0.png",
+      "tags": [
+        "repository",
+        "files",
+        "editor",
+        "agent",
+        "terminal",
+        "diff",
+        "pr"
+      ]
+    },
+    {
+      "product": "Windsurf",
+      "archetype": "IDE + Agent",
+      "state": "Code editor with Cascade, terminal, checkpoints, in-IDE preview, and app deployment",
+      "product_source": "https://docs.windsurf.com/windsurf/previews",
+      "visual_source": "https://medium.com/@filipespacheco/i-used-windsurf-ide-with-premium-license-here-is-what-i-found-5bbded039a57",
+      "image": "https://miro.medium.com/1%2Aiylii729u6-KXrIurKsOxg.png",
+      "tags": [
+        "workspace",
+        "files",
+        "editor",
+        "cascade",
+        "terminal",
+        "preview",
+        "deploy"
+      ]
+    },
+    {
+      "product": "Google Antigravity",
+      "archetype": "IDE + Agent",
+      "state": "Agent-first IDE linking Agent Manager, editor, terminal, browser, and review artifacts",
+      "product_source": "https://antigravity.google/docs/ide/overview/",
+      "visual_source": "https://antigravity.google/docs",
+      "image": "https://antigravity.google/assets/image/docs/editor-open-agent-manager.png",
+      "tags": [
+        "workspaces",
+        "agent-manager",
+        "editor",
+        "terminal",
+        "browser",
+        "artifacts",
+        "review"
+      ]
+    },
+    {
+      "product": "Firebase Studio",
+      "archetype": "IDE + Agent",
+      "state": "Transitional cloud workspace combining AI prototyper, Code OSS IDE, previewers, emulators, and hosting; new workspaces disabled 2026-06-22",
+      "product_source": "https://firebase.google.com/docs/studio",
+      "visual_source": "https://winbuzzer.com/2025/04/11/googles-firebase-studio-enters-the-ai-coding-space-with-a-bang-xcxwbn/",
+      "image": "https://winbuzzer.com/wp-content/uploads/2025/04/Google-Firebase-Studio-official.jpg",
+      "tags": [
+        "workspaces",
+        "prototyper",
+        "ide",
+        "previewers",
+        "emulators",
+        "hosting",
+        "sunsetting"
+      ]
+    },
+    {
+      "product": "n8n",
+      "archetype": "Workflow / Graph",
+      "state": "Workflow editor with node palette, executable graph, node configuration, step data, logs, and publish",
+      "product_source": "https://n8n.io/features/",
+      "visual_source": "https://www.infralovers.com/blog/2025-05-09-n8n-workflow-automation/",
+      "image": "https://www.infralovers.com/images/posts/n8n-workflows/n8n-sample-workflow.webp",
+      "tags": [
+        "workflows",
+        "node-palette",
+        "graph",
+        "configuration",
+        "step-data",
+        "logs",
+        "publish"
+      ]
+    },
+    {
+      "product": "Dify",
+      "archetype": "Workflow / Graph",
+      "state": "Workflow Studio with AI and deterministic nodes, variables, branches, test runs, logs, and publish",
+      "product_source": "https://docs.dify.ai/en/guides/application-orchestrate/creating-an-application",
+      "visual_source": "https://dify.ai/workflows",
+      "image": "https://dify.ai/_astro/workflow.DMomtOeS_Z2e3Rf9.webp",
+      "tags": [
+        "studio",
+        "apps",
+        "graph",
+        "models",
+        "tools",
+        "variables",
+        "test-run",
+        "publish"
+      ]
+    },
+    {
+      "product": "Langflow",
+      "archetype": "Workflow / Graph",
+      "state": "Visual editor with component library, graph workspace, configuration, Playground, logs, and share",
+      "product_source": "https://docs.langflow.org/1.8.0/concepts-overview",
+      "visual_source": "https://docs.langflow.org/concepts-overview",
+      "image": "https://docs.langflow.org/assets/images/workspace-092a57479846fc9459f2a057e268297f.png",
+      "tags": [
+        "projects",
+        "components",
+        "graph",
+        "configuration",
+        "playground",
+        "logs",
+        "share"
+      ]
+    },
+    {
+      "product": "Microsoft Copilot Studio",
+      "archetype": "Workflow / Graph",
+      "state": "Agent/topic authoring canvas with instructions, knowledge, tools, test pane, variables, publish, and channels",
+      "product_source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-test-bot",
+      "visual_source": "https://microsoftlearning.github.io/mslearn-copilotstudio/Instructions/Labs/01-create-copilot.html",
+      "image": "https://microsoftlearning.github.io/mslearn-copilotstudio/Instructions/Labs/media/test-knowledge.png",
+      "tags": [
+        "agents",
+        "flows",
+        "instructions",
+        "topics",
+        "nodes",
+        "knowledge",
+        "tools",
+        "test-pane",
+        "publish",
+        "channels"
+      ]
+    }
+  ]
+}

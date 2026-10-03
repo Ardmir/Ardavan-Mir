@@ -1,7 +1,7 @@
 # SOT-08 — Changelog
 
 Version: 0.3
-Last updated: 2026-08-13
+Last updated: 2026-10-03
 Status: Active
 
 Use this file every time something changes.
@@ -20,6 +20,16 @@ Next action:
 ```
 
 ## Change history
+
+### 2026-10-03 — Approved visual research library publication
+Type: Content / Design / Deployment / Verification
+Changed by: Codex
+Files affected: research collection, research entry metadata, sitemap, optional manuscript rail, new visual-atlas route and external research assets.
+Summary: Added three screenshot-led public research collections with portfolio manuscript grammar and external-only source evidence. Preserved source attributions, dates, filters, and full-size images. Excluded internal material and one untraceable mobile frame. The owner approved the exact public content and confirmed the existing top navigation provides sufficient access.
+Decision links: D-023; visual-research-publication.md
+Verification: Owner content approval received 2026-10-03. Lint, TypeScript, static export, publication-safety scans, image dependencies, gallery interactions, and responsive layouts pass.
+Verification needed: Confirm live homepage access and gallery routes after the normal GitHub Pages workflow completes.
+Next action: Present the local preview and scope for approval.
 
 ### 2026-08-13 — v1.1 — End-to-end Staff Product Designer framing and Ardavan Mir portfolio brand
 Type: Strategy / Content / Resume / Design / Verification

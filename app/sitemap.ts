@@ -9,6 +9,10 @@ const PUBLIC_ROUTES = [
   "/work/quickbooks-dimensional-chart-of-accounts",
   "/research",
   "/research/ai-native-strategy",
+  "/research/visual-atlas",
+  "/research/visual-atlas/builders/index.html",
+  "/research/visual-atlas/developer-builders/index.html",
+  "/research/visual-atlas/mobile/index.html",
 ] as const
 
 export default function sitemap(): MetadataRoute.Sitemap {

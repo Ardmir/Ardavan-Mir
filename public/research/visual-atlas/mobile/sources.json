@@ -1,0 +1,1749 @@
+{
+  "title": "AI-native mobile tools & interaction references",
+  "limitations": "Dated research; source links and evidence classifications are inherited from the research snapshot and were not refreshed. App Store imagery is promotional. State and role labels are analyst interpretations.",
+  "frames": [
+    {
+      "frame_id": "M001",
+      "product_family": "chatgpt",
+      "product_name": "ChatGPT",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/chatgpt/id6448311069?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/7167f910877e2391a99adc4e.png",
+        "media/c7b06c6c795dd5f9c5ef8f11.jpg",
+        "media/c87424b6668b6bbae669aee8.jpg",
+        "media/df3723fc5be3cf838222c2e3.png"
+      ]
+    },
+    {
+      "frame_id": "M002",
+      "product_family": "chatgpt",
+      "product_name": "ChatGPT",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/chatgpt/id6448311069?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/0b9f382576cc73f074cadf67.png",
+        "media/370c7bbca253a231c71aaa55.jpg",
+        "media/7167f910877e2391a99adc4e.png",
+        "media/c058195bbf4fd00610e1c7af.jpg"
+      ]
+    },
+    {
+      "frame_id": "M003",
+      "product_family": "chatgpt",
+      "product_name": "ChatGPT",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/chatgpt/id6448311069?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/54668ad14d2358c60329c67c.jpg",
+        "media/6aa73616ce30b6135b6c47e7.jpg",
+        "media/7167f910877e2391a99adc4e.png",
+        "media/f95afffb8c6383056328df4d.png"
+      ]
+    },
+    {
+      "frame_id": "M004",
+      "product_family": "chatgpt",
+      "product_name": "ChatGPT",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/chatgpt/id6448311069?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/5a128a6ab4429bfbe56c0cfa.jpg",
+        "media/666f4a885fc5d54bb4f8d631.png",
+        "media/7167f910877e2391a99adc4e.png",
+        "media/7a5ef13f93b6cb3cb4a11053.jpg"
+      ]
+    },
+    {
+      "frame_id": "M005",
+      "product_family": "google-gemini",
+      "product_name": "Google Gemini",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/google-gemini/id6477489729?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/2834ce0b64cb8328b18acbac.jpg",
+        "media/3cfa1b8f5256b2ac71d1260f.png",
+        "media/73e49065877cae5fade2b18d.png",
+        "media/e0dda8409f61c0f539913f41.jpg"
+      ]
+    },
+    {
+      "frame_id": "M006",
+      "product_family": "google-gemini",
+      "product_name": "Google Gemini",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/google-gemini/id6477489729?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/53ffbc5937c859b5052141e9.png",
+        "media/73e49065877cae5fade2b18d.png",
+        "media/cbb31ee4d0542b717b4d6769.jpg",
+        "media/f925ddb892b3a887f912012b.jpg"
+      ]
+    },
+    {
+      "frame_id": "M007",
+      "product_family": "google-gemini",
+      "product_name": "Google Gemini",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/google-gemini/id6477489729?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/20cf7ef1f6c1ddc388795724.jpg",
+        "media/73e49065877cae5fade2b18d.png",
+        "media/86d37d630ca73ba52f797716.png",
+        "media/9541f07fc597ef82b00cb1a5.jpg"
+      ]
+    },
+    {
+      "frame_id": "M008",
+      "product_family": "google-gemini",
+      "product_name": "Google Gemini",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/google-gemini/id6477489729?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/302c4f142e9b03b124744257.png",
+        "media/73e49065877cae5fade2b18d.png",
+        "media/af01931fc1b52e8f0de04dd5.jpg",
+        "media/bcc8cc2d770caf6ef94cfb94.jpg"
+      ]
+    },
+    {
+      "frame_id": "M009",
+      "product_family": "claude",
+      "product_name": "Claude by Anthropic",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/0fa9519a14fb9959bd4374f7.png",
+        "media/5dcfe201d23f9cb5f8156130.png",
+        "media/e965d095bbd81eada1a3528a.jpg"
+      ]
+    },
+    {
+      "frame_id": "M010",
+      "product_family": "claude",
+      "product_name": "Claude by Anthropic",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/10cdcaceb7bcfdcb9ac98b6a.jpg",
+        "media/dbb3c7a4dfe789aa28ff1edd.png",
+        "media/f7d2b049effffc62efb0b191.png"
+      ]
+    },
+    {
+      "frame_id": "M011",
+      "product_family": "claude",
+      "product_name": "Claude by Anthropic",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/43329bdb033a1114e676a7b6.png",
+        "media/7f8f4bf3fd2a2d7069e4df8a.jpg",
+        "media/c1ecb504f206ce6c9181a261.png"
+      ]
+    },
+    {
+      "frame_id": "M012",
+      "product_family": "claude",
+      "product_name": "Claude by Anthropic",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/438c22d966b3bbc69dd5496e.png",
+        "media/919b109d0de6976d1068f439.jpg",
+        "media/d034f0247b86b5e74e298528.png"
+      ]
+    },
+    {
+      "frame_id": "M013",
+      "product_family": "perplexity",
+      "product_name": "Perplexity - AI Search & Chat",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/perplexity-ai-search-chat/id1668000334?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/5baa4f03b619bc9ba7ea32b5.png",
+        "media/7302287b7bc0e37ea381f182.png",
+        "media/9bce6016dccb005e727a496c.jpg"
+      ]
+    },
+    {
+      "frame_id": "M014",
+      "product_family": "perplexity",
+      "product_name": "Perplexity - AI Search & Chat",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/perplexity-ai-search-chat/id1668000334?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/56b2bf87cfa0a507308716e3.jpg",
+        "media/d08d0e40524c53a15ee616d1.png",
+        "media/d7ffbda5b6db0fa5dec1c629.png"
+      ]
+    },
+    {
+      "frame_id": "M015",
+      "product_family": "perplexity",
+      "product_name": "Perplexity - AI Search & Chat",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/perplexity-ai-search-chat/id1668000334?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/2611560e651982cd86f28490.jpg",
+        "media/789ee0476318bbe5b509c4fb.png",
+        "media/ffc77d5deb7cf726a07d9a94.png"
+      ]
+    },
+    {
+      "frame_id": "M016",
+      "product_family": "perplexity",
+      "product_name": "Perplexity - AI Search & Chat",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/perplexity-ai-search-chat/id1668000334?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/9477ff231547e044ef86d17d.png",
+        "media/95001fad426dd1beada085ee.png",
+        "media/d361aa8b1e0dcee9e8009704.jpg"
+      ]
+    },
+    {
+      "frame_id": "M017",
+      "product_family": "arc-search",
+      "product_name": "Arc Search — Find it, Faster",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/arc-search-find-it-faster/id6472513080?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/3863b6ab51e543f093936db6.png",
+        "media/4b0d9432d48d1c364ab640f4.jpg",
+        "media/ee391b9922d69fe04a3fea93.jpg"
+      ]
+    },
+    {
+      "frame_id": "M018",
+      "product_family": "arc-search",
+      "product_name": "Arc Search — Find it, Faster",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/arc-search-find-it-faster/id6472513080?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/47ccb2fd76effcadaa2e8186.jpg",
+        "media/560ab43f4615698e650291f7.jpg",
+        "media/9a1e31c914d437201229ea9a.png"
+      ]
+    },
+    {
+      "frame_id": "M019",
+      "product_family": "arc-search",
+      "product_name": "Arc Search — Find it, Faster",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/arc-search-find-it-faster/id6472513080?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/6b2f716b7446295d28f7d04a.jpg",
+        "media/6cf59dec0e06be41788850ba.jpg",
+        "media/c8fb7fdd3f62c76a1d1dc5f1.png"
+      ]
+    },
+    {
+      "frame_id": "M020",
+      "product_family": "arc-search",
+      "product_name": "Arc Search — Find it, Faster",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/arc-search-find-it-faster/id6472513080?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/2ee86b4d9ad9ce4c890131fe.jpg",
+        "media/dce2a6a053e9c9a718cdd364.png",
+        "media/ebc1f7333b491d97806ac36a.jpg"
+      ]
+    },
+    {
+      "frame_id": "M021",
+      "product_family": "plaud",
+      "product_name": "Plaud: AI Note Taker",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/plaud-ai-note-taker/id6450364080?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/109e076e061f9342fb2aa657.png",
+        "media/576f5fe4ded76964b0634788.png",
+        "media/a9b875cbc6a02e1b4b15f168.jpg",
+        "media/c9f159454ad6d10bf19f41d5.jpg"
+      ]
+    },
+    {
+      "frame_id": "M022",
+      "product_family": "plaud",
+      "product_name": "Plaud: AI Note Taker",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/plaud-ai-note-taker/id6450364080?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/576f5fe4ded76964b0634788.png",
+        "media/58a19dc862bb74b1cc7490ef.jpg",
+        "media/dd85ab2eb63aaad1e57bf1e5.jpg",
+        "media/e434ab174cad702b6c1725ee.png"
+      ]
+    },
+    {
+      "frame_id": "M023",
+      "product_family": "plaud",
+      "product_name": "Plaud: AI Note Taker",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/plaud-ai-note-taker/id6450364080?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/034afcb259712aab02815cf0.png",
+        "media/576f5fe4ded76964b0634788.png",
+        "media/e6ac5adf129430623ed3dc47.jpg",
+        "media/eccf9146fbbda89b1dea8d6c.jpg"
+      ]
+    },
+    {
+      "frame_id": "M024",
+      "product_family": "plaud",
+      "product_name": "Plaud: AI Note Taker",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/plaud-ai-note-taker/id6450364080?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/12f8a77152ed2008ff071d7d.jpg",
+        "media/576f5fe4ded76964b0634788.png",
+        "media/617c6c339c07ed6226222620.png",
+        "media/d6bb3fa98e909680189ccd25.jpg"
+      ]
+    },
+    {
+      "frame_id": "M025",
+      "product_family": "microsoft-365-copilot",
+      "product_name": "Microsoft Copilot",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/microsoft-copilot/id541164041?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/100fc1b64b30b49d2f0d2b7c.png",
+        "media/41256434b7f14d6f46b45347.jpg",
+        "media/dc3e4a137354535f778b3a02.png",
+        "media/e439df6b65c429744a3d3638.png"
+      ]
+    },
+    {
+      "frame_id": "M026",
+      "product_family": "microsoft-365-copilot",
+      "product_name": "Microsoft Copilot",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/microsoft-copilot/id541164041?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/0c66f44c308aa55789996dcd.jpg",
+        "media/100fc1b64b30b49d2f0d2b7c.png",
+        "media/aee7dd7979f554f434a1ae56.png",
+        "media/e1501a5a6637fba940962a26.png"
+      ]
+    },
+    {
+      "frame_id": "M027",
+      "product_family": "microsoft-365-copilot",
+      "product_name": "Microsoft Copilot",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/microsoft-copilot/id541164041?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/100fc1b64b30b49d2f0d2b7c.png",
+        "media/1735f91b4ea60b577af87816.png",
+        "media/232d25bd329d4109565d4695.jpg",
+        "media/4fdc62353e96c82438035952.png"
+      ]
+    },
+    {
+      "frame_id": "M028",
+      "product_family": "microsoft-365-copilot",
+      "product_name": "Microsoft Copilot",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/microsoft-copilot/id541164041?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/100fc1b64b30b49d2f0d2b7c.png",
+        "media/843f96de6e91101de3136509.png",
+        "media/ac45d1c5e570e8b498177739.jpg",
+        "media/fd80966a33fb19c24364a58b.png"
+      ]
+    },
+    {
+      "frame_id": "M029",
+      "product_family": "notion",
+      "product_name": "Notion: Notes, Tasks, AI",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/1cad4f1616bf93ad96cd3c1f.png",
+        "media/1f254e3a7c7811e8c052bfe8.png",
+        "media/1f6e9cc95ca7db04c8eed5d3.jpg",
+        "media/a4d46cade623e2033125a12c.jpg"
+      ]
+    },
+    {
+      "frame_id": "M030",
+      "product_family": "notion",
+      "product_name": "Notion: Notes, Tasks, AI",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/1cad4f1616bf93ad96cd3c1f.png",
+        "media/2c399beacffcea2f9e9834eb.png",
+        "media/317f18afc877666fd428540d.jpg",
+        "media/8ef90b0e8d84c8aa6b3c600d.jpg"
+      ]
+    },
+    {
+      "frame_id": "M031",
+      "product_family": "notion",
+      "product_name": "Notion: Notes, Tasks, AI",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/1cad4f1616bf93ad96cd3c1f.png",
+        "media/7b78bbae02156fac70818a7b.jpg",
+        "media/7d7de25add6289dc27e9228b.png",
+        "media/de15dae12212c3de73eb52b7.jpg"
+      ]
+    },
+    {
+      "frame_id": "M032",
+      "product_family": "notion",
+      "product_name": "Notion: Notes, Tasks, AI",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/196dc8b9c8c7af32f215d2d3.png",
+        "media/1cad4f1616bf93ad96cd3c1f.png",
+        "media/25fcd07dc8394f5142351c2b.jpg",
+        "media/46ab3b4af15a4b0231faab4b.jpg"
+      ]
+    },
+    {
+      "frame_id": "M033",
+      "product_family": "slack",
+      "product_name": "Slack",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/slack/id618783545?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/2d020de97f32b25e0fa19907.png",
+        "media/5447ab7db29d961a21b0b78e.png",
+        "media/5f9965af2f65958ff33e9f11.jpg"
+      ]
+    },
+    {
+      "frame_id": "M034",
+      "product_family": "slack",
+      "product_name": "Slack",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/slack/id618783545?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/4b69f9c84ca6cbb245b66b3a.jpg",
+        "media/85ff018d32a4fb6fa996bb9e.png",
+        "media/86d48493d9a48ad9fcdbd3a1.png"
+      ]
+    },
+    {
+      "frame_id": "M035",
+      "product_family": "slack",
+      "product_name": "Slack",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/slack/id618783545?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/4bd1d5e6b9c3bce848459532.png",
+        "media/79e5c6cd828bcae221fd9494.jpg",
+        "media/8a471ff76c863ca4c90911dd.png"
+      ]
+    },
+    {
+      "frame_id": "M036",
+      "product_family": "slack",
+      "product_name": "Slack",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/slack/id618783545?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/249f8c9ba8f02687deeec36c.png",
+        "media/d3605f52519c6397da5d141b.jpg",
+        "media/d87a83c4a8535d446bd9f64b.png"
+      ]
+    },
+    {
+      "frame_id": "M037",
+      "product_family": "ramp",
+      "product_name": "Ramp",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/ramp/id1628197245?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/80445fb875ccf7a90f302c73.png",
+        "media/874f9589257406c48ae413a1.png",
+        "media/9762d619238d183de92fc2c2.jpg",
+        "media/a40535ddb181be81982017db.jpg"
+      ]
+    },
+    {
+      "frame_id": "M038",
+      "product_family": "ramp",
+      "product_name": "Ramp",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/ramp/id1628197245?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/06f487be255b8846939fbbfe.png",
+        "media/0a57930b9ff763ec43c61cd5.jpg",
+        "media/874f9589257406c48ae413a1.png",
+        "media/e0e229cc158eeeb89883e337.jpg"
+      ]
+    },
+    {
+      "frame_id": "M039",
+      "product_family": "ramp",
+      "product_name": "Ramp",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/ramp/id1628197245?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/4c60804754a8323d34982103.jpg",
+        "media/6eb65a9856694e5018010626.jpg",
+        "media/874f9589257406c48ae413a1.png",
+        "media/b795f5a8b0b6d18990b009d7.png"
+      ]
+    },
+    {
+      "frame_id": "M040",
+      "product_family": "ramp",
+      "product_name": "Ramp",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/ramp/id1628197245?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/005e51cfc49356faa058b15c.jpg",
+        "media/2dbcb20ea18e17f10b631660.jpg",
+        "media/874f9589257406c48ae413a1.png",
+        "media/9e30daff655cdeae73047f0c.png"
+      ]
+    },
+    {
+      "frame_id": "M041",
+      "product_family": "brex",
+      "product_name": "Brex",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/brex/id1472905508?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/02c168af69d7339b01760fdb.png",
+        "media/dc3e8b56210f66bf0a6ade37.png",
+        "media/e0e3f4a286b51cb9fe0b033a.jpg"
+      ]
+    },
+    {
+      "frame_id": "M042",
+      "product_family": "brex",
+      "product_name": "Brex",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/brex/id1472905508?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/216e8366331b00f2c142705d.jpg",
+        "media/249c461a04cdab946d1c3fe2.png",
+        "media/4dd63e0ad453e5a96c41380a.png"
+      ]
+    },
+    {
+      "frame_id": "M043",
+      "product_family": "brex",
+      "product_name": "Brex",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/brex/id1472905508?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/661fc857a2ac42b06888a4b1.png",
+        "media/ac32de6e40b482a17c0cbf38.png",
+        "media/bd7cf9eb296e983ffef9493f.jpg"
+      ]
+    },
+    {
+      "frame_id": "M044",
+      "product_family": "brex",
+      "product_name": "Brex",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/brex/id1472905508?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/3c037acc05c3cb98cb6a4882.png",
+        "media/a33c6f7012b4db7a454dd249.png",
+        "media/ab92c9258917c79b0e78c930.jpg"
+      ]
+    },
+    {
+      "frame_id": "M045",
+      "product_family": "mercury",
+      "product_name": "Mercury | Bank Differently",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/mercury-bank-differently/id1491984028?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/3c0b3dfe5cfc0f2cd08bfd39.jpg",
+        "media/c0ad64f4342bdeb199bd2718.png",
+        "media/d3c53f60f80f585bedf1bb40.jpg"
+      ]
+    },
+    {
+      "frame_id": "M046",
+      "product_family": "mercury",
+      "product_name": "Mercury | Bank Differently",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/mercury-bank-differently/id1491984028?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/0b622eb09ae1fc3bb22f82ad.jpg",
+        "media/75c6946ce42d45f19e305fcf.png",
+        "media/f33b73eda72b92b4a20ac5b8.jpg"
+      ]
+    },
+    {
+      "frame_id": "M047",
+      "product_family": "mercury",
+      "product_name": "Mercury | Bank Differently",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/mercury-bank-differently/id1491984028?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/4f10cdfeed443dc7fc4cfe4c.png",
+        "media/701d989989f30e90ac88e7c6.jpg",
+        "media/b174c161beced6feabef5dd2.jpg"
+      ]
+    },
+    {
+      "frame_id": "M048",
+      "product_family": "mercury",
+      "product_name": "Mercury | Bank Differently",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/mercury-bank-differently/id1491984028?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/805fef9759a30354521d6ed4.jpg",
+        "media/86f5b555a41d2f00d51b8ce0.jpg",
+        "media/a9c3098e89baedf731a60f29.png"
+      ]
+    },
+    {
+      "frame_id": "M049",
+      "product_family": "stripe-dashboard",
+      "product_name": "Stripe Dashboard",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/stripe-dashboard/id978516833?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/20ce6976e848578423ff4bb2.png",
+        "media/6d56959da69f75067ecbb3b8.png",
+        "media/a63792ced39e39ab8f8c5171.jpg",
+        "media/f57543c9d244ebfe5d20e1a5.jpg"
+      ]
+    },
+    {
+      "frame_id": "M050",
+      "product_family": "stripe-dashboard",
+      "product_name": "Stripe Dashboard",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/stripe-dashboard/id978516833?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/55afc8ec62e8cc3d5d08b62c.png",
+        "media/6d56959da69f75067ecbb3b8.png",
+        "media/9f7e61abb36c4f1b597a06ff.jpg",
+        "media/fb08c712fe7d78bc4ab89789.jpg"
+      ]
+    },
+    {
+      "frame_id": "M051",
+      "product_family": "stripe-dashboard",
+      "product_name": "Stripe Dashboard",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/stripe-dashboard/id978516833?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/2380076bf8fbdc6a99058770.png",
+        "media/64c60f82fe73f2ba6f7aed5d.jpg",
+        "media/653b43fa1494e4e8ffea50c3.jpg",
+        "media/6d56959da69f75067ecbb3b8.png"
+      ]
+    },
+    {
+      "frame_id": "M052",
+      "product_family": "stripe-dashboard",
+      "product_name": "Stripe Dashboard",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/stripe-dashboard/id978516833?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/08ff84236e58186004e8091d.jpg",
+        "media/57bc72528a0c1b944b26a983.png",
+        "media/6d56959da69f75067ecbb3b8.png",
+        "media/ee1c11379ac15b3405a2800e.jpg"
+      ]
+    },
+    {
+      "frame_id": "M053",
+      "product_family": "shopify",
+      "product_name": "Shopify: Sell online/in person",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/shopify-sell-online-in-person/id371294472?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/0421dace9d72686d3c04cfb2.png",
+        "media/31d3c57fdc58a5aba0b61c33.jpg",
+        "media/983f8e7477ff7c38aa16eece.jpg"
+      ]
+    },
+    {
+      "frame_id": "M054",
+      "product_family": "shopify",
+      "product_name": "Shopify: Sell online/in person",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/shopify-sell-online-in-person/id371294472?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/20116ca32f368eed7ece5f7a.jpg",
+        "media/c753ac8b9b266988861ea479.png",
+        "media/cfaf4bdbc8b81a82fb2ad20e.jpg"
+      ]
+    },
+    {
+      "frame_id": "M055",
+      "product_family": "shopify",
+      "product_name": "Shopify: Sell online/in person",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/shopify-sell-online-in-person/id371294472?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/91407f9691c027de5cbdc910.png",
+        "media/a890532a8633a75ed4903dbc.jpg",
+        "media/aff308c01b4ca6b2a4e6ee60.jpg"
+      ]
+    },
+    {
+      "frame_id": "M056",
+      "product_family": "shopify",
+      "product_name": "Shopify: Sell online/in person",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/shopify-sell-online-in-person/id371294472?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/32687ad565153843371e6488.jpg",
+        "media/bfe1b4a0cbc493539c3d90b9.jpg",
+        "media/fbab8afa3cc651cf686c2c70.png"
+      ]
+    },
+    {
+      "frame_id": "M057",
+      "product_family": "procore",
+      "product_name": "Procore",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/procore/id374930542?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/03719337b076af1f2679e130.png",
+        "media/436e1f1950b02a381005f1fb.jpg",
+        "media/b893db44d95a02fe2b08eef5.jpg",
+        "media/d251c5c39986188f605c696c.png"
+      ]
+    },
+    {
+      "frame_id": "M058",
+      "product_family": "procore",
+      "product_name": "Procore",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/procore/id374930542?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/1b93c6f1832ac2c65b02453b.jpg",
+        "media/8ff6d5023712ef733c6b3113.png",
+        "media/d251c5c39986188f605c696c.png",
+        "media/d50eb248bdb0be39aa5729dc.jpg"
+      ]
+    },
+    {
+      "frame_id": "M059",
+      "product_family": "procore",
+      "product_name": "Procore",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/procore/id374930542?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/6689e814ed5e2ccccd96668b.jpg",
+        "media/9a0a17b68ade966360a2ceed.jpg",
+        "media/d251c5c39986188f605c696c.png",
+        "media/f5f8475e4906c5c4ca7dbca1.png"
+      ]
+    },
+    {
+      "frame_id": "M060",
+      "product_family": "procore",
+      "product_name": "Procore",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/procore/id374930542?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/6f1b4f78ebb84912342b19c1.png",
+        "media/a525e714c388ed1db114702f.jpg",
+        "media/d251c5c39986188f605c696c.png",
+        "media/d55e0104ddae355eb7520675.jpg"
+      ]
+    },
+    {
+      "frame_id": "M061",
+      "product_family": "autodesk-construction-cloud",
+      "product_name": "Autodesk Forma",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/autodesk-forma/id498795789?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/66b6296f7cc9f584bda6b57e.jpg",
+        "media/8d0452018062afab9a4bbdfd.png",
+        "media/a5c0fa3d2f76967cbc4735d3.png"
+      ]
+    },
+    {
+      "frame_id": "M062",
+      "product_family": "autodesk-construction-cloud",
+      "product_name": "Autodesk Forma",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/autodesk-forma/id498795789?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/085efafc3a0e595144501f9b.jpg",
+        "media/2bc8c2a68b18782817a54a1f.png",
+        "media/a15daa7fc667fa47f151d3df.png"
+      ]
+    },
+    {
+      "frame_id": "M063",
+      "product_family": "autodesk-construction-cloud",
+      "product_name": "Autodesk Forma",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/autodesk-forma/id498795789?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/54250b7d57a2b881304838c1.jpg",
+        "media/cf638a9e021d215c52ff61f2.png",
+        "media/d82c6ee846553ea32a3e2651.png"
+      ]
+    },
+    {
+      "frame_id": "M064",
+      "product_family": "autodesk-construction-cloud",
+      "product_name": "Autodesk Forma",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/autodesk-forma/id498795789?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/25aa6fbe49bd465ed251f82c.png",
+        "media/6072c1353bdaaa0d7c69315a.jpg",
+        "media/da860f8d8268e3e6ea287453.png"
+      ]
+    },
+    {
+      "frame_id": "M065",
+      "product_family": "servicetitan",
+      "product_name": "ServiceTitan Mobile",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/servicetitan-mobile/id1037989976?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/0358f32729760d8f89180b32.png",
+        "media/1a547c989abe37c299685908.jpg",
+        "media/57f16ffad72ee764af85ffde.png"
+      ]
+    },
+    {
+      "frame_id": "M066",
+      "product_family": "servicetitan",
+      "product_name": "ServiceTitan Mobile",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/servicetitan-mobile/id1037989976?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/2238e7d18471df2df4af753d.jpg",
+        "media/4693b9c28a781063d1f301ed.png",
+        "media/90ad9eadba66153bfa499803.png"
+      ]
+    },
+    {
+      "frame_id": "M067",
+      "product_family": "servicetitan",
+      "product_name": "ServiceTitan Mobile",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/servicetitan-mobile/id1037989976?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/03ac6c70196ffff32c9270f4.png",
+        "media/99aead5f3931b66bd165f7dd.jpg",
+        "media/ab9c5f620dd12043352a6ab2.png"
+      ]
+    },
+    {
+      "frame_id": "M068",
+      "product_family": "servicetitan",
+      "product_name": "ServiceTitan Mobile",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/servicetitan-mobile/id1037989976?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/385ec0f344e08d0ab7aa0183.jpg",
+        "media/51de548fc79e9453e7033fc2.png",
+        "media/f78d0ab2851dea2b9bb625a6.png"
+      ]
+    },
+    {
+      "frame_id": "M069",
+      "product_family": "buildertrend",
+      "product_name": "Buildertrend",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/buildertrend/id504370616?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/33a297a9cc57aaf3d92b2d6e.png",
+        "media/f690bceb7dc483ed3f200094.png",
+        "media/fbde50e178bef764f24c0e21.jpg"
+      ]
+    },
+    {
+      "frame_id": "M070",
+      "product_family": "buildertrend",
+      "product_name": "Buildertrend",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/buildertrend/id504370616?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/4ced8d5f9764c7a7cd554238.jpg",
+        "media/a062861eb1bb96e5783bcf42.png",
+        "media/cdfea95745936f6110361022.png"
+      ]
+    },
+    {
+      "frame_id": "M071",
+      "product_family": "buildertrend",
+      "product_name": "Buildertrend",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/buildertrend/id504370616?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/19ad3b989283479d7348df79.jpg",
+        "media/37b94fe8d7e3586921cb2b7c.png",
+        "media/488ac1cef891cb1d810d2c70.png"
+      ]
+    },
+    {
+      "frame_id": "M072",
+      "product_family": "buildertrend",
+      "product_name": "Buildertrend",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/buildertrend/id504370616?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/0fc1533973a386899e5055df.png",
+        "media/6015cee4e3aff85b130772cb.jpg",
+        "media/cc65ec3584c3e21e5d1efc43.png"
+      ]
+    },
+    {
+      "frame_id": "M073",
+      "product_family": "fieldwire",
+      "product_name": "Fieldwire - Construction App",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/fieldwire-construction-app/id780165517?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/151b4e55905191fea829c10c.png",
+        "media/a30fdde118f50588b16b6f0b.png",
+        "media/c2450700718794cc86356648.jpg",
+        "media/def89022f1f5e8173aa0e554.png"
+      ]
+    },
+    {
+      "frame_id": "M074",
+      "product_family": "fieldwire",
+      "product_name": "Fieldwire - Construction App",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/fieldwire-construction-app/id780165517?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/03c0c28857b15d60bc702336.jpg",
+        "media/151b4e55905191fea829c10c.png",
+        "media/5bd613faa3e774394021a52e.png",
+        "media/aafa147a3a656c5dd0344ef0.png"
+      ]
+    },
+    {
+      "frame_id": "M075",
+      "product_family": "fieldwire",
+      "product_name": "Fieldwire - Construction App",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/fieldwire-construction-app/id780165517?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/06d9335505cd99119cb72df8.png",
+        "media/151b4e55905191fea829c10c.png",
+        "media/e7ae4fbb9a218b35947efbec.jpg",
+        "media/f0f93bb2dc3609c5ef4d8599.png"
+      ]
+    },
+    {
+      "frame_id": "M076",
+      "product_family": "fieldwire",
+      "product_name": "Fieldwire - Construction App",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "App Store marketing",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/fieldwire-construction-app/id780165517?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/151b4e55905191fea829c10c.png",
+        "media/1b724efa548fa516173c8c59.png",
+        "media/2d9beea6b3ed3f88d8503201.png",
+        "media/7dbf54e1132208e7652abae4.jpg"
+      ]
+    },
+    {
+      "frame_id": "M077",
+      "product_family": "flighty",
+      "product_name": "Flighty – Live Flight Tracker",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/flighty-live-flight-tracker/id1358823008?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/28ccc6c8a2341877f0b65488.jpg",
+        "media/7a2ced28546af2784771ac25.jpg",
+        "media/9dc8fdb50c9503b83641bc02.png",
+        "media/f495587a2e3ff56a9b9fb73e.png"
+      ]
+    },
+    {
+      "frame_id": "M078",
+      "product_family": "flighty",
+      "product_name": "Flighty – Live Flight Tracker",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/flighty-live-flight-tracker/id1358823008?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/124158dde19d04675bb85c7e.png",
+        "media/290610a04102562d16c5ae76.jpg",
+        "media/846642380889c0eeacdb4bf5.jpg",
+        "media/9dc8fdb50c9503b83641bc02.png"
+      ]
+    },
+    {
+      "frame_id": "M079",
+      "product_family": "flighty",
+      "product_name": "Flighty – Live Flight Tracker",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/flighty-live-flight-tracker/id1358823008?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/6b5f859453b3d551ff24b698.jpg",
+        "media/9dc8fdb50c9503b83641bc02.png",
+        "media/9fe3460b4c9588ab6396c80a.jpg",
+        "media/d309cdd618366e2732928b0a.png"
+      ]
+    },
+    {
+      "frame_id": "M080",
+      "product_family": "flighty",
+      "product_name": "Flighty – Live Flight Tracker",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/flighty-live-flight-tracker/id1358823008?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/9dc8fdb50c9503b83641bc02.png",
+        "media/b5c1a84140d10fcf28d6f4c6.jpg",
+        "media/dd70d32a477adf1518746fff.png",
+        "media/e4c60db52bcaf72eb48a63be.jpg"
+      ]
+    },
+    {
+      "frame_id": "M081",
+      "product_family": "uber",
+      "product_name": "Uber - Request a ride",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/uber-request-a-ride/id368677368?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/3feb1651b79f7593e6064443.png",
+        "media/461433f7680bf31dde677827.png",
+        "media/9aa40911b46c8ca976d5e29f.jpg",
+        "media/e47c07eff2728c7005d9baa8.png"
+      ]
+    },
+    {
+      "frame_id": "M082",
+      "product_family": "uber",
+      "product_name": "Uber - Request a ride",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/uber-request-a-ride/id368677368?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/015de85d906e65b1e35952c2.png",
+        "media/a6011849d049fd93fb6e22c9.png",
+        "media/a924b550d1850fbc4a7c3166.jpg",
+        "media/e47c07eff2728c7005d9baa8.png"
+      ]
+    },
+    {
+      "frame_id": "M083",
+      "product_family": "uber",
+      "product_name": "Uber - Request a ride",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/uber-request-a-ride/id368677368?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/d1a38ee2f0a32112a22cf229.png",
+        "media/d29f51b0689c2fdae83e9c25.png",
+        "media/e47c07eff2728c7005d9baa8.png",
+        "media/ec93d33e5fe16f8a05f79394.jpg"
+      ]
+    },
+    {
+      "frame_id": "M084",
+      "product_family": "uber",
+      "product_name": "Uber - Request a ride",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/uber-request-a-ride/id368677368?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/824e92fcf68be1569ae7b7e1.png",
+        "media/8eddbae543510e35de3303d8.png",
+        "media/e47c07eff2728c7005d9baa8.png",
+        "media/ea93e8f3ef272985e9c6a8f4.jpg"
+      ]
+    },
+    {
+      "frame_id": "M085",
+      "product_family": "doordash",
+      "product_name": "DoorDash: Food, Grocery, More",
+      "platform": "iOS",
+      "state": "entry",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/doordash-food-grocery-more/id719972451?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/1f1aeac03b05f33ae46bac46.png",
+        "media/3bb896f56f429a6e6ebaca30.png",
+        "media/5d1c05ba2cb2d784c41b1166.jpg",
+        "media/95e335832aecfaf83026d7af.jpg"
+      ]
+    },
+    {
+      "frame_id": "M086",
+      "product_family": "doordash",
+      "product_name": "DoorDash: Food, Grocery, More",
+      "platform": "iOS",
+      "state": "prepared-work",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/doordash-food-grocery-more/id719972451?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/34ce0fd7571b9d548e4b69bf.jpg",
+        "media/388aee0144d6680dbebdc318.jpg",
+        "media/3bb896f56f429a6e6ebaca30.png",
+        "media/ed5dccc18e28edfdd99d9081.png"
+      ]
+    },
+    {
+      "frame_id": "M087",
+      "product_family": "doordash",
+      "product_name": "DoorDash: Food, Grocery, More",
+      "platform": "iOS",
+      "state": "review-detail",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/doordash-food-grocery-more/id719972451?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/3bb896f56f429a6e6ebaca30.png",
+        "media/da15961c1767d4365e0d8876.jpg",
+        "media/f2da84fd78cc42904f2725ff.jpg",
+        "media/fbb500a8f9cbcc73320b7dca.png"
+      ]
+    },
+    {
+      "frame_id": "M088",
+      "product_family": "doordash",
+      "product_name": "DoorDash: Food, Grocery, More",
+      "platform": "iOS",
+      "state": "outcome-or-continuity",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://apps.apple.com/us/app/doordash-food-grocery-more/id719972451?uo=4",
+      "limitation": "Promotional composition from the official listing; not independently verified in a live signed-in product. Screenshot publication date is not exposed by the API.",
+      "media": [
+        "media/0a70f67ed8b6e82e247f7993.jpg",
+        "media/3bb896f56f429a6e6ebaca30.png",
+        "media/dedfec5697bf4b3666bb1b70.jpg",
+        "media/fdfcffb0707cbb2dcaa37288.png"
+      ]
+    },
+    {
+      "frame_id": "M089",
+      "product_family": "apple-live-activities",
+      "product_name": "Apple Live Activities",
+      "platform": "iOS, iPadOS, watchOS, macOS, CarPlay",
+      "state": "ambient-entry",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://developer.apple.com/design/human-interface-guidelines/live-activities",
+      "limitation": "Browser capture of official design guidance; not a live signed-in capture of a third-party product.",
+      "media": [
+        "media/48c9a024c499730f8fd43220.png",
+        "media/8063f80ef510240e34cd6179.jpg",
+        "media/937891e1011a125c8a4b02e8.png",
+        "media/978064ee759638b4cac36198.png"
+      ]
+    },
+    {
+      "frame_id": "M090",
+      "product_family": "apple-live-activities",
+      "product_name": "Apple Live Activities",
+      "platform": "iOS, iPadOS, watchOS, macOS, CarPlay",
+      "state": "progressing-event",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://developer.apple.com/design/human-interface-guidelines/live-activities",
+      "limitation": "Browser capture of official design guidance; not a live signed-in capture of a third-party product.",
+      "media": [
+        "media/48c9a024c499730f8fd43220.png",
+        "media/687b861e38098592fd260dd8.jpg",
+        "media/79bb72ff4044d725adc3d5ec.png",
+        "media/7f46a058064b8a75c8b50f5b.png"
+      ]
+    },
+    {
+      "frame_id": "M091",
+      "product_family": "apple-live-activities",
+      "product_name": "Apple Live Activities",
+      "platform": "iOS, iPadOS, watchOS, macOS, CarPlay",
+      "state": "lock-screen",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://developer.apple.com/design/human-interface-guidelines/live-activities",
+      "limitation": "Browser capture of official design guidance; not a live signed-in capture of a third-party product.",
+      "media": [
+        "media/1e8120ec061182a982281d61.png",
+        "media/22b46d64c9d9520e79e190d6.jpg",
+        "media/48c9a024c499730f8fd43220.png",
+        "media/e00bfce2653719dd499abc3a.png"
+      ]
+    },
+    {
+      "frame_id": "M092",
+      "product_family": "apple-live-activities",
+      "product_name": "Apple Live Activities",
+      "platform": "iOS, iPadOS, watchOS, macOS, CarPlay",
+      "state": "cross-device",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://developer.apple.com/design/human-interface-guidelines/live-activities",
+      "limitation": "Browser capture of official design guidance; not a live signed-in capture of a third-party product.",
+      "media": [
+        "media/00e8e2b863aef851e2f9e3be.jpg",
+        "media/173fe6860508282c79aef4e9.png",
+        "media/48c9a024c499730f8fd43220.png",
+        "media/4902aa10c0a4c94104c32d43.png"
+      ]
+    },
+    {
+      "frame_id": "M093",
+      "product_family": "android-live-updates",
+      "product_name": "Android Live Updates",
+      "platform": "Android",
+      "state": "glanceable-status",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://developer.android.com/design/ui/mobile/guides/home-screen/live-updates",
+      "limitation": "Browser capture of official design guidance; not a live signed-in capture of a third-party product.",
+      "media": [
+        "media/2471a5761f9c945fd8d5ae2f.png",
+        "media/3a1c531ac427f59f9ddaeb85.png",
+        "media/876e7c601360bc18da9b095c.png",
+        "media/9b40beeb09bb1b2d8d6217d7.jpg"
+      ]
+    },
+    {
+      "frame_id": "M094",
+      "product_family": "android-live-updates",
+      "product_name": "Android Live Updates",
+      "platform": "Android",
+      "state": "alert-threshold",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://developer.android.com/design/ui/mobile/guides/home-screen/live-updates",
+      "limitation": "Browser capture of official design guidance; not a live signed-in capture of a third-party product.",
+      "media": [
+        "media/0887bf202bf4f7b4ce9b13f9.jpg",
+        "media/876e7c601360bc18da9b095c.png",
+        "media/abbc42ca65015bda9a90a7b0.png",
+        "media/c3a2a81ce3ac9e308330d97b.png"
+      ]
+    },
+    {
+      "frame_id": "M095",
+      "product_family": "android-live-updates",
+      "product_name": "Android Live Updates",
+      "platform": "Android",
+      "state": "progress-semantics",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://developer.android.com/design/ui/mobile/guides/home-screen/live-updates",
+      "limitation": "Browser capture of official design guidance; not a live signed-in capture of a third-party product.",
+      "media": [
+        "media/0f35020f63df5bf887a540c3.jpg",
+        "media/1ed7c731cdd071e72b14d83d.png",
+        "media/66df08e8a35661f07a166e52.png",
+        "media/876e7c601360bc18da9b095c.png"
+      ]
+    },
+    {
+      "frame_id": "M096",
+      "product_family": "android-live-updates",
+      "product_name": "Android Live Updates",
+      "platform": "Android",
+      "state": "template-specialization",
+      "evidence": "Adjacent interaction analog",
+      "research_snapshot": "2026-08-19",
+      "official_source": "https://developer.android.com/design/ui/mobile/guides/home-screen/live-updates",
+      "limitation": "Browser capture of official design guidance; not a live signed-in capture of a third-party product.",
+      "media": [
+        "media/1af6d2c7e5a91f1de56f5c46.png",
+        "media/876e7c601360bc18da9b095c.png",
+        "media/87879170b90fd6b5b4dc6299.jpg",
+        "media/f8bcc7eaff0771d1d23af437.png"
+      ]
+    },
+    {
+      "frame_id": "M097",
+      "product_family": "ramp",
+      "product_name": "Ramp Policy Agent",
+      "platform": "Web/Desktop",
+      "state": "review",
+      "evidence": "Official product documentation",
+      "research_snapshot": "2026-08-18",
+      "official_source": "https://support.ramp.com/policy-agent-overview/",
+      "limitation": "Supporting desktop evidence retained from the August 18, 2026 research snapshot. The original evidence classification is preserved; current signed-in behavior was not verified for this publication.",
+      "media": [
+        "media/874f9589257406c48ae413a1.png",
+        "media/9983477e039c1d82a929db1e.png",
+        "media/ad004a13ac376d489c4eeacf.png",
+        "media/d3c9c4292c487ef1e7c6dc77.jpg"
+      ]
+    },
+    {
+      "frame_id": "M098",
+      "product_family": "ramp",
+      "product_name": "Ramp Policy Agent",
+      "platform": "Web/Desktop",
+      "state": "explanation",
+      "evidence": "Official product documentation",
+      "research_snapshot": "2026-08-18",
+      "official_source": "https://support.ramp.com/policy-agent-overview/",
+      "limitation": "Supporting desktop evidence retained from the August 18, 2026 research snapshot. The original evidence classification is preserved; current signed-in behavior was not verified for this publication.",
+      "media": [
+        "media/35e0588b97a4a69f1e78321e.png",
+        "media/874f9589257406c48ae413a1.png",
+        "media/e049c0526fd6e682298c8749.png",
+        "media/e3a50e8060cd5d722f4008df.jpg"
+      ]
+    },
+    {
+      "frame_id": "M099",
+      "product_family": "ramp",
+      "product_name": "Ramp Policy Agent",
+      "platform": "Web/Desktop",
+      "state": "receipt",
+      "evidence": "Official product documentation",
+      "research_snapshot": "2026-08-18",
+      "official_source": "https://support.ramp.com/policy-agent-overview/",
+      "limitation": "Supporting desktop evidence retained from the August 18, 2026 research snapshot. The original evidence classification is preserved; current signed-in behavior was not verified for this publication.",
+      "media": [
+        "media/874f9589257406c48ae413a1.png",
+        "media/b81a434be6ca827546f2350c.png",
+        "media/c36aef08e01a7aeb0042f4e3.png",
+        "media/e991ee90c811e55a15c07f2a.jpg"
+      ]
+    },
+    {
+      "frame_id": "M100",
+      "product_family": "microsoft-365-copilot",
+      "product_name": "Microsoft Copilot Pages",
+      "platform": "Web/Desktop",
+      "state": "handoff",
+      "evidence": "Official product documentation",
+      "research_snapshot": "2026-08-18",
+      "official_source": "https://support.microsoft.com/en-us/microsoft-365-copilot/use-researcher-in-microsoft-365-copilot-notebooks",
+      "limitation": "Supporting desktop evidence retained from the August 18, 2026 research snapshot. The original evidence classification is preserved; current signed-in behavior was not verified for this publication. The related mobile sequence link shows the same product’s mobile promotional montage, not a sequence of this desktop state.",
+      "media": [
+        "media/0a49b4a86a213cca44eddfe3.png",
+        "media/100fc1b64b30b49d2f0d2b7c.png",
+        "media/5cbe48df547745ff3258c0bb.jpg",
+        "media/c63edba510b3ba89fe43511b.png"
+      ]
+    },
+    {
+      "frame_id": "M101",
+      "product_family": "microsoft-365-copilot",
+      "product_name": "Microsoft Researcher",
+      "platform": "Web/Desktop",
+      "state": "durable-object",
+      "evidence": "Official product documentation",
+      "research_snapshot": "2026-08-18",
+      "official_source": "https://support.microsoft.com/en-US/Microsoft-365-Copilot/get-started-using-researcher-with-computer-use-in-microsoft-365-copilot-frontier",
+      "limitation": "Supporting desktop evidence retained from the August 18, 2026 research snapshot. The original evidence classification is preserved; current signed-in behavior was not verified for this publication. The related mobile sequence link shows the same product’s mobile promotional montage, not a sequence of this desktop state.",
+      "media": [
+        "media/100fc1b64b30b49d2f0d2b7c.png",
+        "media/144e309f844bcda35769b85f.jpg",
+        "media/2f09f19242eb1f31c4068481.png",
+        "media/77361f1e9b37fa38f93cdb4d.png"
+      ]
+    },
+    {
+      "frame_id": "M102",
+      "product_family": "notion",
+      "product_name": "Notion Custom Agents",
+      "platform": "Web/Desktop",
+      "state": "recovery",
+      "evidence": "Official demo",
+      "research_snapshot": "2026-08-18",
+      "official_source": "https://www.notion.com/en-gb/releases/2026-05-05",
+      "limitation": "Supporting desktop evidence retained from the August 18, 2026 research snapshot. The original evidence classification is preserved; current signed-in behavior was not verified for this publication. The related mobile sequence link shows the same product’s mobile promotional montage, not a sequence of this desktop state.",
+      "media": [
+        "media/0fd38193dabb2f0a8ca54637.png",
+        "media/1cad4f1616bf93ad96cd3c1f.png",
+        "media/3fef7f25d5ef0a1c91e0d7ba.png",
+        "media/b3a7a86f47cbe7c4daa0d082.jpg"
+      ]
+    },
+    {
+      "frame_id": "M103",
+      "product_family": "chatgpt",
+      "product_name": "ChatGPT Workspace Agents",
+      "platform": "Web/Desktop",
+      "state": "authority",
+      "evidence": "Official product documentation",
+      "research_snapshot": "2026-08-18",
+      "official_source": "https://help.openai.com/en/articles/20001143",
+      "limitation": "Supporting desktop evidence retained from the August 18, 2026 research snapshot. The original evidence classification is preserved; current signed-in behavior was not verified for this publication. The related mobile sequence link shows the same product’s mobile promotional montage, not a sequence of this desktop state.",
+      "media": [
+        "media/0b80c6d859809cea34153c17.png",
+        "media/7167f910877e2391a99adc4e.png",
+        "media/d4f10e1c1db2b4d3f7bb667f.png",
+        "media/f14826fa24f66fcfa61c97d8.jpg"
+      ]
+    },
+    {
+      "frame_id": "M104",
+      "product_family": "linear",
+      "product_name": "Linear Coding Sessions",
+      "platform": "Web/Desktop",
+      "state": "review-before-commit",
+      "evidence": "Official product documentation",
+      "research_snapshot": "2026-08-18",
+      "official_source": "https://linear.app/docs/coding-sessions",
+      "limitation": "Supporting desktop evidence retained from the August 18, 2026 research snapshot. The original evidence classification is preserved; current signed-in behavior was not verified for this publication.",
+      "media": [
+        "media/1ee705027a9be9187ea38b51.png",
+        "media/50e4d77b495916e913e95f02.jpg",
+        "media/c67f0f60dac8427c0755579d.png"
+      ]
+    },
+    {
+      "frame_id": "M106",
+      "product_family": "openai-codex",
+      "product_name": "OpenAI Codex app",
+      "platform": "Web/Desktop",
+      "state": "review-before-commit",
+      "evidence": "Official demo",
+      "research_snapshot": "2026-08-18",
+      "official_source": "https://openai.com/index/introducing-the-codex-app/",
+      "limitation": "Supporting desktop evidence retained from the August 18, 2026 research snapshot. The original evidence classification is preserved; current signed-in behavior was not verified for this publication.",
+      "media": [
+        "media/645877a177c9a9a25599291f.jpg",
+        "media/6f9d3178126170f5265ec424.png",
+        "media/c4bba0a7ec9ef8d980d775dd.png"
+      ]
+    }
+  ]
+}
