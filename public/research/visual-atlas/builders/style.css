@@ -122,7 +122,7 @@ h1 { max-width:700px; margin:0; font-size:clamp(48px,5vw,82px); line-height:.95;
 .archetype-visuals figcaption { position:absolute; inset:auto 0 0; padding:9px 11px; background:rgba(8,9,12,.78); color:white; font:9px/1 monospace; text-transform:uppercase; }
 .synthesis { padding:120px 7vw; background:var(--ink); color:white; }
 .synthesis-intro { max-width:1000px; }
-.synthesis-intro .eyebrow { color:var(--acid); }
+.synthesis-intro .eyebrow { color:#c3ceea; }
 .synthesis-intro > p:last-child { max-width:720px; margin:28px 0 0; color:#babbb7; font-size:16px; line-height:1.55; }
 .pattern-wall { max-width:1000px; margin:80px auto 0; display:flex; flex-direction:column; align-items:center; gap:13px; }
 .pattern-wall > i { color:var(--acid); font-style:normal; }

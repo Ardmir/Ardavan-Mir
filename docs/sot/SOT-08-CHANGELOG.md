@@ -21,6 +21,14 @@ Next action:
 
 ## Change history
 
+### 2026-10-03 — Visual research responsive and contrast correction
+Type: Design / Verification
+Changed by: Codex
+Files affected: visual research shared grammar, builder stylesheet, and developer gallery styles.
+Summary: Constrained the developer filter strip to its grid column and stacked its opening below the two-column minimum width. Restricted shared dark backgrounds to their intended sections and restored readable paper backgrounds and pale accents. Public text, source records, and evidence images are unchanged.
+Verification: No document overflow at narrow, intermediate, and wide CSS viewports (346, 798, 910, and 1280 pixels). Developer synthesis and evidence headings retain dark ink on light paper. Existing gallery links, counts, and mobile filtering were verified on the first live release.
+Verification needed: Confirm corrected styles after the follow-up publication workflow completes.
+
 ### 2026-10-03 — Approved visual research library publication
 Type: Content / Design / Deployment / Verification
 Changed by: Codex
