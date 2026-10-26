@@ -232,9 +232,10 @@ Related publication record: visual-research-publication.md
 ## D-024 — Present Fieldnotes as the research project and Beyond the Assistant as its latest chapter
 
 Date: 2026-10-26
-Status: Active; local implementation, publication pending
+Status: Active; implementation verified, release tracked in PR #32
 Decision: Add **Fieldnotes — A Visual Guide to AI-Native Product Design** to Research at `/research/fieldnotes`, using the existing portfolio source, manuscript components, navigation and GitHub Pages workflow. Treat **Beyond the Assistant** as a chapter within the full guide.
 Rationale: The research story connects exact visual evidence, interpretation, tradeoffs and application to design decisions. The latest chapter extends that method into continuity, initiative, authority, correction, return and outcomes.
 Implications: Preserve the restrained role, latest-edition date and artifact scope of nine lessons, three additional cases and 21 retained source visuals. Describe delivered artifacts separately from unmeasured benefits. Use supplied original editorial figures; keep private references, source archives, full-guide HTML and third-party imagery outside the public portfolio. Do not promise a public guide demo.
 Related SOT: `research-strategy-sot.md`
+Release record: [PR #32](https://github.com/Ardmir/Ardavan-Mir/pull/32)
 Related changelog entries: 2026-10-26 — Fieldnotes research entry implementation
