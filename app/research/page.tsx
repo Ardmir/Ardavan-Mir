@@ -1,9 +1,11 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import ResearchStrategyVisuals from "@/components/ResearchStrategyVisuals"
 import { ManuscriptFrame } from "@/components/adaptive-decision-space/ManuscriptFrame"
 import styles from "@/components/adaptive-decision-space/manuscript.module.css"
 import { openGraphShareImages, SITE_URL, twitterShareImages } from "@/lib/site"
+import { FIELDNOTES_RESEARCH } from "@/content/research"
 
 const ogImageAlt =
   "Ardavan Mir — Research and strategy for AI-native design, collaboration, and platform patterns."
@@ -11,14 +13,14 @@ const ogImageAlt =
 export const metadata: Metadata = {
   title: "Research & Strategy — Ardavan Mir",
   description:
-    "Strategic research and operating models for AI-native design, GitHub-based collaboration, platform patterns, and high-trust product workflows.",
+    "Fieldnotes and strategic research for AI-native product design, visual analysis, collaboration, platform patterns, and high-trust workflows.",
   alternates: {
     canonical: "/research",
   },
   openGraph: {
     title: "Research & Strategy — Ardavan Mir",
     description:
-      "Strategic research and operating models for AI-native design, GitHub-based collaboration, platform patterns, and high-trust product workflows.",
+      "Fieldnotes and strategic research for AI-native product design, visual analysis, collaboration, platform patterns, and high-trust workflows.",
     url: `${SITE_URL}/research`,
     type: "website",
     images: openGraphShareImages(ogImageAlt),
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Research & Strategy — Ardavan Mir",
     description:
-      "Strategic research and operating models for AI-native design, GitHub-based collaboration, platform patterns, and high-trust product workflows.",
+      "Fieldnotes and strategic research for AI-native product design, visual analysis, collaboration, platform patterns, and high-trust workflows.",
     images: twitterShareImages,
   },
 }
@@ -124,12 +126,12 @@ const SECTIONS = [
 
 export default function ResearchPage() {
   return (
-    <ManuscriptFrame folio="Research · R.01—03" backHref="/#evidence" backLabel="Back to evidence">
+    <ManuscriptFrame folio="Research · R.01—05" backHref="/#evidence" backLabel="Back to evidence">
       <article>
         <header id="ambiguity" className={styles.hero}>
           <div className={styles.heroMeta}>
             <p>Research &amp; Strategy · Public collection</p>
-            <p>Research folios R.01—03 · Adaptive edition</p>
+            <p>Research folios R.01—05 · Adaptive edition</p>
           </div>
           <div className={styles.heroGrid}>
             <div>
@@ -158,6 +160,47 @@ export default function ResearchPage() {
           <div className={styles.linkRow}>
             <Link href="/research/visual-atlas">Open the AI-native visual research library →</Link>
           </div>
+
+          <div className={`${styles.researchIndex} relative z-10`}>
+            <article id={FIELDNOTES_RESEARCH.id} className={styles.researchEntry} aria-labelledby="fieldnotes-card-title">
+              <span className={styles.researchEntryIndex}>R.05 · Latest</span>
+              <div>
+                <h2 id="fieldnotes-card-title">
+                  <Link href={FIELDNOTES_RESEARCH.href} className="no-underline hover:underline">
+                    {FIELDNOTES_RESEARCH.title}
+                  </Link>
+                </h2>
+                <h3>{FIELDNOTES_RESEARCH.subtitle}</h3>
+                <div className={styles.contentColumns}>
+                  <figure className="m-0">
+                    <Link href={FIELDNOTES_RESEARCH.href} aria-label="Read the Fieldnotes research">
+                      <Image
+                        src={FIELDNOTES_RESEARCH.coverSrc}
+                        alt={FIELDNOTES_RESEARCH.coverAlt}
+                        width={1600}
+                        height={1000}
+                        sizes="(max-width: 700px) 100vw, 45vw"
+                        className="h-auto w-full"
+                      />
+                    </Link>
+                    <figcaption className={`${styles.sourceNote} mt-3`}>
+                      Original editorial figure · Explore → Understand → Compare → Apply.
+                    </figcaption>
+                  </figure>
+                  <div>
+                    <p className="mt-0">{FIELDNOTES_RESEARCH.summary}</p>
+                    <p>
+                      Current guide scope: nine design lessons, three additional ongoing-work cases,
+                      and 21 retained source visuals.
+                    </p>
+                    <div className={styles.linkRow}>
+                      <Link href={FIELDNOTES_RESEARCH.href}>{FIELDNOTES_RESEARCH.ctaLabel} →</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
         </header>
 
         <section id="structure" className={`${styles.stage} ${styles.darkStage}`}>
@@ -182,7 +225,7 @@ export default function ResearchPage() {
               <div className={styles.stageHeader}>
                 <div>
                   <p className={styles.stageNumber}>{stageLabels[index]}</p>
-                  <h2 className={styles.stageHeading}>{section.title}</h2>
+                  <h2 id={section.id} className={`${styles.stageHeading} scroll-mt-8`}>{section.title}</h2>
                 </div>
                 <div>
                   <p className={styles.eyebrow}>{section.subtitle}</p>
@@ -248,6 +291,7 @@ export default function ResearchPage() {
             </p>
           </div>
           <nav className={styles.closingLinks} aria-label="Continue reading">
+            <Link href={FIELDNOTES_RESEARCH.href}>Read Fieldnotes</Link>
             <Link href="/research/ai-native-strategy">Read Architectures of Intent</Link>
             <Link href="/work/intuit-enterprise-suite">Related evidence · IES</Link>
             <Link href="/#evidence">Return to the portfolio manuscript</Link>

@@ -13,6 +13,8 @@ Public routes:
 - `/work/quickbooks-dimensional-chart-of-accounts`
 - `/research`
 - `/research/ai-native-strategy`
+- `/research/visual-atlas`
+- `/research/fieldnotes` (implemented locally; publication pending)
 - `/resume-ardavan-mir.pdf`
 
 The isolated `/explorations/adaptive-decision-space` route is a noindex reference edition and is excluded from the sitemap.

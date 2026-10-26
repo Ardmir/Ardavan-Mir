@@ -13,6 +13,7 @@ const PUBLIC_ROUTES = [
   "/research/visual-atlas/builders/index.html",
   "/research/visual-atlas/developer-builders/index.html",
   "/research/visual-atlas/mobile/index.html",
+  "/research/fieldnotes",
 ] as const
 
 export default function sitemap(): MetadataRoute.Sitemap {

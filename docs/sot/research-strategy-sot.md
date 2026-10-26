@@ -1,12 +1,12 @@
 # Research & Strategy SOT — Public-Safe Backlog
 
-Version: 1.0  
-Last updated: 2026-07-11  
+Version: 1.1
+Last updated: 2026-10-26
 Status: Public-safe
 
 ## Purpose
 
-Document public-safe portfolio opportunities around Ardavan's strategic research work, including AI-native strategy, GitHub-based design collaboration, AI-native platform modes, and decision architecture.
+Document public-safe portfolio research, including Fieldnotes, AI-native strategy, GitHub-based design collaboration, AI-native platform modes, and decision architecture.
 
 ## Summary
 
@@ -93,14 +93,30 @@ Synthesized recurring patterns across AI-native product experiences, including p
 ## 3. Recommended public hierarchy
 
 **Homepage:**  
-Compact Research & Strategy section with three cards.
+Compact Research & Strategy section with five research entries.
 
 **Research route:**  
-`/research` with three public-safe summaries:
+`/research` with five public-safe entries:
 
+- Fieldnotes — A Visual Guide to AI-Native Product Design
 - Architectures of Intent
+- AI-Native Product Visual Research Library (`/research/visual-atlas`)
 - GitHub-Based Design Collaboration
 - AI-Native Platform Patterns
+
+### Fieldnotes implementation and claim boundaries
+
+Decision: D-024 in `SOT-09-DECISION-LOG.md`.
+
+- `[CONFIRMED]` Overall project: **Fieldnotes — A Visual Guide to AI-Native Product Design**. **Beyond the Assistant** is its latest chapter, examining OpenAI Dots, Grok Bot and Muse by Meta.
+- `[CONFIRMED]` Role: **Research and design direction**. Edition **0.4**, dated **October 26, 2026**, identifies the latest guide edition, not the project's start, end or duration.
+- `[CONFIRMED]` Research scope: exact visual source inspection, separation of observation from interpretation and unverified behavior, comparison of mechanisms and tradeoffs, and application through preserve/adapt/investigate questions and a working design brief.
+- `[CONFIRMED]` Delivered guide scope: **nine lessons, three additional ongoing-work cases and 21 retained source visuals**. These are artifact counts, not studies, product tests, adoption or performance measures. The Maya exercise is illustrative.
+- `[CONFIRMED]` Supported outcome: a working interactive learning guide, traceable references, comparisons, an editable/exportable evidence-aware brief and portable research package. Recorded guide checks do not establish researched-product end-to-end behavior, accessibility, improved judgment, reduced review effort or customer outcomes.
+- `[IMPLEMENTED; PUBLICATION PENDING]` Listing card and detail destination: `/research#fieldnotes` → `/research/fieldnotes`, using the shared manuscript frame, Research navigation and page metadata.
+- `[CONFIRMED]` Public artwork is limited to original editorial figures at `/images/research/fieldnotes/fieldnotes-research-cover.svg`, `/images/research/fieldnotes/fieldnotes-research-method.svg` and `/images/research/fieldnotes/fieldnotes-ongoing-work-questions.svg`. `/images/research/fieldnotes/fieldnotes-research-cover.png` supports social metadata.
+- `[DECIDED]` The supplied original figures and case study form the public reader experience. Keep private reference material, full-guide HTML, source archives and third-party product imagery outside the public bundle; no public full-guide demo is supplied.
+- `[TODO]` Complete implementation verification, reconcile newer remote `main` commits, and follow the reviewed GitHub Pages publication workflow. GitHub authentication succeeds with network access enabled; no publication blocker is established.
 
 **Future route candidates:**
 

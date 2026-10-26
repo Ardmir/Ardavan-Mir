@@ -1,7 +1,7 @@
 # SOT-08 — Changelog
 
-Version: 0.3
-Last updated: 2026-10-03
+Version: 1.2
+Last updated: 2026-10-26
 Status: Active
 
 Use this file every time something changes.
@@ -214,3 +214,16 @@ Deployment impact: None. Feature remains a draft-PR candidate and must not be me
 Verification: Strict lint, TypeScript, production build, diff check, source/built publication-safety scans, desktop/tablet/mobile layout, keyboard focus, reduced motion, adaptive reading/lens behavior, and route regressions pass. Screenshots remain review artifacts outside the repository.
 Verification needed: Manual screen-reader, recruiter-comprehension, cultural-integrity, social-preview, and bare-apex DNS/TLS conditions remain tracked.
 Next action: Review the feature draft PR and resolve any publication or granular-authorship follow-up before merge.
+
+### 2026-10-26 — v1.2 — Fieldnotes research entry implementation
+Type: Content / Design / IA / Tech / Documentation
+Changed by: Codex / Ardavan
+Files affected: `content/research.ts`, Research listing and Fieldnotes detail route/styles, shared Research presentation and Ask content, `app/sitemap.ts`, four original public Fieldnotes image assets, `README.md` and Research/deployment/changelog/decision SOT records.
+Summary: Added Fieldnotes as the overall research project and Beyond the Assistant as its latest chapter. Adapted supplied research reasoning, design decisions, learning journey, six ongoing-work questions and bounded outcomes to the portfolio's existing manuscript system. Added card-to-detail and back navigation, metadata and sitemap coverage.
+Decision links: D-024
+Claim impact: Retains “Research and design direction” and the latest-edition date; nine lessons, three cases and 21 source visuals describe artifact scope. No measured benefits, adoption, sole authorship or researched-product end-to-end validation claimed.
+Publication boundary: Only supplied original editorial figures enter public assets. Private reference material, full-guide HTML, archives and third-party product imagery remain outside the portfolio.
+Deployment impact: Local implementation only; verification and publication pending. CNAME, hosting and deployment workflow are unchanged. GitHub authentication succeeds with network access enabled; no publication blocker is established.
+Verification: Lint passes; TypeScript and static build checks are in progress.
+Verification needed: Complete TypeScript/static export checks, card/detail/back navigation, responsive layouts, image inspection/alternatives, links and public asset inventory.
+Next action: Complete verification, reconcile newer remote `main` commits, and publish through the existing reviewed GitHub Pages workflow.
