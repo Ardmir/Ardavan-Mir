@@ -13,6 +13,8 @@ Public routes:
 - `/work/quickbooks-dimensional-chart-of-accounts`
 - `/research`
 - `/research/ai-native-strategy`
+- `/research/visual-atlas`
+- `/research/fieldnotes`
 - `/resume-ardavan-mir.pdf`
 
 The isolated `/explorations/adaptive-decision-space` route is a noindex reference edition and is excluded from the sitemap.
@@ -50,6 +52,8 @@ The production build exports to `out/`.
 The canonical production URL is [https://www.ardavanmir.com](https://www.ardavanmir.com). Pushes to `main` deploy the static export through `.github/workflows/deploy.yml` to GitHub Pages. `public/CNAME` must remain `www.ardavanmir.com`.
 
 The legacy Vercel/v0 project is not the production authority. Do not change CNAME, DNS, the deployment workflow, or the production branch without explicit approval.
+
+The Fieldnotes Research addition and its release checks are recorded in [PR #32](https://github.com/Ardmir/Ardavan-Mir/pull/32).
 
 As of the 2026-07-19 production audit, `www` serves the portfolio over HTTPS and bare-apex HTTP redirects to `www`; bare-apex HTTPS still has a certificate-name mismatch and requires external DNS/domain remediation.
 

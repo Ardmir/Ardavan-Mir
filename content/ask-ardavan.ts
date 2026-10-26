@@ -112,8 +112,12 @@ export const ASK_ARDAVAN_PROMPTS: AskArdavanPrompt[] = [
     prompt: "What kind of research do you do?",
     assistantTitle: "Research & Strategy",
     answer:
-      "I create strategic research and operating models that help teams make sense of AI-native product work. Recent public-safe examples include an AI-native strategy guide, a GitHub-based collaboration model for integrated prototype work, and research on platform patterns like context, grounding, trust, review, permissions, human control, and moving from suggestion to action.",
+      "I create strategic research and operating models that help teams make sense of AI-native product work. Fieldnotes connects visual product examples to design decisions about scope, review, authority and continuing work. Other examples include Architectures of Intent, a GitHub-based collaboration model, and research on platform patterns like context, grounding, trust and human control.",
     links: [
+      {
+        label: "Read Fieldnotes",
+        href: "/research/fieldnotes",
+      },
       {
         label: "Read Architectures of Intent",
         href: "/research/ai-native-strategy",

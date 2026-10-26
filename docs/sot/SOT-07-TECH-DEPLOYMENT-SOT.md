@@ -1,7 +1,7 @@
 # SOT-07 — Tech and Deployment Source of Truth
 
-Version: 0.3
-Last updated: 2026-07-19
+Version: 0.4
+Last updated: 2026-10-26
 Status: Active
 
 ## Authoritative production state
@@ -24,6 +24,8 @@ Status: Active
 - `/work/quickbooks-dimensional-chart-of-accounts`
 - `/research`
 - `/research/ai-native-strategy`
+- `/research/visual-atlas`
+- `/research/fieldnotes`
 - `/resume-ardavan-mir.pdf`
 
 The reference route `/explorations/adaptive-decision-space` is `noindex` and intentionally excluded from `sitemap.xml`.
@@ -81,6 +83,7 @@ The build must validate TypeScript and lint successfully; `ignoreBuildErrors` an
 
 ## Remaining external actions
 
+- `[RELEASE TRACKING 2026-10-26]` Fieldnotes implementation is verified and recorded in [PR #32](https://github.com/Ardmir/Ardavan-Mir/pull/32). Current remote `main` through `d162895` is incorporated. Lint, TypeScript, production static export and Vercel preview checks pass; source/export audits confirm local targets, unique IDs, image alternatives, metadata, sitemap, CNAME and exclusion of private package paths. The card-to-detail journey and full-size method figure were inspected in the in-app browser. Final responsive/keyboard checks and GitHub Pages production release confirmation remain pending.
 - `[TODO]` Repair or configure the bare-apex HTTPS certificate/DNS path, then verify redirect behavior.
 - `[TODO]` Complete evidence-backed LinkedIn, Slack, and iMessage unfurl checks using full `www` URLs.
 - `[DEFERRED]` Disconnect the legacy Vercel/v0 integration only after Ardavan approves that infrastructure change.

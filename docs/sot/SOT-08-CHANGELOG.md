@@ -1,7 +1,7 @@
 # SOT-08 — Changelog
 
-Version: 0.3
-Last updated: 2026-10-03
+Version: 1.2
+Last updated: 2026-10-26
 Status: Active
 
 Use this file every time something changes.
@@ -214,3 +214,16 @@ Deployment impact: None. Feature remains a draft-PR candidate and must not be me
 Verification: Strict lint, TypeScript, production build, diff check, source/built publication-safety scans, desktop/tablet/mobile layout, keyboard focus, reduced motion, adaptive reading/lens behavior, and route regressions pass. Screenshots remain review artifacts outside the repository.
 Verification needed: Manual screen-reader, recruiter-comprehension, cultural-integrity, social-preview, and bare-apex DNS/TLS conditions remain tracked.
 Next action: Review the feature draft PR and resolve any publication or granular-authorship follow-up before merge.
+
+### 2026-10-26 — v1.2 — Fieldnotes research entry implementation
+Type: Content / Design / IA / Tech / Documentation
+Changed by: Codex / Ardavan
+Files affected: `content/research.ts`, Research listing and Fieldnotes detail route/styles, shared Research presentation and Ask content, `app/sitemap.ts`, four original public Fieldnotes image assets, `README.md` and Research/deployment/changelog/decision SOT records.
+Summary: Added Fieldnotes as the overall research project and Beyond the Assistant as its latest chapter. Adapted supplied research reasoning, design decisions, learning journey, six ongoing-work questions and bounded outcomes to the portfolio's existing manuscript system. Added card-to-detail and back navigation, metadata and sitemap coverage. Incorporated current remote `main` through `d162895`, preserving Staff Product Designer positioning, Ardavan Mir branding and visual atlas R.04; Fieldnotes uses R.05.
+Decision links: D-024
+Claim impact: Retains “Research and design direction” and the latest-edition date; nine lessons, three cases and 21 source visuals describe artifact scope. No measured benefits, adoption, sole authorship or researched-product end-to-end validation claimed.
+Publication boundary: Only supplied original editorial figures enter public assets. Private reference material, full-guide HTML, archives and third-party product imagery remain outside the portfolio.
+Deployment impact: Implementation verified; release tracked in [PR #32](https://github.com/Ardmir/Ardavan-Mir/pull/32). CNAME, hosting and deployment workflow are unchanged. Release follows the existing pull-request merge and GitHub Pages workflow.
+Verification: Lint, TypeScript, production static export and Vercel preview checks pass. Source/export audits find no missing local targets or duplicate IDs on listing/detail; image alternatives, canonical, sitemap and CNAME are correct; private package paths are absent. All four Fieldnotes assets byte-match their supplied originals. Card-to-detail, back navigation and full-size method figure inspection pass in the in-app browser. Automated listing/detail layout checks pass at 320, 390, 1024 and 1440px; keyboard skip-to-main, stage navigation and back navigation pass. Screenshots were visually inspected. Browser JavaScript errors: zero; Chrome emitted existing font/prefetch-use warnings.
+Release checks: Verify the merged commit’s GitHub Pages workflow and canonical live routes.
+Follow-up: Use the existing corrective-PR or reviewed-revert workflow for subsequent changes.

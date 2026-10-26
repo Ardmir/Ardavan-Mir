@@ -6,6 +6,7 @@
 export type ResearchEntry = {
   id: string
   title: string
+  subtitle?: string
   eyebrow: string
   summary: string
   whatItShows: string
@@ -13,6 +14,8 @@ export type ResearchEntry = {
   status: string
   href: string
   ctaLabel: string
+  coverSrc?: string
+  coverAlt?: string
   externalHref?: string
   externalCtaLabel?: string
 }
@@ -26,7 +29,33 @@ export const RESEARCH_SECTION = {
   ctaHref: "/research",
 } as const
 
+export const FIELDNOTES_RESEARCH = {
+  id: "fieldnotes",
+  title: "Fieldnotes",
+  subtitle: "A Visual Guide to AI-Native Product Design",
+  eyebrow: "Visual product research · Research synthesis · Learning experience",
+  summary:
+    "A visual research guide connecting AI product examples to design decisions about scope, review, authority, correction, and continuing work. Its latest chapter, Beyond the Assistant, examines OpenAI Dots, Grok Bot, and Muse by Meta.",
+  whatItShows:
+    "Research and design direction, visual analysis, evidence-aware synthesis, interaction design, and the translation of product examples into practical design decisions.",
+  publicSafeThemes: [
+    "AI-native product design",
+    "Visual analysis",
+    "Research synthesis",
+    "Evidence and interpretation",
+    "Human review and authority",
+    "Ongoing AI work",
+  ],
+  status: "Public research case study · Edition 0.4",
+  href: "/research/fieldnotes",
+  ctaLabel: "Read the research",
+  coverSrc: "/images/research/fieldnotes/fieldnotes-research-cover.svg",
+  coverAlt:
+    "Fieldnotes editorial cover. The learning journey is Explore, Understand, Compare and Apply. Edition 0.4 contains nine design lessons, three ongoing-work cases and 21 retained source visuals.",
+} satisfies ResearchEntry
+
 export const RESEARCH_ENTRIES: ResearchEntry[] = [
+  FIELDNOTES_RESEARCH,
   {
     id: "architectures-of-intent",
     eyebrow: "AI-native strategy · Enterprise systems · Operating models",

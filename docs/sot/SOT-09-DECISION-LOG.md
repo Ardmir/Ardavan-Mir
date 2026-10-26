@@ -1,7 +1,7 @@
 # SOT-09 — Decision Log
 
-Version: 0.4
-Last updated: 2026-08-13
+Version: 0.5
+Last updated: 2026-10-26
 Status: Active
 
 Use this file for decisions that should persist across ChatGPT/Claude/Cursor sessions.
@@ -228,3 +228,14 @@ Decision: Publish an external-only visual research hub with builder, developer-t
 Rationale: The owner requested a durable place on the existing website to find the research, consistent visual grammar, and approval of the exact information before publishing.
 Implications: Exclude confidential material, internal applications, private links, and untraceable images. Preserve source attribution and dated evidence limitations. The owner approved the reviewed content on 2026-10-03. Publish through the existing repository workflow and keep production hosting and domain settings.
 Related publication record: visual-research-publication.md
+
+## D-024 — Present Fieldnotes as the research project and Beyond the Assistant as its latest chapter
+
+Date: 2026-10-26
+Status: Active; implementation verified, release tracked in PR #32
+Decision: Add **Fieldnotes — A Visual Guide to AI-Native Product Design** to Research at `/research/fieldnotes`, using the existing portfolio source, manuscript components, navigation and GitHub Pages workflow. Treat **Beyond the Assistant** as a chapter within the full guide.
+Rationale: The research story connects exact visual evidence, interpretation, tradeoffs and application to design decisions. The latest chapter extends that method into continuity, initiative, authority, correction, return and outcomes.
+Implications: Preserve the restrained role, latest-edition date and artifact scope of nine lessons, three additional cases and 21 retained source visuals. Describe delivered artifacts separately from unmeasured benefits. Use supplied original editorial figures; keep private references, source archives, full-guide HTML and third-party imagery outside the public portfolio. Do not promise a public guide demo.
+Related SOT: `research-strategy-sot.md`
+Release record: [PR #32](https://github.com/Ardmir/Ardavan-Mir/pull/32)
+Related changelog entries: 2026-10-26 — Fieldnotes research entry implementation

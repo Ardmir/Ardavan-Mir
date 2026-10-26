@@ -1,0 +1,24 @@
+.hero { min-height: auto; }
+.hero .figure { position: relative; z-index: 1; }
+.subtitle { max-width: 28ch; margin: 1.4rem 0 0; font-size: clamp(1.4rem, 2.6vw, 2.2rem); font-weight: 400; letter-spacing: -0.035em; line-height: 1.2; }
+.edition { display: grid; gap: 1rem; margin: 0; }
+.edition div { border-bottom: 1px solid var(--rule); padding-bottom: 0.7rem; }
+.edition dt { color: var(--weft); font-family: var(--font-mono), monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.edition dd { margin: 0.25rem 0 0; color: var(--ink); }
+.figure { margin: 2.5rem 0 0; }
+.figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+.figure figcaption { margin-top: 0.8rem; color: var(--ink-soft); font-family: var(--font-mono), monospace; font-size: 0.7rem; line-height: 1.7; }
+.figure figcaption a { display: inline-block; color: var(--ink); text-underline-offset: 0.2rem; }
+.decisions h3 { margin: 2rem 0 0.6rem; font-size: 1.25rem; font-weight: 500; letter-spacing: -0.025em; line-height: 1.3; }
+.decisions h3:first-child { margin-top: 0; }
+.questions { margin: 2rem 0; padding: 0; list-style: none; border-top: 1px solid var(--rule-strong); }
+.questions li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 1.25rem; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+.questions strong { color: var(--weft); font-family: var(--font-mono), monospace; font-size: 0.7rem; font-weight: 400; letter-spacing: 0.04em; }
+.questions li p { margin: 0; }
+.scope { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 2rem 0; padding: 1.4rem 0; border-top: 1px solid var(--rule-strong); border-bottom: 1px solid var(--rule); }
+.scope dt { color: var(--weft); font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 400; letter-spacing: -0.06em; line-height: 1.1; }
+.scope dd { margin: 0.5rem 0 0; color: var(--ink-soft); font-family: var(--font-mono), monospace; font-size: 0.68rem; line-height: 1.6; }
+@media (max-width: 720px) {
+  .questions li { grid-template-columns: 1fr; gap: 0.4rem; }
+  .scope { gap: 0.65rem; }
+}
